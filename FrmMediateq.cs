@@ -48,7 +48,7 @@ namespace Mediateq_AP_SIO2
         #region Parutions
         //-----------------------------------------------------------
         // ONGLET "PARUTIONS"
-        //------------------------------------------------------------
+        //-----------------------------------------------------------
         private void tabParutions_Enter(object sender, EventArgs e)
         {
             cbxTitres.DataSource = lesTitres;
@@ -78,7 +78,7 @@ namespace Mediateq_AP_SIO2
         #region Revues
         //-----------------------------------------------------------
         // ONGLET "TITRES"
-        //------------------------------------------------------------
+        //-----------------------------------------------------------
         private void tabTitres_Enter(object sender, EventArgs e)
         {
             cbxDomaines.DataSource = lesDescripteurs;
