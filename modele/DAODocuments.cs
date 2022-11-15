@@ -113,7 +113,5 @@ namespace Mediateq_AP_SIO2
             DAOFactory.deconnecter();
             return categorie;
         }
-
     }
-
 }

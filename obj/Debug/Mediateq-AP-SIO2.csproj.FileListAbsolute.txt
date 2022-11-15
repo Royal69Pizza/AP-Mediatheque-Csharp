@@ -64,3 +64,37 @@ C:\Users\slam\Documents\AP-SIO2\AP-SIO2-2022-2023\Mediateq-AP-SIO2\obj\Debug\Med
 C:\Users\slam\Documents\AP-SIO2\AP-SIO2-2022-2023\Mediateq-AP-SIO2\obj\Debug\Mediateq-AP-SIO2.csproj.CopyComplete
 C:\Users\slam\Documents\AP-SIO2\AP-SIO2-2022-2023\Mediateq-AP-SIO2\obj\Debug\Mediateq-AP-SIO2.exe
 C:\Users\slam\Documents\AP-SIO2\AP-SIO2-2022-2023\Mediateq-AP-SIO2\obj\Debug\Mediateq-AP-SIO2.pdb
+C:\Users\royal\Desktop\ICOF\Informatique\Programmation\M I S S I O N   I M P O S S I B L E   C #   M A S T E R   B A T T L E\bin\Debug\Mediateq-AP-SIO2.exe.config
+C:\Users\royal\Desktop\ICOF\Informatique\Programmation\M I S S I O N   I M P O S S I B L E   C #   M A S T E R   B A T T L E\bin\Debug\Mediateq-AP-SIO2.exe
+C:\Users\royal\Desktop\ICOF\Informatique\Programmation\M I S S I O N   I M P O S S I B L E   C #   M A S T E R   B A T T L E\bin\Debug\Mediateq-AP-SIO2.pdb
+C:\Users\royal\Desktop\ICOF\Informatique\Programmation\M I S S I O N   I M P O S S I B L E   C #   M A S T E R   B A T T L E\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\royal\Desktop\ICOF\Informatique\Programmation\M I S S I O N   I M P O S S I B L E   C #   M A S T E R   B A T T L E\bin\Debug\Google.Protobuf.dll
+C:\Users\royal\Desktop\ICOF\Informatique\Programmation\M I S S I O N   I M P O S S I B L E   C #   M A S T E R   B A T T L E\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\royal\Desktop\ICOF\Informatique\Programmation\M I S S I O N   I M P O S S I B L E   C #   M A S T E R   B A T T L E\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\royal\Desktop\ICOF\Informatique\Programmation\M I S S I O N   I M P O S S I B L E   C #   M A S T E R   B A T T L E\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\royal\Desktop\ICOF\Informatique\Programmation\M I S S I O N   I M P O S S I B L E   C #   M A S T E R   B A T T L E\bin\Debug\MySql.Data.dll
+C:\Users\royal\Desktop\ICOF\Informatique\Programmation\M I S S I O N   I M P O S S I B L E   C #   M A S T E R   B A T T L E\bin\Debug\System.Buffers.dll
+C:\Users\royal\Desktop\ICOF\Informatique\Programmation\M I S S I O N   I M P O S S I B L E   C #   M A S T E R   B A T T L E\bin\Debug\System.Memory.dll
+C:\Users\royal\Desktop\ICOF\Informatique\Programmation\M I S S I O N   I M P O S S I B L E   C #   M A S T E R   B A T T L E\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\royal\Desktop\ICOF\Informatique\Programmation\M I S S I O N   I M P O S S I B L E   C #   M A S T E R   B A T T L E\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\royal\Desktop\ICOF\Informatique\Programmation\M I S S I O N   I M P O S S I B L E   C #   M A S T E R   B A T T L E\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\royal\Desktop\ICOF\Informatique\Programmation\M I S S I O N   I M P O S S I B L E   C #   M A S T E R   B A T T L E\bin\Debug\ZstdNet.dll
+C:\Users\royal\Desktop\ICOF\Informatique\Programmation\M I S S I O N   I M P O S S I B L E   C #   M A S T E R   B A T T L E\bin\Debug\Google.Protobuf.pdb
+C:\Users\royal\Desktop\ICOF\Informatique\Programmation\M I S S I O N   I M P O S S I B L E   C #   M A S T E R   B A T T L E\bin\Debug\Google.Protobuf.xml
+C:\Users\royal\Desktop\ICOF\Informatique\Programmation\M I S S I O N   I M P O S S I B L E   C #   M A S T E R   B A T T L E\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\royal\Desktop\ICOF\Informatique\Programmation\M I S S I O N   I M P O S S I B L E   C #   M A S T E R   B A T T L E\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\royal\Desktop\ICOF\Informatique\Programmation\M I S S I O N   I M P O S S I B L E   C #   M A S T E R   B A T T L E\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\royal\Desktop\ICOF\Informatique\Programmation\M I S S I O N   I M P O S S I B L E   C #   M A S T E R   B A T T L E\bin\Debug\MySql.Data.xml
+C:\Users\royal\Desktop\ICOF\Informatique\Programmation\M I S S I O N   I M P O S S I B L E   C #   M A S T E R   B A T T L E\bin\Debug\System.Buffers.xml
+C:\Users\royal\Desktop\ICOF\Informatique\Programmation\M I S S I O N   I M P O S S I B L E   C #   M A S T E R   B A T T L E\bin\Debug\System.Memory.xml
+C:\Users\royal\Desktop\ICOF\Informatique\Programmation\M I S S I O N   I M P O S S I B L E   C #   M A S T E R   B A T T L E\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\royal\Desktop\ICOF\Informatique\Programmation\M I S S I O N   I M P O S S I B L E   C #   M A S T E R   B A T T L E\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\royal\Desktop\ICOF\Informatique\Programmation\M I S S I O N   I M P O S S I B L E   C #   M A S T E R   B A T T L E\obj\Debug\Mediateq-AP-SIO2.csproj.AssemblyReference.cache
+C:\Users\royal\Desktop\ICOF\Informatique\Programmation\M I S S I O N   I M P O S S I B L E   C #   M A S T E R   B A T T L E\obj\Debug\Mediateq-AP-SIO2.csproj.SuggestedBindingRedirects.cache
+C:\Users\royal\Desktop\ICOF\Informatique\Programmation\M I S S I O N   I M P O S S I B L E   C #   M A S T E R   B A T T L E\obj\Debug\Mediateq_AP_SIO2.Properties.Resources.resources
+C:\Users\royal\Desktop\ICOF\Informatique\Programmation\M I S S I O N   I M P O S S I B L E   C #   M A S T E R   B A T T L E\obj\Debug\Mediateq_AP_SIO2.FrmMediateq.resources
+C:\Users\royal\Desktop\ICOF\Informatique\Programmation\M I S S I O N   I M P O S S I B L E   C #   M A S T E R   B A T T L E\obj\Debug\Mediateq-AP-SIO2.csproj.GenerateResource.cache
+C:\Users\royal\Desktop\ICOF\Informatique\Programmation\M I S S I O N   I M P O S S I B L E   C #   M A S T E R   B A T T L E\obj\Debug\Mediateq-AP-SIO2.csproj.CoreCompileInputs.cache
+C:\Users\royal\Desktop\ICOF\Informatique\Programmation\M I S S I O N   I M P O S S I B L E   C #   M A S T E R   B A T T L E\obj\Debug\Mediateq-AP-SIO2.csproj.CopyComplete
+C:\Users\royal\Desktop\ICOF\Informatique\Programmation\M I S S I O N   I M P O S S I B L E   C #   M A S T E R   B A T T L E\obj\Debug\Mediateq-AP-SIO2.exe
+C:\Users\royal\Desktop\ICOF\Informatique\Programmation\M I S S I O N   I M P O S S I B L E   C #   M A S T E R   B A T T L E\obj\Debug\Mediateq-AP-SIO2.pdb

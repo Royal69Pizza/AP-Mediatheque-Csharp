@@ -15,7 +15,7 @@ namespace Mediateq_AP_SIO2
     public partial class FrmMediateq : Form
     {
         #region Variables globales
-
+        
         static List<Categorie> lesCategories;
         static List<Descripteur> lesDescripteurs;
         static List<Revue> lesTitres;
@@ -39,7 +39,7 @@ namespace Mediateq_AP_SIO2
             // Chargement des objets en mémoire
             lesDescripteurs = DAODocuments.getAllDescripteurs();
             lesTitres = DAOPresse.getAllTitre();
-
+            lesCategories = DAODocuments.getAllCategories();
         }
 
         #endregion
@@ -174,5 +174,31 @@ namespace Mediateq_AP_SIO2
         }
         #endregion
 
+        #region Gestion des Documents
+        //-----------------------------------------------------------
+        // G E S T I O N   D E S   D O C U M E N T S
+        //-----------------------------------------------------------
+        private void tabGestionDesDocs_Enter(object sender, EventArgs e)
+        {
+            for (int i = 0; i < lesCategories.Count; i++)
+            {
+                selectCategorieLivre.Items.Add(lesCategories[i]);
+            }
+        }
+        private void buttonCreerLivre_Click(object sender, EventArgs e)
+        {
+            int unInputIDLivre = int.Parse(inputIDLivre.Text);
+            String unInputTitreLivre = inputTitreLivre.Text;
+            String unInputAuteurLivre = inputAuteurLivre.Text;
+            String unInputISBNLivre = inputISBNLivre.Text;
+            String unInputCollectionLivre = inputCollectionLivre.Text;
+            String unInputImageLivre = inputImageLivre.Text;
+            String unInputCategorieLivre = selectCategorieLivre.SelectedIndex.ToString();
+
+
+            // Livre unNouveauLivre = new Livre(unInputIDLivre, unInputTitreLivre, unInputISBNLivre, unInputAuteurLivre, unInputCollectionLivre, unInputImageLivre)
+        }
+
+        #endregion
     }
 }
