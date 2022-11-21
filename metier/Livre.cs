@@ -12,12 +12,16 @@ namespace Mediateq_AP_SIO2.metier
         private string auteur;
         private string laCollection;
 
-
         public Livre(string unId, string unTitre, string unISBN, string unAuteur, string uneCollection,string uneImage, Categorie uneCategorie) : base(unId, unTitre, uneImage, uneCategorie)
         {
             ISBN1 = unISBN;
             Auteur = unAuteur;
             LaCollection = uneCollection;
+        }
+
+        public String getISBNLivre()
+        {
+            return this.ISBN;
         }
 
         public string ISBN1 { get => ISBN; set => ISBN = value; }

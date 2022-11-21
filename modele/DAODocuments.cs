@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Mediateq_AP_SIO2
 {
@@ -49,9 +50,9 @@ namespace Mediateq_AP_SIO2
         public static List<Livre> getAllLivres()
         {
             List<Livre> lesLivres = new List<Livre>();
-            string req = "Select l.id, l.ISBN, l.auteur, d.titre, d.image, l.collection, d.idPublic, c.libelle from livre l ";
+            string req = "Select l.id, l.ISBN, l.auteur, d.titre, d.image, l.collection, d.idCategorie, c.libelle from livre l ";
             req += " join document d on l.id=d.id";
-            req += " join categorie c on d.idPublic = c.id";
+            req += " join categorie c on d.idCategorie = c.id";
 
             DAOFactory.connecter();
 
@@ -95,7 +96,7 @@ namespace Mediateq_AP_SIO2
         public static Categorie getCategorieByLivre(Livre pLivre)
         {
             Categorie categorie;
-            string req = "Select c.id,c.libelle from categorie c,document d where c.id = d.idPublic and d.id='";
+            string req = "Select c.id,c.libelle from categorie c,document d where c.id = d.idCategorie and d.id='";
             req += pLivre.IdDoc + "'";
 
             DAOFactory.connecter();
@@ -112,6 +113,66 @@ namespace Mediateq_AP_SIO2
             }
             DAOFactory.deconnecter();
             return categorie;
+        }
+
+
+
+        //|-----------------------------------------------------------
+        //| Recherche de la catégorie en fonction du libelle selectione de la combobox
+        //|-----------------------------------------------------------
+        public static String getIdCategorieByLibelle(String unLibelle)
+        {
+            String resultat;
+            String req = "SELECT id FROM categorie WHERE libelle ='" + unLibelle + "'";
+
+            MessageBox.Show(req);
+            DAOFactory.connecter();
+
+            MySqlDataReader reader = DAOFactory.execSQLRead(req);
+
+            if (reader.Read())
+            {
+                resultat = reader[0].ToString();
+            }
+            else
+            {
+                resultat = null;
+            }
+
+            DAOFactory.deconnecter();
+            return resultat;
+        }
+
+        //|-----------------------------------------------------------
+        //| Créer un nouveau livre
+        //|-----------------------------------------------------------
+        public static bool setNouveauLivre(String ID, String Titre, String ISBN, String Auteur, String Collection, String Image, String unIdCategorie)
+        {
+            bool resultat;
+
+            try
+            {
+                String req1 = "INSERT INTO document (id, titre, image, idCategorie) VALUES ('" + ID + "', '" + Titre + "', '" + Image + "', '" + unIdCategorie + "');";
+                
+                String req2 = "INSERT INTO livre (id, ISBN, auteur, collection) VALUES ('" + ID + "', '" + ISBN + "', '" + Auteur + "', '" + Collection + "');";
+
+                DAOFactory.connecter();
+
+                DAOFactory.execSQLWrite(req1);
+
+                DAOFactory.execSQLWrite(req2);
+
+                DAOFactory.deconnecter();
+
+                resultat = true;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+                resultat = false;
+            }
+            
+            return resultat;
         }
     }
 }

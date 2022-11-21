@@ -17,7 +17,15 @@ namespace Mediateq_AP_SIO2.metier
             this.libelle = libelle;
         }
 
-        public string Id { get => id; set => id = value; }
+        public string getLibelleCategorie()
+        {
+            return this.libelle;
+        }
+
+        public string getIdCategorie()
+        {
+            return this.id;
+        }
         public string Libelle { get => libelle; set => libelle = value; }
     }
 }

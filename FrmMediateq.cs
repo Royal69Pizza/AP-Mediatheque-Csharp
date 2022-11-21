@@ -40,6 +40,33 @@ namespace Mediateq_AP_SIO2
             lesDescripteurs = DAODocuments.getAllDescripteurs();
             lesTitres = DAOPresse.getAllTitre();
             lesCategories = DAODocuments.getAllCategories();
+            lesLivres = DAODocuments.getAllLivres();
+
+            comboboxesLivre();
+        }
+
+        private void comboboxesLivre()
+        {
+            //|
+            //| Comboboxes livre dans livre
+            //|
+            //|
+            //| A REFAIRE pour les libvres joindre la table document avec livre et récup le titre
+            //|
+            for (int i = 0; i < lesLivres.Count; i++)
+            {
+                selectLivreForEdit.Items.Add(lesLivres[i].getISBNLivre());
+                selectLivreForDelete.Items.Add(lesLivres[i].getISBNLivre());
+            }
+
+            //|
+            //| Comboboxes catégorie dans livre
+            //|
+            selectCategorieLivreForCreate.DataSource = lesCategories;
+            selectCategorieLivreForCreate.DisplayMember = "libelle";
+
+            selectCategorieLivreForEdit.DataSource = lesCategories;
+            selectCategorieLivreForEdit.DisplayMember = "libelle";
         }
 
         #endregion
@@ -175,28 +202,42 @@ namespace Mediateq_AP_SIO2
         #endregion
 
         #region Gestion des Documents
-        //-----------------------------------------------------------
-        // G E S T I O N   D E S   D O C U M E N T S
-        //-----------------------------------------------------------
-        private void tabGestionDesDocs_Enter(object sender, EventArgs e)
-        {
-            for (int i = 0; i < lesCategories.Count; i++)
-            {
-                selectCategorieLivre.Items.Add(lesCategories[i]);
-            }
-        }
+        //|-----------------------------------------------------------
+        //| Crétion des Livres
+        //|-----------------------------------------------------------
         private void buttonCreerLivre_Click(object sender, EventArgs e)
         {
-            int unInputIDLivre = int.Parse(inputIDLivre.Text);
-            String unInputTitreLivre = inputTitreLivre.Text;
-            String unInputAuteurLivre = inputAuteurLivre.Text;
-            String unInputISBNLivre = inputISBNLivre.Text;
-            String unInputCollectionLivre = inputCollectionLivre.Text;
-            String unInputImageLivre = inputImageLivre.Text;
-            String unInputCategorieLivre = selectCategorieLivre.SelectedIndex.ToString();
+            //|
+            //| Récupération des infos des input
+            //|
+            String ID = inputIDLivre.Text;
+            String Titre = inputTitreLivre.Text;
+            String Auteur = inputAuteurLivre.Text;
+            String ISBN = inputISBNLivre.Text;
+            String Collection = inputCollectionLivre.Text;
+            String Image = inputImageLivre.Text;
 
+            Categorie uneNouvelleCategorie = (Categorie)selectCategorieLivreForCreate.SelectedItem;
 
-            // Livre unNouveauLivre = new Livre(unInputIDLivre, unInputTitreLivre, unInputISBNLivre, unInputAuteurLivre, unInputCollectionLivre, unInputImageLivre)
+            if (ID == null || uneNouvelleCategorie == null)
+            {
+                eventLivreCreate.Text = "Le champ ID et la catégorie est obligatoire";
+                eventLivreCreate.ForeColor = System.Drawing.Color.FromArgb(255, 0, 0);
+            }
+            else
+            {
+                Livre unNouveauLivre = new Livre(ID, Titre, ISBN, Auteur, Collection, Image, uneNouvelleCategorie);
+
+                //|
+                //| Appel de la base de données
+                //|
+                bool resultat;
+
+                resultat = DAODocuments.setNouveauLivre(ID, Titre, ISBN, Auteur, Collection, Image, uneNouvelleCategorie.getIdCategorie());
+
+                eventLivreCreate.Text = "Livre ajouté";
+                eventLivreCreate.ForeColor = System.Drawing.Color.FromArgb(0, 255, 0);
+            }
         }
 
         #endregion
