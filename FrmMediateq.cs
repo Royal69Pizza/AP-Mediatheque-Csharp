@@ -42,31 +42,51 @@ namespace Mediateq_AP_SIO2
             lesCategories = DAODocuments.getAllCategories();
             lesLivres = DAODocuments.getAllLivres();
 
-            comboboxesLivre();
+            setComboboxCategorieForEditLivre();
+            setComboboxCategorieForCreateLivre();
+
+            setComboboxLivreForEditLivre();
+            setComboboxLivreForDeleteLivre();
         }
 
-        private void comboboxesLivre()
-        {
-            //|
-            //| Comboboxes livre dans livre
-            //|
-            //|
-            //| A REFAIRE pour les libvres joindre la table document avec livre et récup le titre
-            //|
-            for (int i = 0; i < lesLivres.Count; i++)
-            {
-                selectLivreForEdit.Items.Add(lesLivres[i].getISBNLivre());
-                selectLivreForDelete.Items.Add(lesLivres[i].getISBNLivre());
-            }
+        #endregion
 
-            //|
-            //| Comboboxes catégorie dans livre
-            //|
+        #region Comboboxes
+
+        //|
+        //| Comboboxes catégorie dans créér Livre
+        //|
+        private void setComboboxLivreForEditLivre()
+        {
+            selectLivreForEdit.DataSource = lesLivres;
+            selectLivreForEdit.DisplayMember = "titre";
+        }
+
+        //|
+        //| Comboboxes catégorie dans modifier livre
+        //|
+        private void setComboboxCategorieForEditLivre()
+        {
+            selectCategorieForEdit.DataSource = lesCategories;
+            selectCategorieForEdit.DisplayMember = "libelle";
+        }
+
+        //|
+        //| Comboboxes livre dans modifier livre
+        //|
+        private void setComboboxCategorieForCreateLivre()
+        {
             selectCategorieLivreForCreate.DataSource = lesCategories;
             selectCategorieLivreForCreate.DisplayMember = "libelle";
+        }
 
-            selectCategorieLivreForEdit.DataSource = lesCategories;
-            selectCategorieLivreForEdit.DisplayMember = "libelle";
+        //|
+        //| Comboboxes livre dans supprimer livre
+        //|
+        private void setComboboxLivreForDeleteLivre()
+        {
+            selectLivreForDelete.DataSource = lesLivres;
+            selectLivreForDelete.DisplayMember = "titre";
         }
 
         #endregion
@@ -216,16 +236,22 @@ namespace Mediateq_AP_SIO2
             String ISBN = inputISBNLivre.Text;
             String Collection = inputCollectionLivre.Text;
             String Image = inputImageLivre.Text;
-
+            
             Categorie uneNouvelleCategorie = (Categorie)selectCategorieLivreForCreate.SelectedItem;
 
+            //|
+            //| Si les champs ID et categorie sont vides 
+            //|
             if (ID == null || uneNouvelleCategorie == null)
             {
-                eventLivreCreate.Text = "Le champ ID et la catégorie est obligatoire";
-                eventLivreCreate.ForeColor = System.Drawing.Color.FromArgb(255, 0, 0);
+                textAlertEvent.Text = "{CRUD LIVRE}-{Créer} Le champ ID et la catégorie est obligatoire";
+                textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 0, 0);
             }
             else
             {
+                //|
+                //| Création de l'objet Livre
+                //|
                 Livre unNouveauLivre = new Livre(ID, Titre, ISBN, Auteur, Collection, Image, uneNouvelleCategorie);
 
                 //|
@@ -233,13 +259,152 @@ namespace Mediateq_AP_SIO2
                 //|
                 bool resultat;
 
-                resultat = DAODocuments.setNouveauLivre(ID, Titre, ISBN, Auteur, Collection, Image, uneNouvelleCategorie.getIdCategorie());
+                resultat = DAODocuments.setNouveauLivre(ID, Titre, ISBN, Auteur, Collection, Image, uneNouvelleCategorie.Id);
 
-                eventLivreCreate.Text = "Livre ajouté";
-                eventLivreCreate.ForeColor = System.Drawing.Color.FromArgb(0, 255, 0);
+                if (resultat)
+                {
+                    textAlertEvent.Text = "{CRUD LIVRE}-{Créer} Un livre à été créé";
+                    textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(0, 255, 0);
+
+                    //|
+                    //| On met à jour la combobox de la modif et suppression des livres
+                    //|
+                    lesLivres = DAODocuments.getAllLivres();
+
+                    setComboboxLivreForEditLivre();
+                    setComboboxLivreForDeleteLivre();
+                }
+                else
+                {
+                    textAlertEvent.Text = "{CRUD LIVRE}-{Créer} Erreur BDD lors de la création du livre";
+                    textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 0, 0);
+                }
             }
         }
 
         #endregion
+
+        //|-----------------------------------------------------------
+        //| Modification des livres
+        //|-----------------------------------------------------------
+        private void selectLivreForEdit_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //|
+            //| On recupère les infos de l'objet livre séléctionné
+            //|
+            Livre leLivreForEdit = (Livre)selectLivreForEdit.SelectedItem;
+
+            inputIDLivreForEdit.Text = leLivreForEdit.IdDoc;
+            inputTitreLivreForEdit.Text = leLivreForEdit.Titre;
+            inputAuteurLivreForEdit.Text = leLivreForEdit.Auteur;
+            inputISBNLivreForEdit.Text = leLivreForEdit.ISBN1;
+            inputCollectionLivreForEdit.Text = leLivreForEdit.LaCollection;
+            inputImageLivreForEdit.Text = leLivreForEdit.Image;
+        }
+
+        private void buttonEditLivre_Click(object sender, EventArgs e)
+        {
+            //|
+            //| Récupération des infos des input
+            //|
+            String ID = inputIDLivreForEdit.Text;
+            String Titre = inputTitreLivreForEdit.Text;
+            String Auteur = inputAuteurLivreForEdit.Text;
+            String ISBN = inputISBNLivreForEdit.Text;
+            String Collection = inputCollectionLivreForEdit.Text;
+            String Image = inputImageLivreForEdit.Text;
+
+            Categorie uneNouvelleCategorie = (Categorie)selectCategorieForEdit.SelectedItem;
+
+            //|
+            //| Si les champs ID et categorie sont vides 
+            //|
+            if (ID == null || uneNouvelleCategorie == null)
+            {
+                textAlertEvent.Text = "{CRUD LIVRE}-{Modifier} Le champ ID et la catégorie est obligatoire";
+                textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 0, 0);
+            }
+            else
+            {
+                //|
+                //| On supprime l'ancien objet et on le recrée avec les nouveaux trucs
+                //|
+                Livre leLivreForEdit = (Livre)selectLivreForEdit.SelectedItem;
+                leLivreForEdit = null;
+                leLivreForEdit = new Livre(ID, Titre, ISBN, Auteur, Collection, Image, uneNouvelleCategorie);
+
+                //|
+                //| Appel de la base de données
+                //|
+                bool resultat;
+
+                resultat = DAODocuments.editLivre(leLivreForEdit, uneNouvelleCategorie);
+
+                if (resultat)
+                {
+                    textAlertEvent.Text = "{CRUD LIVRE}-{Modifier} Le livre à été modifié";
+                    textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(0, 255, 0);
+
+                    //|
+                    //| On met à jour la combobox de la modif et suppression des livres
+                    //|
+                    lesLivres = DAODocuments.getAllLivres();
+
+                    setComboboxLivreForEditLivre();
+                    setComboboxLivreForDeleteLivre();
+                }
+                else
+                {
+                    textAlertEvent.Text = "{CRUD LIVRE}-{Modifier} Erreur BDD lors de la modification du livre";
+                    textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 0, 0);
+                }
+
+                //|
+                //| Création de l'objet Livre
+                //|
+                Livre unNouveauLivre = new Livre(ID, Titre, ISBN, Auteur, Collection, Image, uneNouvelleCategorie);
+            }
+        }
+
+        //|-----------------------------------------------------------
+        //| Suppression des livres
+        //|-----------------------------------------------------------
+        private void buttonDeleteLivre_Click(object sender, EventArgs e)
+        {
+            bool resultat;
+            Livre leLivreForEdit = (Livre)selectLivreForDelete.SelectedItem;
+
+            //|
+            //| Si la combobox est séléctionnée
+            //|
+            if (leLivreForEdit != null )
+            {
+                resultat = DAODocuments.deleteLivre(leLivreForEdit);
+
+                if (resultat)
+                {
+                    textAlertEvent.Text = "{CRUD LIVRE}-{Supprimer} Le livre à bien été supprimé";
+                    textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(0, 255, 0);
+
+                    //|
+                    //| On met à jour la combobox de la modif et suppression des livres
+                    //|
+                    lesLivres = DAODocuments.getAllLivres();
+
+                    setComboboxLivreForEditLivre();
+                    setComboboxLivreForDeleteLivre();
+                }
+                else
+                {
+                    textAlertEvent.Text = "{CRUD LIVRE}-{Supprimer} Erreur BDD lors de la suppression du livre";
+                    textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 0, 0);
+                }
+            }
+            else
+            {
+                textAlertEvent.Text = "{CRUD LIVRE}-{Supprimer} Aucun livre séléctionné";
+                textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 0, 0);
+            }
+        }
     }
 }

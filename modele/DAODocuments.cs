@@ -1,5 +1,6 @@
 ﻿using Mediateq_AP_SIO2.metier;
 using MySql.Data.MySqlClient;
+using MySqlX.XDevAPI.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -118,32 +119,6 @@ namespace Mediateq_AP_SIO2
 
 
         //|-----------------------------------------------------------
-        //| Recherche de la catégorie en fonction du libelle selectione de la combobox
-        //|-----------------------------------------------------------
-        public static String getIdCategorieByLibelle(String unLibelle)
-        {
-            String resultat;
-            String req = "SELECT id FROM categorie WHERE libelle ='" + unLibelle + "'";
-
-            MessageBox.Show(req);
-            DAOFactory.connecter();
-
-            MySqlDataReader reader = DAOFactory.execSQLRead(req);
-
-            if (reader.Read())
-            {
-                resultat = reader[0].ToString();
-            }
-            else
-            {
-                resultat = null;
-            }
-
-            DAOFactory.deconnecter();
-            return resultat;
-        }
-
-        //|-----------------------------------------------------------
         //| Créer un nouveau livre
         //|-----------------------------------------------------------
         public static bool setNouveauLivre(String ID, String Titre, String ISBN, String Auteur, String Collection, String Image, String unIdCategorie)
@@ -172,6 +147,98 @@ namespace Mediateq_AP_SIO2
                 resultat = false;
             }
             
+            return resultat;
+        }
+
+        //|-----------------------------------------------------------
+        //| Récupération des infos pour la modif des livres
+        //|-----------------------------------------------------------
+        public static Livre getLivreByLibelleForEdit(String unId)
+        {
+            Livre resultat;
+            String req = "Select l.id, l.ISBN, l.auteur, d.titre, d.image, l.collection, d.idCategorie, c.libelle from livre l ";
+            req += " join document d on l.id=d.id";
+            req += " join categorie c on d.idCategorie = c.id WHERE d.id = '" + unId + "'";
+
+            DAOFactory.connecter();
+
+            MySqlDataReader reader = DAOFactory.execSQLRead(req);
+
+            if (reader.Read())
+            {
+                resultat = new Livre(reader[0].ToString(), reader[3].ToString(), reader[1].ToString(),
+                reader[2].ToString(), reader[5].ToString(), reader[4].ToString(), new Categorie(reader[6].ToString(), reader[7].ToString()));
+            }
+            else
+            {
+                resultat = null;
+            }
+
+            DAOFactory.deconnecter();
+
+            return resultat;
+        }
+
+        //|-----------------------------------------------------------
+        //| Modifiaction d'un livre
+        //|-----------------------------------------------------------
+        public static bool editLivre(Livre unLivre, Categorie uneCategorie)
+        {
+            bool resultat;
+
+            try
+            {
+                String req1 = "UPDATE document SET titre = '" + unLivre.Titre + "', image = '" + unLivre.Image + "', idCategorie = '" + uneCategorie.Id + "' WHERE id = '" + unLivre.IdDoc + "';";
+
+                String req2 = "UPDATE livre SET ISBN = '" + unLivre.ISBN1 + "', auteur = '" + unLivre.Auteur + "', collection = '" + unLivre.LaCollection + "' WHERE id = '" + unLivre.IdDoc + "';";
+
+                DAOFactory.connecter();
+
+                DAOFactory.execSQLWrite(req1);
+
+                DAOFactory.execSQLWrite(req2);
+
+                DAOFactory.deconnecter();
+
+                resultat = true;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+                resultat = false;
+            }
+
+            return resultat;
+        }
+
+        //|-----------------------------------------------------------
+        //| Supprimer un livre
+        //|-----------------------------------------------------------
+        public static bool deleteLivre(Livre unLivre)
+        {
+            bool resultat;
+
+            try
+            {
+                String req1 = "DELETE FROM livre WHERE id = '" + unLivre.IdDoc + "';";
+
+                String req2 = "DELETE FROM document WHERE id = '" + unLivre.IdDoc + "';";
+
+                DAOFactory.connecter();
+
+                DAOFactory.execSQLWrite(req1);
+
+                DAOFactory.execSQLWrite(req2);
+
+                DAOFactory.deconnecter();
+
+                resultat = true;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+                resultat = false;
+            }
             return resultat;
         }
     }
