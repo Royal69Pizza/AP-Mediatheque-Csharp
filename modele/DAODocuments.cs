@@ -12,6 +12,8 @@ namespace Mediateq_AP_SIO2
 {
     class DAODocuments
     {
+
+        #region Gestion Générale
         public static List<Categorie> getAllCategories()
         {
             List<Categorie> lesCategories = new List<Categorie>();
@@ -73,6 +75,36 @@ namespace Mediateq_AP_SIO2
             return lesLivres;
         }
 
+        //|-----------------------------------------------------------
+        //| Retourne une collection d'objets DVD
+        //|-----------------------------------------------------------
+        public static List<Dvd> getAllDvd()
+        {
+            List<Dvd> lesDvd = new List<Dvd>();
+            string req = "Select d.id, d.synopsis, d.réalisateur, doc.titre, d.duree, doc.image, doc.idCategorie, c.libelle from dvd d";
+            req += " join document doc on d.id=doc.id";
+            req += " join categorie c on doc.idCategorie = c.id";
+
+            DAOFactory.connecter();
+
+            MySqlDataReader reader = DAOFactory.execSQLRead(req);
+
+            while (reader.Read())
+            {
+                Dvd dvd = new Dvd(reader[0].ToString(), reader[1].ToString(), reader[2].ToString(), reader[3].ToString(), int.Parse(reader[4].ToString()), reader[5].ToString(), new Categorie(reader[6].ToString(), reader[7].ToString()));
+
+                lesDvd.Add(dvd);
+
+            }
+
+            DAOFactory.deconnecter();
+
+            return lesDvd;
+        }
+
+        //|-----------------------------------------------------------
+        //| Créer un genre
+        //|-----------------------------------------------------------
         public static void setDescripteurs(List<Livre> lesLivres)
         {
             DAOFactory.connecter();
@@ -94,29 +126,9 @@ namespace Mediateq_AP_SIO2
             DAOFactory.deconnecter();
         }
 
-        public static Categorie getCategorieByLivre(Livre pLivre)
-        {
-            Categorie categorie;
-            string req = "Select c.id,c.libelle from categorie c,document d where c.id = d.idCategorie and d.id='";
-            req += pLivre.IdDoc + "'";
+        #endregion
 
-            DAOFactory.connecter();
-
-            MySqlDataReader reader = DAOFactory.execSQLRead(req);
-
-            if (reader.Read())
-            {
-                categorie = new Categorie(reader[0].ToString(), reader[1].ToString());
-            }
-            else
-            {
-                categorie = null;
-            }
-            DAOFactory.deconnecter();
-            return categorie;
-        }
-
-
+        #region Gestion des Livres
 
         //|-----------------------------------------------------------
         //| Créer un nouveau livre
@@ -241,5 +253,43 @@ namespace Mediateq_AP_SIO2
             }
             return resultat;
         }
+
+        #endregion
+
+        #region Gestion des Dvd
+
+        //|-----------------------------------------------------------
+        //| Créer un nouveau Dvd
+        //|-----------------------------------------------------------
+        public static bool setNouveauDvd(Dvd unDvd, Categorie uneCategorie)
+        {
+            bool resultat;
+
+            try
+            {
+                String req1 = "INSERT INTO document (id, titre, image, idCategorie) VALUES ('" + unDvd.IdDoc + "', '" + unDvd.Titre + "', '" + unDvd.Image + "', '" + uneCategorie.Id + "');";
+
+                String req2 = "INSERT INTO dvd (id, synopsis, réalisateur, duree) VALUES ('" + unDvd.IdDoc + "', '" + unDvd.Synopsis + "', '" + unDvd.Realisateur + "', '" + unDvd.Duree + "');";
+
+                DAOFactory.connecter();
+
+                DAOFactory.execSQLWrite(req1);
+
+                DAOFactory.execSQLWrite(req2);
+
+                DAOFactory.deconnecter();
+
+                resultat = true;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+                resultat = false;
+            }
+
+            return resultat;
+        }
+
+        #endregion
     }
 }

@@ -22,8 +22,6 @@ namespace Mediateq_AP_SIO2.metier
             laCategorie = uneCategorie;
         }
 
-
-
         public string IdDoc { get => idDoc; set => idDoc = value; }
         public string Titre { get => titre; set => titre = value; }
         public string Image { get => image; set => image = value; }

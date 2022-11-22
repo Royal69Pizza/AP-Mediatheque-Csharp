@@ -94,6 +94,7 @@
     <Compile Include="metier\Categorie.cs" />
     <Compile Include="metier\Document.cs" />
     <Compile Include="metier\Descripteur.cs" />
+    <Compile Include="metier\Dvd.cs" />
     <Compile Include="metier\Livre.cs" />
     <Compile Include="metier\Parution.cs" />
     <Compile Include="metier\Utilisateur.cs" />

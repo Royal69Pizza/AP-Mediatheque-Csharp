@@ -20,6 +20,7 @@ namespace Mediateq_AP_SIO2
         static List<Descripteur> lesDescripteurs;
         static List<Revue> lesTitres;
         static List<Livre> lesLivres;
+        static List<Dvd> lesDvd;
 
         #endregion
 
@@ -41,12 +42,11 @@ namespace Mediateq_AP_SIO2
             lesTitres = DAOPresse.getAllTitre();
             lesCategories = DAODocuments.getAllCategories();
             lesLivres = DAODocuments.getAllLivres();
+            lesDvd = DAODocuments.getAllDvd();
 
-            setComboboxCategorieForEditLivre();
-            setComboboxCategorieForCreateLivre();
-
-            setComboboxLivreForEditLivre();
-            setComboboxLivreForDeleteLivre();
+            setComboboxCategorieForLivre();
+            setComboboxLivreForLivre();
+            setComboboxCategorieForDvd();
         }
 
         #endregion
@@ -54,43 +54,36 @@ namespace Mediateq_AP_SIO2
         #region Comboboxes
 
         //|
-        //| Comboboxes catégorie dans créér Livre
+        //| Comboboxes Livres dans Livre
         //|
-        private void setComboboxLivreForEditLivre()
+        private void setComboboxLivreForLivre()
         {
             selectLivreForEdit.DataSource = lesLivres;
             selectLivreForEdit.DisplayMember = "titre";
-        }
 
-        //|
-        //| Comboboxes catégorie dans modifier livre
-        //|
-        private void setComboboxCategorieForEditLivre()
-        {
-            selectCategorieForEdit.DataSource = lesCategories;
-            selectCategorieForEdit.DisplayMember = "libelle";
-        }
-
-        //|
-        //| Comboboxes livre dans modifier livre
-        //|
-        private void setComboboxCategorieForCreateLivre()
-        {
-            selectCategorieLivreForCreate.DataSource = lesCategories;
-            selectCategorieLivreForCreate.DisplayMember = "libelle";
-        }
-
-        //|
-        //| Comboboxes livre dans supprimer livre
-        //|
-        private void setComboboxLivreForDeleteLivre()
-        {
             selectLivreForDelete.DataSource = lesLivres;
             selectLivreForDelete.DisplayMember = "titre";
         }
 
-        #endregion
+        //|
+        //| Comboboxes Catégorie dans Livre & Dvd
+        //|
+        private void setComboboxCategorieForLivre()
+        {
+            selectCategorieForEdit.DataSource = lesCategories;
+            selectCategorieForEdit.DisplayMember = "libelle";
 
+            selectCategorieLivreForCreate.DataSource = lesCategories;
+            selectCategorieLivreForCreate.DisplayMember = "libelle";
+        }
+
+        private void setComboboxCategorieForDvd()
+        {
+            selectCategorieDvdForCreate.DataSource = lesCategories;
+            selectCategorieDvdForCreate.DisplayMember = "libelle";
+        }
+
+        #endregion
 
         #region Parutions
         //-----------------------------------------------------------
@@ -221,7 +214,7 @@ namespace Mediateq_AP_SIO2
         }
         #endregion
 
-        #region Gestion des Documents
+        #region Gestion des Livres
         //|-----------------------------------------------------------
         //| Crétion des Livres
         //|-----------------------------------------------------------
@@ -271,8 +264,7 @@ namespace Mediateq_AP_SIO2
                     //|
                     lesLivres = DAODocuments.getAllLivres();
 
-                    setComboboxLivreForEditLivre();
-                    setComboboxLivreForDeleteLivre();
+                    setComboboxLivreForLivre();
                 }
                 else
                 {
@@ -281,8 +273,6 @@ namespace Mediateq_AP_SIO2
                 }
             }
         }
-
-        #endregion
 
         //|-----------------------------------------------------------
         //| Modification des livres
@@ -350,8 +340,7 @@ namespace Mediateq_AP_SIO2
                     //|
                     lesLivres = DAODocuments.getAllLivres();
 
-                    setComboboxLivreForEditLivre();
-                    setComboboxLivreForDeleteLivre();
+                    setComboboxLivreForLivre();
                 }
                 else
                 {
@@ -391,8 +380,7 @@ namespace Mediateq_AP_SIO2
                     //|
                     lesLivres = DAODocuments.getAllLivres();
 
-                    setComboboxLivreForEditLivre();
-                    setComboboxLivreForDeleteLivre();
+                    setComboboxLivreForLivre();
                 }
                 else
                 {
@@ -406,5 +394,72 @@ namespace Mediateq_AP_SIO2
                 textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 0, 0);
             }
         }
+
+        #endregion
+
+        #region Gestion des Dvd
+
+        //|-----------------------------------------------------------
+        //| Créer un Dvd
+        //|-----------------------------------------------------------
+        private void buttonCreerDvd_Click(object sender, EventArgs e)
+        {
+            //|
+            //| Récupération des infos des input
+            //|
+            String ID = inputIdDvd.Text;
+            String Titre = inputTitreDvd.Text;
+            String Image = inputImageDvd.Text;
+            String Realisateur = inputRealisateurDvd.Text;
+            int Duree = int.Parse(inputDureeDvd.Text);
+            String Synopsis = inputSynopsisDvd.Text;
+
+            Categorie uneNouvelleCategorie = (Categorie)selectCategorieDvdForCreate.SelectedItem;
+
+            //|
+            //| Si les champs ID et categorie sont vides 
+            //|
+            if (ID == null || uneNouvelleCategorie == null)
+            {
+                textAlertEvent.Text = "{CRUD DVD}-{Créer} Le champ ID et la catégorie est obligatoire";
+                textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 0, 0);
+            }
+            else
+            {
+                //|
+                //| Création de l'objet Dvd
+                //|
+                Dvd unNouveauDvd = new Dvd(ID, Synopsis, Realisateur, Titre, Duree, Image, uneNouvelleCategorie);
+
+                //|
+                //| Appel de la base de données
+                //|
+                bool resultat;
+
+                resultat = DAODocuments.setNouveauDvd(unNouveauDvd, uneNouvelleCategorie);
+
+                if (resultat)
+                {
+                    textAlertEvent.Text = "{CRUD DVD}-{Créer} Un dvd à été créé";
+                    textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(0, 255, 0);
+
+                    //|
+                    //| On met à jour la combobox de la modif et suppression des dvd
+                    //|
+                    lesDvd = DAODocuments.getAllDvd();
+
+                    //|
+                    //| !!!!!!!!!!!!!!!!!!!UPDATE COMBO DVD
+                    //|
+                }
+                else
+                {
+                    textAlertEvent.Text = "{CRUD DVD}-{Créer} Erreur BDD lors de la création du dvd";
+                    textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 0, 0);
+                }
+            }
+        }
+
+        #endregion
     }
 }
