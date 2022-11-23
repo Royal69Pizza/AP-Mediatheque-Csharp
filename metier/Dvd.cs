@@ -13,7 +13,6 @@ namespace Mediateq_AP_SIO2.metier
         private string réalisateur;
         private int duree;
 
-
         public Dvd(string unId, string unSynopsis, string unRealisateur, string unTitre, int uneDuree, string uneImage, Categorie uneCategorie) : base(unId, unTitre, uneImage, uneCategorie)
         {
             Id = unId;

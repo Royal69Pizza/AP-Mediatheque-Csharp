@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Mediateq_AP_SIO2.metier;
 
-
 namespace Mediateq_AP_SIO2
 {
     public partial class FrmMediateq : Form
@@ -24,7 +23,6 @@ namespace Mediateq_AP_SIO2
 
         #endregion
 
-
         #region Procédures évènementielles
 
         public FrmMediateq()
@@ -34,19 +32,32 @@ namespace Mediateq_AP_SIO2
 
         private void FrmMediateq_Load(object sender, EventArgs e)
         {
-            // Création de la connexion avec la base de données
+            //|
+            //| Création de la connection
+            //|
             DAOFactory.creerConnection();
 
-            // Chargement des objets en mémoire
+            //|
+            //| Chargement des objets
+            //|
             lesDescripteurs = DAODocuments.getAllDescripteurs();
             lesTitres = DAOPresse.getAllTitre();
             lesCategories = DAODocuments.getAllCategories();
             lesLivres = DAODocuments.getAllLivres();
             lesDvd = DAODocuments.getAllDvd();
 
+            //|
+            //| Chargement des comboboxes
+            //|
             setComboboxCategorieForLivreAndDvd();
             setComboboxLivreForLivre();
             setComboboxDvdForDvd();
+
+            //|
+            //| Chargement des datagridview
+            //|
+            setAllDataOfLivres();
+            setAllDataOfDvd();
         }
 
         #endregion
@@ -126,7 +137,6 @@ namespace Mediateq_AP_SIO2
         }
         #endregion
 
-
         #region Revues
         //-----------------------------------------------------------
         // ONGLET "TITRES"
@@ -155,7 +165,6 @@ namespace Mediateq_AP_SIO2
             }
         }
         #endregion
-
 
         #region Livres
         //-----------------------------------------------------------
@@ -227,6 +236,20 @@ namespace Mediateq_AP_SIO2
         #endregion
 
         #region Gestion des Livres
+
+        //|-----------------------------------------------------------
+        //| Affichage de tous les livres dans le datagridview
+        //|-----------------------------------------------------------
+        public void setAllDataOfLivres()
+        {
+            dataOfLivre.Rows.Clear();
+
+            foreach (Livre unLivre in lesLivres)
+            {
+                dataOfLivre.Rows.Add(unLivre.IdDoc, unLivre.Titre, unLivre.Image, unLivre.LaCategorie.Libelle, unLivre.ISBN1, unLivre.Auteur, unLivre.LaCollection);
+            }
+        }
+
         //|-----------------------------------------------------------
         //| Crétion des Livres
         //|-----------------------------------------------------------
@@ -254,34 +277,44 @@ namespace Mediateq_AP_SIO2
             }
             else
             {
-                //|
-                //| Création de l'objet Livre
-                //|
-                Livre unNouveauLivre = new Livre(ID, Titre, ISBN, Auteur, Collection, Image, uneNouvelleCategorie);
-
-                //|
-                //| Appel de la base de données
-                //|
-                bool resultat;
-
-                resultat = DAODocuments.setNouveauLivre(ID, Titre, ISBN, Auteur, Collection, Image, uneNouvelleCategorie.Id);
-
-                if (resultat)
+                if (ID.Length > 10)
                 {
-                    textAlertEvent.Text = "{CRUD LIVRE}-{Créer} Un livre à été créé";
-                    textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(0, 255, 0);
-
-                    //|
-                    //| On met à jour la combobox de la modif et suppression des livres
-                    //|
-                    lesLivres = DAODocuments.getAllLivres();
-
-                    setComboboxLivreForLivre();
+                    textAlertEvent.Text = "{CRUD LIVRE}-{Créer} Le champ ID est trop long (Max 10 caractères)";
+                    textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 0, 0);
                 }
                 else
                 {
-                    textAlertEvent.Text = "{CRUD LIVRE}-{Créer} Erreur BDD lors de la création du livre";
-                    textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 0, 0);
+                    //|
+                    //| Création de l'objet Livre
+                    //|
+                    Livre unNouveauLivre = new Livre(ID, Titre, ISBN, Auteur, Collection, Image, uneNouvelleCategorie);
+
+                    //|
+                    //| Appel de la base de données
+                    //|
+                    bool resultat;
+
+                    resultat = DAODocuments.setNouveauLivre(ID, Titre, ISBN, Auteur, Collection, Image, uneNouvelleCategorie.Id);
+
+                    if (resultat)
+                    {
+                        textAlertEvent.Text = "{CRUD LIVRE}-{Créer} Un livre à été créé";
+                        textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(0, 255, 0);
+
+                        //|
+                        //| On met à jour la combobox de la modif et suppression des livres & le datagridview des livres
+                        //|
+                        lesLivres = DAODocuments.getAllLivres();
+
+                        setAllDataOfLivres();
+
+                        setComboboxLivreForLivre();
+                    }
+                    else
+                    {
+                        textAlertEvent.Text = "{CRUD LIVRE}-{Créer} Erreur BDD lors de la création du livre";
+                        textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 0, 0);
+                    }
                 }
             }
         }
@@ -351,9 +384,11 @@ namespace Mediateq_AP_SIO2
                     textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(0, 255, 0);
 
                     //|
-                    //| On met à jour la combobox de la modif et suppression des livres
+                    //| On met à jour la combobox de la modif et suppression des livres & le datagridview des livres
                     //|
                     lesLivres = DAODocuments.getAllLivres();
+
+                    setAllDataOfLivres();
 
                     setComboboxLivreForLivre();
                 }
@@ -415,6 +450,19 @@ namespace Mediateq_AP_SIO2
         #region Gestion des Dvd
 
         //|-----------------------------------------------------------
+        //| Affichage de tous les dvd dans le datagridview
+        //|-----------------------------------------------------------
+        public void setAllDataOfDvd()
+        {
+            dataOfDvd.Rows.Clear();
+
+            foreach (Dvd unDvd in lesDvd)
+            {
+                dataOfDvd.Rows.Add(unDvd.IdDoc, unDvd.Titre, unDvd.Image, unDvd.LaCategorie.Libelle, unDvd.Synopsis, unDvd.Realisateur, unDvd.Duree);
+            }
+        }
+
+        //|-----------------------------------------------------------
         //| Créer un Dvd
         //|-----------------------------------------------------------
         private void buttonCreerDvd_Click(object sender, EventArgs e)
@@ -441,34 +489,44 @@ namespace Mediateq_AP_SIO2
             }
             else
             {
-                //|
-                //| Création de l'objet Dvd
-                //|
-                Dvd unNouveauDvd = new Dvd(ID, Synopsis, Realisateur, Titre, Duree, Image, uneNouvelleCategorie);
-
-                //|
-                //| Appel de la base de données
-                //|
-                bool resultat;
-
-                resultat = DAODocuments.setNouveauDvd(unNouveauDvd, uneNouvelleCategorie);
-
-                if (resultat)
+                if (ID.Length > 10)
                 {
-                    textAlertEvent.Text = "{CRUD DVD}-{Créer} Un dvd à été créé";
-                    textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(0, 255, 0);
-
-                    //|
-                    //| On met à jour la combobox de la modif et suppression des dvd
-                    //|
-                    lesDvd = DAODocuments.getAllDvd();
-
-                    setComboboxDvdForDvd();
+                    textAlertEvent.Text = "{CRUD DVD}-{Créer} Le champ ID est trop long (Max 10 caractères)";
+                    textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 0, 0);
                 }
                 else
                 {
-                    textAlertEvent.Text = "{CRUD DVD}-{Créer} Erreur BDD lors de la création du dvd";
-                    textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 0, 0);
+                    //|
+                    //| Création de l'objet Dvd
+                    //|
+                    Dvd unNouveauDvd = new Dvd(ID, Synopsis, Realisateur, Titre, Duree, Image, uneNouvelleCategorie);
+
+                    //|
+                    //| Appel de la base de données
+                    //|
+                    bool resultat;
+
+                    resultat = DAODocuments.setNouveauDvd(unNouveauDvd, uneNouvelleCategorie);
+
+                    if (resultat)
+                    {
+                        textAlertEvent.Text = "{CRUD DVD}-{Créer} Un dvd à été créé";
+                        textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(0, 255, 0);
+
+                        //|
+                        //| On met à jour la combobox de la modif et suppression des dvd & le datagridview des dvd
+                        //|
+                        lesDvd = DAODocuments.getAllDvd();
+
+                        setAllDataOfDvd();
+
+                        setComboboxDvdForDvd();
+                    }
+                    else
+                    {
+                        textAlertEvent.Text = "{CRUD DVD}-{Créer} Erreur BDD lors de la création du dvd";
+                        textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 0, 0);
+                    }
                 }
             }
         }
@@ -491,9 +549,6 @@ namespace Mediateq_AP_SIO2
             inputDureeDvdForEdit.Text = leDvdForEdit.Duree.ToString();
         }
 
-
-
-        #endregion
         //|-----------------------------------------------------------
         //| Modification des Dvd
         //|-----------------------------------------------------------
@@ -541,9 +596,11 @@ namespace Mediateq_AP_SIO2
                     textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(0, 255, 0);
 
                     //|
-                    //| On met à jour la combobox de la modif et suppression des dvd
+                    //| On met à jour la combobox de la modif et suppression des dvd & le datagridview des dvd
                     //|
                     lesDvd = DAODocuments.getAllDvd();
+
+                    setAllDataOfDvd();
 
                     setComboboxDvdForDvd();
                 }
@@ -599,5 +656,7 @@ namespace Mediateq_AP_SIO2
                 textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 0, 0);
             }
         }
+
+        #endregion
     }
 }
