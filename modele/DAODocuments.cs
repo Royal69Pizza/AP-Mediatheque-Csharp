@@ -290,6 +290,69 @@ namespace Mediateq_AP_SIO2
             return resultat;
         }
 
+        //|-----------------------------------------------------------
+        //| Modification d'un Dvd
+        //|-----------------------------------------------------------
+        public static bool editDvd(Dvd unDvd, Categorie uneCategorie)
+        {
+            bool resultat;
+
+            try
+            {
+                String req1 = "UPDATE document SET titre = '" + unDvd.Titre + "', image = '" + unDvd.Image + "', idCategorie = '" + uneCategorie.Id + "' WHERE id = '" + unDvd.IdDoc + "';";
+
+                String req2 = "UPDATE dvd SET synopsis = '" + unDvd.Synopsis + "', réalisateur = '" + unDvd.Realisateur + "', duree = '" + unDvd.Duree + "' WHERE id = '" + unDvd.IdDoc + "';";
+
+                DAOFactory.connecter();
+
+                DAOFactory.execSQLWrite(req1);
+
+                DAOFactory.execSQLWrite(req2);
+
+                DAOFactory.deconnecter();
+
+                resultat = true;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+                resultat = false;
+            }
+
+            return resultat;
+        }
+
+        //|-----------------------------------------------------------
+        //| Supprimer un dvd
+        //|-----------------------------------------------------------
+        public static bool deleteDvd(Dvd unDvd)
+        {
+            bool resultat;
+
+            try
+            {
+                String req1 = "DELETE FROM dvd WHERE id = '" + unDvd.IdDoc + "';";
+
+                String req2 = "DELETE FROM document WHERE id = '" + unDvd.IdDoc + "';";
+
+                DAOFactory.connecter();
+
+                DAOFactory.execSQLWrite(req1);
+
+                DAOFactory.execSQLWrite(req2);
+
+                DAOFactory.deconnecter();
+
+                resultat = true;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+                resultat = false;
+            }
+            return resultat;
+        }
+
         #endregion
     }
 }

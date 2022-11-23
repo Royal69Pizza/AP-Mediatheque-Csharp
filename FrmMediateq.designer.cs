@@ -84,11 +84,28 @@ namespace Mediateq_AP_SIO2
             this.user = new System.Windows.Forms.Label();
             this.tabGestionDesDocs = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.textAlertEvent = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.selectLivreForDelete = new System.Windows.Forms.ComboBox();
             this.buttonDeleteLivre = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.selectCategorieForEdit = new System.Windows.Forms.ComboBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.inputImageLivreForEdit = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.inputCollectionLivreForEdit = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.inputISBNLivreForEdit = new System.Windows.Forms.TextBox();
+            this.inputAuteurLivreForEdit = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.inputTitreLivreForEdit = new System.Windows.Forms.TextBox();
+            this.inputIDLivreForEdit = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.selectLivreForEdit = new System.Windows.Forms.ComboBox();
             this.buttonEditLivre = new System.Windows.Forms.Button();
@@ -109,25 +126,28 @@ namespace Mediateq_AP_SIO2
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.label15 = new System.Windows.Forms.Label();
-            this.tabCommandesDeDocument = new System.Windows.Forms.TabPage();
-            this.textAlertEvent = new System.Windows.Forms.Label();
-            this.selectCategorieForEdit = new System.Windows.Forms.ComboBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.inputImageLivreForEdit = new System.Windows.Forms.TextBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.inputCollectionLivreForEdit = new System.Windows.Forms.TextBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.inputISBNLivreForEdit = new System.Windows.Forms.TextBox();
-            this.inputAuteurLivreForEdit = new System.Windows.Forms.TextBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.inputTitreLivreForEdit = new System.Windows.Forms.TextBox();
-            this.inputIDLivreForEdit = new System.Windows.Forms.TextBox();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.selectLivreForDelete = new System.Windows.Forms.ComboBox();
-            this.label31 = new System.Windows.Forms.Label();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.label46 = new System.Windows.Forms.Label();
+            this.selectDvdForDelete = new System.Windows.Forms.ComboBox();
+            this.buttonDeleteDvd = new System.Windows.Forms.Button();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.selectCategorieDvdForEdit = new System.Windows.Forms.ComboBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.inputRealisateurDvdForEdit = new System.Windows.Forms.TextBox();
+            this.label39 = new System.Windows.Forms.Label();
+            this.inputSynopsisDvdForEdit = new System.Windows.Forms.TextBox();
+            this.label40 = new System.Windows.Forms.Label();
+            this.inputImageDvdForEdit = new System.Windows.Forms.TextBox();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.inputTitreDvdForEdit = new System.Windows.Forms.TextBox();
+            this.inputIdDvdForEdit = new System.Windows.Forms.TextBox();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.inputDureeDvdForEdit = new System.Windows.Forms.TextBox();
+            this.label45 = new System.Windows.Forms.Label();
+            this.selectDvdForEdit = new System.Windows.Forms.ComboBox();
+            this.buttonEditDvd = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.selectCategorieDvdForCreate = new System.Windows.Forms.ComboBox();
             this.label32 = new System.Windows.Forms.Label();
@@ -136,7 +156,6 @@ namespace Mediateq_AP_SIO2
             this.buttonCreerDvd = new System.Windows.Forms.Button();
             this.inputSynopsisDvd = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
-            this.inputDureeDvd = new System.Windows.Forms.TextBox();
             this.inputImageDvd = new System.Windows.Forms.TextBox();
             this.Durée = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
@@ -144,6 +163,9 @@ namespace Mediateq_AP_SIO2
             this.inputIdDvd = new System.Windows.Forms.TextBox();
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
+            this.inputDureeDvd = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.tabCommandesDeDocument = new System.Windows.Forms.TabPage();
             this.tabOngletsApplication.SuspendLayout();
             this.tabParutions.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvParutions)).BeginInit();
@@ -162,6 +184,8 @@ namespace Mediateq_AP_SIO2
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -762,6 +786,17 @@ namespace Mediateq_AP_SIO2
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "évenements";
             // 
+            // textAlertEvent
+            // 
+            this.textAlertEvent.AutoSize = true;
+            this.textAlertEvent.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textAlertEvent.ForeColor = System.Drawing.Color.White;
+            this.textAlertEvent.Location = new System.Drawing.Point(7, 18);
+            this.textAlertEvent.Name = "textAlertEvent";
+            this.textAlertEvent.Size = new System.Drawing.Size(200, 18);
+            this.textAlertEvent.TabIndex = 5;
+            this.textAlertEvent.Text = "Aucun évenement enregistré";
+            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
@@ -800,6 +835,28 @@ namespace Mediateq_AP_SIO2
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Supprimer";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.ForeColor = System.Drawing.Color.White;
+            this.label31.Location = new System.Drawing.Point(6, 21);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(149, 18);
+            this.label31.TabIndex = 30;
+            this.label31.Text = "Séléctionnez un livre.";
+            // 
+            // selectLivreForDelete
+            // 
+            this.selectLivreForDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.selectLivreForDelete.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.selectLivreForDelete.ForeColor = System.Drawing.Color.Red;
+            this.selectLivreForDelete.FormattingEnabled = true;
+            this.selectLivreForDelete.Location = new System.Drawing.Point(9, 47);
+            this.selectLivreForDelete.Name = "selectLivreForDelete";
+            this.selectLivreForDelete.Size = new System.Drawing.Size(234, 26);
+            this.selectLivreForDelete.TabIndex = 29;
             // 
             // buttonDeleteLivre
             // 
@@ -842,6 +899,155 @@ namespace Mediateq_AP_SIO2
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Modifier";
+            // 
+            // selectCategorieForEdit
+            // 
+            this.selectCategorieForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.selectCategorieForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.selectCategorieForEdit.ForeColor = System.Drawing.Color.Yellow;
+            this.selectCategorieForEdit.FormattingEnabled = true;
+            this.selectCategorieForEdit.Location = new System.Drawing.Point(107, 177);
+            this.selectCategorieForEdit.Name = "selectCategorieForEdit";
+            this.selectCategorieForEdit.Size = new System.Drawing.Size(223, 26);
+            this.selectCategorieForEdit.TabIndex = 39;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.White;
+            this.label23.Location = new System.Drawing.Point(9, 180);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(72, 18);
+            this.label23.TabIndex = 38;
+            this.label23.Text = "Catégorie";
+            // 
+            // inputImageLivreForEdit
+            // 
+            this.inputImageLivreForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputImageLivreForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputImageLivreForEdit.ForeColor = System.Drawing.Color.Yellow;
+            this.inputImageLivreForEdit.Location = new System.Drawing.Point(107, 147);
+            this.inputImageLivreForEdit.Name = "inputImageLivreForEdit";
+            this.inputImageLivreForEdit.Size = new System.Drawing.Size(223, 26);
+            this.inputImageLivreForEdit.TabIndex = 37;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.White;
+            this.label24.Location = new System.Drawing.Point(9, 150);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(83, 18);
+            this.label24.TabIndex = 36;
+            this.label24.Text = "Path Image";
+            // 
+            // inputCollectionLivreForEdit
+            // 
+            this.inputCollectionLivreForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputCollectionLivreForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputCollectionLivreForEdit.ForeColor = System.Drawing.Color.Yellow;
+            this.inputCollectionLivreForEdit.Location = new System.Drawing.Point(107, 271);
+            this.inputCollectionLivreForEdit.Name = "inputCollectionLivreForEdit";
+            this.inputCollectionLivreForEdit.Size = new System.Drawing.Size(223, 26);
+            this.inputCollectionLivreForEdit.TabIndex = 35;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.White;
+            this.label25.Location = new System.Drawing.Point(9, 274);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(73, 18);
+            this.label25.TabIndex = 34;
+            this.label25.Text = "Collection";
+            // 
+            // inputISBNLivreForEdit
+            // 
+            this.inputISBNLivreForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputISBNLivreForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputISBNLivreForEdit.ForeColor = System.Drawing.Color.Yellow;
+            this.inputISBNLivreForEdit.Location = new System.Drawing.Point(107, 209);
+            this.inputISBNLivreForEdit.Name = "inputISBNLivreForEdit";
+            this.inputISBNLivreForEdit.Size = new System.Drawing.Size(223, 26);
+            this.inputISBNLivreForEdit.TabIndex = 33;
+            // 
+            // inputAuteurLivreForEdit
+            // 
+            this.inputAuteurLivreForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputAuteurLivreForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputAuteurLivreForEdit.ForeColor = System.Drawing.Color.Yellow;
+            this.inputAuteurLivreForEdit.Location = new System.Drawing.Point(107, 241);
+            this.inputAuteurLivreForEdit.Name = "inputAuteurLivreForEdit";
+            this.inputAuteurLivreForEdit.Size = new System.Drawing.Size(223, 26);
+            this.inputAuteurLivreForEdit.TabIndex = 32;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.White;
+            this.label26.Location = new System.Drawing.Point(9, 212);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(42, 18);
+            this.label26.TabIndex = 31;
+            this.label26.Text = "ISBN";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.White;
+            this.label27.Location = new System.Drawing.Point(9, 244);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(53, 18);
+            this.label27.TabIndex = 30;
+            this.label27.Text = "Auteur";
+            // 
+            // inputTitreLivreForEdit
+            // 
+            this.inputTitreLivreForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputTitreLivreForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputTitreLivreForEdit.ForeColor = System.Drawing.Color.Yellow;
+            this.inputTitreLivreForEdit.Location = new System.Drawing.Point(107, 117);
+            this.inputTitreLivreForEdit.Name = "inputTitreLivreForEdit";
+            this.inputTitreLivreForEdit.Size = new System.Drawing.Size(223, 26);
+            this.inputTitreLivreForEdit.TabIndex = 29;
+            // 
+            // inputIDLivreForEdit
+            // 
+            this.inputIDLivreForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputIDLivreForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputIDLivreForEdit.ForeColor = System.Drawing.Color.Yellow;
+            this.inputIDLivreForEdit.Location = new System.Drawing.Point(107, 85);
+            this.inputIDLivreForEdit.Name = "inputIDLivreForEdit";
+            this.inputIDLivreForEdit.ReadOnly = true;
+            this.inputIDLivreForEdit.Size = new System.Drawing.Size(223, 26);
+            this.inputIDLivreForEdit.TabIndex = 28;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.ForeColor = System.Drawing.Color.White;
+            this.label28.Location = new System.Drawing.Point(9, 119);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(38, 18);
+            this.label28.TabIndex = 27;
+            this.label28.Text = "Titre";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.ForeColor = System.Drawing.Color.White;
+            this.label29.Location = new System.Drawing.Point(9, 88);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(22, 18);
+            this.label29.TabIndex = 26;
+            this.label29.Text = "ID";
             // 
             // label30
             // 
@@ -1070,6 +1276,8 @@ namespace Mediateq_AP_SIO2
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tabPage2.Controls.Add(this.groupBox7);
+            this.tabPage2.Controls.Add(this.groupBox6);
             this.tabPage2.Controls.Add(this.groupBox5);
             this.tabPage2.Location = new System.Drawing.Point(4, 30);
             this.tabPage2.Name = "tabPage2";
@@ -1078,209 +1286,269 @@ namespace Mediateq_AP_SIO2
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "DVD";
             // 
-            // label15
+            // groupBox7
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Omega Flight Title", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(7, 3);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(363, 20);
-            this.label15.TabIndex = 4;
-            this.label15.Text = "Gestion des Documents";
+            this.groupBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.groupBox7.Controls.Add(this.label46);
+            this.groupBox7.Controls.Add(this.selectDvdForDelete);
+            this.groupBox7.Controls.Add(this.buttonDeleteDvd);
+            this.groupBox7.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox7.ForeColor = System.Drawing.Color.White;
+            this.groupBox7.Location = new System.Drawing.Point(692, 7);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(249, 469);
+            this.groupBox7.TabIndex = 3;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Supprimer";
             // 
-            // tabCommandesDeDocument
+            // label46
             // 
-            this.tabCommandesDeDocument.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tabCommandesDeDocument.ForeColor = System.Drawing.Color.White;
-            this.tabCommandesDeDocument.Location = new System.Drawing.Point(4, 25);
-            this.tabCommandesDeDocument.Name = "tabCommandesDeDocument";
-            this.tabCommandesDeDocument.Padding = new System.Windows.Forms.Padding(3);
-            this.tabCommandesDeDocument.Size = new System.Drawing.Size(974, 600);
-            this.tabCommandesDeDocument.TabIndex = 6;
-            this.tabCommandesDeDocument.Text = "Commandes de Documents";
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.ForeColor = System.Drawing.Color.White;
+            this.label46.Location = new System.Drawing.Point(6, 21);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(149, 18);
+            this.label46.TabIndex = 30;
+            this.label46.Text = "Séléctionnez un livre.";
             // 
-            // textAlertEvent
+            // selectDvdForDelete
             // 
-            this.textAlertEvent.AutoSize = true;
-            this.textAlertEvent.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textAlertEvent.ForeColor = System.Drawing.Color.White;
-            this.textAlertEvent.Location = new System.Drawing.Point(7, 18);
-            this.textAlertEvent.Name = "textAlertEvent";
-            this.textAlertEvent.Size = new System.Drawing.Size(250, 23);
-            this.textAlertEvent.TabIndex = 5;
-            this.textAlertEvent.Text = "Aucun évenement enregistré";
+            this.selectDvdForDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.selectDvdForDelete.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.selectDvdForDelete.ForeColor = System.Drawing.Color.Red;
+            this.selectDvdForDelete.FormattingEnabled = true;
+            this.selectDvdForDelete.Location = new System.Drawing.Point(9, 47);
+            this.selectDvdForDelete.Name = "selectDvdForDelete";
+            this.selectDvdForDelete.Size = new System.Drawing.Size(234, 26);
+            this.selectDvdForDelete.TabIndex = 29;
             // 
-            // selectCategorieForEdit
+            // buttonDeleteDvd
             // 
-            this.selectCategorieForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.selectCategorieForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectCategorieForEdit.ForeColor = System.Drawing.Color.Yellow;
-            this.selectCategorieForEdit.FormattingEnabled = true;
-            this.selectCategorieForEdit.Location = new System.Drawing.Point(107, 177);
-            this.selectCategorieForEdit.Name = "selectCategorieForEdit";
-            this.selectCategorieForEdit.Size = new System.Drawing.Size(223, 26);
-            this.selectCategorieForEdit.TabIndex = 39;
+            this.buttonDeleteDvd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.buttonDeleteDvd.Font = new System.Drawing.Font("Omega Flight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDeleteDvd.ForeColor = System.Drawing.Color.White;
+            this.buttonDeleteDvd.Location = new System.Drawing.Point(96, 437);
+            this.buttonDeleteDvd.Name = "buttonDeleteDvd";
+            this.buttonDeleteDvd.Size = new System.Drawing.Size(147, 26);
+            this.buttonDeleteDvd.TabIndex = 28;
+            this.buttonDeleteDvd.Text = "Supprimer";
+            this.buttonDeleteDvd.UseVisualStyleBackColor = false;
+            this.buttonDeleteDvd.Click += new System.EventHandler(this.buttonDeleteDvd_Click);
             // 
-            // label23
+            // groupBox6
             // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.White;
-            this.label23.Location = new System.Drawing.Point(9, 180);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(72, 18);
-            this.label23.TabIndex = 38;
-            this.label23.Text = "Catégorie";
+            this.groupBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.groupBox6.Controls.Add(this.selectCategorieDvdForEdit);
+            this.groupBox6.Controls.Add(this.label35);
+            this.groupBox6.Controls.Add(this.inputRealisateurDvdForEdit);
+            this.groupBox6.Controls.Add(this.label39);
+            this.groupBox6.Controls.Add(this.inputSynopsisDvdForEdit);
+            this.groupBox6.Controls.Add(this.label40);
+            this.groupBox6.Controls.Add(this.inputImageDvdForEdit);
+            this.groupBox6.Controls.Add(this.label41);
+            this.groupBox6.Controls.Add(this.label42);
+            this.groupBox6.Controls.Add(this.inputTitreDvdForEdit);
+            this.groupBox6.Controls.Add(this.inputIdDvdForEdit);
+            this.groupBox6.Controls.Add(this.label43);
+            this.groupBox6.Controls.Add(this.label44);
+            this.groupBox6.Controls.Add(this.inputDureeDvdForEdit);
+            this.groupBox6.Controls.Add(this.label45);
+            this.groupBox6.Controls.Add(this.selectDvdForEdit);
+            this.groupBox6.Controls.Add(this.buttonEditDvd);
+            this.groupBox6.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox6.ForeColor = System.Drawing.Color.White;
+            this.groupBox6.Location = new System.Drawing.Point(350, 7);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(336, 469);
+            this.groupBox6.TabIndex = 2;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Modifier";
             // 
-            // inputImageLivreForEdit
+            // selectCategorieDvdForEdit
             // 
-            this.inputImageLivreForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputImageLivreForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputImageLivreForEdit.ForeColor = System.Drawing.Color.Yellow;
-            this.inputImageLivreForEdit.Location = new System.Drawing.Point(107, 147);
-            this.inputImageLivreForEdit.Name = "inputImageLivreForEdit";
-            this.inputImageLivreForEdit.Size = new System.Drawing.Size(223, 26);
-            this.inputImageLivreForEdit.TabIndex = 37;
+            this.selectCategorieDvdForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.selectCategorieDvdForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.selectCategorieDvdForEdit.ForeColor = System.Drawing.Color.Cyan;
+            this.selectCategorieDvdForEdit.FormattingEnabled = true;
+            this.selectCategorieDvdForEdit.Location = new System.Drawing.Point(107, 174);
+            this.selectCategorieDvdForEdit.Name = "selectCategorieDvdForEdit";
+            this.selectCategorieDvdForEdit.Size = new System.Drawing.Size(223, 26);
+            this.selectCategorieDvdForEdit.TabIndex = 39;
             // 
-            // label24
+            // label35
             // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.White;
-            this.label24.Location = new System.Drawing.Point(9, 150);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(83, 18);
-            this.label24.TabIndex = 36;
-            this.label24.Text = "Path Image";
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.ForeColor = System.Drawing.Color.White;
+            this.label35.Location = new System.Drawing.Point(9, 177);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(72, 18);
+            this.label35.TabIndex = 38;
+            this.label35.Text = "Catégorie";
             // 
-            // inputCollectionLivreForEdit
+            // inputRealisateurDvdForEdit
             // 
-            this.inputCollectionLivreForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputCollectionLivreForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputCollectionLivreForEdit.ForeColor = System.Drawing.Color.Yellow;
-            this.inputCollectionLivreForEdit.Location = new System.Drawing.Point(107, 271);
-            this.inputCollectionLivreForEdit.Name = "inputCollectionLivreForEdit";
-            this.inputCollectionLivreForEdit.Size = new System.Drawing.Size(223, 26);
-            this.inputCollectionLivreForEdit.TabIndex = 35;
+            this.inputRealisateurDvdForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputRealisateurDvdForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputRealisateurDvdForEdit.ForeColor = System.Drawing.Color.Cyan;
+            this.inputRealisateurDvdForEdit.Location = new System.Drawing.Point(107, 237);
+            this.inputRealisateurDvdForEdit.Name = "inputRealisateurDvdForEdit";
+            this.inputRealisateurDvdForEdit.Size = new System.Drawing.Size(223, 26);
+            this.inputRealisateurDvdForEdit.TabIndex = 37;
             // 
-            // label25
+            // label39
             // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.White;
-            this.label25.Location = new System.Drawing.Point(9, 274);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(73, 18);
-            this.label25.TabIndex = 34;
-            this.label25.Text = "Collection";
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.ForeColor = System.Drawing.Color.White;
+            this.label39.Location = new System.Drawing.Point(9, 240);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(85, 18);
+            this.label39.TabIndex = 36;
+            this.label39.Text = "Réalisateur";
             // 
-            // inputISBNLivreForEdit
+            // inputSynopsisDvdForEdit
             // 
-            this.inputISBNLivreForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputISBNLivreForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputISBNLivreForEdit.ForeColor = System.Drawing.Color.Yellow;
-            this.inputISBNLivreForEdit.Location = new System.Drawing.Point(107, 209);
-            this.inputISBNLivreForEdit.Name = "inputISBNLivreForEdit";
-            this.inputISBNLivreForEdit.Size = new System.Drawing.Size(223, 26);
-            this.inputISBNLivreForEdit.TabIndex = 33;
+            this.inputSynopsisDvdForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputSynopsisDvdForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputSynopsisDvdForEdit.ForeColor = System.Drawing.Color.Cyan;
+            this.inputSynopsisDvdForEdit.Location = new System.Drawing.Point(107, 205);
+            this.inputSynopsisDvdForEdit.Name = "inputSynopsisDvdForEdit";
+            this.inputSynopsisDvdForEdit.Size = new System.Drawing.Size(223, 26);
+            this.inputSynopsisDvdForEdit.TabIndex = 35;
             // 
-            // inputAuteurLivreForEdit
+            // label40
             // 
-            this.inputAuteurLivreForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputAuteurLivreForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputAuteurLivreForEdit.ForeColor = System.Drawing.Color.Yellow;
-            this.inputAuteurLivreForEdit.Location = new System.Drawing.Point(107, 241);
-            this.inputAuteurLivreForEdit.Name = "inputAuteurLivreForEdit";
-            this.inputAuteurLivreForEdit.Size = new System.Drawing.Size(223, 26);
-            this.inputAuteurLivreForEdit.TabIndex = 32;
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.ForeColor = System.Drawing.Color.White;
+            this.label40.Location = new System.Drawing.Point(9, 208);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(68, 18);
+            this.label40.TabIndex = 34;
+            this.label40.Text = "Synopsis";
             // 
-            // label26
+            // inputImageDvdForEdit
             // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.White;
-            this.label26.Location = new System.Drawing.Point(9, 212);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(42, 18);
-            this.label26.TabIndex = 31;
-            this.label26.Text = "ISBN";
+            this.inputImageDvdForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputImageDvdForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputImageDvdForEdit.ForeColor = System.Drawing.Color.Cyan;
+            this.inputImageDvdForEdit.Location = new System.Drawing.Point(107, 145);
+            this.inputImageDvdForEdit.Name = "inputImageDvdForEdit";
+            this.inputImageDvdForEdit.Size = new System.Drawing.Size(223, 26);
+            this.inputImageDvdForEdit.TabIndex = 32;
             // 
-            // label27
+            // label41
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.White;
-            this.label27.Location = new System.Drawing.Point(9, 244);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(53, 18);
-            this.label27.TabIndex = 30;
-            this.label27.Text = "Auteur";
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.ForeColor = System.Drawing.Color.White;
+            this.label41.Location = new System.Drawing.Point(9, 269);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(48, 18);
+            this.label41.TabIndex = 31;
+            this.label41.Text = "Durée";
             // 
-            // inputTitreLivreForEdit
+            // label42
             // 
-            this.inputTitreLivreForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputTitreLivreForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputTitreLivreForEdit.ForeColor = System.Drawing.Color.Yellow;
-            this.inputTitreLivreForEdit.Location = new System.Drawing.Point(107, 117);
-            this.inputTitreLivreForEdit.Name = "inputTitreLivreForEdit";
-            this.inputTitreLivreForEdit.Size = new System.Drawing.Size(223, 26);
-            this.inputTitreLivreForEdit.TabIndex = 29;
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.ForeColor = System.Drawing.Color.White;
+            this.label42.Location = new System.Drawing.Point(9, 148);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(83, 18);
+            this.label42.TabIndex = 30;
+            this.label42.Text = "Path Image";
             // 
-            // inputIDLivreForEdit
+            // inputTitreDvdForEdit
             // 
-            this.inputIDLivreForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputIDLivreForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputIDLivreForEdit.ForeColor = System.Drawing.Color.Yellow;
-            this.inputIDLivreForEdit.Location = new System.Drawing.Point(107, 85);
-            this.inputIDLivreForEdit.Name = "inputIDLivreForEdit";
-            this.inputIDLivreForEdit.ReadOnly = true;
-            this.inputIDLivreForEdit.Size = new System.Drawing.Size(223, 26);
-            this.inputIDLivreForEdit.TabIndex = 28;
+            this.inputTitreDvdForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputTitreDvdForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputTitreDvdForEdit.ForeColor = System.Drawing.Color.Cyan;
+            this.inputTitreDvdForEdit.Location = new System.Drawing.Point(107, 113);
+            this.inputTitreDvdForEdit.Name = "inputTitreDvdForEdit";
+            this.inputTitreDvdForEdit.Size = new System.Drawing.Size(223, 26);
+            this.inputTitreDvdForEdit.TabIndex = 29;
             // 
-            // label28
+            // inputIdDvdForEdit
             // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.Color.White;
-            this.label28.Location = new System.Drawing.Point(9, 119);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(38, 18);
-            this.label28.TabIndex = 27;
-            this.label28.Text = "Titre";
+            this.inputIdDvdForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputIdDvdForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputIdDvdForEdit.ForeColor = System.Drawing.Color.Cyan;
+            this.inputIdDvdForEdit.Location = new System.Drawing.Point(107, 81);
+            this.inputIdDvdForEdit.Name = "inputIdDvdForEdit";
+            this.inputIdDvdForEdit.ReadOnly = true;
+            this.inputIdDvdForEdit.Size = new System.Drawing.Size(223, 26);
+            this.inputIdDvdForEdit.TabIndex = 28;
             // 
-            // label29
+            // label43
             // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.ForeColor = System.Drawing.Color.White;
-            this.label29.Location = new System.Drawing.Point(9, 88);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(22, 18);
-            this.label29.TabIndex = 26;
-            this.label29.Text = "ID";
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.ForeColor = System.Drawing.Color.White;
+            this.label43.Location = new System.Drawing.Point(9, 115);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(38, 18);
+            this.label43.TabIndex = 27;
+            this.label43.Text = "Titre";
             // 
-            // selectLivreForDelete
+            // label44
             // 
-            this.selectLivreForDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.selectLivreForDelete.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectLivreForDelete.ForeColor = System.Drawing.Color.Red;
-            this.selectLivreForDelete.FormattingEnabled = true;
-            this.selectLivreForDelete.Location = new System.Drawing.Point(9, 47);
-            this.selectLivreForDelete.Name = "selectLivreForDelete";
-            this.selectLivreForDelete.Size = new System.Drawing.Size(234, 26);
-            this.selectLivreForDelete.TabIndex = 29;
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.ForeColor = System.Drawing.Color.White;
+            this.label44.Location = new System.Drawing.Point(9, 84);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(22, 18);
+            this.label44.TabIndex = 26;
+            this.label44.Text = "ID";
             // 
-            // label31
+            // inputDureeDvdForEdit
             // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.ForeColor = System.Drawing.Color.White;
-            this.label31.Location = new System.Drawing.Point(6, 21);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(149, 18);
-            this.label31.TabIndex = 30;
-            this.label31.Text = "Séléctionnez un livre.";
+            this.inputDureeDvdForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputDureeDvdForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputDureeDvdForEdit.ForeColor = System.Drawing.Color.Cyan;
+            this.inputDureeDvdForEdit.Location = new System.Drawing.Point(107, 266);
+            this.inputDureeDvdForEdit.Name = "inputDureeDvdForEdit";
+            this.inputDureeDvdForEdit.Size = new System.Drawing.Size(223, 26);
+            this.inputDureeDvdForEdit.TabIndex = 33;
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.ForeColor = System.Drawing.Color.White;
+            this.label45.Location = new System.Drawing.Point(9, 21);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(149, 18);
+            this.label45.TabIndex = 25;
+            this.label45.Text = "Séléctionnez un livre.";
+            // 
+            // selectDvdForEdit
+            // 
+            this.selectDvdForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.selectDvdForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.selectDvdForEdit.ForeColor = System.Drawing.Color.Yellow;
+            this.selectDvdForEdit.FormattingEnabled = true;
+            this.selectDvdForEdit.Location = new System.Drawing.Point(12, 47);
+            this.selectDvdForEdit.Name = "selectDvdForEdit";
+            this.selectDvdForEdit.Size = new System.Drawing.Size(318, 26);
+            this.selectDvdForEdit.TabIndex = 24;
+            this.selectDvdForEdit.SelectedIndexChanged += new System.EventHandler(this.selectDvdForEdit_SelectedIndexChanged);
+            // 
+            // buttonEditDvd
+            // 
+            this.buttonEditDvd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.buttonEditDvd.Font = new System.Drawing.Font("Omega Flight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonEditDvd.ForeColor = System.Drawing.Color.White;
+            this.buttonEditDvd.Location = new System.Drawing.Point(230, 437);
+            this.buttonEditDvd.Name = "buttonEditDvd";
+            this.buttonEditDvd.Size = new System.Drawing.Size(100, 26);
+            this.buttonEditDvd.TabIndex = 18;
+            this.buttonEditDvd.Text = "Modifier";
+            this.buttonEditDvd.UseVisualStyleBackColor = false;
+            this.buttonEditDvd.Click += new System.EventHandler(this.buttonEditDvd_Click);
             // 
             // groupBox5
             // 
@@ -1348,7 +1616,7 @@ namespace Mediateq_AP_SIO2
             this.label33.ForeColor = System.Drawing.Color.White;
             this.label33.Location = new System.Drawing.Point(6, 177);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(106, 23);
+            this.label33.Size = new System.Drawing.Size(85, 18);
             this.label33.TabIndex = 19;
             this.label33.Text = "Réalisateur";
             // 
@@ -1382,19 +1650,9 @@ namespace Mediateq_AP_SIO2
             this.label34.ForeColor = System.Drawing.Color.White;
             this.label34.Location = new System.Drawing.Point(6, 145);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(85, 23);
+            this.label34.Size = new System.Drawing.Size(68, 18);
             this.label34.TabIndex = 12;
             this.label34.Text = "Synopsis";
-            // 
-            // inputDureeDvd
-            // 
-            this.inputDureeDvd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputDureeDvd.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputDureeDvd.ForeColor = System.Drawing.Color.Cyan;
-            this.inputDureeDvd.Location = new System.Drawing.Point(109, 203);
-            this.inputDureeDvd.Name = "inputDureeDvd";
-            this.inputDureeDvd.Size = new System.Drawing.Size(223, 26);
-            this.inputDureeDvd.TabIndex = 11;
             // 
             // inputImageDvd
             // 
@@ -1413,7 +1671,7 @@ namespace Mediateq_AP_SIO2
             this.Durée.ForeColor = System.Drawing.Color.White;
             this.Durée.Location = new System.Drawing.Point(6, 206);
             this.Durée.Name = "Durée";
-            this.Durée.Size = new System.Drawing.Size(60, 23);
+            this.Durée.Size = new System.Drawing.Size(48, 18);
             this.Durée.TabIndex = 9;
             this.Durée.Text = "Durée";
             // 
@@ -1424,7 +1682,7 @@ namespace Mediateq_AP_SIO2
             this.label36.ForeColor = System.Drawing.Color.White;
             this.label36.Location = new System.Drawing.Point(6, 85);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(104, 23);
+            this.label36.Size = new System.Drawing.Size(83, 18);
             this.label36.TabIndex = 8;
             this.label36.Text = "Path Image";
             // 
@@ -1470,6 +1728,38 @@ namespace Mediateq_AP_SIO2
             this.label38.TabIndex = 4;
             this.label38.Text = "ID";
             // 
+            // inputDureeDvd
+            // 
+            this.inputDureeDvd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputDureeDvd.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputDureeDvd.ForeColor = System.Drawing.Color.Cyan;
+            this.inputDureeDvd.Location = new System.Drawing.Point(109, 203);
+            this.inputDureeDvd.Name = "inputDureeDvd";
+            this.inputDureeDvd.Size = new System.Drawing.Size(223, 26);
+            this.inputDureeDvd.TabIndex = 11;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Omega Flight Title", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(7, 3);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(363, 20);
+            this.label15.TabIndex = 4;
+            this.label15.Text = "Gestion des Documents";
+            // 
+            // tabCommandesDeDocument
+            // 
+            this.tabCommandesDeDocument.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tabCommandesDeDocument.ForeColor = System.Drawing.Color.White;
+            this.tabCommandesDeDocument.Location = new System.Drawing.Point(4, 25);
+            this.tabCommandesDeDocument.Name = "tabCommandesDeDocument";
+            this.tabCommandesDeDocument.Padding = new System.Windows.Forms.Padding(3);
+            this.tabCommandesDeDocument.Size = new System.Drawing.Size(974, 600);
+            this.tabCommandesDeDocument.TabIndex = 6;
+            this.tabCommandesDeDocument.Text = "Commandes de Documents";
+            // 
             // FrmMediateq
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1508,6 +1798,10 @@ namespace Mediateq_AP_SIO2
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
@@ -1631,6 +1925,28 @@ namespace Mediateq_AP_SIO2
         private System.Windows.Forms.TextBox inputIdDvd;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.ComboBox selectDvdForEdit;
+        private System.Windows.Forms.Button buttonEditDvd;
+        private System.Windows.Forms.ComboBox selectCategorieDvdForEdit;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.TextBox inputRealisateurDvdForEdit;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.TextBox inputSynopsisDvdForEdit;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.TextBox inputImageDvdForEdit;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.TextBox inputTitreDvdForEdit;
+        private System.Windows.Forms.TextBox inputIdDvdForEdit;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.TextBox inputDureeDvdForEdit;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.ComboBox selectDvdForDelete;
+        private System.Windows.Forms.Button buttonDeleteDvd;
     }
 }
 

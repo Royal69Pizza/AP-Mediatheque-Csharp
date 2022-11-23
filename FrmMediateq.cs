@@ -44,9 +44,9 @@ namespace Mediateq_AP_SIO2
             lesLivres = DAODocuments.getAllLivres();
             lesDvd = DAODocuments.getAllDvd();
 
-            setComboboxCategorieForLivre();
+            setComboboxCategorieForLivreAndDvd();
             setComboboxLivreForLivre();
-            setComboboxCategorieForDvd();
+            setComboboxDvdForDvd();
         }
 
         #endregion
@@ -66,21 +66,33 @@ namespace Mediateq_AP_SIO2
         }
 
         //|
+        //| Comboboxes Dvd dans Dvd
+        //|
+        private void setComboboxDvdForDvd()
+        {
+            selectDvdForEdit.DataSource = lesDvd;
+            selectDvdForEdit.DisplayMember = "titre";
+
+            selectDvdForDelete.DataSource = lesDvd;
+            selectDvdForDelete.DisplayMember = "titre";
+        }
+
+        //|
         //| Comboboxes Catégorie dans Livre & Dvd
         //|
-        private void setComboboxCategorieForLivre()
+        private void setComboboxCategorieForLivreAndDvd()
         {
             selectCategorieForEdit.DataSource = lesCategories;
             selectCategorieForEdit.DisplayMember = "libelle";
 
             selectCategorieLivreForCreate.DataSource = lesCategories;
             selectCategorieLivreForCreate.DisplayMember = "libelle";
-        }
 
-        private void setComboboxCategorieForDvd()
-        {
             selectCategorieDvdForCreate.DataSource = lesCategories;
             selectCategorieDvdForCreate.DisplayMember = "libelle";
+
+            selectCategorieDvdForEdit.DataSource = lesCategories;
+            selectCategorieDvdForEdit.DisplayMember = "libelle";
         }
 
         #endregion
@@ -275,7 +287,7 @@ namespace Mediateq_AP_SIO2
         }
 
         //|-----------------------------------------------------------
-        //| Modification des livres
+        //| Affichage des infos du livre séléctionné dans modification
         //|-----------------------------------------------------------
         private void selectLivreForEdit_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -292,6 +304,9 @@ namespace Mediateq_AP_SIO2
             inputImageLivreForEdit.Text = leLivreForEdit.Image;
         }
 
+        //|-----------------------------------------------------------
+        //| Modification des livres
+        //|-----------------------------------------------------------
         private void buttonEditLivre_Click(object sender, EventArgs e)
         {
             //|
@@ -448,9 +463,7 @@ namespace Mediateq_AP_SIO2
                     //|
                     lesDvd = DAODocuments.getAllDvd();
 
-                    //|
-                    //| !!!!!!!!!!!!!!!!!!!UPDATE COMBO DVD
-                    //|
+                    setComboboxDvdForDvd();
                 }
                 else
                 {
@@ -460,6 +473,131 @@ namespace Mediateq_AP_SIO2
             }
         }
 
+        //|-----------------------------------------------------------
+        //| Affichage des infos du dvd séléctionné dans modification
+        //|-----------------------------------------------------------
+        private void selectDvdForEdit_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //|
+            //| On recupère les infos de l'objet dvd séléctionné
+            //|
+            Dvd leDvdForEdit = (Dvd)selectDvdForEdit.SelectedItem;
+
+            inputIdDvdForEdit.Text = leDvdForEdit.IdDoc;
+            inputTitreDvdForEdit.Text = leDvdForEdit.Titre;
+            inputImageDvdForEdit.Text = leDvdForEdit.Image;
+            inputSynopsisDvdForEdit.Text = leDvdForEdit.Synopsis;
+            inputRealisateurDvdForEdit.Text = leDvdForEdit.Realisateur;
+            inputDureeDvdForEdit.Text = leDvdForEdit.Duree.ToString();
+        }
+
+
+
         #endregion
+        //|-----------------------------------------------------------
+        //| Modification des Dvd
+        //|-----------------------------------------------------------
+        private void buttonEditDvd_Click(object sender, EventArgs e)
+        {
+            //|
+            //| Récupération des infos des input
+            //|
+            String ID = inputIdDvdForEdit.Text;
+            String Titre = inputTitreDvdForEdit.Text;
+            String Image = inputImageDvdForEdit.Text;
+            String Synopsis = inputSynopsisDvdForEdit.Text;
+            String Realisateur = inputRealisateurDvdForEdit.Text;
+            int Duree = int.Parse(inputDureeDvdForEdit.Text);
+
+            Categorie uneNouvelleCategorie = (Categorie)selectCategorieDvdForEdit.SelectedItem;
+
+            //|
+            //| Si les champs ID et categorie sont vides 
+            //|
+            if (ID == null || uneNouvelleCategorie == null)
+            {
+                textAlertEvent.Text = "{CRUD DVD}-{Modifier} Le champ ID et la catégorie est obligatoire";
+                textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 0, 0);
+            }
+            else
+            {
+                //|
+                //| On supprime l'ancien objet et on le recrée avec les nouveaux trucs
+                //|
+                Dvd leDvdForEdit = (Dvd)selectDvdForEdit.SelectedItem;
+                leDvdForEdit = null;
+                leDvdForEdit = new Dvd(ID, Synopsis, Realisateur, Titre, Duree, Image, uneNouvelleCategorie);
+
+                //|
+                //| Appel de la base de données
+                //|
+                bool resultat;
+
+                resultat = DAODocuments.editDvd(leDvdForEdit, uneNouvelleCategorie);
+
+                if (resultat)
+                {
+                    textAlertEvent.Text = "{CRUD DVD}-{Modifier} Le dvd à été modifié";
+                    textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(0, 255, 0);
+
+                    //|
+                    //| On met à jour la combobox de la modif et suppression des dvd
+                    //|
+                    lesDvd = DAODocuments.getAllDvd();
+
+                    setComboboxDvdForDvd();
+                }
+                else
+                {
+                    textAlertEvent.Text = "{CRUD DVD}-{Modifier} Erreur BDD lors de la modification du dvd";
+                    textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 0, 0);
+                }
+
+                //|
+                //| Création de l'objet Livre
+                //|
+                Dvd unNouveauDvd = new Dvd(ID, Synopsis, Realisateur, Titre, Duree, Image, uneNouvelleCategorie);
+            }
+        }
+
+        //|-----------------------------------------------------------
+        //| Supprimer les Dvd
+        //|-----------------------------------------------------------
+        private void buttonDeleteDvd_Click(object sender, EventArgs e)
+        {
+            bool resultat;
+            Dvd leDvdForDelete = (Dvd)selectDvdForDelete.SelectedItem;
+
+            //|
+            //| Si la combobox est séléctionnée
+            //|
+            if (leDvdForDelete != null)
+            {
+                resultat = DAODocuments.deleteDvd(leDvdForDelete);
+
+                if (resultat)
+                {
+                    textAlertEvent.Text = "{CRUD DVD}-{Supprimer} Le dvd à bien été supprimé";
+                    textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(0, 255, 0);
+
+                    //|
+                    //| On met à jour la combobox de la modif et suppression des dvd
+                    //|
+                    lesDvd = DAODocuments.getAllDvd();
+
+                    setComboboxDvdForDvd();
+                }
+                else
+                {
+                    textAlertEvent.Text = "{CRUD DVD}-{Supprimer} Erreur BDD lors de la suppression du dvd";
+                    textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 0, 0);
+                }
+            }
+            else
+            {
+                textAlertEvent.Text = "{CRUD DVD}-{Supprimer} Aucun livre séléctionné";
+                textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 0, 0);
+            }
+        }
     }
 }
