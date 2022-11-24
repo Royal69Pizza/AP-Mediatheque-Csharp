@@ -101,6 +101,14 @@ namespace Mediateq_AP_SIO2
             this.textAlertEvent = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.dataOfLivre = new System.Windows.Forms.DataGridView();
+            this.IdLivre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TitreLivre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ImageLivre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LibelleCategorieLivre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ISBNLivre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AuteurLivre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CollectionLivre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label31 = new System.Windows.Forms.Label();
             this.selectLivreForDelete = new System.Windows.Forms.ComboBox();
@@ -140,6 +148,14 @@ namespace Mediateq_AP_SIO2
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.dataOfDvd = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.label46 = new System.Windows.Forms.Label();
             this.selectDvdForDelete = new System.Windows.Forms.ComboBox();
@@ -179,22 +195,6 @@ namespace Mediateq_AP_SIO2
             this.label38 = new System.Windows.Forms.Label();
             this.inputDureeDvd = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.dataOfLivre = new System.Windows.Forms.DataGridView();
-            this.IdLivre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TitreLivre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ImageLivre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LibelleCategorieLivre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ISBNLivre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AuteurLivre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CollectionLivre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataOfDvd = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabOngletsApplication.SuspendLayout();
             this.tabParutions.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvParutions)).BeginInit();
@@ -208,15 +208,15 @@ namespace Mediateq_AP_SIO2
             this.groupBox4.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataOfLivre)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataOfDvd)).BeginInit();
             this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataOfLivre)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataOfDvd)).BeginInit();
             this.SuspendLayout();
             // 
             // tabOngletsApplication
@@ -783,6 +783,127 @@ namespace Mediateq_AP_SIO2
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Livres";
             // 
+            // dataOfLivre
+            // 
+            this.dataOfLivre.AllowUserToAddRows = false;
+            this.dataOfLivre.AllowUserToDeleteRows = false;
+            this.dataOfLivre.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.dataOfLivre.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataOfLivre.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataOfLivre.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataOfLivre.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IdLivre,
+            this.TitreLivre,
+            this.ImageLivre,
+            this.LibelleCategorieLivre,
+            this.ISBNLivre,
+            this.AuteurLivre,
+            this.CollectionLivre});
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Omega Flight Title", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataOfLivre.DefaultCellStyle = dataGridViewCellStyle9;
+            this.dataOfLivre.Location = new System.Drawing.Point(6, 6);
+            this.dataOfLivre.Name = "dataOfLivre";
+            this.dataOfLivre.ReadOnly = true;
+            this.dataOfLivre.RowHeadersWidth = 51;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataOfLivre.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            this.dataOfLivre.RowTemplate.Height = 24;
+            this.dataOfLivre.Size = new System.Drawing.Size(929, 122);
+            this.dataOfLivre.TabIndex = 3;
+            // 
+            // IdLivre
+            // 
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Aqua;
+            this.IdLivre.DefaultCellStyle = dataGridViewCellStyle2;
+            this.IdLivre.HeaderText = "ID";
+            this.IdLivre.MinimumWidth = 6;
+            this.IdLivre.Name = "IdLivre";
+            this.IdLivre.ReadOnly = true;
+            this.IdLivre.Width = 125;
+            // 
+            // TitreLivre
+            // 
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Aqua;
+            this.TitreLivre.DefaultCellStyle = dataGridViewCellStyle3;
+            this.TitreLivre.HeaderText = "Titre";
+            this.TitreLivre.MinimumWidth = 6;
+            this.TitreLivre.Name = "TitreLivre";
+            this.TitreLivre.ReadOnly = true;
+            this.TitreLivre.Width = 125;
+            // 
+            // ImageLivre
+            // 
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Aqua;
+            this.ImageLivre.DefaultCellStyle = dataGridViewCellStyle4;
+            this.ImageLivre.HeaderText = "Image";
+            this.ImageLivre.MinimumWidth = 6;
+            this.ImageLivre.Name = "ImageLivre";
+            this.ImageLivre.ReadOnly = true;
+            this.ImageLivre.Width = 125;
+            // 
+            // LibelleCategorieLivre
+            // 
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Aqua;
+            this.LibelleCategorieLivre.DefaultCellStyle = dataGridViewCellStyle5;
+            this.LibelleCategorieLivre.HeaderText = "Categorie";
+            this.LibelleCategorieLivre.MinimumWidth = 6;
+            this.LibelleCategorieLivre.Name = "LibelleCategorieLivre";
+            this.LibelleCategorieLivre.ReadOnly = true;
+            this.LibelleCategorieLivre.Width = 125;
+            // 
+            // ISBNLivre
+            // 
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Aqua;
+            this.ISBNLivre.DefaultCellStyle = dataGridViewCellStyle6;
+            this.ISBNLivre.HeaderText = "ISBN";
+            this.ISBNLivre.MinimumWidth = 6;
+            this.ISBNLivre.Name = "ISBNLivre";
+            this.ISBNLivre.ReadOnly = true;
+            this.ISBNLivre.Width = 125;
+            // 
+            // AuteurLivre
+            // 
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Aqua;
+            this.AuteurLivre.DefaultCellStyle = dataGridViewCellStyle7;
+            this.AuteurLivre.HeaderText = "Auteur";
+            this.AuteurLivre.MinimumWidth = 6;
+            this.AuteurLivre.Name = "AuteurLivre";
+            this.AuteurLivre.ReadOnly = true;
+            this.AuteurLivre.Width = 125;
+            // 
+            // CollectionLivre
+            // 
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Aqua;
+            this.CollectionLivre.DefaultCellStyle = dataGridViewCellStyle8;
+            this.CollectionLivre.HeaderText = "Collection";
+            this.CollectionLivre.MinimumWidth = 6;
+            this.CollectionLivre.Name = "CollectionLivre";
+            this.CollectionLivre.ReadOnly = true;
+            this.CollectionLivre.Width = 125;
+            // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -1249,6 +1370,127 @@ namespace Mediateq_AP_SIO2
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "DVD";
             // 
+            // dataOfDvd
+            // 
+            this.dataOfDvd.AllowUserToAddRows = false;
+            this.dataOfDvd.AllowUserToDeleteRows = false;
+            this.dataOfDvd.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.dataOfDvd.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataOfDvd.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            this.dataOfDvd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataOfDvd.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7});
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Omega Flight Title", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataOfDvd.DefaultCellStyle = dataGridViewCellStyle19;
+            this.dataOfDvd.Location = new System.Drawing.Point(6, 6);
+            this.dataOfDvd.Name = "dataOfDvd";
+            this.dataOfDvd.ReadOnly = true;
+            this.dataOfDvd.RowHeadersWidth = 51;
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataOfDvd.RowsDefaultCellStyle = dataGridViewCellStyle20;
+            this.dataOfDvd.RowTemplate.Height = 24;
+            this.dataOfDvd.Size = new System.Drawing.Size(929, 122);
+            this.dataOfDvd.TabIndex = 4;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle12;
+            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle13;
+            this.dataGridViewTextBoxColumn2.HeaderText = "Titre";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle14;
+            this.dataGridViewTextBoxColumn3.HeaderText = "Image";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle15;
+            this.dataGridViewTextBoxColumn4.HeaderText = "Categorie";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle16;
+            this.dataGridViewTextBoxColumn5.HeaderText = "Synopsis";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            this.dataGridViewTextBoxColumn5.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle17;
+            this.dataGridViewTextBoxColumn6.HeaderText = "Réalisateur";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            this.dataGridViewTextBoxColumn6.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn7.DefaultCellStyle = dataGridViewCellStyle18;
+            this.dataGridViewTextBoxColumn7.HeaderText = "Durée";
+            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            this.dataGridViewTextBoxColumn7.Width = 125;
+            // 
             // groupBox7
             // 
             this.groupBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -1713,248 +1955,6 @@ namespace Mediateq_AP_SIO2
             this.label15.TabIndex = 4;
             this.label15.Text = "Gestion des Documents";
             // 
-            // dataOfLivre
-            // 
-            this.dataOfLivre.AllowUserToAddRows = false;
-            this.dataOfLivre.AllowUserToDeleteRows = false;
-            this.dataOfLivre.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.dataOfLivre.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataOfLivre.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataOfLivre.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataOfLivre.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.IdLivre,
-            this.TitreLivre,
-            this.ImageLivre,
-            this.LibelleCategorieLivre,
-            this.ISBNLivre,
-            this.AuteurLivre,
-            this.CollectionLivre});
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Omega Flight Title", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataOfLivre.DefaultCellStyle = dataGridViewCellStyle9;
-            this.dataOfLivre.Location = new System.Drawing.Point(6, 6);
-            this.dataOfLivre.Name = "dataOfLivre";
-            this.dataOfLivre.ReadOnly = true;
-            this.dataOfLivre.RowHeadersWidth = 51;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataOfLivre.RowsDefaultCellStyle = dataGridViewCellStyle10;
-            this.dataOfLivre.RowTemplate.Height = 24;
-            this.dataOfLivre.Size = new System.Drawing.Size(929, 122);
-            this.dataOfLivre.TabIndex = 3;
-            // 
-            // IdLivre
-            // 
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Aqua;
-            this.IdLivre.DefaultCellStyle = dataGridViewCellStyle2;
-            this.IdLivre.HeaderText = "ID";
-            this.IdLivre.MinimumWidth = 6;
-            this.IdLivre.Name = "IdLivre";
-            this.IdLivre.ReadOnly = true;
-            this.IdLivre.Width = 125;
-            // 
-            // TitreLivre
-            // 
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Aqua;
-            this.TitreLivre.DefaultCellStyle = dataGridViewCellStyle3;
-            this.TitreLivre.HeaderText = "Titre";
-            this.TitreLivre.MinimumWidth = 6;
-            this.TitreLivre.Name = "TitreLivre";
-            this.TitreLivre.ReadOnly = true;
-            this.TitreLivre.Width = 125;
-            // 
-            // ImageLivre
-            // 
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Aqua;
-            this.ImageLivre.DefaultCellStyle = dataGridViewCellStyle4;
-            this.ImageLivre.HeaderText = "Image";
-            this.ImageLivre.MinimumWidth = 6;
-            this.ImageLivre.Name = "ImageLivre";
-            this.ImageLivre.ReadOnly = true;
-            this.ImageLivre.Width = 125;
-            // 
-            // LibelleCategorieLivre
-            // 
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Aqua;
-            this.LibelleCategorieLivre.DefaultCellStyle = dataGridViewCellStyle5;
-            this.LibelleCategorieLivre.HeaderText = "Categorie";
-            this.LibelleCategorieLivre.MinimumWidth = 6;
-            this.LibelleCategorieLivre.Name = "LibelleCategorieLivre";
-            this.LibelleCategorieLivre.ReadOnly = true;
-            this.LibelleCategorieLivre.Width = 125;
-            // 
-            // ISBNLivre
-            // 
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Aqua;
-            this.ISBNLivre.DefaultCellStyle = dataGridViewCellStyle6;
-            this.ISBNLivre.HeaderText = "ISBN";
-            this.ISBNLivre.MinimumWidth = 6;
-            this.ISBNLivre.Name = "ISBNLivre";
-            this.ISBNLivre.ReadOnly = true;
-            this.ISBNLivre.Width = 125;
-            // 
-            // AuteurLivre
-            // 
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Aqua;
-            this.AuteurLivre.DefaultCellStyle = dataGridViewCellStyle7;
-            this.AuteurLivre.HeaderText = "Auteur";
-            this.AuteurLivre.MinimumWidth = 6;
-            this.AuteurLivre.Name = "AuteurLivre";
-            this.AuteurLivre.ReadOnly = true;
-            this.AuteurLivre.Width = 125;
-            // 
-            // CollectionLivre
-            // 
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Aqua;
-            this.CollectionLivre.DefaultCellStyle = dataGridViewCellStyle8;
-            this.CollectionLivre.HeaderText = "Collection";
-            this.CollectionLivre.MinimumWidth = 6;
-            this.CollectionLivre.Name = "CollectionLivre";
-            this.CollectionLivre.ReadOnly = true;
-            this.CollectionLivre.Width = 125;
-            // 
-            // dataOfDvd
-            // 
-            this.dataOfDvd.AllowUserToAddRows = false;
-            this.dataOfDvd.AllowUserToDeleteRows = false;
-            this.dataOfDvd.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.dataOfDvd.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Omega Flight Title", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataOfDvd.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
-            this.dataOfDvd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataOfDvd.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7});
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Omega Flight Title", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataOfDvd.DefaultCellStyle = dataGridViewCellStyle19;
-            this.dataOfDvd.Location = new System.Drawing.Point(6, 6);
-            this.dataOfDvd.Name = "dataOfDvd";
-            this.dataOfDvd.ReadOnly = true;
-            this.dataOfDvd.RowHeadersWidth = 51;
-            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataOfDvd.RowsDefaultCellStyle = dataGridViewCellStyle20;
-            this.dataOfDvd.RowTemplate.Height = 24;
-            this.dataOfDvd.Size = new System.Drawing.Size(929, 122);
-            this.dataOfDvd.TabIndex = 4;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Aqua;
-            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle12;
-            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Aqua;
-            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle13;
-            this.dataGridViewTextBoxColumn2.HeaderText = "Titre";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Aqua;
-            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle14;
-            this.dataGridViewTextBoxColumn3.HeaderText = "Image";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Aqua;
-            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle15;
-            this.dataGridViewTextBoxColumn4.HeaderText = "Categorie";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Aqua;
-            this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle16;
-            this.dataGridViewTextBoxColumn5.HeaderText = "Synopsis";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.Aqua;
-            this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle17;
-            this.dataGridViewTextBoxColumn6.HeaderText = "Réalisateur";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            this.dataGridViewTextBoxColumn6.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Aqua;
-            this.dataGridViewTextBoxColumn7.DefaultCellStyle = dataGridViewCellStyle18;
-            this.dataGridViewTextBoxColumn7.HeaderText = "Durée";
-            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            this.dataGridViewTextBoxColumn7.Width = 125;
-            // 
             // FrmMediateq
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1984,6 +1984,7 @@ namespace Mediateq_AP_SIO2
             this.groupBox4.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataOfLivre)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -1991,14 +1992,13 @@ namespace Mediateq_AP_SIO2
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataOfDvd)).EndInit();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataOfLivre)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataOfDvd)).EndInit();
             this.ResumeLayout(false);
 
         }
