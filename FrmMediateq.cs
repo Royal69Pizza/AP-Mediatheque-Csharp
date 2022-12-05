@@ -268,11 +268,11 @@ namespace Mediateq_AP_SIO2
             Categorie uneNouvelleCategorie = (Categorie)selectCategorieLivreForCreate.SelectedItem;
 
             //|
-            //| Si les champs ID et categorie sont vides 
+            //| Si les champs ID, Titre et categorie sont vides
             //|
-            if (ID == null || uneNouvelleCategorie == null)
+            if (ID == "" || Titre == "" || uneNouvelleCategorie == null)
             {
-                textAlertEvent.Text = "{CRUD LIVRE}-{Créer} Le champ ID et la catégorie est obligatoire";
+                textAlertEvent.Text = "{CRUD LIVRE}-{Créer} Le champ ID, Titre et la catégorie sont obligatoires";
                 textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 0, 0);
             }
             else
@@ -305,7 +305,7 @@ namespace Mediateq_AP_SIO2
                         //| On met à jour la combobox de la modif et suppression des livres & le datagridview des livres
                         //|
                         lesLivres = DAODocuments.getAllLivres();
-
+                        
                         setAllDataOfLivres();
 
                         setComboboxLivreForLivre();
@@ -355,11 +355,11 @@ namespace Mediateq_AP_SIO2
             Categorie uneNouvelleCategorie = (Categorie)selectCategorieForEdit.SelectedItem;
 
             //|
-            //| Si les champs ID et categorie sont vides 
+            //| Si les champs ID, Titre et categorie sont vides
             //|
-            if (ID == null || uneNouvelleCategorie == null)
+            if (ID == "" || Titre == "" || uneNouvelleCategorie == null)
             {
-                textAlertEvent.Text = "{CRUD LIVRE}-{Modifier} Le champ ID et la catégorie est obligatoire";
+                textAlertEvent.Text = "{CRUD LIVRE}-{Modifier} Le champ ID, Titre et la catégorie sont obligatoires";
                 textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 0, 0);
             }
             else
@@ -377,6 +377,11 @@ namespace Mediateq_AP_SIO2
                 bool resultat;
 
                 resultat = DAODocuments.editLivre(leLivreForEdit, uneNouvelleCategorie);
+
+                //|
+                //| Création de l'objet Livre
+                //|
+                Livre unNouveauLivre = new Livre(ID, Titre, ISBN, Auteur, Collection, Image, uneNouvelleCategorie);
 
                 if (resultat)
                 {
@@ -397,11 +402,6 @@ namespace Mediateq_AP_SIO2
                     textAlertEvent.Text = "{CRUD LIVRE}-{Modifier} Erreur BDD lors de la modification du livre";
                     textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 0, 0);
                 }
-
-                //|
-                //| Création de l'objet Livre
-                //|
-                Livre unNouveauLivre = new Livre(ID, Titre, ISBN, Auteur, Collection, Image, uneNouvelleCategorie);
             }
         }
 
@@ -480,11 +480,11 @@ namespace Mediateq_AP_SIO2
             Categorie uneNouvelleCategorie = (Categorie)selectCategorieDvdForCreate.SelectedItem;
 
             //|
-            //| Si les champs ID et categorie sont vides 
+            //| Si les champs ID, Titre et categorie sont vides
             //|
-            if (ID == null || uneNouvelleCategorie == null)
+            if (ID == "" || Titre == "" || uneNouvelleCategorie == null)
             {
-                textAlertEvent.Text = "{CRUD DVD}-{Créer} Le champ ID et la catégorie est obligatoire";
+                textAlertEvent.Text = "{CRUD DVD}-{Créer} Le champ ID, Titre et la catégorie sont obligatoires";
                 textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 0, 0);
             }
             else
@@ -567,11 +567,11 @@ namespace Mediateq_AP_SIO2
             Categorie uneNouvelleCategorie = (Categorie)selectCategorieDvdForEdit.SelectedItem;
 
             //|
-            //| Si les champs ID et categorie sont vides 
+            //| Si les champs ID, Titre et categorie sont vides 
             //|
-            if (ID == null || uneNouvelleCategorie == null)
+            if (ID == "" || Titre == "" || uneNouvelleCategorie == null)
             {
-                textAlertEvent.Text = "{CRUD DVD}-{Modifier} Le champ ID et la catégorie est obligatoire";
+                textAlertEvent.Text = "{CRUD DVD}-{Modifier} Le champ ID, Titre et la catégorie sont obligatoires";
                 textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 0, 0);
             }
             else
@@ -589,6 +589,11 @@ namespace Mediateq_AP_SIO2
                 bool resultat;
 
                 resultat = DAODocuments.editDvd(leDvdForEdit, uneNouvelleCategorie);
+
+                //|
+                //| Création de l'objet Livre
+                //|
+                Dvd unNouveauDvd = new Dvd(ID, Synopsis, Realisateur, Titre, Duree, Image, uneNouvelleCategorie);
 
                 if (resultat)
                 {
@@ -609,11 +614,6 @@ namespace Mediateq_AP_SIO2
                     textAlertEvent.Text = "{CRUD DVD}-{Modifier} Erreur BDD lors de la modification du dvd";
                     textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 0, 0);
                 }
-
-                //|
-                //| Création de l'objet Livre
-                //|
-                Dvd unNouveauDvd = new Dvd(ID, Synopsis, Realisateur, Titre, Duree, Image, uneNouvelleCategorie);
             }
         }
 

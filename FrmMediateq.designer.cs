@@ -29,26 +29,26 @@ namespace Mediateq_AP_SIO2
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabOngletsApplication = new System.Windows.Forms.TabControl();
             this.tabParutions = new System.Windows.Forms.TabPage();
             this.label3 = new System.Windows.Forms.Label();
@@ -226,6 +226,7 @@ namespace Mediateq_AP_SIO2
             this.tabOngletsApplication.Controls.Add(this.tabLivres);
             this.tabOngletsApplication.Controls.Add(this.tabGestionDesDocs);
             this.tabOngletsApplication.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabOngletsApplication.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabOngletsApplication.Location = new System.Drawing.Point(0, 0);
             this.tabOngletsApplication.Margin = new System.Windows.Forms.Padding(4);
             this.tabOngletsApplication.Name = "tabOngletsApplication";
@@ -239,11 +240,11 @@ namespace Mediateq_AP_SIO2
             this.tabParutions.Controls.Add(this.dgvParutions);
             this.tabParutions.Controls.Add(this.label1);
             this.tabParutions.Controls.Add(this.cbxTitres);
-            this.tabParutions.Location = new System.Drawing.Point(4, 25);
+            this.tabParutions.Location = new System.Drawing.Point(4, 27);
             this.tabParutions.Margin = new System.Windows.Forms.Padding(4);
             this.tabParutions.Name = "tabParutions";
             this.tabParutions.Padding = new System.Windows.Forms.Padding(4);
-            this.tabParutions.Size = new System.Drawing.Size(974, 600);
+            this.tabParutions.Size = new System.Drawing.Size(974, 598);
             this.tabParutions.TabIndex = 0;
             this.tabParutions.Text = "Parutions";
             this.tabParutions.UseVisualStyleBackColor = true;
@@ -312,7 +313,7 @@ namespace Mediateq_AP_SIO2
             this.cbxTitres.Location = new System.Drawing.Point(142, 36);
             this.cbxTitres.Margin = new System.Windows.Forms.Padding(4);
             this.cbxTitres.Name = "cbxTitres";
-            this.cbxTitres.Size = new System.Drawing.Size(193, 24);
+            this.cbxTitres.Size = new System.Drawing.Size(193, 26);
             this.cbxTitres.TabIndex = 0;
             this.cbxTitres.SelectedIndexChanged += new System.EventHandler(this.cbxTitres_SelectedIndexChanged);
             // 
@@ -322,11 +323,11 @@ namespace Mediateq_AP_SIO2
             this.tabTitres.Controls.Add(this.dgvTitres);
             this.tabTitres.Controls.Add(this.label2);
             this.tabTitres.Controls.Add(this.cbxDomaines);
-            this.tabTitres.Location = new System.Drawing.Point(4, 25);
+            this.tabTitres.Location = new System.Drawing.Point(4, 27);
             this.tabTitres.Margin = new System.Windows.Forms.Padding(4);
             this.tabTitres.Name = "tabTitres";
             this.tabTitres.Padding = new System.Windows.Forms.Padding(4);
-            this.tabTitres.Size = new System.Drawing.Size(974, 600);
+            this.tabTitres.Size = new System.Drawing.Size(974, 598);
             this.tabTitres.TabIndex = 1;
             this.tabTitres.Text = "Titres";
             this.tabTitres.UseVisualStyleBackColor = true;
@@ -411,7 +412,7 @@ namespace Mediateq_AP_SIO2
             this.cbxDomaines.Location = new System.Drawing.Point(171, 37);
             this.cbxDomaines.Margin = new System.Windows.Forms.Padding(4);
             this.cbxDomaines.Name = "cbxDomaines";
-            this.cbxDomaines.Size = new System.Drawing.Size(300, 24);
+            this.cbxDomaines.Size = new System.Drawing.Size(300, 26);
             this.cbxDomaines.TabIndex = 0;
             this.cbxDomaines.SelectedIndexChanged += new System.EventHandler(this.cbxDomaines_SelectedIndexChanged);
             // 
@@ -419,10 +420,10 @@ namespace Mediateq_AP_SIO2
             // 
             this.tabLivres.Controls.Add(this.grpRechercheTitre);
             this.tabLivres.Controls.Add(this.grpRechercheCode);
-            this.tabLivres.Location = new System.Drawing.Point(4, 25);
+            this.tabLivres.Location = new System.Drawing.Point(4, 27);
             this.tabLivres.Margin = new System.Windows.Forms.Padding(4);
             this.tabLivres.Name = "tabLivres";
-            this.tabLivres.Size = new System.Drawing.Size(974, 600);
+            this.tabLivres.Size = new System.Drawing.Size(974, 598);
             this.tabLivres.TabIndex = 2;
             this.tabLivres.Text = "Livres";
             this.tabLivres.UseVisualStyleBackColor = true;
@@ -509,7 +510,7 @@ namespace Mediateq_AP_SIO2
             this.txbTitre.Location = new System.Drawing.Point(282, 28);
             this.txbTitre.Margin = new System.Windows.Forms.Padding(4);
             this.txbTitre.Name = "txbTitre";
-            this.txbTitre.Size = new System.Drawing.Size(231, 22);
+            this.txbTitre.Size = new System.Drawing.Size(451, 26);
             this.txbTitre.TabIndex = 3;
             this.txbTitre.TextChanged += new System.EventHandler(this.txbTitre_TextChanged);
             // 
@@ -547,7 +548,7 @@ namespace Mediateq_AP_SIO2
             this.lblCategorie.Location = new System.Drawing.Point(641, 218);
             this.lblCategorie.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCategorie.Name = "lblCategorie";
-            this.lblCategorie.Size = new System.Drawing.Size(72, 16);
+            this.lblCategorie.Size = new System.Drawing.Size(80, 18);
             this.lblCategorie.TabIndex = 18;
             this.lblCategorie.Text = "(catégorie)";
             // 
@@ -580,7 +581,7 @@ namespace Mediateq_AP_SIO2
             this.lblTitre.Location = new System.Drawing.Point(361, 96);
             this.lblTitre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitre.Name = "lblTitre";
-            this.lblTitre.Size = new System.Drawing.Size(36, 16);
+            this.lblTitre.Size = new System.Drawing.Size(46, 18);
             this.lblTitre.TabIndex = 12;
             this.lblTitre.Text = "(titre)";
             // 
@@ -590,7 +591,7 @@ namespace Mediateq_AP_SIO2
             this.lblImage.Location = new System.Drawing.Point(217, 140);
             this.lblImage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblImage.Name = "lblImage";
-            this.lblImage.Size = new System.Drawing.Size(53, 16);
+            this.lblImage.Size = new System.Drawing.Size(59, 18);
             this.lblImage.TabIndex = 16;
             this.lblImage.Text = "(image)";
             // 
@@ -621,7 +622,7 @@ namespace Mediateq_AP_SIO2
             this.txbNumDoc.Location = new System.Drawing.Point(264, 25);
             this.txbNumDoc.Margin = new System.Windows.Forms.Padding(4);
             this.txbNumDoc.Name = "txbNumDoc";
-            this.txbNumDoc.Size = new System.Drawing.Size(88, 22);
+            this.txbNumDoc.Size = new System.Drawing.Size(173, 26);
             this.txbNumDoc.TabIndex = 0;
             // 
             // lblNumero
@@ -630,7 +631,7 @@ namespace Mediateq_AP_SIO2
             this.lblNumero.Location = new System.Drawing.Point(196, 96);
             this.lblNumero.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNumero.Name = "lblNumero";
-            this.lblNumero.Size = new System.Drawing.Size(60, 16);
+            this.lblNumero.Size = new System.Drawing.Size(69, 18);
             this.lblNumero.TabIndex = 11;
             this.lblNumero.Text = "(numéro)";
             // 
@@ -640,7 +641,7 @@ namespace Mediateq_AP_SIO2
             this.lblAuteur.Location = new System.Drawing.Point(381, 178);
             this.lblAuteur.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAuteur.Name = "lblAuteur";
-            this.lblAuteur.Size = new System.Drawing.Size(52, 16);
+            this.lblAuteur.Size = new System.Drawing.Size(61, 18);
             this.lblAuteur.TabIndex = 14;
             this.lblAuteur.Text = "(auteur)";
             // 
@@ -650,7 +651,7 @@ namespace Mediateq_AP_SIO2
             this.lblISBN.Location = new System.Drawing.Point(119, 178);
             this.lblISBN.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblISBN.Name = "lblISBN";
-            this.lblISBN.Size = new System.Drawing.Size(40, 16);
+            this.lblISBN.Size = new System.Drawing.Size(46, 18);
             this.lblISBN.TabIndex = 15;
             this.lblISBN.Text = "(isbn)";
             // 
@@ -682,7 +683,7 @@ namespace Mediateq_AP_SIO2
             this.lblCollection.Location = new System.Drawing.Point(111, 218);
             this.lblCollection.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCollection.Name = "lblCollection";
-            this.lblCollection.Size = new System.Drawing.Size(72, 16);
+            this.lblCollection.Size = new System.Drawing.Size(81, 18);
             this.lblCollection.TabIndex = 13;
             this.lblCollection.Text = "(collection)";
             // 
@@ -726,10 +727,10 @@ namespace Mediateq_AP_SIO2
             this.tabGestionDesDocs.Controls.Add(this.tabControl1);
             this.tabGestionDesDocs.Controls.Add(this.label15);
             this.tabGestionDesDocs.ForeColor = System.Drawing.Color.White;
-            this.tabGestionDesDocs.Location = new System.Drawing.Point(4, 25);
+            this.tabGestionDesDocs.Location = new System.Drawing.Point(4, 27);
             this.tabGestionDesDocs.Name = "tabGestionDesDocs";
             this.tabGestionDesDocs.Padding = new System.Windows.Forms.Padding(3);
-            this.tabGestionDesDocs.Size = new System.Drawing.Size(974, 600);
+            this.tabGestionDesDocs.Size = new System.Drawing.Size(974, 598);
             this.tabGestionDesDocs.TabIndex = 5;
             this.tabGestionDesDocs.Text = "Gestion des Documents";
             // 
@@ -789,14 +790,14 @@ namespace Mediateq_AP_SIO2
             this.dataOfLivre.AllowUserToDeleteRows = false;
             this.dataOfLivre.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.dataOfLivre.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataOfLivre.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Omega Flight Title", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataOfLivre.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle21;
             this.dataOfLivre.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataOfLivre.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IdLivre,
@@ -806,32 +807,32 @@ namespace Mediateq_AP_SIO2
             this.ISBNLivre,
             this.AuteurLivre,
             this.CollectionLivre});
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Omega Flight Title", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataOfLivre.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle29.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("Omega Flight Title", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle29.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataOfLivre.DefaultCellStyle = dataGridViewCellStyle29;
             this.dataOfLivre.Location = new System.Drawing.Point(6, 6);
             this.dataOfLivre.Name = "dataOfLivre";
             this.dataOfLivre.ReadOnly = true;
             this.dataOfLivre.RowHeadersWidth = 51;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataOfLivre.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataOfLivre.RowsDefaultCellStyle = dataGridViewCellStyle30;
             this.dataOfLivre.RowTemplate.Height = 24;
             this.dataOfLivre.Size = new System.Drawing.Size(929, 122);
             this.dataOfLivre.TabIndex = 3;
             // 
             // IdLivre
             // 
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Aqua;
-            this.IdLivre.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.Aqua;
+            this.IdLivre.DefaultCellStyle = dataGridViewCellStyle22;
             this.IdLivre.HeaderText = "ID";
             this.IdLivre.MinimumWidth = 6;
             this.IdLivre.Name = "IdLivre";
@@ -840,9 +841,9 @@ namespace Mediateq_AP_SIO2
             // 
             // TitreLivre
             // 
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Aqua;
-            this.TitreLivre.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.Aqua;
+            this.TitreLivre.DefaultCellStyle = dataGridViewCellStyle23;
             this.TitreLivre.HeaderText = "Titre";
             this.TitreLivre.MinimumWidth = 6;
             this.TitreLivre.Name = "TitreLivre";
@@ -851,9 +852,9 @@ namespace Mediateq_AP_SIO2
             // 
             // ImageLivre
             // 
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Aqua;
-            this.ImageLivre.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.Aqua;
+            this.ImageLivre.DefaultCellStyle = dataGridViewCellStyle24;
             this.ImageLivre.HeaderText = "Image";
             this.ImageLivre.MinimumWidth = 6;
             this.ImageLivre.Name = "ImageLivre";
@@ -862,9 +863,9 @@ namespace Mediateq_AP_SIO2
             // 
             // LibelleCategorieLivre
             // 
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Aqua;
-            this.LibelleCategorieLivre.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle25.ForeColor = System.Drawing.Color.Aqua;
+            this.LibelleCategorieLivre.DefaultCellStyle = dataGridViewCellStyle25;
             this.LibelleCategorieLivre.HeaderText = "Categorie";
             this.LibelleCategorieLivre.MinimumWidth = 6;
             this.LibelleCategorieLivre.Name = "LibelleCategorieLivre";
@@ -873,9 +874,9 @@ namespace Mediateq_AP_SIO2
             // 
             // ISBNLivre
             // 
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Aqua;
-            this.ISBNLivre.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.Aqua;
+            this.ISBNLivre.DefaultCellStyle = dataGridViewCellStyle26;
             this.ISBNLivre.HeaderText = "ISBN";
             this.ISBNLivre.MinimumWidth = 6;
             this.ISBNLivre.Name = "ISBNLivre";
@@ -884,9 +885,9 @@ namespace Mediateq_AP_SIO2
             // 
             // AuteurLivre
             // 
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Aqua;
-            this.AuteurLivre.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle27.ForeColor = System.Drawing.Color.Aqua;
+            this.AuteurLivre.DefaultCellStyle = dataGridViewCellStyle27;
             this.AuteurLivre.HeaderText = "Auteur";
             this.AuteurLivre.MinimumWidth = 6;
             this.AuteurLivre.Name = "AuteurLivre";
@@ -895,9 +896,9 @@ namespace Mediateq_AP_SIO2
             // 
             // CollectionLivre
             // 
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Aqua;
-            this.CollectionLivre.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle28.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle28.ForeColor = System.Drawing.Color.Aqua;
+            this.CollectionLivre.DefaultCellStyle = dataGridViewCellStyle28;
             this.CollectionLivre.HeaderText = "Collection";
             this.CollectionLivre.MinimumWidth = 6;
             this.CollectionLivre.Name = "CollectionLivre";
@@ -1376,14 +1377,14 @@ namespace Mediateq_AP_SIO2
             this.dataOfDvd.AllowUserToDeleteRows = false;
             this.dataOfDvd.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.dataOfDvd.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataOfDvd.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle31.BackColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle31.Font = new System.Drawing.Font("Omega Flight Title", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle31.ForeColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataOfDvd.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle31;
             this.dataOfDvd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataOfDvd.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -1393,32 +1394,32 @@ namespace Mediateq_AP_SIO2
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6,
             this.dataGridViewTextBoxColumn7});
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Omega Flight Title", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataOfDvd.DefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle39.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle39.Font = new System.Drawing.Font("Omega Flight Title", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle39.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle39.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle39.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle39.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataOfDvd.DefaultCellStyle = dataGridViewCellStyle39;
             this.dataOfDvd.Location = new System.Drawing.Point(6, 6);
             this.dataOfDvd.Name = "dataOfDvd";
             this.dataOfDvd.ReadOnly = true;
             this.dataOfDvd.RowHeadersWidth = 51;
-            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataOfDvd.RowsDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle40.ForeColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle40.SelectionBackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle40.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataOfDvd.RowsDefaultCellStyle = dataGridViewCellStyle40;
             this.dataOfDvd.RowTemplate.Height = 24;
             this.dataOfDvd.Size = new System.Drawing.Size(929, 122);
             this.dataOfDvd.TabIndex = 4;
             // 
             // dataGridViewTextBoxColumn1
             // 
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Aqua;
-            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle32.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle32;
             this.dataGridViewTextBoxColumn1.HeaderText = "ID";
             this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
@@ -1427,9 +1428,9 @@ namespace Mediateq_AP_SIO2
             // 
             // dataGridViewTextBoxColumn2
             // 
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Aqua;
-            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle33.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle33.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle33;
             this.dataGridViewTextBoxColumn2.HeaderText = "Titre";
             this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
@@ -1438,9 +1439,9 @@ namespace Mediateq_AP_SIO2
             // 
             // dataGridViewTextBoxColumn3
             // 
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Aqua;
-            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle34.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle34.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle34;
             this.dataGridViewTextBoxColumn3.HeaderText = "Image";
             this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
@@ -1449,9 +1450,9 @@ namespace Mediateq_AP_SIO2
             // 
             // dataGridViewTextBoxColumn4
             // 
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Aqua;
-            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle35.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle35.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle35;
             this.dataGridViewTextBoxColumn4.HeaderText = "Categorie";
             this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
@@ -1460,9 +1461,9 @@ namespace Mediateq_AP_SIO2
             // 
             // dataGridViewTextBoxColumn5
             // 
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Aqua;
-            this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle36.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle36.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle36;
             this.dataGridViewTextBoxColumn5.HeaderText = "Synopsis";
             this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
@@ -1471,9 +1472,9 @@ namespace Mediateq_AP_SIO2
             // 
             // dataGridViewTextBoxColumn6
             // 
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.Aqua;
-            this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle37.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle37.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle37;
             this.dataGridViewTextBoxColumn6.HeaderText = "Réalisateur";
             this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
@@ -1482,9 +1483,9 @@ namespace Mediateq_AP_SIO2
             // 
             // dataGridViewTextBoxColumn7
             // 
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Aqua;
-            this.dataGridViewTextBoxColumn7.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle38.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle38.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn7.DefaultCellStyle = dataGridViewCellStyle38;
             this.dataGridViewTextBoxColumn7.HeaderText = "Durée";
             this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
@@ -1962,6 +1963,8 @@ namespace Mediateq_AP_SIO2
             this.ClientSize = new System.Drawing.Size(982, 629);
             this.Controls.Add(this.tabOngletsApplication);
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximumSize = new System.Drawing.Size(1000, 676);
+            this.MinimumSize = new System.Drawing.Size(1000, 676);
             this.Name = "FrmMediateq";
             this.Text = "Gestion Médiathèque";
             this.Load += new System.EventHandler(this.FrmMediateq_Load);

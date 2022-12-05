@@ -19,16 +19,25 @@ namespace Mediateq_AP_SIO2
             List<Categorie> lesCategories = new List<Categorie>();
             string req = "Select * from categorie";
 
-            DAOFactory.connecter();
-
-            MySqlDataReader reader = DAOFactory.execSQLRead(req);
-
-            while (reader.Read())
+            try
             {
-                Categorie categorie = new Categorie(reader[0].ToString(), reader[1].ToString());
-                lesCategories.Add(categorie);
+                DAOFactory.connecter();
+
+                MySqlDataReader reader = DAOFactory.execSQLRead(req);
+
+                while (reader.Read())
+                {
+                    Categorie categorie = new Categorie(reader[0].ToString(), reader[1].ToString());
+                    lesCategories.Add(categorie);
+                }
+                DAOFactory.deconnecter();
             }
-            DAOFactory.deconnecter();
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+                DAOFactory.deconnecter();
+            }
+
             return lesCategories;
         }
 
@@ -37,16 +46,25 @@ namespace Mediateq_AP_SIO2
             List<Descripteur> lesDescripteurs = new List<Descripteur>();
             string req = "Select * from descripteur";
 
-            DAOFactory.connecter();
-
-            MySqlDataReader reader = DAOFactory.execSQLRead(req);
-
-            while (reader.Read())
+            try
             {
-                Descripteur genre = new Descripteur(reader[0].ToString(), reader[1].ToString());
-                lesDescripteurs.Add(genre);
+                DAOFactory.connecter();
+
+                MySqlDataReader reader = DAOFactory.execSQLRead(req);
+
+                while (reader.Read())
+                {
+                    Descripteur genre = new Descripteur(reader[0].ToString(), reader[1].ToString());
+                    lesDescripteurs.Add(genre);
+                }
+                DAOFactory.deconnecter();
             }
-            DAOFactory.deconnecter();
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+                DAOFactory.deconnecter();
+            }
+            
             return lesDescripteurs;
         }
         
@@ -57,21 +75,28 @@ namespace Mediateq_AP_SIO2
             req += " join document d on l.id=d.id";
             req += " join categorie c on d.idCategorie = c.id";
 
-            DAOFactory.connecter();
-
-            MySqlDataReader reader = DAOFactory.execSQLRead(req);
-
-            while (reader.Read())
+            try
             {
-                Livre livre = new Livre(reader[0].ToString(), reader[3].ToString(), reader[1].ToString(),
-                reader[2].ToString(), reader[5].ToString(), reader[4].ToString(),new Categorie(reader[6].ToString(),reader[7].ToString()));
-  
-                lesLivres.Add(livre);
-                
+                DAOFactory.connecter();
+
+                MySqlDataReader reader = DAOFactory.execSQLRead(req);
+
+                while (reader.Read())
+                {
+                    Livre livre = new Livre(reader[0].ToString(), reader[3].ToString(), reader[1].ToString(),
+                    reader[2].ToString(), reader[5].ToString(), reader[4].ToString(), new Categorie(reader[6].ToString(), reader[7].ToString()));
+
+                    lesLivres.Add(livre);
+                }
+
+                DAOFactory.deconnecter();
             }
-
-            DAOFactory.deconnecter();
-
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+                DAOFactory.deconnecter();
+            }
+            
             return lesLivres;
         }
 
@@ -85,19 +110,26 @@ namespace Mediateq_AP_SIO2
             req += " join document doc on d.id=doc.id";
             req += " join categorie c on doc.idCategorie = c.id";
 
-            DAOFactory.connecter();
-
-            MySqlDataReader reader = DAOFactory.execSQLRead(req);
-
-            while (reader.Read())
+            try
             {
-                Dvd dvd = new Dvd(reader[0].ToString(), reader[1].ToString(), reader[2].ToString(), reader[3].ToString(), int.Parse(reader[4].ToString()), reader[5].ToString(), new Categorie(reader[6].ToString(), reader[7].ToString()));
+                DAOFactory.connecter();
 
-                lesDvd.Add(dvd);
+                MySqlDataReader reader = DAOFactory.execSQLRead(req);
 
+                while (reader.Read())
+                {
+                    Dvd dvd = new Dvd(reader[0].ToString(), reader[1].ToString(), reader[2].ToString(), reader[3].ToString(), int.Parse(reader[4].ToString()), reader[5].ToString(), new Categorie(reader[6].ToString(), reader[7].ToString()));
+
+                    lesDvd.Add(dvd);
+                }
+
+                DAOFactory.deconnecter();
             }
-
-            DAOFactory.deconnecter();
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+                DAOFactory.deconnecter();
+            }
 
             return lesDvd;
         }
@@ -107,23 +139,31 @@ namespace Mediateq_AP_SIO2
         //|-----------------------------------------------------------
         public static void setDescripteurs(List<Livre> lesLivres)
         {
-            DAOFactory.connecter();
-
-            foreach (Livre livre in lesLivres)
+            try
             {
-                List<Descripteur> lesDescripteursDuLivre = new List<Descripteur>(); ;
-                string req = "Select de.id, de.libelle from descripteur de ";
-                req += " join est_decrit_par e on de.id = e.idDesc";
-                req += " join document do on do.id = '" + livre.IdDoc + "'";
-                             
-                MySqlDataReader reader = DAOFactory.execSQLRead(req);
-                while (reader.Read())
+                DAOFactory.connecter();
+
+                foreach (Livre livre in lesLivres)
                 {
-                    lesDescripteursDuLivre.Add(new Descripteur(reader[0].ToString(), reader[1].ToString()));
+                    List<Descripteur> lesDescripteursDuLivre = new List<Descripteur>(); ;
+                    string req = "Select de.id, de.libelle from descripteur de ";
+                    req += " join est_decrit_par e on de.id = e.idDesc";
+                    req += " join document do on do.id = '" + livre.IdDoc + "'";
+
+                    MySqlDataReader reader = DAOFactory.execSQLRead(req);
+                    while (reader.Read())
+                    {
+                        lesDescripteursDuLivre.Add(new Descripteur(reader[0].ToString(), reader[1].ToString()));
+                    }
+                    livre.LesDescripteurs = lesDescripteursDuLivre;
                 }
-                livre.LesDescripteurs = lesDescripteursDuLivre;
+                DAOFactory.deconnecter();
             }
-            DAOFactory.deconnecter();
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+                DAOFactory.deconnecter();
+            }
         }
 
         #endregion
@@ -157,6 +197,7 @@ namespace Mediateq_AP_SIO2
             {
                 MessageBox.Show(e.Message);
                 resultat = false;
+                DAOFactory.deconnecter();
             }
             
             return resultat;
@@ -218,6 +259,7 @@ namespace Mediateq_AP_SIO2
             {
                 MessageBox.Show(e.Message);
                 resultat = false;
+                DAOFactory.deconnecter();
             }
 
             return resultat;
@@ -250,6 +292,7 @@ namespace Mediateq_AP_SIO2
             {
                 MessageBox.Show(e.Message);
                 resultat = false;
+                DAOFactory.deconnecter();
             }
             return resultat;
         }
@@ -285,6 +328,7 @@ namespace Mediateq_AP_SIO2
             {
                 MessageBox.Show(e.Message);
                 resultat = false;
+                DAOFactory.deconnecter();
             }
 
             return resultat;
@@ -317,6 +361,7 @@ namespace Mediateq_AP_SIO2
             {
                 MessageBox.Show(e.Message);
                 resultat = false;
+                DAOFactory.deconnecter();
             }
 
             return resultat;
@@ -349,6 +394,7 @@ namespace Mediateq_AP_SIO2
             {
                 MessageBox.Show(e.Message);
                 resultat = false;
+                DAOFactory.deconnecter();
             }
             return resultat;
         }
