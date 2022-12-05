@@ -273,14 +273,14 @@ namespace Mediateq_AP_SIO2
             if (ID == "" || Titre == "" || uneNouvelleCategorie == null)
             {
                 textAlertEvent.Text = "{CRUD LIVRE}-{Créer} Le champ ID, Titre et la catégorie sont obligatoires";
-                textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 0, 0);
+                textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 255, 0);
             }
             else
             {
-                if (ID.Length > 10)
+                if (ID.Length > 5)
                 {
-                    textAlertEvent.Text = "{CRUD LIVRE}-{Créer} Le champ ID est trop long (Max 10 caractères)";
-                    textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 0, 0);
+                    textAlertEvent.Text = "{CRUD LIVRE}-{Créer} Le champ ID est trop long (Max 5 caractères)";
+                    textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 255, 0);
                 }
                 else
                 {
@@ -360,7 +360,7 @@ namespace Mediateq_AP_SIO2
             if (ID == "" || Titre == "" || uneNouvelleCategorie == null)
             {
                 textAlertEvent.Text = "{CRUD LIVRE}-{Modifier} Le champ ID, Titre et la catégorie sont obligatoires";
-                textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 0, 0);
+                textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 255, 0);
             }
             else
             {
@@ -411,14 +411,14 @@ namespace Mediateq_AP_SIO2
         private void buttonDeleteLivre_Click(object sender, EventArgs e)
         {
             bool resultat;
-            Livre leLivreForEdit = (Livre)selectLivreForDelete.SelectedItem;
+            Livre leLivreForDelete = (Livre)selectLivreForDelete.SelectedItem;
 
             //|
             //| Si la combobox est séléctionnée
             //|
-            if (leLivreForEdit != null )
+            if (leLivreForDelete != null )
             {
-                resultat = DAODocuments.deleteLivre(leLivreForEdit);
+                resultat = DAODocuments.deleteLivre(leLivreForDelete);
 
                 if (resultat)
                 {
@@ -429,6 +429,8 @@ namespace Mediateq_AP_SIO2
                     //| On met à jour la combobox de la modif et suppression des livres
                     //|
                     lesLivres = DAODocuments.getAllLivres();
+
+                    setAllDataOfLivres();
 
                     setComboboxLivreForLivre();
                 }
@@ -441,7 +443,7 @@ namespace Mediateq_AP_SIO2
             else
             {
                 textAlertEvent.Text = "{CRUD LIVRE}-{Supprimer} Aucun livre séléctionné";
-                textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 0, 0);
+                textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 255, 0);
             }
         }
 
@@ -485,14 +487,14 @@ namespace Mediateq_AP_SIO2
             if (ID == "" || Titre == "" || uneNouvelleCategorie == null)
             {
                 textAlertEvent.Text = "{CRUD DVD}-{Créer} Le champ ID, Titre et la catégorie sont obligatoires";
-                textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 0, 0);
+                textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 255, 0);
             }
             else
             {
-                if (ID.Length > 10)
+                if (ID.Length > 5)
                 {
-                    textAlertEvent.Text = "{CRUD DVD}-{Créer} Le champ ID est trop long (Max 10 caractères)";
-                    textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 0, 0);
+                    textAlertEvent.Text = "{CRUD DVD}-{Créer} Le champ ID est trop long (Max 5 caractères)";
+                    textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 255, 0);
                 }
                 else
                 {
@@ -572,7 +574,7 @@ namespace Mediateq_AP_SIO2
             if (ID == "" || Titre == "" || uneNouvelleCategorie == null)
             {
                 textAlertEvent.Text = "{CRUD DVD}-{Modifier} Le champ ID, Titre et la catégorie sont obligatoires";
-                textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 0, 0);
+                textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 255, 0);
             }
             else
             {
@@ -642,6 +644,8 @@ namespace Mediateq_AP_SIO2
                     //|
                     lesDvd = DAODocuments.getAllDvd();
 
+                    setAllDataOfDvd();
+
                     setComboboxDvdForDvd();
                 }
                 else
@@ -653,7 +657,7 @@ namespace Mediateq_AP_SIO2
             else
             {
                 textAlertEvent.Text = "{CRUD DVD}-{Supprimer} Aucun livre séléctionné";
-                textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 0, 0);
+                textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 255, 0);
             }
         }
 
