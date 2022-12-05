@@ -14,7 +14,10 @@ namespace Mediateq_AP_SIO2
     public partial class FrmMediateq : Form
     {
         #region Variables globales
-        
+
+        //|
+        //| Listes qui contiennent des objets
+        //|
         static List<Categorie> lesCategories;
         static List<Descripteur> lesDescripteurs;
         static List<Revue> lesTitres;
@@ -65,7 +68,7 @@ namespace Mediateq_AP_SIO2
         #region Comboboxes
 
         //|
-        //| Comboboxes Livres dans Livre
+        //| Comboboxes Livres dans l'onglet Livre
         //|
         private void setComboboxLivreForLivre()
         {
@@ -77,7 +80,7 @@ namespace Mediateq_AP_SIO2
         }
 
         //|
-        //| Comboboxes Dvd dans Dvd
+        //| Comboboxes Dvd dans l'onglet Dvd
         //|
         private void setComboboxDvdForDvd()
         {
@@ -89,7 +92,7 @@ namespace Mediateq_AP_SIO2
         }
 
         //|
-        //| Comboboxes Catégorie dans Livre & Dvd
+        //| Comboboxes Catégorie dans les onglets Livre & Dvd
         //|
         private void setComboboxCategorieForLivreAndDvd()
         {
@@ -251,7 +254,7 @@ namespace Mediateq_AP_SIO2
         }
 
         //|-----------------------------------------------------------
-        //| Crétion des Livres
+        //| Création des Livres
         //|-----------------------------------------------------------
         private void buttonCreerLivre_Click(object sender, EventArgs e)
         {
@@ -264,7 +267,10 @@ namespace Mediateq_AP_SIO2
             String ISBN = inputISBNLivre.Text;
             String Collection = inputCollectionLivre.Text;
             String Image = inputImageLivre.Text;
-            
+
+            //|
+            //| Récupération de la catégorie séléctionnée
+            //|
             Categorie uneNouvelleCategorie = (Categorie)selectCategorieLivreForCreate.SelectedItem;
 
             //|
@@ -290,7 +296,7 @@ namespace Mediateq_AP_SIO2
                     Livre unNouveauLivre = new Livre(ID, Titre, ISBN, Auteur, Collection, Image, uneNouvelleCategorie);
 
                     //|
-                    //| Appel de la base de données
+                    //| Appel de la base de données qui donnera le résultat True ou False si ça a bien fonctionné ou non
                     //|
                     bool resultat;
 
@@ -302,12 +308,18 @@ namespace Mediateq_AP_SIO2
                         textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(0, 255, 0);
 
                         //|
-                        //| On met à jour la combobox de la modif et suppression des livres & le datagridview des livres
+                        //| Mise à jour de la liste des objets Livre
                         //|
                         lesLivres = DAODocuments.getAllLivres();
-                        
+
+                        //|
+                        //| Mise à jour du Datagridview
+                        //|
                         setAllDataOfLivres();
 
+                        //|
+                        //| Mise à jour des combobox dans l'onglet Livres
+                        //|
                         setComboboxLivreForLivre();
                     }
                     else
