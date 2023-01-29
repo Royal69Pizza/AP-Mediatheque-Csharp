@@ -14,6 +14,7 @@ namespace Mediateq_AP_SIO2
     {
 
         #region Gestion Générale
+
         public static List<Categorie> getAllCategories()
         {
             List<Categorie> lesCategories = new List<Categorie>();
@@ -71,7 +72,7 @@ namespace Mediateq_AP_SIO2
         public static List<Livre> getAllLivres()
         {
             List<Livre> lesLivres = new List<Livre>();
-            string req = "Select l.id, l.ISBN, l.auteur, d.titre, d.image, l.collection, d.idCategorie, c.libelle from livre l ";
+            string req = "Select l.id, d.titre, l.ISBN, l.auteur, l.collection, d.image, d.idCategorie, c.libelle from livre l ";
             req += " join document d on l.id=d.id";
             req += " join categorie c on d.idCategorie = c.id";
 
@@ -83,8 +84,8 @@ namespace Mediateq_AP_SIO2
 
                 while (reader.Read())
                 {
-                    Livre livre = new Livre(reader[0].ToString(), reader[3].ToString(), reader[1].ToString(),
-                    reader[2].ToString(), reader[5].ToString(), reader[4].ToString(), new Categorie(reader[6].ToString(), reader[7].ToString()));
+                    Livre livre = new Livre(reader[0].ToString(), reader[1].ToString(), reader[2].ToString(),
+                    reader[3].ToString(), reader[4].ToString(), reader[5].ToString(), new Categorie(reader[6].ToString(), reader[7].ToString()));
 
                     lesLivres.Add(livre);
                 }
@@ -173,7 +174,7 @@ namespace Mediateq_AP_SIO2
         //|-----------------------------------------------------------
         //| Créer un nouveau livre
         //|-----------------------------------------------------------
-        public static bool setNouveauLivre(String ID, String Titre, String ISBN, String Auteur, String Collection, String Image, String unIdCategorie)
+        public static bool setNouveauLivre(String ID, String Titre, String ISBN, String unAuteur, String Collection, String Image, String unIdCategorie)
         {
             bool resultat;
 
@@ -181,7 +182,7 @@ namespace Mediateq_AP_SIO2
             {
                 String req1 = "INSERT INTO document (id, titre, image, idCategorie) VALUES ('" + ID + "', '" + Titre + "', '" + Image + "', '" + unIdCategorie + "');";
                 
-                String req2 = "INSERT INTO livre (id, ISBN, auteur, collection) VALUES ('" + ID + "', '" + ISBN + "', '" + Auteur + "', '" + Collection + "');";
+                String req2 = "INSERT INTO livre (id, ISBN, auteur, collection) VALUES ('" + ID + "', '" + ISBN + "', '" + unAuteur + "', '" + Collection + "');";
 
                 DAOFactory.connecter();
 
@@ -209,7 +210,7 @@ namespace Mediateq_AP_SIO2
         public static Livre getLivreByLibelleForEdit(String unId)
         {
             Livre resultat;
-            String req = "Select l.id, l.ISBN, l.auteur, d.titre, d.image, l.collection, d.idCategorie, c.libelle from livre l ";
+            string req = "Select l.id, d.titre, l.ISBN, l.auteur, l.collection, d.image, d.idCategorie, c.libelle from livre l ";
             req += " join document d on l.id=d.id";
             req += " join categorie c on d.idCategorie = c.id WHERE d.id = '" + unId + "'";
 
@@ -219,8 +220,8 @@ namespace Mediateq_AP_SIO2
 
             if (reader.Read())
             {
-                resultat = new Livre(reader[0].ToString(), reader[3].ToString(), reader[1].ToString(),
-                reader[2].ToString(), reader[5].ToString(), reader[4].ToString(), new Categorie(reader[6].ToString(), reader[7].ToString()));
+                resultat = new Livre(reader[0].ToString(), reader[1].ToString(), reader[2].ToString(),
+                    reader[3].ToString(), reader[4].ToString(), reader[5].ToString(), new Categorie(reader[6].ToString(), reader[7].ToString()));
             }
             else
             {
@@ -243,7 +244,7 @@ namespace Mediateq_AP_SIO2
             {
                 String req1 = "UPDATE document SET titre = '" + unLivre.Titre + "', image = '" + unLivre.Image + "', idCategorie = '" + uneCategorie.Id + "' WHERE id = '" + unLivre.IdDoc + "';";
 
-                String req2 = "UPDATE livre SET ISBN = '" + unLivre.ISBN1 + "', auteur = '" + unLivre.Auteur + "', collection = '" + unLivre.LaCollection + "' WHERE id = '" + unLivre.IdDoc + "';";
+                String req2 = "UPDATE livre SET ISBN = '" + unLivre.ISBN1 + "', auteur = '" + unLivre.AuteurDuLivre + "', collection = '" + unLivre.LaCollection + "' WHERE id = '" + unLivre.IdDoc + "';";
 
                 DAOFactory.connecter();
 

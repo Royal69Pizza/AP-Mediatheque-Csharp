@@ -22,5 +22,9 @@ namespace Mediateq_AP_SIO2.metier
             this.login = unLogin;
             this.mdp = unMdp;
         }
+
+        public string Prenom { get => prenom; set => prenom = value; }
+        public string Nom { get => nom; set => nom = value; }
+        public string Service { get => service; set => service = value; }
     }
 }

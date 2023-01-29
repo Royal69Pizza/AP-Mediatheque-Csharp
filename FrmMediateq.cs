@@ -1,13 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Mediateq_AP_SIO2.metier;
+using Mediateq_AP_SIO2.divers;
 
 namespace Mediateq_AP_SIO2
 {
@@ -23,6 +18,9 @@ namespace Mediateq_AP_SIO2
         static List<Revue> lesTitres;
         static List<Livre> lesLivres;
         static List<Dvd> lesDvd;
+        static List<Commande> lesCommandes;
+
+        internal Utilisateur UtilisateurLogged;
 
         #endregion
 
@@ -52,15 +50,23 @@ namespace Mediateq_AP_SIO2
             //|
             //| Chargement des comboboxes
             //|
-            setComboboxCategorieForLivreAndDvd();
             setComboboxLivreForLivre();
             setComboboxDvdForDvd();
+            setComboboxCategorieForLivreAndDvd();
 
             //|
             //| Chargement des datagridview
             //|
             setAllDataOfLivres();
             setAllDataOfDvd();
+
+            //|
+            //| Affichage des données sur la page Utilisateur
+            //|
+            prenomUtilisateurAlert.Text = UtilisateurLogged.Prenom;
+            prenomUtilisateurProfil.Text = UtilisateurLogged.Prenom;
+            nomUtilisateurProfil.Text = UtilisateurLogged.Nom;
+            serviceUtilisateurProfil.Text = UtilisateurLogged.Service;
         }
 
         #endregion
@@ -203,7 +209,6 @@ namespace Mediateq_AP_SIO2
                 {
                     lblNumero.Text = livre.IdDoc;
                     lblTitre.Text = livre.Titre;
-                    lblAuteur.Text = livre.Auteur;
                     lblCollection.Text = livre.LaCollection;
                     lblISBN.Text = livre.ISBN1;
                     lblImage.Text = livre.Image;
@@ -232,11 +237,13 @@ namespace Mediateq_AP_SIO2
                 //on teste si le titre du livre contient ce qui a été saisi
                 if (titreMinuscules.Contains(saisieMinuscules))
                 {
-                    dgvLivres.Rows.Add(livre.IdDoc,livre.Titre,livre.Auteur,livre.ISBN1,livre.LaCollection);
+                    dgvLivres.Rows.Add(livre.IdDoc,livre.Titre,livre.AuteurDuLivre,livre.ISBN1,livre.LaCollection);
                 }
             }
         }
         #endregion
+
+        #region Gestion des Documents
 
         #region Gestion des Livres
 
@@ -249,7 +256,7 @@ namespace Mediateq_AP_SIO2
 
             foreach (Livre unLivre in lesLivres)
             {
-                dataOfLivre.Rows.Add(unLivre.IdDoc, unLivre.Titre, unLivre.Image, unLivre.LaCategorie.Libelle, unLivre.ISBN1, unLivre.Auteur, unLivre.LaCollection);
+                dataOfLivre.Rows.Add(unLivre.IdDoc, unLivre.Titre, unLivre.Image, unLivre.LaCategorie.Libelle, unLivre.ISBN1, unLivre.AuteurDuLivre, unLivre.LaCollection);
             }
         }
 
@@ -269,7 +276,7 @@ namespace Mediateq_AP_SIO2
             String Image = inputImageLivre.Text;
 
             //|
-            //| Récupération de la catégorie séléctionnée
+            //| Récupération de la catégorie séléctionnée et de l'auteur
             //|
             Categorie uneNouvelleCategorie = (Categorie)selectCategorieLivreForCreate.SelectedItem;
 
@@ -278,7 +285,7 @@ namespace Mediateq_AP_SIO2
             //|
             if (ID == "" || Titre == "" || uneNouvelleCategorie == null)
             {
-                textAlertEvent.Text = "{CRUD LIVRE}-{Créer} Le champ ID, Titre et la catégorie sont obligatoires";
+                textAlertEvent.Text = "{CRUD LIVRE}-{Créer} Le champ ID, Titre, Catégorie et Auteur sont obligatoires";
                 textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 255, 0);
             }
             else
@@ -343,10 +350,10 @@ namespace Mediateq_AP_SIO2
 
             inputIDLivreForEdit.Text = leLivreForEdit.IdDoc;
             inputTitreLivreForEdit.Text = leLivreForEdit.Titre;
-            inputAuteurLivreForEdit.Text = leLivreForEdit.Auteur;
             inputISBNLivreForEdit.Text = leLivreForEdit.ISBN1;
             inputCollectionLivreForEdit.Text = leLivreForEdit.LaCollection;
             inputImageLivreForEdit.Text = leLivreForEdit.Image;
+            selectCategorieForEdit.Text = leLivreForEdit.LaCategorie.Libelle;
         }
 
         //|-----------------------------------------------------------
@@ -359,8 +366,8 @@ namespace Mediateq_AP_SIO2
             //|
             String ID = inputIDLivreForEdit.Text;
             String Titre = inputTitreLivreForEdit.Text;
-            String Auteur = inputAuteurLivreForEdit.Text;
             String ISBN = inputISBNLivreForEdit.Text;
+            String Auteur = inputAuteurLivreForEdit.Text;
             String Collection = inputCollectionLivreForEdit.Text;
             String Image = inputImageLivreForEdit.Text;
 
@@ -428,7 +435,7 @@ namespace Mediateq_AP_SIO2
             //|
             //| Si la combobox est séléctionnée
             //|
-            if (leLivreForDelete != null )
+            if (leLivreForDelete != null)
             {
                 resultat = DAODocuments.deleteLivre(leLivreForDelete);
 
@@ -561,6 +568,7 @@ namespace Mediateq_AP_SIO2
             inputSynopsisDvdForEdit.Text = leDvdForEdit.Synopsis;
             inputRealisateurDvdForEdit.Text = leDvdForEdit.Realisateur;
             inputDureeDvdForEdit.Text = leDvdForEdit.Duree.ToString();
+            selectCategorieDvdForEdit.Text = leDvdForEdit.LaCategorie.Libelle;
         }
 
         //|-----------------------------------------------------------
@@ -672,6 +680,8 @@ namespace Mediateq_AP_SIO2
                 textAlertEvent.ForeColor = System.Drawing.Color.FromArgb(255, 255, 0);
             }
         }
+
+        #endregion
 
         #endregion
     }

@@ -91,6 +91,13 @@
   <ItemGroup>
     <Compile Include="bdd\DAOFactory.cs" />
     <Compile Include="divers\ExceptionSio.cs" />
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="metier\Commande.cs" />
     <Compile Include="metier\Categorie.cs" />
     <Compile Include="metier\Document.cs" />
     <Compile Include="metier\Descripteur.cs" />
@@ -100,6 +107,7 @@
     <Compile Include="metier\Utilisateur.cs" />
     <Compile Include="metier\Revue.cs" />
     <Compile Include="modele\DAODocuments.cs" />
+    <Compile Include="modele\DAOCommandes.cs" />
     <Compile Include="modele\DAOUtilisateurs.cs" />
     <Compile Include="modele\DAOPresse.cs" />
     <Compile Include="Program.cs" />
@@ -110,6 +118,9 @@
     <Compile Include="FrmMediateq.designer.cs">
       <DependentUpon>FrmMediateq.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

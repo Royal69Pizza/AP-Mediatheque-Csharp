@@ -23,7 +23,7 @@ namespace Mediateq_AP_SIO2
             }
             catch (Exception e)
             {
-                throw new ExceptionSio(1, "problème création connexion BDD", e.Message);
+                throw new ExceptionSio(1, "Connexion générale à la BDD impossible.", "Configurez ou reconnectez la connexion au server.");
             }
 
         }
@@ -36,7 +36,7 @@ namespace Mediateq_AP_SIO2
             }
             catch (Exception e)
             {
-                throw new ExceptionSio(1, "problème ouverture connexion BDD", e.Message);
+                throw new ExceptionSio(1, "Connexion locale à la BDD impossible.", "Configurez ou reconnectez la connexion au server.");
             }
         }
 
@@ -66,7 +66,7 @@ namespace Mediateq_AP_SIO2
             }
             catch (Exception e)
             {
-                throw new ExceptionSio(1, "Erreur lecture BDD", e.Message);
+                throw new ExceptionSio(1, "Erreur de lecture dans la BDD", "Configurez ou reconnectez la connexion au server.");
             }
 
 
@@ -76,7 +76,6 @@ namespace Mediateq_AP_SIO2
         // Exécution d'une requete d'écriture (Insert ou Update) ; ne retourne rien
         public static void execSQLWrite(string requete)
         {
-
             MySqlCommand command;
             command = new MySqlCommand();
             command.CommandText = requete;
@@ -87,7 +86,7 @@ namespace Mediateq_AP_SIO2
             }
             catch (Exception e)
             {
-                throw new ExceptionSio(1, "Erreur écriture BDD", e.Message);
+                throw new ExceptionSio(1, "Erreur d'écriture dans la BDD", "Configurez ou reconnectez la connexion au server.");
             }
             
         }
