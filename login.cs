@@ -38,7 +38,7 @@ namespace Mediateq_AP_SIO2
             //|
             //| Pour le mot de passe on autorise certain caractères spéciaux
             //|
-            Regex regexMdp = new Regex(@"^[\w@&()!_$*€£+=\/;?#éèàùëêöôâäüûïî]+$");
+            Regex regexMdp = new Regex(@"^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$");
 
             Match LoginTest = regexLogin.Match(Login);
             Match MdpTest = regexMdp.Match(MDP);
