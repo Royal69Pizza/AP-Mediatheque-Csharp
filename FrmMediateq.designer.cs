@@ -29,44 +29,100 @@ namespace Mediateq_AP_SIO2
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabOngletsApplication = new System.Windows.Forms.TabControl();
             this.tabProfil = new System.Windows.Forms.TabPage();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.confirmationNouveauMDP = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.buttonModifierMDP = new System.Windows.Forms.Button();
+            this.inputNouveauMDP = new System.Windows.Forms.TextBox();
+            this.inputAncienMDP = new System.Windows.Forms.TextBox();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.loginUtilisateurProfil = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.prenomUtilisateurAlert = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.buttonExit = new System.Windows.Forms.Button();
+            this.prenomUtilisateurProfil = new System.Windows.Forms.Label();
             this.serviceUtilisateurProfil = new System.Windows.Forms.Label();
             this.nomUtilisateurProfil = new System.Windows.Forms.Label();
-            this.prenomUtilisateurProfil = new System.Windows.Forms.Label();
-            this.prenomUtilisateurAlert = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.tabGestionDesUsers = new System.Windows.Forms.TabPage();
-            this.tabGestionDesDocs = new System.Windows.Forms.TabPage();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.textAlertEvent = new System.Windows.Forms.Label();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.dataOfUser = new System.Windows.Forms.DataGridView();
+            this.idUtilisateur = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prenomUtilisateur = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomUtilisateur = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.serviceUtilisateur = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loginUtilisateur = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label42 = new System.Windows.Forms.Label();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button8 = new System.Windows.Forms.Button();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.label38 = new System.Windows.Forms.Label();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.label39 = new System.Windows.Forms.Label();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.label40 = new System.Windows.Forms.Label();
+            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.tabGestionDesLivres = new System.Windows.Forms.TabPage();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.textEventLivres = new System.Windows.Forms.Label();
             this.groupSuprLivre = new System.Windows.Forms.GroupBox();
+            this.buttonDeleteLivre = new System.Windows.Forms.Button();
             this.label31 = new System.Windows.Forms.Label();
             this.selectLivreForDelete = new System.Windows.Forms.ComboBox();
-            this.buttonDeleteLivre = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
             this.groupModifierLivre = new System.Windows.Forms.GroupBox();
             this.inputAuteurLivreForEdit = new System.Windows.Forms.TextBox();
             this.selectCategorieForEdit = new System.Windows.Forms.ComboBox();
@@ -85,6 +141,14 @@ namespace Mediateq_AP_SIO2
             this.label30 = new System.Windows.Forms.Label();
             this.selectLivreForEdit = new System.Windows.Forms.ComboBox();
             this.buttonEditLivre = new System.Windows.Forms.Button();
+            this.dataOfLivre = new System.Windows.Forms.DataGridView();
+            this.IdLivre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TitreLivre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ImageLivre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LibelleCategorieLivre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ISBNLivre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AuteurLivre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CollectionLivre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupCreerLivre = new System.Windows.Forms.GroupBox();
             this.inputAuteurLivre = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
@@ -101,219 +165,456 @@ namespace Mediateq_AP_SIO2
             this.inputIDLivre = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.dataOfDvd = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.label46 = new System.Windows.Forms.Label();
+            this.tabGestionDesDvd = new System.Windows.Forms.TabPage();
+            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label32 = new System.Windows.Forms.Label();
             this.selectDvdForDelete = new System.Windows.Forms.ComboBox();
-            this.buttonDeleteDvd = new System.Windows.Forms.Button();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.ButtonDeleteDvd = new System.Windows.Forms.Button();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.selectCategorieDvdForEdit = new System.Windows.Forms.ComboBox();
-            this.label35 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.inputRealisateurDvdForEdit = new System.Windows.Forms.TextBox();
-            this.label39 = new System.Windows.Forms.Label();
+            this.label79 = new System.Windows.Forms.Label();
             this.inputSynopsisDvdForEdit = new System.Windows.Forms.TextBox();
-            this.label40 = new System.Windows.Forms.Label();
+            this.label80 = new System.Windows.Forms.Label();
             this.inputImageDvdForEdit = new System.Windows.Forms.TextBox();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
+            this.label81 = new System.Windows.Forms.Label();
+            this.label82 = new System.Windows.Forms.Label();
             this.inputTitreDvdForEdit = new System.Windows.Forms.TextBox();
             this.inputIdDvdForEdit = new System.Windows.Forms.TextBox();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
+            this.label83 = new System.Windows.Forms.Label();
+            this.label84 = new System.Windows.Forms.Label();
             this.inputDureeDvdForEdit = new System.Windows.Forms.TextBox();
-            this.label45 = new System.Windows.Forms.Label();
+            this.label85 = new System.Windows.Forms.Label();
             this.selectDvdForEdit = new System.Windows.Forms.ComboBox();
-            this.buttonEditDvd = new System.Windows.Forms.Button();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.label78 = new System.Windows.Forms.Label();
+            this.dataOfDvd = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox18 = new System.Windows.Forms.GroupBox();
             this.selectCategorieDvdForCreate = new System.Windows.Forms.ComboBox();
-            this.label32 = new System.Windows.Forms.Label();
+            this.label71 = new System.Windows.Forms.Label();
             this.inputRealisateurDvd = new System.Windows.Forms.TextBox();
-            this.label33 = new System.Windows.Forms.Label();
-            this.buttonCreerDvd = new System.Windows.Forms.Button();
+            this.label72 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             this.inputSynopsisDvd = new System.Windows.Forms.TextBox();
-            this.label34 = new System.Windows.Forms.Label();
+            this.label73 = new System.Windows.Forms.Label();
             this.inputImageDvd = new System.Windows.Forms.TextBox();
-            this.Durée = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
+            this.label74 = new System.Windows.Forms.Label();
+            this.label75 = new System.Windows.Forms.Label();
             this.inputTitreDvd = new System.Windows.Forms.TextBox();
             this.inputIdDvd = new System.Windows.Forms.TextBox();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
+            this.label76 = new System.Windows.Forms.Label();
+            this.label77 = new System.Windows.Forms.Label();
             this.inputDureeDvd = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.tabGestionDesCommandes = new System.Windows.Forms.TabPage();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.selectNouveauEtatCommande = new System.Windows.Forms.ComboBox();
-            this.label50 = new System.Windows.Forms.Label();
-            this.selectCommandeForEtat = new System.Windows.Forms.ComboBox();
-            this.label48 = new System.Windows.Forms.Label();
-            this.buttonModifierEtatCommande = new System.Windows.Forms.Button();
-            this.inputEtatActuelCommande = new System.Windows.Forms.TextBox();
-            this.label56 = new System.Windows.Forms.Label();
-            this.label57 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.selectDocumentForCommande = new System.Windows.Forms.ComboBox();
-            this.label49 = new System.Windows.Forms.Label();
-            this.buttonCreerCommande = new System.Windows.Forms.Button();
-            this.inputMontantCommande = new System.Windows.Forms.TextBox();
-            this.label52 = new System.Windows.Forms.Label();
-            this.inputExemplairesCommande = new System.Windows.Forms.TextBox();
-            this.label53 = new System.Windows.Forms.Label();
-            this.inputIDCommande = new System.Windows.Forms.TextBox();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.dataOfCommande = new System.Windows.Forms.DataGridView();
-            this.Document = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NbExemplaires = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DateCommande = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Montant = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.État = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label47 = new System.Windows.Forms.Label();
-            this.tabParutions = new System.Windows.Forms.TabPage();
-            this.label3 = new System.Windows.Forms.Label();
-            this.dgvParutions = new System.Windows.Forms.DataGridView();
-            this.numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateParution = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.photo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cbxTitres = new System.Windows.Forms.ComboBox();
-            this.tabTitres = new System.Windows.Forms.TabPage();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.textEventDvd = new System.Windows.Forms.Label();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.groupBox14 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.dgvTitres = new System.Windows.Forms.DataGridView();
-            this.idTitre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.empruntable = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateFin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.periodicite = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label2 = new System.Windows.Forms.Label();
-            this.cbxDomaines = new System.Windows.Forms.ComboBox();
-            this.tabLivres = new System.Windows.Forms.TabPage();
-            this.grpRechercheTitre = new System.Windows.Forms.GroupBox();
-            this.dgvLivres = new System.Windows.Forms.DataGridView();
-            this.idDoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.titre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.auteur = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.isbn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lacollection = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txbTitre = new System.Windows.Forms.TextBox();
-            this.grpRechercheCode = new System.Windows.Forms.GroupBox();
-            this.lblCategorie = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.btnRechercher = new System.Windows.Forms.Button();
-            this.lblTitre = new System.Windows.Forms.Label();
-            this.lblImage = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox15 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txbNumDoc = new System.Windows.Forms.TextBox();
-            this.lblNumero = new System.Windows.Forms.Label();
-            this.lblAuteur = new System.Windows.Forms.Label();
-            this.lblISBN = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.groupBox16 = new System.Windows.Forms.GroupBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.lblCollection = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.dataOfLivre = new System.Windows.Forms.DataGridView();
-            this.IdLivre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TitreLivre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ImageLivre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LibelleCategorieLivre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ISBNLivre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AuteurLivre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CollectionLivre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.groupBox17 = new System.Windows.Forms.GroupBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.label64 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label65 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.label66 = new System.Windows.Forms.Label();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label67 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.label69 = new System.Windows.Forms.Label();
+            this.label70 = new System.Windows.Forms.Label();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.tabGestionDesCommandes = new System.Windows.Forms.TabPage();
+            this.groupBox19 = new System.Windows.Forms.GroupBox();
+            this.label87 = new System.Windows.Forms.Label();
+            this.label86 = new System.Windows.Forms.Label();
+            this.selectCommandeForDelete = new System.Windows.Forms.ComboBox();
+            this.buttonDeleteCommande = new System.Windows.Forms.Button();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.label57 = new System.Windows.Forms.Label();
+            this.selectCommandeForEdit = new System.Windows.Forms.ComboBox();
+            this.selectEtatForEditCommande = new System.Windows.Forms.ComboBox();
+            this.label47 = new System.Windows.Forms.Label();
+            this.selectDocumentForEditCommande = new System.Windows.Forms.ComboBox();
+            this.label52 = new System.Windows.Forms.Label();
+            this.inputDateCommandeForEdit = new System.Windows.Forms.DateTimePicker();
+            this.label53 = new System.Windows.Forms.Label();
+            this.buttonModifierCommande = new System.Windows.Forms.Button();
+            this.inputMontantCommandeForEdit = new System.Windows.Forms.TextBox();
+            this.label54 = new System.Windows.Forms.Label();
+            this.inputNbExemplairesCommandesForEdit = new System.Windows.Forms.TextBox();
+            this.inputIdCommandeForEdit = new System.Windows.Forms.TextBox();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.selectEtatForCreateCommande = new System.Windows.Forms.ComboBox();
+            this.label45 = new System.Windows.Forms.Label();
+            this.selectDocumentForCreateCommande = new System.Windows.Forms.ComboBox();
+            this.label44 = new System.Windows.Forms.Label();
+            this.inputDateCommande = new System.Windows.Forms.DateTimePicker();
+            this.label46 = new System.Windows.Forms.Label();
+            this.buttonCreateCommande = new System.Windows.Forms.Button();
+            this.inputMontantCommande = new System.Windows.Forms.TextBox();
+            this.label48 = new System.Windows.Forms.Label();
+            this.inputNbExemplairesCommande = new System.Windows.Forms.TextBox();
+            this.inputIdCommande = new System.Windows.Forms.TextBox();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.dataOfCommande = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nbExemplaire = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateCommande = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.montant = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.document = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.etatCommande = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label43 = new System.Windows.Forms.Label();
             this.tabOngletsApplication.SuspendLayout();
             this.tabProfil.SuspendLayout();
             this.groupBox9.SuspendLayout();
-            this.tabGestionDesDocs.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.groupSuprLivre.SuspendLayout();
-            this.groupModifierLivre.SuspendLayout();
-            this.groupCreerLivre.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataOfDvd)).BeginInit();
-            this.groupBox7.SuspendLayout();
-            this.groupBox6.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            this.groupBox10.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.tabGestionDesUsers.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataOfUser)).BeginInit();
             this.groupBox5.SuspendLayout();
-            this.tabGestionDesCommandes.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataOfCommande)).BeginInit();
-            this.tabParutions.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvParutions)).BeginInit();
-            this.tabTitres.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTitres)).BeginInit();
-            this.tabLivres.SuspendLayout();
-            this.grpRechercheTitre.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvLivres)).BeginInit();
-            this.grpRechercheCode.SuspendLayout();
+            this.tabGestionDesLivres.SuspendLayout();
+            this.groupBox12.SuspendLayout();
+            this.groupSuprLivre.SuspendLayout();
+            this.groupModifierLivre.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataOfLivre)).BeginInit();
+            this.groupCreerLivre.SuspendLayout();
+            this.tabGestionDesDvd.SuspendLayout();
+            this.tabControl2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataOfDvd)).BeginInit();
+            this.groupBox18.SuspendLayout();
+            this.groupBox13.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            this.groupBox14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox15.SuspendLayout();
+            this.groupBox16.SuspendLayout();
+            this.groupBox17.SuspendLayout();
+            this.tabGestionDesCommandes.SuspendLayout();
+            this.groupBox19.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataOfCommande)).BeginInit();
             this.SuspendLayout();
             // 
             // tabOngletsApplication
             // 
             this.tabOngletsApplication.Controls.Add(this.tabProfil);
             this.tabOngletsApplication.Controls.Add(this.tabGestionDesUsers);
-            this.tabOngletsApplication.Controls.Add(this.tabGestionDesDocs);
+            this.tabOngletsApplication.Controls.Add(this.tabGestionDesLivres);
+            this.tabOngletsApplication.Controls.Add(this.tabGestionDesDvd);
             this.tabOngletsApplication.Controls.Add(this.tabGestionDesCommandes);
-            this.tabOngletsApplication.Controls.Add(this.tabParutions);
-            this.tabOngletsApplication.Controls.Add(this.tabTitres);
-            this.tabOngletsApplication.Controls.Add(this.tabLivres);
             this.tabOngletsApplication.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabOngletsApplication.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabOngletsApplication.Location = new System.Drawing.Point(0, 0);
-            this.tabOngletsApplication.Margin = new System.Windows.Forms.Padding(4);
+            this.tabOngletsApplication.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.tabOngletsApplication.Name = "tabOngletsApplication";
             this.tabOngletsApplication.SelectedIndex = 0;
-            this.tabOngletsApplication.Size = new System.Drawing.Size(982, 629);
+            this.tabOngletsApplication.Size = new System.Drawing.Size(762, 703);
             this.tabOngletsApplication.TabIndex = 0;
             // 
             // tabProfil
             // 
             this.tabProfil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.tabProfil.Controls.Add(this.groupBox9);
-            this.tabProfil.Controls.Add(this.prenomUtilisateurAlert);
-            this.tabProfil.Controls.Add(this.label21);
             this.tabProfil.ForeColor = System.Drawing.Color.White;
             this.tabProfil.Location = new System.Drawing.Point(4, 27);
             this.tabProfil.Name = "tabProfil";
             this.tabProfil.Padding = new System.Windows.Forms.Padding(3);
-            this.tabProfil.Size = new System.Drawing.Size(974, 598);
+            this.tabProfil.Size = new System.Drawing.Size(754, 672);
             this.tabProfil.TabIndex = 6;
             this.tabProfil.Text = "Mon Profil";
             // 
             // groupBox9
             // 
             this.groupBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.groupBox9.Controls.Add(this.serviceUtilisateurProfil);
-            this.groupBox9.Controls.Add(this.nomUtilisateurProfil);
-            this.groupBox9.Controls.Add(this.prenomUtilisateurProfil);
+            this.groupBox9.Controls.Add(this.groupBox8);
+            this.groupBox9.Controls.Add(this.prenomUtilisateurAlert);
+            this.groupBox9.Controls.Add(this.groupBox3);
+            this.groupBox9.Controls.Add(this.label21);
             this.groupBox9.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox9.ForeColor = System.Drawing.Color.White;
-            this.groupBox9.Location = new System.Drawing.Point(13, 40);
+            this.groupBox9.Location = new System.Drawing.Point(8, 6);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(953, 110);
+            this.groupBox9.Size = new System.Drawing.Size(738, 658);
             this.groupBox9.TabIndex = 7;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Mon Profil";
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.groupBox10);
+            this.groupBox8.Controls.Add(this.loginUtilisateurProfil);
+            this.groupBox8.Controls.Add(this.label51);
+            this.groupBox8.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox8.ForeColor = System.Drawing.Color.White;
+            this.groupBox8.Location = new System.Drawing.Point(6, 161);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(726, 491);
+            this.groupBox8.TabIndex = 22;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "Paramètres";
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.confirmationNouveauMDP);
+            this.groupBox10.Controls.Add(this.label63);
+            this.groupBox10.Controls.Add(this.label62);
+            this.groupBox10.Controls.Add(this.label61);
+            this.groupBox10.Controls.Add(this.label60);
+            this.groupBox10.Controls.Add(this.buttonModifierMDP);
+            this.groupBox10.Controls.Add(this.inputNouveauMDP);
+            this.groupBox10.Controls.Add(this.inputAncienMDP);
+            this.groupBox10.Controls.Add(this.label58);
+            this.groupBox10.Controls.Add(this.label59);
+            this.groupBox10.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox10.ForeColor = System.Drawing.Color.White;
+            this.groupBox10.Location = new System.Drawing.Point(6, 299);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(711, 186);
+            this.groupBox10.TabIndex = 23;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "Changer le mot de passe";
+            // 
+            // confirmationNouveauMDP
+            // 
+            this.confirmationNouveauMDP.AutoSize = true;
+            this.confirmationNouveauMDP.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirmationNouveauMDP.ForeColor = System.Drawing.Color.Lime;
+            this.confirmationNouveauMDP.Location = new System.Drawing.Point(26, 528);
+            this.confirmationNouveauMDP.Name = "confirmationNouveauMDP";
+            this.confirmationNouveauMDP.Size = new System.Drawing.Size(0, 18);
+            this.confirmationNouveauMDP.TabIndex = 24;
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label63.ForeColor = System.Drawing.Color.Yellow;
+            this.label63.Location = new System.Drawing.Point(16, 76);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(272, 18);
+            this.label63.TabIndex = 23;
+            this.label63.Text = "- Peut contenir des caractères spéciaux";
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label62.ForeColor = System.Drawing.Color.Yellow;
+            this.label62.Location = new System.Drawing.Point(16, 58);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(342, 18);
+            this.label62.TabIndex = 22;
+            this.label62.Text = "- Au moins 1 chiffre, lettre minuscule et majuscule";
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label61.ForeColor = System.Drawing.Color.Yellow;
+            this.label61.Location = new System.Drawing.Point(16, 40);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(174, 18);
+            this.label61.TabIndex = 21;
+            this.label61.Text = "- Au moins 10 caractères";
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label60.ForeColor = System.Drawing.Color.Yellow;
+            this.label60.Location = new System.Drawing.Point(6, 22);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(382, 18);
+            this.label60.TabIndex = 20;
+            this.label60.Text = "Le mot de passe doit remplir les conditions ci-dessous :";
+            // 
+            // buttonModifierMDP
+            // 
+            this.buttonModifierMDP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.buttonModifierMDP.Font = new System.Drawing.Font("Omega Flight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonModifierMDP.ForeColor = System.Drawing.Color.White;
+            this.buttonModifierMDP.Location = new System.Drawing.Point(600, 118);
+            this.buttonModifierMDP.Name = "buttonModifierMDP";
+            this.buttonModifierMDP.Size = new System.Drawing.Size(105, 58);
+            this.buttonModifierMDP.TabIndex = 19;
+            this.buttonModifierMDP.Text = "Modifier";
+            this.buttonModifierMDP.UseVisualStyleBackColor = false;
+            this.buttonModifierMDP.Click += new System.EventHandler(this.ButtonModifierMDP_Click);
+            // 
+            // inputNouveauMDP
+            // 
+            this.inputNouveauMDP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputNouveauMDP.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputNouveauMDP.ForeColor = System.Drawing.Color.Yellow;
+            this.inputNouveauMDP.Location = new System.Drawing.Point(173, 150);
+            this.inputNouveauMDP.Name = "inputNouveauMDP";
+            this.inputNouveauMDP.Size = new System.Drawing.Size(421, 26);
+            this.inputNouveauMDP.TabIndex = 8;
+            // 
+            // inputAncienMDP
+            // 
+            this.inputAncienMDP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputAncienMDP.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputAncienMDP.ForeColor = System.Drawing.Color.Yellow;
+            this.inputAncienMDP.Location = new System.Drawing.Point(173, 118);
+            this.inputAncienMDP.Name = "inputAncienMDP";
+            this.inputAncienMDP.Size = new System.Drawing.Size(421, 26);
+            this.inputAncienMDP.TabIndex = 7;
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label58.ForeColor = System.Drawing.Color.White;
+            this.label58.Location = new System.Drawing.Point(6, 153);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(161, 18);
+            this.label58.TabIndex = 6;
+            this.label58.Text = "Nouveau mot de passe";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label59.ForeColor = System.Drawing.Color.White;
+            this.label59.Location = new System.Drawing.Point(6, 121);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(147, 18);
+            this.label59.TabIndex = 5;
+            this.label59.Text = "Ancien mot de passe";
+            // 
+            // loginUtilisateurProfil
+            // 
+            this.loginUtilisateurProfil.AutoSize = true;
+            this.loginUtilisateurProfil.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginUtilisateurProfil.ForeColor = System.Drawing.Color.Red;
+            this.loginUtilisateurProfil.Location = new System.Drawing.Point(68, 22);
+            this.loginUtilisateurProfil.Name = "loginUtilisateurProfil";
+            this.loginUtilisateurProfil.Size = new System.Drawing.Size(45, 18);
+            this.loginUtilisateurProfil.TabIndex = 6;
+            this.loginUtilisateurProfil.Text = "Login";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.ForeColor = System.Drawing.Color.White;
+            this.label51.Location = new System.Drawing.Point(6, 22);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(56, 18);
+            this.label51.TabIndex = 5;
+            this.label51.Text = "Login : ";
+            // 
+            // prenomUtilisateurAlert
+            // 
+            this.prenomUtilisateurAlert.AutoSize = true;
+            this.prenomUtilisateurAlert.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.prenomUtilisateurAlert.ForeColor = System.Drawing.Color.Cyan;
+            this.prenomUtilisateurAlert.Location = new System.Drawing.Point(154, 24);
+            this.prenomUtilisateurAlert.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.prenomUtilisateurAlert.Name = "prenomUtilisateurAlert";
+            this.prenomUtilisateurAlert.Size = new System.Drawing.Size(81, 24);
+            this.prenomUtilisateurAlert.TabIndex = 6;
+            this.prenomUtilisateurAlert.Text = "Prénom";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.buttonExit);
+            this.groupBox3.Controls.Add(this.prenomUtilisateurProfil);
+            this.groupBox3.Controls.Add(this.serviceUtilisateurProfil);
+            this.groupBox3.Controls.Add(this.nomUtilisateurProfil);
+            this.groupBox3.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.ForeColor = System.Drawing.Color.White;
+            this.groupBox3.Location = new System.Drawing.Point(6, 61);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(726, 94);
+            this.groupBox3.TabIndex = 21;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Informations";
+            // 
+            // buttonExit
+            // 
+            this.buttonExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.buttonExit.Font = new System.Drawing.Font("Omega Flight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonExit.ForeColor = System.Drawing.Color.White;
+            this.buttonExit.Location = new System.Drawing.Point(558, 34);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(162, 39);
+            this.buttonExit.TabIndex = 23;
+            this.buttonExit.Text = "Déconnexion";
+            this.buttonExit.UseVisualStyleBackColor = false;
+            this.buttonExit.Click += new System.EventHandler(this.ButtonExit_Click);
+            // 
+            // prenomUtilisateurProfil
+            // 
+            this.prenomUtilisateurProfil.AutoSize = true;
+            this.prenomUtilisateurProfil.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.prenomUtilisateurProfil.ForeColor = System.Drawing.Color.Cyan;
+            this.prenomUtilisateurProfil.Location = new System.Drawing.Point(6, 22);
+            this.prenomUtilisateurProfil.Name = "prenomUtilisateurProfil";
+            this.prenomUtilisateurProfil.Size = new System.Drawing.Size(60, 18);
+            this.prenomUtilisateurProfil.TabIndex = 4;
+            this.prenomUtilisateurProfil.Text = "Prénom";
             // 
             // serviceUtilisateurProfil
             // 
             this.serviceUtilisateurProfil.AutoSize = true;
             this.serviceUtilisateurProfil.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.serviceUtilisateurProfil.ForeColor = System.Drawing.Color.Cyan;
-            this.serviceUtilisateurProfil.Location = new System.Drawing.Point(6, 79);
+            this.serviceUtilisateurProfil.ForeColor = System.Drawing.Color.Red;
+            this.serviceUtilisateurProfil.Location = new System.Drawing.Point(6, 67);
             this.serviceUtilisateurProfil.Name = "serviceUtilisateurProfil";
             this.serviceUtilisateurProfil.Size = new System.Drawing.Size(58, 18);
             this.serviceUtilisateurProfil.TabIndex = 19;
@@ -324,41 +625,18 @@ namespace Mediateq_AP_SIO2
             this.nomUtilisateurProfil.AutoSize = true;
             this.nomUtilisateurProfil.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nomUtilisateurProfil.ForeColor = System.Drawing.Color.Cyan;
-            this.nomUtilisateurProfil.Location = new System.Drawing.Point(72, 21);
+            this.nomUtilisateurProfil.Location = new System.Drawing.Point(72, 22);
             this.nomUtilisateurProfil.Name = "nomUtilisateurProfil";
             this.nomUtilisateurProfil.Size = new System.Drawing.Size(40, 18);
             this.nomUtilisateurProfil.TabIndex = 5;
             this.nomUtilisateurProfil.Text = "Nom";
             // 
-            // prenomUtilisateurProfil
-            // 
-            this.prenomUtilisateurProfil.AutoSize = true;
-            this.prenomUtilisateurProfil.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prenomUtilisateurProfil.ForeColor = System.Drawing.Color.Cyan;
-            this.prenomUtilisateurProfil.Location = new System.Drawing.Point(6, 21);
-            this.prenomUtilisateurProfil.Name = "prenomUtilisateurProfil";
-            this.prenomUtilisateurProfil.Size = new System.Drawing.Size(60, 18);
-            this.prenomUtilisateurProfil.TabIndex = 4;
-            this.prenomUtilisateurProfil.Text = "Prénom";
-            // 
-            // prenomUtilisateurAlert
-            // 
-            this.prenomUtilisateurAlert.AutoSize = true;
-            this.prenomUtilisateurAlert.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prenomUtilisateurAlert.ForeColor = System.Drawing.Color.Cyan;
-            this.prenomUtilisateurAlert.Location = new System.Drawing.Point(153, 1);
-            this.prenomUtilisateurAlert.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.prenomUtilisateurAlert.Name = "prenomUtilisateurAlert";
-            this.prenomUtilisateurAlert.Size = new System.Drawing.Size(81, 24);
-            this.prenomUtilisateurAlert.TabIndex = 6;
-            this.prenomUtilisateurAlert.Text = "Prénom";
-            // 
             // label21
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Omega Flight Title", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(9, 4);
-            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label21.Location = new System.Drawing.Point(8, 28);
+            this.label21.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(136, 20);
             this.label21.TabIndex = 5;
@@ -367,98 +645,496 @@ namespace Mediateq_AP_SIO2
             // tabGestionDesUsers
             // 
             this.tabGestionDesUsers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tabGestionDesUsers.Controls.Add(this.dataOfUser);
+            this.tabGestionDesUsers.Controls.Add(this.label42);
+            this.tabGestionDesUsers.Controls.Add(this.groupBox5);
+            this.tabGestionDesUsers.Controls.Add(this.groupBox2);
+            this.tabGestionDesUsers.Controls.Add(this.groupBox1);
             this.tabGestionDesUsers.ForeColor = System.Drawing.Color.White;
             this.tabGestionDesUsers.Location = new System.Drawing.Point(4, 27);
             this.tabGestionDesUsers.Name = "tabGestionDesUsers";
-            this.tabGestionDesUsers.Size = new System.Drawing.Size(974, 598);
+            this.tabGestionDesUsers.Size = new System.Drawing.Size(754, 672);
             this.tabGestionDesUsers.TabIndex = 7;
             this.tabGestionDesUsers.Text = "Gestion des Utilisateurs";
             // 
-            // tabGestionDesDocs
+            // dataOfUser
             // 
-            this.tabGestionDesDocs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tabGestionDesDocs.Controls.Add(this.groupBox4);
-            this.tabGestionDesDocs.Controls.Add(this.tabControl1);
-            this.tabGestionDesDocs.Controls.Add(this.label15);
-            this.tabGestionDesDocs.ForeColor = System.Drawing.Color.White;
-            this.tabGestionDesDocs.Location = new System.Drawing.Point(4, 27);
-            this.tabGestionDesDocs.Name = "tabGestionDesDocs";
-            this.tabGestionDesDocs.Padding = new System.Windows.Forms.Padding(3);
-            this.tabGestionDesDocs.Size = new System.Drawing.Size(974, 598);
-            this.tabGestionDesDocs.TabIndex = 5;
-            this.tabGestionDesDocs.Text = "Gestion des Documents";
+            this.dataOfUser.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.dataOfUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataOfUser.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idUtilisateur,
+            this.prenomUtilisateur,
+            this.nomUtilisateur,
+            this.serviceUtilisateur,
+            this.loginUtilisateur});
+            this.dataOfUser.Location = new System.Drawing.Point(9, 32);
+            this.dataOfUser.Name = "dataOfUser";
+            this.dataOfUser.ReadOnly = true;
+            this.dataOfUser.RowHeadersWidth = 51;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataOfUser.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataOfUser.RowTemplate.Height = 24;
+            this.dataOfUser.Size = new System.Drawing.Size(731, 135);
+            this.dataOfUser.TabIndex = 26;
             // 
-            // groupBox4
+            // idUtilisateur
             // 
-            this.groupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.groupBox4.Controls.Add(this.textAlertEvent);
-            this.groupBox4.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.ForeColor = System.Drawing.Color.White;
-            this.groupBox4.Location = new System.Drawing.Point(11, 547);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(955, 47);
-            this.groupBox4.TabIndex = 23;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "évenements";
+            this.idUtilisateur.HeaderText = "ID";
+            this.idUtilisateur.MinimumWidth = 6;
+            this.idUtilisateur.Name = "idUtilisateur";
+            this.idUtilisateur.ReadOnly = true;
+            this.idUtilisateur.Width = 125;
             // 
-            // textAlertEvent
+            // prenomUtilisateur
             // 
-            this.textAlertEvent.AutoSize = true;
-            this.textAlertEvent.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textAlertEvent.ForeColor = System.Drawing.Color.White;
-            this.textAlertEvent.Location = new System.Drawing.Point(7, 18);
-            this.textAlertEvent.Name = "textAlertEvent";
-            this.textAlertEvent.Size = new System.Drawing.Size(200, 18);
-            this.textAlertEvent.TabIndex = 5;
-            this.textAlertEvent.Text = "Aucun évenement enregistré";
+            this.prenomUtilisateur.HeaderText = "Prénom";
+            this.prenomUtilisateur.MinimumWidth = 6;
+            this.prenomUtilisateur.Name = "prenomUtilisateur";
+            this.prenomUtilisateur.ReadOnly = true;
+            this.prenomUtilisateur.Width = 125;
             // 
-            // tabControl1
+            // nomUtilisateur
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Font = new System.Drawing.Font("Omega Flight Title", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(11, 28);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(955, 513);
-            this.tabControl1.TabIndex = 2;
+            this.nomUtilisateur.HeaderText = "Nom";
+            this.nomUtilisateur.MinimumWidth = 6;
+            this.nomUtilisateur.Name = "nomUtilisateur";
+            this.nomUtilisateur.ReadOnly = true;
+            this.nomUtilisateur.Width = 125;
             // 
-            // tabPage1
+            // serviceUtilisateur
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tabPage1.Controls.Add(this.dataOfLivre);
-            this.tabPage1.Controls.Add(this.groupSuprLivre);
-            this.tabPage1.Controls.Add(this.groupModifierLivre);
-            this.tabPage1.Controls.Add(this.groupCreerLivre);
-            this.tabPage1.ForeColor = System.Drawing.Color.White;
-            this.tabPage1.Location = new System.Drawing.Point(4, 30);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(947, 479);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Livres";
+            this.serviceUtilisateur.HeaderText = "Service";
+            this.serviceUtilisateur.MinimumWidth = 6;
+            this.serviceUtilisateur.Name = "serviceUtilisateur";
+            this.serviceUtilisateur.ReadOnly = true;
+            this.serviceUtilisateur.Width = 125;
+            // 
+            // loginUtilisateur
+            // 
+            this.loginUtilisateur.HeaderText = "Login";
+            this.loginUtilisateur.MinimumWidth = 6;
+            this.loginUtilisateur.Name = "loginUtilisateur";
+            this.loginUtilisateur.ReadOnly = true;
+            this.loginUtilisateur.Width = 125;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Omega Flight Title", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.Location = new System.Drawing.Point(5, 9);
+            this.label42.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(389, 20);
+            this.label42.TabIndex = 25;
+            this.label42.Text = "Gestion des Utilisateurs";
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.groupBox5.Controls.Add(this.button6);
+            this.groupBox5.Controls.Add(this.label2);
+            this.groupBox5.Controls.Add(this.comboBox5);
+            this.groupBox5.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox5.ForeColor = System.Drawing.Color.White;
+            this.groupBox5.Location = new System.Drawing.Point(8, 586);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(738, 77);
+            this.groupBox5.TabIndex = 24;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Supprimer";
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.button6.Font = new System.Drawing.Font("Omega Flight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Location = new System.Drawing.Point(562, 33);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(170, 36);
+            this.button6.TabIndex = 31;
+            this.button6.Text = "Supprimer";
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(6, 18);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(186, 18);
+            this.label2.TabIndex = 30;
+            this.label2.Text = "Séléctionnez un utilisateur.";
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.comboBox5.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox5.ForeColor = System.Drawing.Color.Red;
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Location = new System.Drawing.Point(9, 39);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(534, 26);
+            this.comboBox5.TabIndex = 29;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.button8);
+            this.groupBox2.Controls.Add(this.textBox18);
+            this.groupBox2.Controls.Add(this.label38);
+            this.groupBox2.Controls.Add(this.textBox19);
+            this.groupBox2.Controls.Add(this.label39);
+            this.groupBox2.Controls.Add(this.textBox20);
+            this.groupBox2.Controls.Add(this.label40);
+            this.groupBox2.Controls.Add(this.textBox21);
+            this.groupBox2.Controls.Add(this.label41);
+            this.groupBox2.Controls.Add(this.label37);
+            this.groupBox2.Controls.Add(this.comboBox6);
+            this.groupBox2.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.ForeColor = System.Drawing.Color.White;
+            this.groupBox2.Location = new System.Drawing.Point(8, 369);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(738, 211);
+            this.groupBox2.TabIndex = 23;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Modifier un utilisateur";
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.button8.Font = new System.Drawing.Font("Omega Flight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Location = new System.Drawing.Point(562, 97);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(170, 36);
+            this.button8.TabIndex = 33;
+            this.button8.Text = "Modifier";
+            this.button8.UseVisualStyleBackColor = false;
+            // 
+            // textBox18
+            // 
+            this.textBox18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox18.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox18.ForeColor = System.Drawing.Color.Cyan;
+            this.textBox18.Location = new System.Drawing.Point(109, 107);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(434, 26);
+            this.textBox18.TabIndex = 43;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.ForeColor = System.Drawing.Color.White;
+            this.label38.Location = new System.Drawing.Point(6, 110);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(40, 18);
+            this.label38.TabIndex = 42;
+            this.label38.Text = "Nom";
+            // 
+            // textBox19
+            // 
+            this.textBox19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox19.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox19.ForeColor = System.Drawing.Color.Cyan;
+            this.textBox19.Location = new System.Drawing.Point(109, 75);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(434, 26);
+            this.textBox19.TabIndex = 41;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.ForeColor = System.Drawing.Color.White;
+            this.label39.Location = new System.Drawing.Point(6, 78);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(60, 18);
+            this.label39.TabIndex = 40;
+            this.label39.Text = "Prénom";
+            // 
+            // textBox20
+            // 
+            this.textBox20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox20.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox20.ForeColor = System.Drawing.Color.Cyan;
+            this.textBox20.Location = new System.Drawing.Point(109, 171);
+            this.textBox20.Name = "textBox20";
+            this.textBox20.Size = new System.Drawing.Size(434, 26);
+            this.textBox20.TabIndex = 39;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.ForeColor = System.Drawing.Color.White;
+            this.label40.Location = new System.Drawing.Point(6, 174);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(97, 18);
+            this.label40.TabIndex = 38;
+            this.label40.Text = "Mot de passe";
+            // 
+            // textBox21
+            // 
+            this.textBox21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox21.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox21.ForeColor = System.Drawing.Color.Cyan;
+            this.textBox21.Location = new System.Drawing.Point(109, 139);
+            this.textBox21.Name = "textBox21";
+            this.textBox21.Size = new System.Drawing.Size(434, 26);
+            this.textBox21.TabIndex = 37;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.ForeColor = System.Drawing.Color.White;
+            this.label41.Location = new System.Drawing.Point(5, 142);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(45, 18);
+            this.label41.TabIndex = 35;
+            this.label41.Text = "Login";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.ForeColor = System.Drawing.Color.White;
+            this.label37.Location = new System.Drawing.Point(6, 18);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(186, 18);
+            this.label37.TabIndex = 33;
+            this.label37.Text = "Séléctionnez un utilisateur.";
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.comboBox6.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox6.ForeColor = System.Drawing.Color.Red;
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Location = new System.Drawing.Point(9, 39);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(534, 26);
+            this.comboBox6.TabIndex = 32;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.button7);
+            this.groupBox1.Controls.Add(this.textBox16);
+            this.groupBox1.Controls.Add(this.label35);
+            this.groupBox1.Controls.Add(this.textBox17);
+            this.groupBox1.Controls.Add(this.label36);
+            this.groupBox1.Controls.Add(this.textBox13);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.textBox14);
+            this.groupBox1.Controls.Add(this.textBox15);
+            this.groupBox1.Controls.Add(this.label33);
+            this.groupBox1.Controls.Add(this.label34);
+            this.groupBox1.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.Location = new System.Drawing.Point(8, 173);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(738, 190);
+            this.groupBox1.TabIndex = 22;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Créer un utilisateur";
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.button7.Font = new System.Drawing.Font("Omega Flight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.White;
+            this.button7.Location = new System.Drawing.Point(562, 83);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(170, 36);
+            this.button7.TabIndex = 32;
+            this.button7.Text = "Créer";
+            this.button7.UseVisualStyleBackColor = false;
+            // 
+            // textBox16
+            // 
+            this.textBox16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox16.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox16.ForeColor = System.Drawing.Color.Cyan;
+            this.textBox16.Location = new System.Drawing.Point(109, 89);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(434, 26);
+            this.textBox16.TabIndex = 30;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.ForeColor = System.Drawing.Color.White;
+            this.label35.Location = new System.Drawing.Point(6, 92);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(40, 18);
+            this.label35.TabIndex = 29;
+            this.label35.Text = "Nom";
+            // 
+            // textBox17
+            // 
+            this.textBox17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox17.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox17.ForeColor = System.Drawing.Color.Cyan;
+            this.textBox17.Location = new System.Drawing.Point(109, 57);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(434, 26);
+            this.textBox17.TabIndex = 28;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.Color.White;
+            this.label36.Location = new System.Drawing.Point(6, 60);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(60, 18);
+            this.label36.TabIndex = 27;
+            this.label36.Text = "Prénom";
+            // 
+            // textBox13
+            // 
+            this.textBox13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox13.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox13.ForeColor = System.Drawing.Color.Cyan;
+            this.textBox13.Location = new System.Drawing.Point(109, 153);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(434, 26);
+            this.textBox13.TabIndex = 26;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(6, 156);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(97, 18);
+            this.label3.TabIndex = 25;
+            this.label3.Text = "Mot de passe";
+            // 
+            // textBox14
+            // 
+            this.textBox14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox14.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox14.ForeColor = System.Drawing.Color.Cyan;
+            this.textBox14.Location = new System.Drawing.Point(109, 121);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(434, 26);
+            this.textBox14.TabIndex = 24;
+            // 
+            // textBox15
+            // 
+            this.textBox15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox15.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox15.ForeColor = System.Drawing.Color.Cyan;
+            this.textBox15.Location = new System.Drawing.Point(109, 25);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(434, 26);
+            this.textBox15.TabIndex = 23;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.Color.White;
+            this.label33.Location = new System.Drawing.Point(5, 124);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(45, 18);
+            this.label33.TabIndex = 22;
+            this.label33.Text = "Login";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.ForeColor = System.Drawing.Color.White;
+            this.label34.Location = new System.Drawing.Point(6, 28);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(22, 18);
+            this.label34.TabIndex = 21;
+            this.label34.Text = "ID";
+            // 
+            // tabGestionDesLivres
+            // 
+            this.tabGestionDesLivres.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tabGestionDesLivres.Controls.Add(this.groupBox12);
+            this.tabGestionDesLivres.Controls.Add(this.groupSuprLivre);
+            this.tabGestionDesLivres.Controls.Add(this.label15);
+            this.tabGestionDesLivres.Controls.Add(this.groupModifierLivre);
+            this.tabGestionDesLivres.Controls.Add(this.dataOfLivre);
+            this.tabGestionDesLivres.Controls.Add(this.groupCreerLivre);
+            this.tabGestionDesLivres.ForeColor = System.Drawing.Color.White;
+            this.tabGestionDesLivres.Location = new System.Drawing.Point(4, 27);
+            this.tabGestionDesLivres.Name = "tabGestionDesLivres";
+            this.tabGestionDesLivres.Padding = new System.Windows.Forms.Padding(3);
+            this.tabGestionDesLivres.Size = new System.Drawing.Size(754, 672);
+            this.tabGestionDesLivres.TabIndex = 5;
+            this.tabGestionDesLivres.Text = "Gestion des Livres";
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.groupBox12.Controls.Add(this.textEventLivres);
+            this.groupBox12.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox12.ForeColor = System.Drawing.Color.White;
+            this.groupBox12.Location = new System.Drawing.Point(373, 617);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Size = new System.Drawing.Size(373, 48);
+            this.groupBox12.TabIndex = 7;
+            this.groupBox12.TabStop = false;
+            this.groupBox12.Text = "Évenements";
+            // 
+            // textEventLivres
+            // 
+            this.textEventLivres.AutoSize = true;
+            this.textEventLivres.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textEventLivres.ForeColor = System.Drawing.Color.White;
+            this.textEventLivres.Location = new System.Drawing.Point(6, 18);
+            this.textEventLivres.Name = "textEventLivres";
+            this.textEventLivres.Size = new System.Drawing.Size(130, 18);
+            this.textEventLivres.TabIndex = 4;
+            this.textEventLivres.Text = "Aucun évènement.";
             // 
             // groupSuprLivre
             // 
             this.groupSuprLivre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.groupSuprLivre.Controls.Add(this.buttonDeleteLivre);
             this.groupSuprLivre.Controls.Add(this.label31);
             this.groupSuprLivre.Controls.Add(this.selectLivreForDelete);
-            this.groupSuprLivre.Controls.Add(this.buttonDeleteLivre);
             this.groupSuprLivre.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupSuprLivre.ForeColor = System.Drawing.Color.White;
-            this.groupSuprLivre.Location = new System.Drawing.Point(692, 134);
+            this.groupSuprLivre.Location = new System.Drawing.Point(15, 529);
             this.groupSuprLivre.Name = "groupSuprLivre";
-            this.groupSuprLivre.Size = new System.Drawing.Size(249, 341);
+            this.groupSuprLivre.Size = new System.Drawing.Size(352, 135);
             this.groupSuprLivre.TabIndex = 2;
             this.groupSuprLivre.TabStop = false;
             this.groupSuprLivre.Text = "Supprimer";
+            // 
+            // buttonDeleteLivre
+            // 
+            this.buttonDeleteLivre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.buttonDeleteLivre.Font = new System.Drawing.Font("Omega Flight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDeleteLivre.ForeColor = System.Drawing.Color.White;
+            this.buttonDeleteLivre.Location = new System.Drawing.Point(98, 88);
+            this.buttonDeleteLivre.Name = "buttonDeleteLivre";
+            this.buttonDeleteLivre.Size = new System.Drawing.Size(170, 36);
+            this.buttonDeleteLivre.TabIndex = 31;
+            this.buttonDeleteLivre.Text = "Supprimer";
+            this.buttonDeleteLivre.UseVisualStyleBackColor = false;
+            this.buttonDeleteLivre.Click += new System.EventHandler(this.ButtonDeleteLivre_Click_1);
             // 
             // label31
             // 
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.ForeColor = System.Drawing.Color.White;
-            this.label31.Location = new System.Drawing.Point(6, 21);
+            this.label31.Location = new System.Drawing.Point(6, 18);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(149, 18);
             this.label31.TabIndex = 30;
@@ -470,23 +1146,21 @@ namespace Mediateq_AP_SIO2
             this.selectLivreForDelete.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.selectLivreForDelete.ForeColor = System.Drawing.Color.Red;
             this.selectLivreForDelete.FormattingEnabled = true;
-            this.selectLivreForDelete.Location = new System.Drawing.Point(9, 47);
+            this.selectLivreForDelete.Location = new System.Drawing.Point(9, 39);
             this.selectLivreForDelete.Name = "selectLivreForDelete";
-            this.selectLivreForDelete.Size = new System.Drawing.Size(234, 26);
+            this.selectLivreForDelete.Size = new System.Drawing.Size(334, 26);
             this.selectLivreForDelete.TabIndex = 29;
             // 
-            // buttonDeleteLivre
+            // label15
             // 
-            this.buttonDeleteLivre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.buttonDeleteLivre.Font = new System.Drawing.Font("Omega Flight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDeleteLivre.ForeColor = System.Drawing.Color.White;
-            this.buttonDeleteLivre.Location = new System.Drawing.Point(96, 309);
-            this.buttonDeleteLivre.Name = "buttonDeleteLivre";
-            this.buttonDeleteLivre.Size = new System.Drawing.Size(147, 26);
-            this.buttonDeleteLivre.TabIndex = 28;
-            this.buttonDeleteLivre.Text = "Supprimer";
-            this.buttonDeleteLivre.UseVisualStyleBackColor = false;
-            this.buttonDeleteLivre.Click += new System.EventHandler(this.buttonDeleteLivre_Click);
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Omega Flight Title", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(11, 4);
+            this.label15.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(291, 20);
+            this.label15.TabIndex = 4;
+            this.label15.Text = "Gestion des Livres";
             // 
             // groupModifierLivre
             // 
@@ -510,9 +1184,9 @@ namespace Mediateq_AP_SIO2
             this.groupModifierLivre.Controls.Add(this.buttonEditLivre);
             this.groupModifierLivre.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupModifierLivre.ForeColor = System.Drawing.Color.White;
-            this.groupModifierLivre.Location = new System.Drawing.Point(350, 134);
+            this.groupModifierLivre.Location = new System.Drawing.Point(373, 221);
             this.groupModifierLivre.Name = "groupModifierLivre";
-            this.groupModifierLivre.Size = new System.Drawing.Size(336, 341);
+            this.groupModifierLivre.Size = new System.Drawing.Size(373, 390);
             this.groupModifierLivre.TabIndex = 1;
             this.groupModifierLivre.TabStop = false;
             this.groupModifierLivre.Text = "Modifier";
@@ -522,9 +1196,9 @@ namespace Mediateq_AP_SIO2
             this.inputAuteurLivreForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.inputAuteurLivreForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.inputAuteurLivreForEdit.ForeColor = System.Drawing.Color.Cyan;
-            this.inputAuteurLivreForEdit.Location = new System.Drawing.Point(107, 239);
+            this.inputAuteurLivreForEdit.Location = new System.Drawing.Point(95, 245);
             this.inputAuteurLivreForEdit.Name = "inputAuteurLivreForEdit";
-            this.inputAuteurLivreForEdit.Size = new System.Drawing.Size(223, 26);
+            this.inputAuteurLivreForEdit.Size = new System.Drawing.Size(272, 26);
             this.inputAuteurLivreForEdit.TabIndex = 40;
             // 
             // selectCategorieForEdit
@@ -533,9 +1207,9 @@ namespace Mediateq_AP_SIO2
             this.selectCategorieForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.selectCategorieForEdit.ForeColor = System.Drawing.Color.Cyan;
             this.selectCategorieForEdit.FormattingEnabled = true;
-            this.selectCategorieForEdit.Location = new System.Drawing.Point(107, 177);
+            this.selectCategorieForEdit.Location = new System.Drawing.Point(95, 181);
             this.selectCategorieForEdit.Name = "selectCategorieForEdit";
-            this.selectCategorieForEdit.Size = new System.Drawing.Size(223, 26);
+            this.selectCategorieForEdit.Size = new System.Drawing.Size(272, 26);
             this.selectCategorieForEdit.TabIndex = 39;
             // 
             // label23
@@ -543,7 +1217,7 @@ namespace Mediateq_AP_SIO2
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.Color.White;
-            this.label23.Location = new System.Drawing.Point(9, 180);
+            this.label23.Location = new System.Drawing.Point(7, 184);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(72, 18);
             this.label23.TabIndex = 38;
@@ -554,9 +1228,9 @@ namespace Mediateq_AP_SIO2
             this.inputImageLivreForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.inputImageLivreForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.inputImageLivreForEdit.ForeColor = System.Drawing.Color.Cyan;
-            this.inputImageLivreForEdit.Location = new System.Drawing.Point(107, 147);
+            this.inputImageLivreForEdit.Location = new System.Drawing.Point(95, 147);
             this.inputImageLivreForEdit.Name = "inputImageLivreForEdit";
-            this.inputImageLivreForEdit.Size = new System.Drawing.Size(223, 26);
+            this.inputImageLivreForEdit.Size = new System.Drawing.Size(272, 26);
             this.inputImageLivreForEdit.TabIndex = 37;
             // 
             // label24
@@ -564,7 +1238,7 @@ namespace Mediateq_AP_SIO2
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.White;
-            this.label24.Location = new System.Drawing.Point(9, 150);
+            this.label24.Location = new System.Drawing.Point(6, 150);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(83, 18);
             this.label24.TabIndex = 36;
@@ -575,9 +1249,9 @@ namespace Mediateq_AP_SIO2
             this.inputCollectionLivreForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.inputCollectionLivreForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.inputCollectionLivreForEdit.ForeColor = System.Drawing.Color.Cyan;
-            this.inputCollectionLivreForEdit.Location = new System.Drawing.Point(107, 271);
+            this.inputCollectionLivreForEdit.Location = new System.Drawing.Point(95, 277);
             this.inputCollectionLivreForEdit.Name = "inputCollectionLivreForEdit";
-            this.inputCollectionLivreForEdit.Size = new System.Drawing.Size(223, 26);
+            this.inputCollectionLivreForEdit.Size = new System.Drawing.Size(272, 26);
             this.inputCollectionLivreForEdit.TabIndex = 35;
             // 
             // label25
@@ -585,7 +1259,7 @@ namespace Mediateq_AP_SIO2
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.Color.White;
-            this.label25.Location = new System.Drawing.Point(9, 274);
+            this.label25.Location = new System.Drawing.Point(9, 280);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(73, 18);
             this.label25.TabIndex = 34;
@@ -596,9 +1270,9 @@ namespace Mediateq_AP_SIO2
             this.inputISBNLivreForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.inputISBNLivreForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.inputISBNLivreForEdit.ForeColor = System.Drawing.Color.Cyan;
-            this.inputISBNLivreForEdit.Location = new System.Drawing.Point(107, 209);
+            this.inputISBNLivreForEdit.Location = new System.Drawing.Point(95, 213);
             this.inputISBNLivreForEdit.Name = "inputISBNLivreForEdit";
-            this.inputISBNLivreForEdit.Size = new System.Drawing.Size(223, 26);
+            this.inputISBNLivreForEdit.Size = new System.Drawing.Size(272, 26);
             this.inputISBNLivreForEdit.TabIndex = 33;
             // 
             // label26
@@ -606,7 +1280,7 @@ namespace Mediateq_AP_SIO2
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.White;
-            this.label26.Location = new System.Drawing.Point(9, 212);
+            this.label26.Location = new System.Drawing.Point(9, 216);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(42, 18);
             this.label26.TabIndex = 31;
@@ -617,7 +1291,7 @@ namespace Mediateq_AP_SIO2
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.Color.White;
-            this.label27.Location = new System.Drawing.Point(9, 244);
+            this.label27.Location = new System.Drawing.Point(6, 248);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(53, 18);
             this.label27.TabIndex = 30;
@@ -628,9 +1302,9 @@ namespace Mediateq_AP_SIO2
             this.inputTitreLivreForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.inputTitreLivreForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.inputTitreLivreForEdit.ForeColor = System.Drawing.Color.Cyan;
-            this.inputTitreLivreForEdit.Location = new System.Drawing.Point(107, 117);
+            this.inputTitreLivreForEdit.Location = new System.Drawing.Point(95, 115);
             this.inputTitreLivreForEdit.Name = "inputTitreLivreForEdit";
-            this.inputTitreLivreForEdit.Size = new System.Drawing.Size(223, 26);
+            this.inputTitreLivreForEdit.Size = new System.Drawing.Size(272, 26);
             this.inputTitreLivreForEdit.TabIndex = 29;
             // 
             // inputIDLivreForEdit
@@ -638,10 +1312,10 @@ namespace Mediateq_AP_SIO2
             this.inputIDLivreForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.inputIDLivreForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.inputIDLivreForEdit.ForeColor = System.Drawing.Color.Cyan;
-            this.inputIDLivreForEdit.Location = new System.Drawing.Point(107, 85);
+            this.inputIDLivreForEdit.Location = new System.Drawing.Point(95, 83);
             this.inputIDLivreForEdit.Name = "inputIDLivreForEdit";
             this.inputIDLivreForEdit.ReadOnly = true;
-            this.inputIDLivreForEdit.Size = new System.Drawing.Size(223, 26);
+            this.inputIDLivreForEdit.Size = new System.Drawing.Size(272, 26);
             this.inputIDLivreForEdit.TabIndex = 28;
             // 
             // label28
@@ -649,7 +1323,7 @@ namespace Mediateq_AP_SIO2
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.ForeColor = System.Drawing.Color.White;
-            this.label28.Location = new System.Drawing.Point(9, 119);
+            this.label28.Location = new System.Drawing.Point(6, 118);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(38, 18);
             this.label28.TabIndex = 27;
@@ -660,7 +1334,7 @@ namespace Mediateq_AP_SIO2
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.ForeColor = System.Drawing.Color.White;
-            this.label29.Location = new System.Drawing.Point(9, 88);
+            this.label29.Location = new System.Drawing.Point(6, 86);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(22, 18);
             this.label29.TabIndex = 26;
@@ -671,7 +1345,7 @@ namespace Mediateq_AP_SIO2
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label30.ForeColor = System.Drawing.Color.White;
-            this.label30.Location = new System.Drawing.Point(9, 21);
+            this.label30.Location = new System.Drawing.Point(6, 18);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(149, 18);
             this.label30.TabIndex = 25;
@@ -683,1651 +1357,28 @@ namespace Mediateq_AP_SIO2
             this.selectLivreForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.selectLivreForEdit.ForeColor = System.Drawing.Color.Cyan;
             this.selectLivreForEdit.FormattingEnabled = true;
-            this.selectLivreForEdit.Location = new System.Drawing.Point(12, 47);
+            this.selectLivreForEdit.Location = new System.Drawing.Point(9, 41);
             this.selectLivreForEdit.Name = "selectLivreForEdit";
-            this.selectLivreForEdit.Size = new System.Drawing.Size(318, 26);
+            this.selectLivreForEdit.Size = new System.Drawing.Size(358, 26);
             this.selectLivreForEdit.TabIndex = 24;
-            this.selectLivreForEdit.SelectedIndexChanged += new System.EventHandler(this.selectLivreForEdit_SelectedIndexChanged);
+            this.selectLivreForEdit.SelectedIndexChanged += new System.EventHandler(this.SelectLivreForEdit_SelectedIndexChanged);
             // 
             // buttonEditLivre
             // 
             this.buttonEditLivre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.buttonEditLivre.Font = new System.Drawing.Font("Omega Flight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonEditLivre.ForeColor = System.Drawing.Color.White;
-            this.buttonEditLivre.Location = new System.Drawing.Point(230, 309);
+            this.buttonEditLivre.Location = new System.Drawing.Point(112, 326);
             this.buttonEditLivre.Name = "buttonEditLivre";
-            this.buttonEditLivre.Size = new System.Drawing.Size(100, 26);
+            this.buttonEditLivre.Size = new System.Drawing.Size(158, 37);
             this.buttonEditLivre.TabIndex = 18;
             this.buttonEditLivre.Text = "Modifier";
             this.buttonEditLivre.UseVisualStyleBackColor = false;
-            this.buttonEditLivre.Click += new System.EventHandler(this.buttonEditLivre_Click);
-            // 
-            // groupCreerLivre
-            // 
-            this.groupCreerLivre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.groupCreerLivre.Controls.Add(this.inputAuteurLivre);
-            this.groupCreerLivre.Controls.Add(this.label14);
-            this.groupCreerLivre.Controls.Add(this.selectCategorieLivreForCreate);
-            this.groupCreerLivre.Controls.Add(this.label18);
-            this.groupCreerLivre.Controls.Add(this.inputImageLivre);
-            this.groupCreerLivre.Controls.Add(this.label19);
-            this.groupCreerLivre.Controls.Add(this.buttonCreerLivre);
-            this.groupCreerLivre.Controls.Add(this.inputCollectionLivre);
-            this.groupCreerLivre.Controls.Add(this.label22);
-            this.groupCreerLivre.Controls.Add(this.inputISBNLivre);
-            this.groupCreerLivre.Controls.Add(this.label20);
-            this.groupCreerLivre.Controls.Add(this.inputTitreLivre);
-            this.groupCreerLivre.Controls.Add(this.inputIDLivre);
-            this.groupCreerLivre.Controls.Add(this.label16);
-            this.groupCreerLivre.Controls.Add(this.label17);
-            this.groupCreerLivre.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupCreerLivre.ForeColor = System.Drawing.Color.White;
-            this.groupCreerLivre.Location = new System.Drawing.Point(6, 134);
-            this.groupCreerLivre.Name = "groupCreerLivre";
-            this.groupCreerLivre.Size = new System.Drawing.Size(338, 341);
-            this.groupCreerLivre.TabIndex = 0;
-            this.groupCreerLivre.TabStop = false;
-            this.groupCreerLivre.Text = "Créer";
-            // 
-            // inputAuteurLivre
-            // 
-            this.inputAuteurLivre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputAuteurLivre.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputAuteurLivre.ForeColor = System.Drawing.Color.Cyan;
-            this.inputAuteurLivre.Location = new System.Drawing.Point(109, 174);
-            this.inputAuteurLivre.Name = "inputAuteurLivre";
-            this.inputAuteurLivre.Size = new System.Drawing.Size(223, 26);
-            this.inputAuteurLivre.TabIndex = 24;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(6, 179);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(53, 18);
-            this.label14.TabIndex = 23;
-            this.label14.Text = "Auteur";
-            // 
-            // selectCategorieLivreForCreate
-            // 
-            this.selectCategorieLivreForCreate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.selectCategorieLivreForCreate.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectCategorieLivreForCreate.ForeColor = System.Drawing.Color.Cyan;
-            this.selectCategorieLivreForCreate.FormattingEnabled = true;
-            this.selectCategorieLivreForCreate.Location = new System.Drawing.Point(109, 111);
-            this.selectCategorieLivreForCreate.Name = "selectCategorieLivreForCreate";
-            this.selectCategorieLivreForCreate.Size = new System.Drawing.Size(223, 26);
-            this.selectCategorieLivreForCreate.TabIndex = 22;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(6, 114);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(72, 18);
-            this.label18.TabIndex = 21;
-            this.label18.Text = "Catégorie";
-            // 
-            // inputImageLivre
-            // 
-            this.inputImageLivre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputImageLivre.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputImageLivre.ForeColor = System.Drawing.Color.Cyan;
-            this.inputImageLivre.Location = new System.Drawing.Point(109, 80);
-            this.inputImageLivre.Name = "inputImageLivre";
-            this.inputImageLivre.Size = new System.Drawing.Size(223, 26);
-            this.inputImageLivre.TabIndex = 20;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(6, 83);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(83, 18);
-            this.label19.TabIndex = 19;
-            this.label19.Text = "Path Image";
-            // 
-            // buttonCreerLivre
-            // 
-            this.buttonCreerLivre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.buttonCreerLivre.Font = new System.Drawing.Font("Omega Flight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCreerLivre.ForeColor = System.Drawing.Color.White;
-            this.buttonCreerLivre.Location = new System.Drawing.Point(232, 309);
-            this.buttonCreerLivre.Name = "buttonCreerLivre";
-            this.buttonCreerLivre.Size = new System.Drawing.Size(100, 26);
-            this.buttonCreerLivre.TabIndex = 18;
-            this.buttonCreerLivre.Text = "Créer";
-            this.buttonCreerLivre.UseVisualStyleBackColor = false;
-            this.buttonCreerLivre.Click += new System.EventHandler(this.buttonCreerLivre_Click);
-            // 
-            // inputCollectionLivre
-            // 
-            this.inputCollectionLivre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputCollectionLivre.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputCollectionLivre.ForeColor = System.Drawing.Color.Cyan;
-            this.inputCollectionLivre.Location = new System.Drawing.Point(109, 206);
-            this.inputCollectionLivre.Name = "inputCollectionLivre";
-            this.inputCollectionLivre.Size = new System.Drawing.Size(223, 26);
-            this.inputCollectionLivre.TabIndex = 13;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(6, 209);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(73, 18);
-            this.label22.TabIndex = 12;
-            this.label22.Text = "Collection";
-            // 
-            // inputISBNLivre
-            // 
-            this.inputISBNLivre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputISBNLivre.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputISBNLivre.ForeColor = System.Drawing.Color.Cyan;
-            this.inputISBNLivre.Location = new System.Drawing.Point(109, 144);
-            this.inputISBNLivre.Name = "inputISBNLivre";
-            this.inputISBNLivre.Size = new System.Drawing.Size(223, 26);
-            this.inputISBNLivre.TabIndex = 11;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(6, 147);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(42, 18);
-            this.label20.TabIndex = 9;
-            this.label20.Text = "ISBN";
-            // 
-            // inputTitreLivre
-            // 
-            this.inputTitreLivre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputTitreLivre.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputTitreLivre.ForeColor = System.Drawing.Color.Cyan;
-            this.inputTitreLivre.Location = new System.Drawing.Point(109, 50);
-            this.inputTitreLivre.Name = "inputTitreLivre";
-            this.inputTitreLivre.Size = new System.Drawing.Size(223, 26);
-            this.inputTitreLivre.TabIndex = 7;
-            // 
-            // inputIDLivre
-            // 
-            this.inputIDLivre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputIDLivre.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputIDLivre.ForeColor = System.Drawing.Color.Cyan;
-            this.inputIDLivre.Location = new System.Drawing.Point(109, 18);
-            this.inputIDLivre.Name = "inputIDLivre";
-            this.inputIDLivre.Size = new System.Drawing.Size(223, 26);
-            this.inputIDLivre.TabIndex = 6;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(6, 52);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(38, 18);
-            this.label16.TabIndex = 5;
-            this.label16.Text = "Titre";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(6, 21);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(22, 18);
-            this.label17.TabIndex = 4;
-            this.label17.Text = "ID";
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tabPage2.Controls.Add(this.dataOfDvd);
-            this.tabPage2.Controls.Add(this.groupBox7);
-            this.tabPage2.Controls.Add(this.groupBox6);
-            this.tabPage2.Controls.Add(this.groupBox5);
-            this.tabPage2.Location = new System.Drawing.Point(4, 30);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(947, 479);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "DVD";
-            // 
-            // dataOfDvd
-            // 
-            this.dataOfDvd.AllowUserToAddRows = false;
-            this.dataOfDvd.AllowUserToDeleteRows = false;
-            this.dataOfDvd.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.dataOfDvd.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataOfDvd.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.dataOfDvd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataOfDvd.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7});
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataOfDvd.DefaultCellStyle = dataGridViewCellStyle13;
-            this.dataOfDvd.Location = new System.Drawing.Point(6, 6);
-            this.dataOfDvd.Name = "dataOfDvd";
-            this.dataOfDvd.ReadOnly = true;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataOfDvd.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
-            this.dataOfDvd.RowHeadersWidth = 51;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataOfDvd.RowsDefaultCellStyle = dataGridViewCellStyle15;
-            this.dataOfDvd.RowTemplate.Height = 24;
-            this.dataOfDvd.Size = new System.Drawing.Size(929, 122);
-            this.dataOfDvd.TabIndex = 4;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Aqua;
-            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle6;
-            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Aqua;
-            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle7;
-            this.dataGridViewTextBoxColumn2.HeaderText = "Titre";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Aqua;
-            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle8;
-            this.dataGridViewTextBoxColumn3.HeaderText = "Image";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Aqua;
-            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle9;
-            this.dataGridViewTextBoxColumn4.HeaderText = "Categorie";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Aqua;
-            this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle10;
-            this.dataGridViewTextBoxColumn5.HeaderText = "Synopsis";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Aqua;
-            this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle11;
-            this.dataGridViewTextBoxColumn6.HeaderText = "Réalisateur";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            this.dataGridViewTextBoxColumn6.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Aqua;
-            this.dataGridViewTextBoxColumn7.DefaultCellStyle = dataGridViewCellStyle12;
-            this.dataGridViewTextBoxColumn7.HeaderText = "Durée";
-            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            this.dataGridViewTextBoxColumn7.Width = 125;
-            // 
-            // groupBox7
-            // 
-            this.groupBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.groupBox7.Controls.Add(this.label46);
-            this.groupBox7.Controls.Add(this.selectDvdForDelete);
-            this.groupBox7.Controls.Add(this.buttonDeleteDvd);
-            this.groupBox7.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox7.ForeColor = System.Drawing.Color.White;
-            this.groupBox7.Location = new System.Drawing.Point(692, 134);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(249, 342);
-            this.groupBox7.TabIndex = 3;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Supprimer";
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.ForeColor = System.Drawing.Color.White;
-            this.label46.Location = new System.Drawing.Point(6, 21);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(143, 18);
-            this.label46.TabIndex = 30;
-            this.label46.Text = "Séléctionnez un dvd.";
-            // 
-            // selectDvdForDelete
-            // 
-            this.selectDvdForDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.selectDvdForDelete.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectDvdForDelete.ForeColor = System.Drawing.Color.Red;
-            this.selectDvdForDelete.FormattingEnabled = true;
-            this.selectDvdForDelete.Location = new System.Drawing.Point(9, 47);
-            this.selectDvdForDelete.Name = "selectDvdForDelete";
-            this.selectDvdForDelete.Size = new System.Drawing.Size(234, 26);
-            this.selectDvdForDelete.TabIndex = 29;
-            // 
-            // buttonDeleteDvd
-            // 
-            this.buttonDeleteDvd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.buttonDeleteDvd.Font = new System.Drawing.Font("Omega Flight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDeleteDvd.ForeColor = System.Drawing.Color.White;
-            this.buttonDeleteDvd.Location = new System.Drawing.Point(96, 309);
-            this.buttonDeleteDvd.Name = "buttonDeleteDvd";
-            this.buttonDeleteDvd.Size = new System.Drawing.Size(147, 26);
-            this.buttonDeleteDvd.TabIndex = 28;
-            this.buttonDeleteDvd.Text = "Supprimer";
-            this.buttonDeleteDvd.UseVisualStyleBackColor = false;
-            this.buttonDeleteDvd.Click += new System.EventHandler(this.buttonDeleteDvd_Click);
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.groupBox6.Controls.Add(this.selectCategorieDvdForEdit);
-            this.groupBox6.Controls.Add(this.label35);
-            this.groupBox6.Controls.Add(this.inputRealisateurDvdForEdit);
-            this.groupBox6.Controls.Add(this.label39);
-            this.groupBox6.Controls.Add(this.inputSynopsisDvdForEdit);
-            this.groupBox6.Controls.Add(this.label40);
-            this.groupBox6.Controls.Add(this.inputImageDvdForEdit);
-            this.groupBox6.Controls.Add(this.label41);
-            this.groupBox6.Controls.Add(this.label42);
-            this.groupBox6.Controls.Add(this.inputTitreDvdForEdit);
-            this.groupBox6.Controls.Add(this.inputIdDvdForEdit);
-            this.groupBox6.Controls.Add(this.label43);
-            this.groupBox6.Controls.Add(this.label44);
-            this.groupBox6.Controls.Add(this.inputDureeDvdForEdit);
-            this.groupBox6.Controls.Add(this.label45);
-            this.groupBox6.Controls.Add(this.selectDvdForEdit);
-            this.groupBox6.Controls.Add(this.buttonEditDvd);
-            this.groupBox6.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox6.ForeColor = System.Drawing.Color.White;
-            this.groupBox6.Location = new System.Drawing.Point(350, 134);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(336, 342);
-            this.groupBox6.TabIndex = 2;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Modifier";
-            // 
-            // selectCategorieDvdForEdit
-            // 
-            this.selectCategorieDvdForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.selectCategorieDvdForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectCategorieDvdForEdit.ForeColor = System.Drawing.Color.Cyan;
-            this.selectCategorieDvdForEdit.FormattingEnabled = true;
-            this.selectCategorieDvdForEdit.Location = new System.Drawing.Point(107, 174);
-            this.selectCategorieDvdForEdit.Name = "selectCategorieDvdForEdit";
-            this.selectCategorieDvdForEdit.Size = new System.Drawing.Size(223, 26);
-            this.selectCategorieDvdForEdit.TabIndex = 39;
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.ForeColor = System.Drawing.Color.White;
-            this.label35.Location = new System.Drawing.Point(9, 177);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(72, 18);
-            this.label35.TabIndex = 38;
-            this.label35.Text = "Catégorie";
-            // 
-            // inputRealisateurDvdForEdit
-            // 
-            this.inputRealisateurDvdForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputRealisateurDvdForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputRealisateurDvdForEdit.ForeColor = System.Drawing.Color.Cyan;
-            this.inputRealisateurDvdForEdit.Location = new System.Drawing.Point(107, 237);
-            this.inputRealisateurDvdForEdit.Name = "inputRealisateurDvdForEdit";
-            this.inputRealisateurDvdForEdit.Size = new System.Drawing.Size(223, 26);
-            this.inputRealisateurDvdForEdit.TabIndex = 37;
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.ForeColor = System.Drawing.Color.White;
-            this.label39.Location = new System.Drawing.Point(9, 240);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(85, 18);
-            this.label39.TabIndex = 36;
-            this.label39.Text = "Réalisateur";
-            // 
-            // inputSynopsisDvdForEdit
-            // 
-            this.inputSynopsisDvdForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputSynopsisDvdForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputSynopsisDvdForEdit.ForeColor = System.Drawing.Color.Cyan;
-            this.inputSynopsisDvdForEdit.Location = new System.Drawing.Point(107, 205);
-            this.inputSynopsisDvdForEdit.Name = "inputSynopsisDvdForEdit";
-            this.inputSynopsisDvdForEdit.Size = new System.Drawing.Size(223, 26);
-            this.inputSynopsisDvdForEdit.TabIndex = 35;
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.ForeColor = System.Drawing.Color.White;
-            this.label40.Location = new System.Drawing.Point(9, 208);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(68, 18);
-            this.label40.TabIndex = 34;
-            this.label40.Text = "Synopsis";
-            // 
-            // inputImageDvdForEdit
-            // 
-            this.inputImageDvdForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputImageDvdForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputImageDvdForEdit.ForeColor = System.Drawing.Color.Cyan;
-            this.inputImageDvdForEdit.Location = new System.Drawing.Point(107, 145);
-            this.inputImageDvdForEdit.Name = "inputImageDvdForEdit";
-            this.inputImageDvdForEdit.Size = new System.Drawing.Size(223, 26);
-            this.inputImageDvdForEdit.TabIndex = 32;
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.ForeColor = System.Drawing.Color.White;
-            this.label41.Location = new System.Drawing.Point(9, 269);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(48, 18);
-            this.label41.TabIndex = 31;
-            this.label41.Text = "Durée";
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.ForeColor = System.Drawing.Color.White;
-            this.label42.Location = new System.Drawing.Point(9, 148);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(83, 18);
-            this.label42.TabIndex = 30;
-            this.label42.Text = "Path Image";
-            // 
-            // inputTitreDvdForEdit
-            // 
-            this.inputTitreDvdForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputTitreDvdForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputTitreDvdForEdit.ForeColor = System.Drawing.Color.Cyan;
-            this.inputTitreDvdForEdit.Location = new System.Drawing.Point(107, 113);
-            this.inputTitreDvdForEdit.Name = "inputTitreDvdForEdit";
-            this.inputTitreDvdForEdit.Size = new System.Drawing.Size(223, 26);
-            this.inputTitreDvdForEdit.TabIndex = 29;
-            // 
-            // inputIdDvdForEdit
-            // 
-            this.inputIdDvdForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputIdDvdForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputIdDvdForEdit.ForeColor = System.Drawing.Color.Cyan;
-            this.inputIdDvdForEdit.Location = new System.Drawing.Point(107, 81);
-            this.inputIdDvdForEdit.Name = "inputIdDvdForEdit";
-            this.inputIdDvdForEdit.ReadOnly = true;
-            this.inputIdDvdForEdit.Size = new System.Drawing.Size(223, 26);
-            this.inputIdDvdForEdit.TabIndex = 28;
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.ForeColor = System.Drawing.Color.White;
-            this.label43.Location = new System.Drawing.Point(9, 115);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(38, 18);
-            this.label43.TabIndex = 27;
-            this.label43.Text = "Titre";
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.ForeColor = System.Drawing.Color.White;
-            this.label44.Location = new System.Drawing.Point(9, 84);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(22, 18);
-            this.label44.TabIndex = 26;
-            this.label44.Text = "ID";
-            // 
-            // inputDureeDvdForEdit
-            // 
-            this.inputDureeDvdForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputDureeDvdForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputDureeDvdForEdit.ForeColor = System.Drawing.Color.Cyan;
-            this.inputDureeDvdForEdit.Location = new System.Drawing.Point(107, 266);
-            this.inputDureeDvdForEdit.Name = "inputDureeDvdForEdit";
-            this.inputDureeDvdForEdit.Size = new System.Drawing.Size(223, 26);
-            this.inputDureeDvdForEdit.TabIndex = 33;
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.ForeColor = System.Drawing.Color.White;
-            this.label45.Location = new System.Drawing.Point(9, 21);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(143, 18);
-            this.label45.TabIndex = 25;
-            this.label45.Text = "Séléctionnez un dvd.";
-            // 
-            // selectDvdForEdit
-            // 
-            this.selectDvdForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.selectDvdForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectDvdForEdit.ForeColor = System.Drawing.Color.Cyan;
-            this.selectDvdForEdit.FormattingEnabled = true;
-            this.selectDvdForEdit.Location = new System.Drawing.Point(12, 47);
-            this.selectDvdForEdit.Name = "selectDvdForEdit";
-            this.selectDvdForEdit.Size = new System.Drawing.Size(318, 26);
-            this.selectDvdForEdit.TabIndex = 24;
-            this.selectDvdForEdit.SelectedIndexChanged += new System.EventHandler(this.selectDvdForEdit_SelectedIndexChanged);
-            // 
-            // buttonEditDvd
-            // 
-            this.buttonEditDvd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.buttonEditDvd.Font = new System.Drawing.Font("Omega Flight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEditDvd.ForeColor = System.Drawing.Color.White;
-            this.buttonEditDvd.Location = new System.Drawing.Point(230, 310);
-            this.buttonEditDvd.Name = "buttonEditDvd";
-            this.buttonEditDvd.Size = new System.Drawing.Size(100, 26);
-            this.buttonEditDvd.TabIndex = 18;
-            this.buttonEditDvd.Text = "Modifier";
-            this.buttonEditDvd.UseVisualStyleBackColor = false;
-            this.buttonEditDvd.Click += new System.EventHandler(this.buttonEditDvd_Click);
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.groupBox5.Controls.Add(this.selectCategorieDvdForCreate);
-            this.groupBox5.Controls.Add(this.label32);
-            this.groupBox5.Controls.Add(this.inputRealisateurDvd);
-            this.groupBox5.Controls.Add(this.label33);
-            this.groupBox5.Controls.Add(this.buttonCreerDvd);
-            this.groupBox5.Controls.Add(this.inputSynopsisDvd);
-            this.groupBox5.Controls.Add(this.label34);
-            this.groupBox5.Controls.Add(this.inputImageDvd);
-            this.groupBox5.Controls.Add(this.Durée);
-            this.groupBox5.Controls.Add(this.label36);
-            this.groupBox5.Controls.Add(this.inputTitreDvd);
-            this.groupBox5.Controls.Add(this.inputIdDvd);
-            this.groupBox5.Controls.Add(this.label37);
-            this.groupBox5.Controls.Add(this.label38);
-            this.groupBox5.Controls.Add(this.inputDureeDvd);
-            this.groupBox5.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.ForeColor = System.Drawing.Color.White;
-            this.groupBox5.Location = new System.Drawing.Point(6, 134);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(338, 341);
-            this.groupBox5.TabIndex = 1;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Créer";
-            // 
-            // selectCategorieDvdForCreate
-            // 
-            this.selectCategorieDvdForCreate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.selectCategorieDvdForCreate.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectCategorieDvdForCreate.ForeColor = System.Drawing.Color.Cyan;
-            this.selectCategorieDvdForCreate.FormattingEnabled = true;
-            this.selectCategorieDvdForCreate.Location = new System.Drawing.Point(109, 111);
-            this.selectCategorieDvdForCreate.Name = "selectCategorieDvdForCreate";
-            this.selectCategorieDvdForCreate.Size = new System.Drawing.Size(223, 26);
-            this.selectCategorieDvdForCreate.TabIndex = 22;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.ForeColor = System.Drawing.Color.White;
-            this.label32.Location = new System.Drawing.Point(6, 114);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(72, 18);
-            this.label32.TabIndex = 21;
-            this.label32.Text = "Catégorie";
-            // 
-            // inputRealisateurDvd
-            // 
-            this.inputRealisateurDvd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputRealisateurDvd.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputRealisateurDvd.ForeColor = System.Drawing.Color.Cyan;
-            this.inputRealisateurDvd.Location = new System.Drawing.Point(109, 174);
-            this.inputRealisateurDvd.Name = "inputRealisateurDvd";
-            this.inputRealisateurDvd.Size = new System.Drawing.Size(223, 26);
-            this.inputRealisateurDvd.TabIndex = 20;
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.ForeColor = System.Drawing.Color.White;
-            this.label33.Location = new System.Drawing.Point(6, 177);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(85, 18);
-            this.label33.TabIndex = 19;
-            this.label33.Text = "Réalisateur";
-            // 
-            // buttonCreerDvd
-            // 
-            this.buttonCreerDvd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.buttonCreerDvd.Font = new System.Drawing.Font("Omega Flight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCreerDvd.ForeColor = System.Drawing.Color.White;
-            this.buttonCreerDvd.Location = new System.Drawing.Point(232, 309);
-            this.buttonCreerDvd.Name = "buttonCreerDvd";
-            this.buttonCreerDvd.Size = new System.Drawing.Size(100, 26);
-            this.buttonCreerDvd.TabIndex = 18;
-            this.buttonCreerDvd.Text = "Créer";
-            this.buttonCreerDvd.UseVisualStyleBackColor = false;
-            this.buttonCreerDvd.Click += new System.EventHandler(this.buttonCreerDvd_Click);
-            // 
-            // inputSynopsisDvd
-            // 
-            this.inputSynopsisDvd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputSynopsisDvd.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputSynopsisDvd.ForeColor = System.Drawing.Color.Cyan;
-            this.inputSynopsisDvd.Location = new System.Drawing.Point(109, 142);
-            this.inputSynopsisDvd.Name = "inputSynopsisDvd";
-            this.inputSynopsisDvd.Size = new System.Drawing.Size(223, 26);
-            this.inputSynopsisDvd.TabIndex = 13;
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.ForeColor = System.Drawing.Color.White;
-            this.label34.Location = new System.Drawing.Point(6, 145);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(68, 18);
-            this.label34.TabIndex = 12;
-            this.label34.Text = "Synopsis";
-            // 
-            // inputImageDvd
-            // 
-            this.inputImageDvd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputImageDvd.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputImageDvd.ForeColor = System.Drawing.Color.Cyan;
-            this.inputImageDvd.Location = new System.Drawing.Point(109, 82);
-            this.inputImageDvd.Name = "inputImageDvd";
-            this.inputImageDvd.Size = new System.Drawing.Size(223, 26);
-            this.inputImageDvd.TabIndex = 10;
-            // 
-            // Durée
-            // 
-            this.Durée.AutoSize = true;
-            this.Durée.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Durée.ForeColor = System.Drawing.Color.White;
-            this.Durée.Location = new System.Drawing.Point(6, 206);
-            this.Durée.Name = "Durée";
-            this.Durée.Size = new System.Drawing.Size(48, 18);
-            this.Durée.TabIndex = 9;
-            this.Durée.Text = "Durée";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.ForeColor = System.Drawing.Color.White;
-            this.label36.Location = new System.Drawing.Point(6, 85);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(83, 18);
-            this.label36.TabIndex = 8;
-            this.label36.Text = "Path Image";
-            // 
-            // inputTitreDvd
-            // 
-            this.inputTitreDvd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputTitreDvd.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputTitreDvd.ForeColor = System.Drawing.Color.Cyan;
-            this.inputTitreDvd.Location = new System.Drawing.Point(109, 50);
-            this.inputTitreDvd.Name = "inputTitreDvd";
-            this.inputTitreDvd.Size = new System.Drawing.Size(223, 26);
-            this.inputTitreDvd.TabIndex = 7;
-            // 
-            // inputIdDvd
-            // 
-            this.inputIdDvd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputIdDvd.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputIdDvd.ForeColor = System.Drawing.Color.Cyan;
-            this.inputIdDvd.Location = new System.Drawing.Point(109, 18);
-            this.inputIdDvd.Name = "inputIdDvd";
-            this.inputIdDvd.Size = new System.Drawing.Size(223, 26);
-            this.inputIdDvd.TabIndex = 6;
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.ForeColor = System.Drawing.Color.White;
-            this.label37.Location = new System.Drawing.Point(6, 52);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(38, 18);
-            this.label37.TabIndex = 5;
-            this.label37.Text = "Titre";
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.ForeColor = System.Drawing.Color.White;
-            this.label38.Location = new System.Drawing.Point(6, 21);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(22, 18);
-            this.label38.TabIndex = 4;
-            this.label38.Text = "ID";
-            // 
-            // inputDureeDvd
-            // 
-            this.inputDureeDvd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputDureeDvd.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputDureeDvd.ForeColor = System.Drawing.Color.Cyan;
-            this.inputDureeDvd.Location = new System.Drawing.Point(109, 203);
-            this.inputDureeDvd.Name = "inputDureeDvd";
-            this.inputDureeDvd.Size = new System.Drawing.Size(223, 26);
-            this.inputDureeDvd.TabIndex = 11;
-            this.inputDureeDvd.Text = "0";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Omega Flight Title", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(7, 3);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(363, 20);
-            this.label15.TabIndex = 4;
-            this.label15.Text = "Gestion des Documents";
-            // 
-            // tabGestionDesCommandes
-            // 
-            this.tabGestionDesCommandes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tabGestionDesCommandes.Controls.Add(this.groupBox2);
-            this.tabGestionDesCommandes.Controls.Add(this.groupBox1);
-            this.tabGestionDesCommandes.Controls.Add(this.dataOfCommande);
-            this.tabGestionDesCommandes.Controls.Add(this.label47);
-            this.tabGestionDesCommandes.ForeColor = System.Drawing.Color.White;
-            this.tabGestionDesCommandes.Location = new System.Drawing.Point(4, 27);
-            this.tabGestionDesCommandes.Name = "tabGestionDesCommandes";
-            this.tabGestionDesCommandes.Padding = new System.Windows.Forms.Padding(3);
-            this.tabGestionDesCommandes.Size = new System.Drawing.Size(974, 598);
-            this.tabGestionDesCommandes.TabIndex = 8;
-            this.tabGestionDesCommandes.Text = "Gestion des Commandes";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.groupBox2.Controls.Add(this.selectNouveauEtatCommande);
-            this.groupBox2.Controls.Add(this.label50);
-            this.groupBox2.Controls.Add(this.selectCommandeForEtat);
-            this.groupBox2.Controls.Add(this.label48);
-            this.groupBox2.Controls.Add(this.buttonModifierEtatCommande);
-            this.groupBox2.Controls.Add(this.inputEtatActuelCommande);
-            this.groupBox2.Controls.Add(this.label56);
-            this.groupBox2.Controls.Add(this.label57);
-            this.groupBox2.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(490, 399);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(476, 191);
-            this.groupBox2.TabIndex = 8;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Modifier l\'état";
-            // 
-            // selectNouveauEtatCommande
-            // 
-            this.selectNouveauEtatCommande.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.selectNouveauEtatCommande.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectNouveauEtatCommande.ForeColor = System.Drawing.Color.Cyan;
-            this.selectNouveauEtatCommande.FormattingEnabled = true;
-            this.selectNouveauEtatCommande.Location = new System.Drawing.Point(118, 114);
-            this.selectNouveauEtatCommande.Name = "selectNouveauEtatCommande";
-            this.selectNouveauEtatCommande.Size = new System.Drawing.Size(352, 26);
-            this.selectNouveauEtatCommande.TabIndex = 24;
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.ForeColor = System.Drawing.Color.White;
-            this.label50.Location = new System.Drawing.Point(6, 117);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(86, 18);
-            this.label50.TabIndex = 23;
-            this.label50.Text = "Nouvel État";
-            // 
-            // selectCommandeForEtat
-            // 
-            this.selectCommandeForEtat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.selectCommandeForEtat.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectCommandeForEtat.ForeColor = System.Drawing.Color.Cyan;
-            this.selectCommandeForEtat.FormattingEnabled = true;
-            this.selectCommandeForEtat.Location = new System.Drawing.Point(118, 18);
-            this.selectCommandeForEtat.Name = "selectCommandeForEtat";
-            this.selectCommandeForEtat.Size = new System.Drawing.Size(352, 26);
-            this.selectCommandeForEtat.TabIndex = 22;
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.ForeColor = System.Drawing.Color.White;
-            this.label48.Location = new System.Drawing.Point(6, 21);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(83, 18);
-            this.label48.TabIndex = 21;
-            this.label48.Text = "Commande";
-            // 
-            // buttonModifierEtatCommande
-            // 
-            this.buttonModifierEtatCommande.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.buttonModifierEtatCommande.Font = new System.Drawing.Font("Omega Flight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonModifierEtatCommande.ForeColor = System.Drawing.Color.White;
-            this.buttonModifierEtatCommande.Location = new System.Drawing.Point(299, 159);
-            this.buttonModifierEtatCommande.Name = "buttonModifierEtatCommande";
-            this.buttonModifierEtatCommande.Size = new System.Drawing.Size(171, 26);
-            this.buttonModifierEtatCommande.TabIndex = 18;
-            this.buttonModifierEtatCommande.Text = "Modifier l\'état";
-            this.buttonModifierEtatCommande.UseVisualStyleBackColor = false;
-            // 
-            // inputEtatActuelCommande
-            // 
-            this.inputEtatActuelCommande.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputEtatActuelCommande.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputEtatActuelCommande.ForeColor = System.Drawing.Color.Cyan;
-            this.inputEtatActuelCommande.Location = new System.Drawing.Point(118, 67);
-            this.inputEtatActuelCommande.Name = "inputEtatActuelCommande";
-            this.inputEtatActuelCommande.Size = new System.Drawing.Size(352, 26);
-            this.inputEtatActuelCommande.TabIndex = 11;
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label56.ForeColor = System.Drawing.Color.White;
-            this.label56.Location = new System.Drawing.Point(6, 70);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(81, 18);
-            this.label56.TabIndex = 9;
-            this.label56.Text = "État Actuel";
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label57.ForeColor = System.Drawing.Color.White;
-            this.label57.Location = new System.Drawing.Point(6, 52);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(0, 18);
-            this.label57.TabIndex = 5;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.groupBox1.Controls.Add(this.selectDocumentForCommande);
-            this.groupBox1.Controls.Add(this.label49);
-            this.groupBox1.Controls.Add(this.buttonCreerCommande);
-            this.groupBox1.Controls.Add(this.inputMontantCommande);
-            this.groupBox1.Controls.Add(this.label52);
-            this.groupBox1.Controls.Add(this.inputExemplairesCommande);
-            this.groupBox1.Controls.Add(this.label53);
-            this.groupBox1.Controls.Add(this.inputIDCommande);
-            this.groupBox1.Controls.Add(this.label54);
-            this.groupBox1.Controls.Add(this.label55);
-            this.groupBox1.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(8, 399);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(476, 191);
-            this.groupBox1.TabIndex = 7;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Créer";
-            // 
-            // selectDocumentForCommande
-            // 
-            this.selectDocumentForCommande.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.selectDocumentForCommande.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectDocumentForCommande.ForeColor = System.Drawing.Color.Cyan;
-            this.selectDocumentForCommande.FormattingEnabled = true;
-            this.selectDocumentForCommande.Location = new System.Drawing.Point(118, 50);
-            this.selectDocumentForCommande.Name = "selectDocumentForCommande";
-            this.selectDocumentForCommande.Size = new System.Drawing.Size(352, 26);
-            this.selectDocumentForCommande.TabIndex = 22;
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.ForeColor = System.Drawing.Color.White;
-            this.label49.Location = new System.Drawing.Point(6, 53);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(75, 18);
-            this.label49.TabIndex = 21;
-            this.label49.Text = "Document";
-            // 
-            // buttonCreerCommande
-            // 
-            this.buttonCreerCommande.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.buttonCreerCommande.Font = new System.Drawing.Font("Omega Flight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCreerCommande.ForeColor = System.Drawing.Color.White;
-            this.buttonCreerCommande.Location = new System.Drawing.Point(370, 159);
-            this.buttonCreerCommande.Name = "buttonCreerCommande";
-            this.buttonCreerCommande.Size = new System.Drawing.Size(100, 26);
-            this.buttonCreerCommande.TabIndex = 18;
-            this.buttonCreerCommande.Text = "Créer";
-            this.buttonCreerCommande.UseVisualStyleBackColor = false;
-            // 
-            // inputMontantCommande
-            // 
-            this.inputMontantCommande.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputMontantCommande.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputMontantCommande.ForeColor = System.Drawing.Color.Cyan;
-            this.inputMontantCommande.Location = new System.Drawing.Point(118, 114);
-            this.inputMontantCommande.Name = "inputMontantCommande";
-            this.inputMontantCommande.Size = new System.Drawing.Size(352, 26);
-            this.inputMontantCommande.TabIndex = 13;
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.ForeColor = System.Drawing.Color.White;
-            this.label52.Location = new System.Drawing.Point(6, 117);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(62, 18);
-            this.label52.TabIndex = 12;
-            this.label52.Text = "Montant";
-            // 
-            // inputExemplairesCommande
-            // 
-            this.inputExemplairesCommande.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputExemplairesCommande.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputExemplairesCommande.ForeColor = System.Drawing.Color.Cyan;
-            this.inputExemplairesCommande.Location = new System.Drawing.Point(118, 82);
-            this.inputExemplairesCommande.Name = "inputExemplairesCommande";
-            this.inputExemplairesCommande.Size = new System.Drawing.Size(352, 26);
-            this.inputExemplairesCommande.TabIndex = 11;
-            // 
-            // label53
-            // 
-            this.label53.AutoSize = true;
-            this.label53.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label53.ForeColor = System.Drawing.Color.White;
-            this.label53.Location = new System.Drawing.Point(6, 85);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(111, 18);
-            this.label53.TabIndex = 9;
-            this.label53.Text = "NbExemplaires";
-            // 
-            // inputIDCommande
-            // 
-            this.inputIDCommande.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputIDCommande.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputIDCommande.ForeColor = System.Drawing.Color.Cyan;
-            this.inputIDCommande.Location = new System.Drawing.Point(118, 18);
-            this.inputIDCommande.Name = "inputIDCommande";
-            this.inputIDCommande.Size = new System.Drawing.Size(352, 26);
-            this.inputIDCommande.TabIndex = 6;
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label54.ForeColor = System.Drawing.Color.White;
-            this.label54.Location = new System.Drawing.Point(6, 52);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(0, 18);
-            this.label54.TabIndex = 5;
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.ForeColor = System.Drawing.Color.White;
-            this.label55.Location = new System.Drawing.Point(6, 21);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(22, 18);
-            this.label55.TabIndex = 4;
-            this.label55.Text = "ID";
-            // 
-            // dataOfCommande
-            // 
-            this.dataOfCommande.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataOfCommande.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Document,
-            this.NbExemplaires,
-            this.DateCommande,
-            this.Montant,
-            this.État});
-            this.dataOfCommande.Location = new System.Drawing.Point(8, 26);
-            this.dataOfCommande.Name = "dataOfCommande";
-            this.dataOfCommande.RowHeadersWidth = 51;
-            this.dataOfCommande.RowTemplate.Height = 24;
-            this.dataOfCommande.Size = new System.Drawing.Size(958, 367);
-            this.dataOfCommande.TabIndex = 6;
-            // 
-            // Document
-            // 
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Aqua;
-            this.Document.DefaultCellStyle = dataGridViewCellStyle16;
-            this.Document.HeaderText = "nomDocument";
-            this.Document.MinimumWidth = 6;
-            this.Document.Name = "Document";
-            this.Document.Width = 125;
-            // 
-            // NbExemplaires
-            // 
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.Aqua;
-            this.NbExemplaires.DefaultCellStyle = dataGridViewCellStyle17;
-            this.NbExemplaires.HeaderText = "nbExemplaires";
-            this.NbExemplaires.MinimumWidth = 6;
-            this.NbExemplaires.Name = "NbExemplaires";
-            this.NbExemplaires.Width = 125;
-            // 
-            // DateCommande
-            // 
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Aqua;
-            this.DateCommande.DefaultCellStyle = dataGridViewCellStyle18;
-            this.DateCommande.HeaderText = "dateCommande";
-            this.DateCommande.MinimumWidth = 6;
-            this.DateCommande.Name = "DateCommande";
-            this.DateCommande.Width = 125;
-            // 
-            // Montant
-            // 
-            dataGridViewCellStyle19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.Aqua;
-            this.Montant.DefaultCellStyle = dataGridViewCellStyle19;
-            this.Montant.HeaderText = "montant";
-            this.Montant.MinimumWidth = 6;
-            this.Montant.Name = "Montant";
-            this.Montant.Width = 125;
-            // 
-            // État
-            // 
-            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.État.DefaultCellStyle = dataGridViewCellStyle20;
-            this.État.HeaderText = "etatCommande";
-            this.État.MinimumWidth = 6;
-            this.État.Name = "État";
-            this.État.Width = 125;
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Font = new System.Drawing.Font("Omega Flight Title", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.Location = new System.Drawing.Point(4, 3);
-            this.label47.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(370, 20);
-            this.label47.TabIndex = 5;
-            this.label47.Text = "Gestion des Commandes";
-            // 
-            // tabParutions
-            // 
-            this.tabParutions.Controls.Add(this.label3);
-            this.tabParutions.Controls.Add(this.dgvParutions);
-            this.tabParutions.Controls.Add(this.label1);
-            this.tabParutions.Controls.Add(this.cbxTitres);
-            this.tabParutions.Location = new System.Drawing.Point(4, 27);
-            this.tabParutions.Margin = new System.Windows.Forms.Padding(4);
-            this.tabParutions.Name = "tabParutions";
-            this.tabParutions.Padding = new System.Windows.Forms.Padding(4);
-            this.tabParutions.Size = new System.Drawing.Size(974, 598);
-            this.tabParutions.TabIndex = 0;
-            this.tabParutions.Text = "Parutions";
-            this.tabParutions.UseVisualStyleBackColor = true;
-            this.tabParutions.Enter += new System.EventHandler(this.tabParutions_Enter);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(4, 4);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(403, 25);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Visualisation des numéros reçus par titre";
-            // 
-            // dgvParutions
-            // 
-            this.dgvParutions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvParutions.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.numero,
-            this.dateParution,
-            this.photo});
-            this.dgvParutions.Location = new System.Drawing.Point(12, 68);
-            this.dgvParutions.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvParutions.Name = "dgvParutions";
-            this.dgvParutions.RowHeadersWidth = 51;
-            this.dgvParutions.Size = new System.Drawing.Size(724, 289);
-            this.dgvParutions.TabIndex = 2;
-            // 
-            // numero
-            // 
-            this.numero.HeaderText = "NUMERO";
-            this.numero.MinimumWidth = 6;
-            this.numero.Name = "numero";
-            this.numero.Width = 60;
-            // 
-            // dateParution
-            // 
-            this.dateParution.HeaderText = "DATE DE PARUTION";
-            this.dateParution.MinimumWidth = 6;
-            this.dateParution.Name = "dateParution";
-            this.dateParution.Width = 140;
-            // 
-            // photo
-            // 
-            this.photo.HeaderText = "EMPLACEMENT PHOTO";
-            this.photo.MinimumWidth = 6;
-            this.photo.Name = "photo";
-            this.photo.Width = 300;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(9, 38);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 17);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Choisir un titre :";
-            // 
-            // cbxTitres
-            // 
-            this.cbxTitres.FormattingEnabled = true;
-            this.cbxTitres.Location = new System.Drawing.Point(142, 36);
-            this.cbxTitres.Margin = new System.Windows.Forms.Padding(4);
-            this.cbxTitres.Name = "cbxTitres";
-            this.cbxTitres.Size = new System.Drawing.Size(193, 26);
-            this.cbxTitres.TabIndex = 0;
-            this.cbxTitres.SelectedIndexChanged += new System.EventHandler(this.cbxTitres_SelectedIndexChanged);
-            // 
-            // tabTitres
-            // 
-            this.tabTitres.Controls.Add(this.label4);
-            this.tabTitres.Controls.Add(this.dgvTitres);
-            this.tabTitres.Controls.Add(this.label2);
-            this.tabTitres.Controls.Add(this.cbxDomaines);
-            this.tabTitres.Location = new System.Drawing.Point(4, 27);
-            this.tabTitres.Margin = new System.Windows.Forms.Padding(4);
-            this.tabTitres.Name = "tabTitres";
-            this.tabTitres.Padding = new System.Windows.Forms.Padding(4);
-            this.tabTitres.Size = new System.Drawing.Size(974, 598);
-            this.tabTitres.TabIndex = 1;
-            this.tabTitres.Text = "Titres";
-            this.tabTitres.UseVisualStyleBackColor = true;
-            this.tabTitres.Enter += new System.EventHandler(this.tabTitres_Enter);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(4, 4);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(318, 25);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Visualisation des titres abonnés";
-            // 
-            // dgvTitres
-            // 
-            this.dgvTitres.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTitres.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idTitre,
-            this.nom,
-            this.empruntable,
-            this.dateFin,
-            this.periodicite});
-            this.dgvTitres.Location = new System.Drawing.Point(9, 69);
-            this.dgvTitres.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvTitres.Name = "dgvTitres";
-            this.dgvTitres.RowHeadersWidth = 51;
-            this.dgvTitres.Size = new System.Drawing.Size(831, 137);
-            this.dgvTitres.TabIndex = 2;
-            // 
-            // idTitre
-            // 
-            this.idTitre.HeaderText = "NUMERO";
-            this.idTitre.MinimumWidth = 6;
-            this.idTitre.Name = "idTitre";
-            this.idTitre.Width = 60;
-            // 
-            // nom
-            // 
-            this.nom.HeaderText = "TITRE";
-            this.nom.MinimumWidth = 6;
-            this.nom.Name = "nom";
-            this.nom.Width = 200;
-            // 
-            // empruntable
-            // 
-            this.empruntable.HeaderText = "EMPRUNTABLE";
-            this.empruntable.MinimumWidth = 6;
-            this.empruntable.Name = "empruntable";
-            this.empruntable.Width = 125;
-            // 
-            // dateFin
-            // 
-            this.dateFin.HeaderText = "FIN D\'ABONNEMENT";
-            this.dateFin.MinimumWidth = 6;
-            this.dateFin.Name = "dateFin";
-            this.dateFin.Width = 140;
-            // 
-            // periodicite
-            // 
-            this.periodicite.HeaderText = "PERIODICITE";
-            this.periodicite.MinimumWidth = 6;
-            this.periodicite.Name = "periodicite";
-            this.periodicite.Width = 80;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(6, 39);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(157, 17);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Choisir un domaine :";
-            // 
-            // cbxDomaines
-            // 
-            this.cbxDomaines.FormattingEnabled = true;
-            this.cbxDomaines.Location = new System.Drawing.Point(171, 37);
-            this.cbxDomaines.Margin = new System.Windows.Forms.Padding(4);
-            this.cbxDomaines.Name = "cbxDomaines";
-            this.cbxDomaines.Size = new System.Drawing.Size(300, 26);
-            this.cbxDomaines.TabIndex = 0;
-            this.cbxDomaines.SelectedIndexChanged += new System.EventHandler(this.cbxDomaines_SelectedIndexChanged);
-            // 
-            // tabLivres
-            // 
-            this.tabLivres.Controls.Add(this.grpRechercheTitre);
-            this.tabLivres.Controls.Add(this.grpRechercheCode);
-            this.tabLivres.Location = new System.Drawing.Point(4, 27);
-            this.tabLivres.Margin = new System.Windows.Forms.Padding(4);
-            this.tabLivres.Name = "tabLivres";
-            this.tabLivres.Size = new System.Drawing.Size(974, 598);
-            this.tabLivres.TabIndex = 2;
-            this.tabLivres.Text = "Livres";
-            this.tabLivres.UseVisualStyleBackColor = true;
-            this.tabLivres.Enter += new System.EventHandler(this.tabLivres_Enter);
-            // 
-            // grpRechercheTitre
-            // 
-            this.grpRechercheTitre.Controls.Add(this.dgvLivres);
-            this.grpRechercheTitre.Controls.Add(this.label6);
-            this.grpRechercheTitre.Controls.Add(this.txbTitre);
-            this.grpRechercheTitre.Location = new System.Drawing.Point(4, 266);
-            this.grpRechercheTitre.Margin = new System.Windows.Forms.Padding(4);
-            this.grpRechercheTitre.Name = "grpRechercheTitre";
-            this.grpRechercheTitre.Padding = new System.Windows.Forms.Padding(4);
-            this.grpRechercheTitre.Size = new System.Drawing.Size(964, 325);
-            this.grpRechercheTitre.TabIndex = 18;
-            this.grpRechercheTitre.TabStop = false;
-            this.grpRechercheTitre.Text = "Recherche par titre";
-            // 
-            // dgvLivres
-            // 
-            this.dgvLivres.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvLivres.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDoc,
-            this.titre,
-            this.auteur,
-            this.isbn,
-            this.lacollection});
-            this.dgvLivres.Location = new System.Drawing.Point(11, 58);
-            this.dgvLivres.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvLivres.Name = "dgvLivres";
-            this.dgvLivres.RowHeadersWidth = 51;
-            this.dgvLivres.Size = new System.Drawing.Size(919, 222);
-            this.dgvLivres.TabIndex = 4;
-            // 
-            // idDoc
-            // 
-            this.idDoc.HeaderText = "NUMERO";
-            this.idDoc.MinimumWidth = 6;
-            this.idDoc.Name = "idDoc";
-            this.idDoc.Width = 60;
-            // 
-            // titre
-            // 
-            this.titre.HeaderText = "TITRE DU LIVRE";
-            this.titre.MinimumWidth = 6;
-            this.titre.Name = "titre";
-            this.titre.Width = 200;
-            // 
-            // auteur
-            // 
-            this.auteur.HeaderText = "AUTEUR(E)";
-            this.auteur.MinimumWidth = 6;
-            this.auteur.Name = "auteur";
-            this.auteur.Width = 125;
-            // 
-            // isbn
-            // 
-            this.isbn.HeaderText = "Code ISBN";
-            this.isbn.MinimumWidth = 6;
-            this.isbn.Name = "isbn";
-            this.isbn.Width = 90;
-            // 
-            // lacollection
-            // 
-            this.lacollection.HeaderText = "COLLECTION";
-            this.lacollection.MinimumWidth = 6;
-            this.lacollection.Name = "lacollection";
-            this.lacollection.Width = 200;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(8, 30);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(269, 17);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "Saisir le titre ou la partie d\'un titre :";
-            // 
-            // txbTitre
-            // 
-            this.txbTitre.Location = new System.Drawing.Point(282, 28);
-            this.txbTitre.Margin = new System.Windows.Forms.Padding(4);
-            this.txbTitre.Name = "txbTitre";
-            this.txbTitre.Size = new System.Drawing.Size(451, 26);
-            this.txbTitre.TabIndex = 3;
-            this.txbTitre.TextChanged += new System.EventHandler(this.txbTitre_TextChanged);
-            // 
-            // grpRechercheCode
-            // 
-            this.grpRechercheCode.Controls.Add(this.lblCategorie);
-            this.grpRechercheCode.Controls.Add(this.label13);
-            this.grpRechercheCode.Controls.Add(this.btnRechercher);
-            this.grpRechercheCode.Controls.Add(this.lblTitre);
-            this.grpRechercheCode.Controls.Add(this.lblImage);
-            this.grpRechercheCode.Controls.Add(this.label5);
-            this.grpRechercheCode.Controls.Add(this.label10);
-            this.grpRechercheCode.Controls.Add(this.txbNumDoc);
-            this.grpRechercheCode.Controls.Add(this.lblNumero);
-            this.grpRechercheCode.Controls.Add(this.lblAuteur);
-            this.grpRechercheCode.Controls.Add(this.lblISBN);
-            this.grpRechercheCode.Controls.Add(this.label7);
-            this.grpRechercheCode.Controls.Add(this.label11);
-            this.grpRechercheCode.Controls.Add(this.lblCollection);
-            this.grpRechercheCode.Controls.Add(this.label8);
-            this.grpRechercheCode.Controls.Add(this.label12);
-            this.grpRechercheCode.Controls.Add(this.label9);
-            this.grpRechercheCode.Location = new System.Drawing.Point(4, 4);
-            this.grpRechercheCode.Margin = new System.Windows.Forms.Padding(4);
-            this.grpRechercheCode.Name = "grpRechercheCode";
-            this.grpRechercheCode.Padding = new System.Windows.Forms.Padding(4);
-            this.grpRechercheCode.Size = new System.Drawing.Size(964, 254);
-            this.grpRechercheCode.TabIndex = 17;
-            this.grpRechercheCode.TabStop = false;
-            this.grpRechercheCode.Text = "Recherche par code document";
-            // 
-            // lblCategorie
-            // 
-            this.lblCategorie.AutoSize = true;
-            this.lblCategorie.Location = new System.Drawing.Point(641, 218);
-            this.lblCategorie.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblCategorie.Name = "lblCategorie";
-            this.lblCategorie.Size = new System.Drawing.Size(80, 18);
-            this.lblCategorie.TabIndex = 18;
-            this.lblCategorie.Text = "(catégorie)";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(467, 218);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(159, 17);
-            this.label13.TabIndex = 17;
-            this.label13.Text = "Catégorie de public :";
-            // 
-            // btnRechercher
-            // 
-            this.btnRechercher.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRechercher.Location = new System.Drawing.Point(385, 24);
-            this.btnRechercher.Margin = new System.Windows.Forms.Padding(4);
-            this.btnRechercher.Name = "btnRechercher";
-            this.btnRechercher.Size = new System.Drawing.Size(128, 25);
-            this.btnRechercher.TabIndex = 4;
-            this.btnRechercher.Text = "Rechercher";
-            this.btnRechercher.UseVisualStyleBackColor = true;
-            this.btnRechercher.Click += new System.EventHandler(this.btnRechercher_Click);
-            // 
-            // lblTitre
-            // 
-            this.lblTitre.AutoSize = true;
-            this.lblTitre.Location = new System.Drawing.Point(361, 96);
-            this.lblTitre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblTitre.Name = "lblTitre";
-            this.lblTitre.Size = new System.Drawing.Size(46, 18);
-            this.lblTitre.TabIndex = 12;
-            this.lblTitre.Text = "(titre)";
-            // 
-            // lblImage
-            // 
-            this.lblImage.AutoSize = true;
-            this.lblImage.Location = new System.Drawing.Point(217, 140);
-            this.lblImage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblImage.Name = "lblImage";
-            this.lblImage.Size = new System.Drawing.Size(59, 18);
-            this.lblImage.TabIndex = 16;
-            this.lblImage.Text = "(image)";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(8, 29);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(239, 17);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Saisir un numéro de document :";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(299, 96);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(52, 17);
-            this.label10.TabIndex = 8;
-            this.label10.Text = "Titre :";
-            // 
-            // txbNumDoc
-            // 
-            this.txbNumDoc.Location = new System.Drawing.Point(264, 25);
-            this.txbNumDoc.Margin = new System.Windows.Forms.Padding(4);
-            this.txbNumDoc.Name = "txbNumDoc";
-            this.txbNumDoc.Size = new System.Drawing.Size(173, 26);
-            this.txbNumDoc.TabIndex = 0;
-            // 
-            // lblNumero
-            // 
-            this.lblNumero.AutoSize = true;
-            this.lblNumero.Location = new System.Drawing.Point(196, 96);
-            this.lblNumero.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblNumero.Name = "lblNumero";
-            this.lblNumero.Size = new System.Drawing.Size(69, 18);
-            this.lblNumero.TabIndex = 11;
-            this.lblNumero.Text = "(numéro)";
-            // 
-            // lblAuteur
-            // 
-            this.lblAuteur.AutoSize = true;
-            this.lblAuteur.Location = new System.Drawing.Point(381, 178);
-            this.lblAuteur.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblAuteur.Name = "lblAuteur";
-            this.lblAuteur.Size = new System.Drawing.Size(61, 18);
-            this.lblAuteur.TabIndex = 14;
-            this.lblAuteur.Text = "(auteur)";
-            // 
-            // lblISBN
-            // 
-            this.lblISBN.AutoSize = true;
-            this.lblISBN.Location = new System.Drawing.Point(119, 178);
-            this.lblISBN.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblISBN.Name = "lblISBN";
-            this.lblISBN.Size = new System.Drawing.Size(46, 18);
-            this.lblISBN.TabIndex = 15;
-            this.lblISBN.Text = "(isbn)";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(8, 96);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(172, 17);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "Numéro de document :";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(299, 178);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(87, 17);
-            this.label11.TabIndex = 9;
-            this.label11.Text = "Auteur(e) :";
-            // 
-            // lblCollection
-            // 
-            this.lblCollection.AutoSize = true;
-            this.lblCollection.Location = new System.Drawing.Point(111, 218);
-            this.lblCollection.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblCollection.Name = "lblCollection";
-            this.lblCollection.Size = new System.Drawing.Size(81, 18);
-            this.lblCollection.TabIndex = 13;
-            this.lblCollection.Text = "(collection)";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(8, 140);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(193, 17);
-            this.label8.TabIndex = 6;
-            this.label8.Text = "Emplacement de l\'image :";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(8, 218);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(89, 17);
-            this.label12.TabIndex = 10;
-            this.label12.Text = "Collection :";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(8, 178);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(95, 17);
-            this.label9.TabIndex = 7;
-            this.label9.Text = "Code ISBN :";
+            this.buttonEditLivre.Click += new System.EventHandler(this.ButtonEditLivre_Click);
             // 
             // dataOfLivre
             // 
             this.dataOfLivre.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataOfLivre.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataOfLivre.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataOfLivre.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IdLivre,
@@ -2337,34 +1388,18 @@ namespace Mediateq_AP_SIO2
             this.ISBNLivre,
             this.AuteurLivre,
             this.CollectionLivre});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataOfLivre.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataOfLivre.Location = new System.Drawing.Point(6, 6);
+            this.dataOfLivre.Location = new System.Drawing.Point(15, 32);
             this.dataOfLivre.Name = "dataOfLivre";
             this.dataOfLivre.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataOfLivre.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataOfLivre.RowHeadersWidth = 51;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataOfLivre.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataOfLivre.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataOfLivre.RowTemplate.Height = 24;
-            this.dataOfLivre.Size = new System.Drawing.Size(935, 122);
+            this.dataOfLivre.Size = new System.Drawing.Size(731, 183);
             this.dataOfLivre.TabIndex = 3;
             // 
             // IdLivre
@@ -2423,63 +1458,2065 @@ namespace Mediateq_AP_SIO2
             this.CollectionLivre.ReadOnly = true;
             this.CollectionLivre.Width = 125;
             // 
+            // groupCreerLivre
+            // 
+            this.groupCreerLivre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.groupCreerLivre.Controls.Add(this.inputAuteurLivre);
+            this.groupCreerLivre.Controls.Add(this.label14);
+            this.groupCreerLivre.Controls.Add(this.selectCategorieLivreForCreate);
+            this.groupCreerLivre.Controls.Add(this.label18);
+            this.groupCreerLivre.Controls.Add(this.inputImageLivre);
+            this.groupCreerLivre.Controls.Add(this.label19);
+            this.groupCreerLivre.Controls.Add(this.buttonCreerLivre);
+            this.groupCreerLivre.Controls.Add(this.inputCollectionLivre);
+            this.groupCreerLivre.Controls.Add(this.label22);
+            this.groupCreerLivre.Controls.Add(this.inputISBNLivre);
+            this.groupCreerLivre.Controls.Add(this.label20);
+            this.groupCreerLivre.Controls.Add(this.inputTitreLivre);
+            this.groupCreerLivre.Controls.Add(this.inputIDLivre);
+            this.groupCreerLivre.Controls.Add(this.label16);
+            this.groupCreerLivre.Controls.Add(this.label17);
+            this.groupCreerLivre.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupCreerLivre.ForeColor = System.Drawing.Color.White;
+            this.groupCreerLivre.Location = new System.Drawing.Point(15, 221);
+            this.groupCreerLivre.Name = "groupCreerLivre";
+            this.groupCreerLivre.Size = new System.Drawing.Size(352, 302);
+            this.groupCreerLivre.TabIndex = 0;
+            this.groupCreerLivre.TabStop = false;
+            this.groupCreerLivre.Text = "Créer";
+            // 
+            // inputAuteurLivre
+            // 
+            this.inputAuteurLivre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputAuteurLivre.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputAuteurLivre.ForeColor = System.Drawing.Color.Cyan;
+            this.inputAuteurLivre.Location = new System.Drawing.Point(98, 178);
+            this.inputAuteurLivre.Name = "inputAuteurLivre";
+            this.inputAuteurLivre.Size = new System.Drawing.Size(237, 26);
+            this.inputAuteurLivre.TabIndex = 24;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(9, 181);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(53, 18);
+            this.label14.TabIndex = 23;
+            this.label14.Text = "Auteur";
+            // 
+            // selectCategorieLivreForCreate
+            // 
+            this.selectCategorieLivreForCreate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.selectCategorieLivreForCreate.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.selectCategorieLivreForCreate.ForeColor = System.Drawing.Color.Cyan;
+            this.selectCategorieLivreForCreate.FormattingEnabled = true;
+            this.selectCategorieLivreForCreate.Location = new System.Drawing.Point(98, 112);
+            this.selectCategorieLivreForCreate.Name = "selectCategorieLivreForCreate";
+            this.selectCategorieLivreForCreate.Size = new System.Drawing.Size(237, 26);
+            this.selectCategorieLivreForCreate.TabIndex = 22;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.White;
+            this.label18.Location = new System.Drawing.Point(9, 115);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(72, 18);
+            this.label18.TabIndex = 21;
+            this.label18.Text = "Catégorie";
+            // 
+            // inputImageLivre
+            // 
+            this.inputImageLivre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputImageLivre.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputImageLivre.ForeColor = System.Drawing.Color.Cyan;
+            this.inputImageLivre.Location = new System.Drawing.Point(98, 80);
+            this.inputImageLivre.Name = "inputImageLivre";
+            this.inputImageLivre.Size = new System.Drawing.Size(237, 26);
+            this.inputImageLivre.TabIndex = 20;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.White;
+            this.label19.Location = new System.Drawing.Point(9, 83);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(83, 18);
+            this.label19.TabIndex = 19;
+            this.label19.Text = "Path Image";
+            // 
+            // buttonCreerLivre
+            // 
+            this.buttonCreerLivre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.buttonCreerLivre.Font = new System.Drawing.Font("Omega Flight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCreerLivre.ForeColor = System.Drawing.Color.White;
+            this.buttonCreerLivre.Location = new System.Drawing.Point(110, 242);
+            this.buttonCreerLivre.Name = "buttonCreerLivre";
+            this.buttonCreerLivre.Size = new System.Drawing.Size(143, 41);
+            this.buttonCreerLivre.TabIndex = 18;
+            this.buttonCreerLivre.Text = "Créer";
+            this.buttonCreerLivre.UseVisualStyleBackColor = false;
+            this.buttonCreerLivre.Click += new System.EventHandler(this.ButtonCreerLivre_Click);
+            // 
+            // inputCollectionLivre
+            // 
+            this.inputCollectionLivre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputCollectionLivre.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputCollectionLivre.ForeColor = System.Drawing.Color.Cyan;
+            this.inputCollectionLivre.Location = new System.Drawing.Point(98, 210);
+            this.inputCollectionLivre.Name = "inputCollectionLivre";
+            this.inputCollectionLivre.Size = new System.Drawing.Size(237, 26);
+            this.inputCollectionLivre.TabIndex = 13;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.White;
+            this.label22.Location = new System.Drawing.Point(8, 213);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(73, 18);
+            this.label22.TabIndex = 12;
+            this.label22.Text = "Collection";
+            // 
+            // inputISBNLivre
+            // 
+            this.inputISBNLivre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputISBNLivre.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputISBNLivre.ForeColor = System.Drawing.Color.Cyan;
+            this.inputISBNLivre.Location = new System.Drawing.Point(98, 144);
+            this.inputISBNLivre.Name = "inputISBNLivre";
+            this.inputISBNLivre.Size = new System.Drawing.Size(237, 26);
+            this.inputISBNLivre.TabIndex = 11;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.White;
+            this.label20.Location = new System.Drawing.Point(9, 147);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(42, 18);
+            this.label20.TabIndex = 9;
+            this.label20.Text = "ISBN";
+            // 
+            // inputTitreLivre
+            // 
+            this.inputTitreLivre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputTitreLivre.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputTitreLivre.ForeColor = System.Drawing.Color.Cyan;
+            this.inputTitreLivre.Location = new System.Drawing.Point(98, 48);
+            this.inputTitreLivre.Name = "inputTitreLivre";
+            this.inputTitreLivre.Size = new System.Drawing.Size(237, 26);
+            this.inputTitreLivre.TabIndex = 7;
+            // 
+            // inputIDLivre
+            // 
+            this.inputIDLivre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputIDLivre.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputIDLivre.ForeColor = System.Drawing.Color.Cyan;
+            this.inputIDLivre.Location = new System.Drawing.Point(98, 16);
+            this.inputIDLivre.Name = "inputIDLivre";
+            this.inputIDLivre.Size = new System.Drawing.Size(237, 26);
+            this.inputIDLivre.TabIndex = 6;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(8, 51);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(38, 18);
+            this.label16.TabIndex = 5;
+            this.label16.Text = "Titre";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Location = new System.Drawing.Point(9, 19);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(22, 18);
+            this.label17.TabIndex = 4;
+            this.label17.Text = "ID";
+            // 
+            // tabGestionDesDvd
+            // 
+            this.tabGestionDesDvd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tabGestionDesDvd.Controls.Add(this.tabControl2);
+            this.tabGestionDesDvd.ForeColor = System.Drawing.Color.White;
+            this.tabGestionDesDvd.Location = new System.Drawing.Point(4, 27);
+            this.tabGestionDesDvd.Name = "tabGestionDesDvd";
+            this.tabGestionDesDvd.Size = new System.Drawing.Size(754, 672);
+            this.tabGestionDesDvd.TabIndex = 9;
+            this.tabGestionDesDvd.Text = "Gestion des DVD";
+            // 
+            // tabControl2
+            // 
+            this.tabControl2.Controls.Add(this.tabPage3);
+            this.tabControl2.Controls.Add(this.tabPage4);
+            this.tabControl2.Font = new System.Drawing.Font("Omega Flight Title", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl2.Location = new System.Drawing.Point(-276, -225);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Size = new System.Drawing.Size(1727, 1214);
+            this.tabControl2.TabIndex = 3;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tabPage3.Controls.Add(this.groupBox4);
+            this.tabPage3.Controls.Add(this.groupBox11);
+            this.tabPage3.Controls.Add(this.label78);
+            this.tabPage3.Controls.Add(this.dataOfDvd);
+            this.tabPage3.Controls.Add(this.groupBox18);
+            this.tabPage3.Controls.Add(this.groupBox13);
+            this.tabPage3.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage3.ForeColor = System.Drawing.Color.White;
+            this.tabPage3.Location = new System.Drawing.Point(4, 30);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1719, 1180);
+            this.tabPage3.TabIndex = 0;
+            this.tabPage3.Text = "Livres";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.groupBox4.Controls.Add(this.label32);
+            this.groupBox4.Controls.Add(this.selectDvdForDelete);
+            this.groupBox4.Controls.Add(this.ButtonDeleteDvd);
+            this.groupBox4.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.ForeColor = System.Drawing.Color.White;
+            this.groupBox4.Location = new System.Drawing.Point(280, 698);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(357, 161);
+            this.groupBox4.TabIndex = 10;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Supprimer";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.ForeColor = System.Drawing.Color.White;
+            this.label32.Location = new System.Drawing.Point(6, 18);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(143, 18);
+            this.label32.TabIndex = 30;
+            this.label32.Text = "Séléctionnez un dvd.";
+            // 
+            // selectDvdForDelete
+            // 
+            this.selectDvdForDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.selectDvdForDelete.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.selectDvdForDelete.ForeColor = System.Drawing.Color.Red;
+            this.selectDvdForDelete.FormattingEnabled = true;
+            this.selectDvdForDelete.Location = new System.Drawing.Point(9, 44);
+            this.selectDvdForDelete.Name = "selectDvdForDelete";
+            this.selectDvdForDelete.Size = new System.Drawing.Size(334, 26);
+            this.selectDvdForDelete.TabIndex = 29;
+            // 
+            // ButtonDeleteDvd
+            // 
+            this.ButtonDeleteDvd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.ButtonDeleteDvd.Font = new System.Drawing.Font("Omega Flight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonDeleteDvd.ForeColor = System.Drawing.Color.White;
+            this.ButtonDeleteDvd.Location = new System.Drawing.Point(78, 103);
+            this.ButtonDeleteDvd.Name = "ButtonDeleteDvd";
+            this.ButtonDeleteDvd.Size = new System.Drawing.Size(190, 31);
+            this.ButtonDeleteDvd.TabIndex = 28;
+            this.ButtonDeleteDvd.Text = "Supprimer";
+            this.ButtonDeleteDvd.UseVisualStyleBackColor = false;
+            // 
+            // groupBox11
+            // 
+            this.groupBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.groupBox11.Controls.Add(this.selectCategorieDvdForEdit);
+            this.groupBox11.Controls.Add(this.label1);
+            this.groupBox11.Controls.Add(this.inputRealisateurDvdForEdit);
+            this.groupBox11.Controls.Add(this.label79);
+            this.groupBox11.Controls.Add(this.inputSynopsisDvdForEdit);
+            this.groupBox11.Controls.Add(this.label80);
+            this.groupBox11.Controls.Add(this.inputImageDvdForEdit);
+            this.groupBox11.Controls.Add(this.label81);
+            this.groupBox11.Controls.Add(this.label82);
+            this.groupBox11.Controls.Add(this.inputTitreDvdForEdit);
+            this.groupBox11.Controls.Add(this.inputIdDvdForEdit);
+            this.groupBox11.Controls.Add(this.label83);
+            this.groupBox11.Controls.Add(this.label84);
+            this.groupBox11.Controls.Add(this.inputDureeDvdForEdit);
+            this.groupBox11.Controls.Add(this.label85);
+            this.groupBox11.Controls.Add(this.selectDvdForEdit);
+            this.groupBox11.Controls.Add(this.button5);
+            this.groupBox11.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox11.ForeColor = System.Drawing.Color.White;
+            this.groupBox11.Location = new System.Drawing.Point(643, 400);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(375, 406);
+            this.groupBox11.TabIndex = 9;
+            this.groupBox11.TabStop = false;
+            this.groupBox11.Text = "Modifier";
+            // 
+            // selectCategorieDvdForEdit
+            // 
+            this.selectCategorieDvdForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.selectCategorieDvdForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.selectCategorieDvdForEdit.ForeColor = System.Drawing.Color.Cyan;
+            this.selectCategorieDvdForEdit.FormattingEnabled = true;
+            this.selectCategorieDvdForEdit.Location = new System.Drawing.Point(100, 179);
+            this.selectCategorieDvdForEdit.Name = "selectCategorieDvdForEdit";
+            this.selectCategorieDvdForEdit.Size = new System.Drawing.Size(269, 26);
+            this.selectCategorieDvdForEdit.TabIndex = 39;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(11, 182);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(72, 18);
+            this.label1.TabIndex = 38;
+            this.label1.Text = "Catégorie";
+            // 
+            // inputRealisateurDvdForEdit
+            // 
+            this.inputRealisateurDvdForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputRealisateurDvdForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputRealisateurDvdForEdit.ForeColor = System.Drawing.Color.Cyan;
+            this.inputRealisateurDvdForEdit.Location = new System.Drawing.Point(100, 243);
+            this.inputRealisateurDvdForEdit.Name = "inputRealisateurDvdForEdit";
+            this.inputRealisateurDvdForEdit.Size = new System.Drawing.Size(269, 26);
+            this.inputRealisateurDvdForEdit.TabIndex = 37;
+            // 
+            // label79
+            // 
+            this.label79.AutoSize = true;
+            this.label79.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label79.ForeColor = System.Drawing.Color.White;
+            this.label79.Location = new System.Drawing.Point(11, 246);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(85, 18);
+            this.label79.TabIndex = 36;
+            this.label79.Text = "Réalisateur";
+            // 
+            // inputSynopsisDvdForEdit
+            // 
+            this.inputSynopsisDvdForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputSynopsisDvdForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputSynopsisDvdForEdit.ForeColor = System.Drawing.Color.Cyan;
+            this.inputSynopsisDvdForEdit.Location = new System.Drawing.Point(100, 211);
+            this.inputSynopsisDvdForEdit.Name = "inputSynopsisDvdForEdit";
+            this.inputSynopsisDvdForEdit.Size = new System.Drawing.Size(269, 26);
+            this.inputSynopsisDvdForEdit.TabIndex = 35;
+            // 
+            // label80
+            // 
+            this.label80.AutoSize = true;
+            this.label80.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label80.ForeColor = System.Drawing.Color.White;
+            this.label80.Location = new System.Drawing.Point(11, 214);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(68, 18);
+            this.label80.TabIndex = 34;
+            this.label80.Text = "Synopsis";
+            // 
+            // inputImageDvdForEdit
+            // 
+            this.inputImageDvdForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputImageDvdForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputImageDvdForEdit.ForeColor = System.Drawing.Color.Cyan;
+            this.inputImageDvdForEdit.Location = new System.Drawing.Point(100, 146);
+            this.inputImageDvdForEdit.Name = "inputImageDvdForEdit";
+            this.inputImageDvdForEdit.Size = new System.Drawing.Size(269, 26);
+            this.inputImageDvdForEdit.TabIndex = 32;
+            // 
+            // label81
+            // 
+            this.label81.AutoSize = true;
+            this.label81.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label81.ForeColor = System.Drawing.Color.White;
+            this.label81.Location = new System.Drawing.Point(11, 278);
+            this.label81.Name = "label81";
+            this.label81.Size = new System.Drawing.Size(48, 18);
+            this.label81.TabIndex = 31;
+            this.label81.Text = "Durée";
+            // 
+            // label82
+            // 
+            this.label82.AutoSize = true;
+            this.label82.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label82.ForeColor = System.Drawing.Color.White;
+            this.label82.Location = new System.Drawing.Point(11, 149);
+            this.label82.Name = "label82";
+            this.label82.Size = new System.Drawing.Size(83, 18);
+            this.label82.TabIndex = 30;
+            this.label82.Text = "Path Image";
+            // 
+            // inputTitreDvdForEdit
+            // 
+            this.inputTitreDvdForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputTitreDvdForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputTitreDvdForEdit.ForeColor = System.Drawing.Color.Cyan;
+            this.inputTitreDvdForEdit.Location = new System.Drawing.Point(100, 114);
+            this.inputTitreDvdForEdit.Name = "inputTitreDvdForEdit";
+            this.inputTitreDvdForEdit.Size = new System.Drawing.Size(269, 26);
+            this.inputTitreDvdForEdit.TabIndex = 29;
+            // 
+            // inputIdDvdForEdit
+            // 
+            this.inputIdDvdForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputIdDvdForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputIdDvdForEdit.ForeColor = System.Drawing.Color.Cyan;
+            this.inputIdDvdForEdit.Location = new System.Drawing.Point(100, 82);
+            this.inputIdDvdForEdit.Name = "inputIdDvdForEdit";
+            this.inputIdDvdForEdit.ReadOnly = true;
+            this.inputIdDvdForEdit.Size = new System.Drawing.Size(269, 26);
+            this.inputIdDvdForEdit.TabIndex = 28;
+            // 
+            // label83
+            // 
+            this.label83.AutoSize = true;
+            this.label83.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label83.ForeColor = System.Drawing.Color.White;
+            this.label83.Location = new System.Drawing.Point(11, 117);
+            this.label83.Name = "label83";
+            this.label83.Size = new System.Drawing.Size(38, 18);
+            this.label83.TabIndex = 27;
+            this.label83.Text = "Titre";
+            // 
+            // label84
+            // 
+            this.label84.AutoSize = true;
+            this.label84.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label84.ForeColor = System.Drawing.Color.White;
+            this.label84.Location = new System.Drawing.Point(11, 85);
+            this.label84.Name = "label84";
+            this.label84.Size = new System.Drawing.Size(22, 18);
+            this.label84.TabIndex = 26;
+            this.label84.Text = "ID";
+            // 
+            // inputDureeDvdForEdit
+            // 
+            this.inputDureeDvdForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputDureeDvdForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputDureeDvdForEdit.ForeColor = System.Drawing.Color.Cyan;
+            this.inputDureeDvdForEdit.Location = new System.Drawing.Point(100, 275);
+            this.inputDureeDvdForEdit.Name = "inputDureeDvdForEdit";
+            this.inputDureeDvdForEdit.Size = new System.Drawing.Size(269, 26);
+            this.inputDureeDvdForEdit.TabIndex = 33;
+            // 
+            // label85
+            // 
+            this.label85.AutoSize = true;
+            this.label85.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label85.ForeColor = System.Drawing.Color.White;
+            this.label85.Location = new System.Drawing.Point(6, 18);
+            this.label85.Name = "label85";
+            this.label85.Size = new System.Drawing.Size(143, 18);
+            this.label85.TabIndex = 25;
+            this.label85.Text = "Séléctionnez un dvd.";
+            // 
+            // selectDvdForEdit
+            // 
+            this.selectDvdForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.selectDvdForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.selectDvdForEdit.ForeColor = System.Drawing.Color.Cyan;
+            this.selectDvdForEdit.FormattingEnabled = true;
+            this.selectDvdForEdit.Location = new System.Drawing.Point(9, 38);
+            this.selectDvdForEdit.Name = "selectDvdForEdit";
+            this.selectDvdForEdit.Size = new System.Drawing.Size(360, 26);
+            this.selectDvdForEdit.TabIndex = 24;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.button5.Font = new System.Drawing.Font("Omega Flight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(112, 336);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(157, 40);
+            this.button5.TabIndex = 18;
+            this.button5.Text = "Modifier";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // label78
+            // 
+            this.label78.AutoSize = true;
+            this.label78.Font = new System.Drawing.Font("Omega Flight Title", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label78.Location = new System.Drawing.Point(276, 204);
+            this.label78.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(253, 20);
+            this.label78.TabIndex = 8;
+            this.label78.Text = "Gestion des DVD";
+            // 
+            // dataOfDvd
+            // 
+            this.dataOfDvd.AllowUserToAddRows = false;
+            this.dataOfDvd.AllowUserToDeleteRows = false;
+            this.dataOfDvd.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.dataOfDvd.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataOfDvd.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataOfDvd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataOfDvd.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn15,
+            this.dataGridViewTextBoxColumn16,
+            this.dataGridViewTextBoxColumn17,
+            this.dataGridViewTextBoxColumn18,
+            this.dataGridViewTextBoxColumn19,
+            this.dataGridViewTextBoxColumn20,
+            this.dataGridViewTextBoxColumn21});
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataOfDvd.DefaultCellStyle = dataGridViewCellStyle11;
+            this.dataOfDvd.Location = new System.Drawing.Point(280, 227);
+            this.dataOfDvd.Name = "dataOfDvd";
+            this.dataOfDvd.ReadOnly = true;
+            this.dataOfDvd.RowHeadersWidth = 51;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataOfDvd.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            this.dataOfDvd.RowTemplate.Height = 24;
+            this.dataOfDvd.Size = new System.Drawing.Size(738, 167);
+            this.dataOfDvd.TabIndex = 7;
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn15.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridViewTextBoxColumn15.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn15.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            this.dataGridViewTextBoxColumn15.ReadOnly = true;
+            this.dataGridViewTextBoxColumn15.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn16.DefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridViewTextBoxColumn16.HeaderText = "Titre";
+            this.dataGridViewTextBoxColumn16.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            this.dataGridViewTextBoxColumn16.ReadOnly = true;
+            this.dataGridViewTextBoxColumn16.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn17
+            // 
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn17.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridViewTextBoxColumn17.HeaderText = "Image";
+            this.dataGridViewTextBoxColumn17.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            this.dataGridViewTextBoxColumn17.ReadOnly = true;
+            this.dataGridViewTextBoxColumn17.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn18
+            // 
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn18.DefaultCellStyle = dataGridViewCellStyle7;
+            this.dataGridViewTextBoxColumn18.HeaderText = "Categorie";
+            this.dataGridViewTextBoxColumn18.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            this.dataGridViewTextBoxColumn18.ReadOnly = true;
+            this.dataGridViewTextBoxColumn18.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn19
+            // 
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn19.DefaultCellStyle = dataGridViewCellStyle8;
+            this.dataGridViewTextBoxColumn19.HeaderText = "Synopsis";
+            this.dataGridViewTextBoxColumn19.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
+            this.dataGridViewTextBoxColumn19.ReadOnly = true;
+            this.dataGridViewTextBoxColumn19.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn20
+            // 
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn20.DefaultCellStyle = dataGridViewCellStyle9;
+            this.dataGridViewTextBoxColumn20.HeaderText = "Réalisateur";
+            this.dataGridViewTextBoxColumn20.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
+            this.dataGridViewTextBoxColumn20.ReadOnly = true;
+            this.dataGridViewTextBoxColumn20.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn21
+            // 
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn21.DefaultCellStyle = dataGridViewCellStyle10;
+            this.dataGridViewTextBoxColumn21.HeaderText = "Durée";
+            this.dataGridViewTextBoxColumn21.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
+            this.dataGridViewTextBoxColumn21.ReadOnly = true;
+            this.dataGridViewTextBoxColumn21.Width = 125;
+            // 
+            // groupBox18
+            // 
+            this.groupBox18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.groupBox18.Controls.Add(this.selectCategorieDvdForCreate);
+            this.groupBox18.Controls.Add(this.label71);
+            this.groupBox18.Controls.Add(this.inputRealisateurDvd);
+            this.groupBox18.Controls.Add(this.label72);
+            this.groupBox18.Controls.Add(this.button4);
+            this.groupBox18.Controls.Add(this.inputSynopsisDvd);
+            this.groupBox18.Controls.Add(this.label73);
+            this.groupBox18.Controls.Add(this.inputImageDvd);
+            this.groupBox18.Controls.Add(this.label74);
+            this.groupBox18.Controls.Add(this.label75);
+            this.groupBox18.Controls.Add(this.inputTitreDvd);
+            this.groupBox18.Controls.Add(this.inputIdDvd);
+            this.groupBox18.Controls.Add(this.label76);
+            this.groupBox18.Controls.Add(this.label77);
+            this.groupBox18.Controls.Add(this.inputDureeDvd);
+            this.groupBox18.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox18.ForeColor = System.Drawing.Color.White;
+            this.groupBox18.Location = new System.Drawing.Point(280, 400);
+            this.groupBox18.Name = "groupBox18";
+            this.groupBox18.Size = new System.Drawing.Size(357, 292);
+            this.groupBox18.TabIndex = 6;
+            this.groupBox18.TabStop = false;
+            this.groupBox18.Text = "Créer";
+            // 
+            // selectCategorieDvdForCreate
+            // 
+            this.selectCategorieDvdForCreate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.selectCategorieDvdForCreate.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.selectCategorieDvdForCreate.ForeColor = System.Drawing.Color.Cyan;
+            this.selectCategorieDvdForCreate.FormattingEnabled = true;
+            this.selectCategorieDvdForCreate.Location = new System.Drawing.Point(95, 111);
+            this.selectCategorieDvdForCreate.Name = "selectCategorieDvdForCreate";
+            this.selectCategorieDvdForCreate.Size = new System.Drawing.Size(252, 26);
+            this.selectCategorieDvdForCreate.TabIndex = 22;
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label71.ForeColor = System.Drawing.Color.White;
+            this.label71.Location = new System.Drawing.Point(6, 114);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(72, 18);
+            this.label71.TabIndex = 21;
+            this.label71.Text = "Catégorie";
+            // 
+            // inputRealisateurDvd
+            // 
+            this.inputRealisateurDvd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputRealisateurDvd.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputRealisateurDvd.ForeColor = System.Drawing.Color.Cyan;
+            this.inputRealisateurDvd.Location = new System.Drawing.Point(95, 175);
+            this.inputRealisateurDvd.Name = "inputRealisateurDvd";
+            this.inputRealisateurDvd.Size = new System.Drawing.Size(252, 26);
+            this.inputRealisateurDvd.TabIndex = 20;
+            // 
+            // label72
+            // 
+            this.label72.AutoSize = true;
+            this.label72.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label72.ForeColor = System.Drawing.Color.White;
+            this.label72.Location = new System.Drawing.Point(6, 178);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(85, 18);
+            this.label72.TabIndex = 19;
+            this.label72.Text = "Réalisateur";
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.button4.Font = new System.Drawing.Font("Omega Flight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(121, 248);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(118, 32);
+            this.button4.TabIndex = 18;
+            this.button4.Text = "Créer";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // inputSynopsisDvd
+            // 
+            this.inputSynopsisDvd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputSynopsisDvd.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputSynopsisDvd.ForeColor = System.Drawing.Color.Cyan;
+            this.inputSynopsisDvd.Location = new System.Drawing.Point(95, 143);
+            this.inputSynopsisDvd.Name = "inputSynopsisDvd";
+            this.inputSynopsisDvd.Size = new System.Drawing.Size(252, 26);
+            this.inputSynopsisDvd.TabIndex = 13;
+            // 
+            // label73
+            // 
+            this.label73.AutoSize = true;
+            this.label73.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label73.ForeColor = System.Drawing.Color.White;
+            this.label73.Location = new System.Drawing.Point(6, 146);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(68, 18);
+            this.label73.TabIndex = 12;
+            this.label73.Text = "Synopsis";
+            // 
+            // inputImageDvd
+            // 
+            this.inputImageDvd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputImageDvd.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputImageDvd.ForeColor = System.Drawing.Color.Cyan;
+            this.inputImageDvd.Location = new System.Drawing.Point(95, 79);
+            this.inputImageDvd.Name = "inputImageDvd";
+            this.inputImageDvd.Size = new System.Drawing.Size(252, 26);
+            this.inputImageDvd.TabIndex = 10;
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label74.ForeColor = System.Drawing.Color.White;
+            this.label74.Location = new System.Drawing.Point(6, 210);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(48, 18);
+            this.label74.TabIndex = 9;
+            this.label74.Text = "Durée";
+            // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label75.ForeColor = System.Drawing.Color.White;
+            this.label75.Location = new System.Drawing.Point(6, 82);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(83, 18);
+            this.label75.TabIndex = 8;
+            this.label75.Text = "Path Image";
+            // 
+            // inputTitreDvd
+            // 
+            this.inputTitreDvd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputTitreDvd.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputTitreDvd.ForeColor = System.Drawing.Color.Cyan;
+            this.inputTitreDvd.Location = new System.Drawing.Point(95, 47);
+            this.inputTitreDvd.Name = "inputTitreDvd";
+            this.inputTitreDvd.Size = new System.Drawing.Size(252, 26);
+            this.inputTitreDvd.TabIndex = 7;
+            // 
+            // inputIdDvd
+            // 
+            this.inputIdDvd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputIdDvd.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputIdDvd.ForeColor = System.Drawing.Color.Cyan;
+            this.inputIdDvd.Location = new System.Drawing.Point(95, 15);
+            this.inputIdDvd.Name = "inputIdDvd";
+            this.inputIdDvd.Size = new System.Drawing.Size(252, 26);
+            this.inputIdDvd.TabIndex = 6;
+            // 
+            // label76
+            // 
+            this.label76.AutoSize = true;
+            this.label76.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label76.ForeColor = System.Drawing.Color.White;
+            this.label76.Location = new System.Drawing.Point(6, 50);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(38, 18);
+            this.label76.TabIndex = 5;
+            this.label76.Text = "Titre";
+            // 
+            // label77
+            // 
+            this.label77.AutoSize = true;
+            this.label77.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label77.ForeColor = System.Drawing.Color.White;
+            this.label77.Location = new System.Drawing.Point(6, 18);
+            this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(22, 18);
+            this.label77.TabIndex = 4;
+            this.label77.Text = "ID";
+            // 
+            // inputDureeDvd
+            // 
+            this.inputDureeDvd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputDureeDvd.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputDureeDvd.ForeColor = System.Drawing.Color.Cyan;
+            this.inputDureeDvd.Location = new System.Drawing.Point(95, 207);
+            this.inputDureeDvd.Name = "inputDureeDvd";
+            this.inputDureeDvd.Size = new System.Drawing.Size(252, 26);
+            this.inputDureeDvd.TabIndex = 11;
+            this.inputDureeDvd.Text = "0";
+            // 
+            // groupBox13
+            // 
+            this.groupBox13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.groupBox13.Controls.Add(this.textEventDvd);
+            this.groupBox13.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox13.ForeColor = System.Drawing.Color.White;
+            this.groupBox13.Location = new System.Drawing.Point(643, 812);
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.Size = new System.Drawing.Size(375, 49);
+            this.groupBox13.TabIndex = 5;
+            this.groupBox13.TabStop = false;
+            this.groupBox13.Text = "Évenements";
+            // 
+            // textEventDvd
+            // 
+            this.textEventDvd.AutoSize = true;
+            this.textEventDvd.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textEventDvd.ForeColor = System.Drawing.Color.White;
+            this.textEventDvd.Location = new System.Drawing.Point(6, 21);
+            this.textEventDvd.Name = "textEventDvd";
+            this.textEventDvd.Size = new System.Drawing.Size(130, 18);
+            this.textEventDvd.TabIndex = 4;
+            this.textEventDvd.Text = "Aucun évènement.";
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tabPage4.Controls.Add(this.groupBox14);
+            this.tabPage4.Controls.Add(this.dataGridView1);
+            this.tabPage4.Controls.Add(this.groupBox15);
+            this.tabPage4.Controls.Add(this.groupBox16);
+            this.tabPage4.Controls.Add(this.groupBox17);
+            this.tabPage4.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage4.Location = new System.Drawing.Point(4, 30);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1719, 1180);
+            this.tabPage4.TabIndex = 1;
+            this.tabPage4.Text = "DVD";
+            // 
+            // groupBox14
+            // 
+            this.groupBox14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.groupBox14.Controls.Add(this.label4);
+            this.groupBox14.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox14.ForeColor = System.Drawing.Color.White;
+            this.groupBox14.Location = new System.Drawing.Point(699, 67);
+            this.groupBox14.Name = "groupBox14";
+            this.groupBox14.Size = new System.Drawing.Size(354, 85);
+            this.groupBox14.TabIndex = 6;
+            this.groupBox14.TabStop = false;
+            this.groupBox14.Text = "Évenements";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(14, 35);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(130, 18);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Aucun évènement.";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn12,
+            this.dataGridViewTextBoxColumn13,
+            this.dataGridViewTextBoxColumn14});
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle21;
+            this.dataGridView1.Location = new System.Drawing.Point(6, 176);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersWidth = 51;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle22;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(1093, 335);
+            this.dataGridView1.TabIndex = 4;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn8.DefaultCellStyle = dataGridViewCellStyle14;
+            this.dataGridViewTextBoxColumn8.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            this.dataGridViewTextBoxColumn8.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn9.DefaultCellStyle = dataGridViewCellStyle15;
+            this.dataGridViewTextBoxColumn9.HeaderText = "Titre";
+            this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.ReadOnly = true;
+            this.dataGridViewTextBoxColumn9.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn10.DefaultCellStyle = dataGridViewCellStyle16;
+            this.dataGridViewTextBoxColumn10.HeaderText = "Image";
+            this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            this.dataGridViewTextBoxColumn10.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn11.DefaultCellStyle = dataGridViewCellStyle17;
+            this.dataGridViewTextBoxColumn11.HeaderText = "Categorie";
+            this.dataGridViewTextBoxColumn11.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.ReadOnly = true;
+            this.dataGridViewTextBoxColumn11.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn12.DefaultCellStyle = dataGridViewCellStyle18;
+            this.dataGridViewTextBoxColumn12.HeaderText = "Synopsis";
+            this.dataGridViewTextBoxColumn12.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.ReadOnly = true;
+            this.dataGridViewTextBoxColumn12.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn13.DefaultCellStyle = dataGridViewCellStyle19;
+            this.dataGridViewTextBoxColumn13.HeaderText = "Réalisateur";
+            this.dataGridViewTextBoxColumn13.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.ReadOnly = true;
+            this.dataGridViewTextBoxColumn13.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn14.DefaultCellStyle = dataGridViewCellStyle20;
+            this.dataGridViewTextBoxColumn14.HeaderText = "Durée";
+            this.dataGridViewTextBoxColumn14.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            this.dataGridViewTextBoxColumn14.ReadOnly = true;
+            this.dataGridViewTextBoxColumn14.Width = 125;
+            // 
+            // groupBox15
+            // 
+            this.groupBox15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.groupBox15.Controls.Add(this.label5);
+            this.groupBox15.Controls.Add(this.comboBox1);
+            this.groupBox15.Controls.Add(this.button1);
+            this.groupBox15.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox15.ForeColor = System.Drawing.Color.White;
+            this.groupBox15.Location = new System.Drawing.Point(9, 930);
+            this.groupBox15.Name = "groupBox15";
+            this.groupBox15.Size = new System.Drawing.Size(523, 246);
+            this.groupBox15.TabIndex = 3;
+            this.groupBox15.TabStop = false;
+            this.groupBox15.Text = "Supprimer";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(19, 44);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(143, 18);
+            this.label5.TabIndex = 30;
+            this.label5.Text = "Séléctionnez un dvd.";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.comboBox1.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.ForeColor = System.Drawing.Color.Red;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(21, 83);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(483, 26);
+            this.comboBox1.TabIndex = 29;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.button1.Font = new System.Drawing.Font("Omega Flight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(141, 159);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(248, 56);
+            this.button1.TabIndex = 28;
+            this.button1.Text = "Supprimer";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // groupBox16
+            // 
+            this.groupBox16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.groupBox16.Controls.Add(this.comboBox2);
+            this.groupBox16.Controls.Add(this.label6);
+            this.groupBox16.Controls.Add(this.textBox1);
+            this.groupBox16.Controls.Add(this.label7);
+            this.groupBox16.Controls.Add(this.textBox2);
+            this.groupBox16.Controls.Add(this.label8);
+            this.groupBox16.Controls.Add(this.textBox3);
+            this.groupBox16.Controls.Add(this.label9);
+            this.groupBox16.Controls.Add(this.label10);
+            this.groupBox16.Controls.Add(this.textBox4);
+            this.groupBox16.Controls.Add(this.textBox5);
+            this.groupBox16.Controls.Add(this.label11);
+            this.groupBox16.Controls.Add(this.label12);
+            this.groupBox16.Controls.Add(this.textBox6);
+            this.groupBox16.Controls.Add(this.label13);
+            this.groupBox16.Controls.Add(this.comboBox3);
+            this.groupBox16.Controls.Add(this.button2);
+            this.groupBox16.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox16.ForeColor = System.Drawing.Color.White;
+            this.groupBox16.Location = new System.Drawing.Point(543, 406);
+            this.groupBox16.Name = "groupBox16";
+            this.groupBox16.Size = new System.Drawing.Size(559, 575);
+            this.groupBox16.TabIndex = 2;
+            this.groupBox16.TabStop = false;
+            this.groupBox16.Text = "Modifier";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.comboBox2.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.ForeColor = System.Drawing.Color.Cyan;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(161, 274);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(349, 26);
+            this.comboBox2.TabIndex = 39;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(21, 280);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(72, 18);
+            this.label6.TabIndex = 38;
+            this.label6.Text = "Catégorie";
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox1.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.Cyan;
+            this.textBox1.Location = new System.Drawing.Point(161, 374);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(349, 26);
+            this.textBox1.TabIndex = 37;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(21, 380);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(85, 18);
+            this.label7.TabIndex = 36;
+            this.label7.Text = "Réalisateur";
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox2.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.ForeColor = System.Drawing.Color.Cyan;
+            this.textBox2.Location = new System.Drawing.Point(161, 325);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(349, 26);
+            this.textBox2.TabIndex = 35;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(21, 328);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(68, 18);
+            this.label8.TabIndex = 34;
+            this.label8.Text = "Synopsis";
+            // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox3.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.ForeColor = System.Drawing.Color.Cyan;
+            this.textBox3.Location = new System.Drawing.Point(161, 225);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(349, 26);
+            this.textBox3.TabIndex = 32;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(21, 430);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(48, 18);
+            this.label9.TabIndex = 31;
+            this.label9.Text = "Durée";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(21, 230);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(83, 18);
+            this.label10.TabIndex = 30;
+            this.label10.Text = "Path Image";
+            // 
+            // textBox4
+            // 
+            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox4.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.ForeColor = System.Drawing.Color.Cyan;
+            this.textBox4.Location = new System.Drawing.Point(161, 176);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(349, 26);
+            this.textBox4.TabIndex = 29;
+            // 
+            // textBox5
+            // 
+            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox5.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.ForeColor = System.Drawing.Color.Cyan;
+            this.textBox5.Location = new System.Drawing.Point(161, 125);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
+            this.textBox5.Size = new System.Drawing.Size(349, 26);
+            this.textBox5.TabIndex = 28;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(21, 176);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(38, 18);
+            this.label11.TabIndex = 27;
+            this.label11.Text = "Titre";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(21, 130);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(22, 18);
+            this.label12.TabIndex = 26;
+            this.label12.Text = "ID";
+            // 
+            // textBox6
+            // 
+            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox6.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6.ForeColor = System.Drawing.Color.Cyan;
+            this.textBox6.Location = new System.Drawing.Point(161, 426);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(349, 26);
+            this.textBox6.TabIndex = 33;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(21, 28);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(143, 18);
+            this.label13.TabIndex = 25;
+            this.label13.Text = "Séléctionnez un dvd.";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.comboBox3.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox3.ForeColor = System.Drawing.Color.Cyan;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(27, 63);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(498, 26);
+            this.comboBox3.TabIndex = 24;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.button2.Font = new System.Drawing.Font("Omega Flight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(238, 490);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(173, 60);
+            this.button2.TabIndex = 18;
+            this.button2.Text = "Modifier";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // groupBox17
+            // 
+            this.groupBox17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.groupBox17.Controls.Add(this.comboBox4);
+            this.groupBox17.Controls.Add(this.label64);
+            this.groupBox17.Controls.Add(this.textBox7);
+            this.groupBox17.Controls.Add(this.label65);
+            this.groupBox17.Controls.Add(this.button3);
+            this.groupBox17.Controls.Add(this.textBox8);
+            this.groupBox17.Controls.Add(this.label66);
+            this.groupBox17.Controls.Add(this.textBox9);
+            this.groupBox17.Controls.Add(this.label67);
+            this.groupBox17.Controls.Add(this.label68);
+            this.groupBox17.Controls.Add(this.textBox10);
+            this.groupBox17.Controls.Add(this.textBox11);
+            this.groupBox17.Controls.Add(this.label69);
+            this.groupBox17.Controls.Add(this.label70);
+            this.groupBox17.Controls.Add(this.textBox12);
+            this.groupBox17.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox17.ForeColor = System.Drawing.Color.White;
+            this.groupBox17.Location = new System.Drawing.Point(9, 406);
+            this.groupBox17.Name = "groupBox17";
+            this.groupBox17.Size = new System.Drawing.Size(523, 514);
+            this.groupBox17.TabIndex = 1;
+            this.groupBox17.TabStop = false;
+            this.groupBox17.Text = "Créer";
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.comboBox4.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox4.ForeColor = System.Drawing.Color.Cyan;
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(155, 204);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(349, 26);
+            this.comboBox4.TabIndex = 22;
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label64.ForeColor = System.Drawing.Color.White;
+            this.label64.Location = new System.Drawing.Point(16, 205);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(72, 18);
+            this.label64.TabIndex = 21;
+            this.label64.Text = "Catégorie";
+            // 
+            // textBox7
+            // 
+            this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox7.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox7.ForeColor = System.Drawing.Color.Cyan;
+            this.textBox7.Location = new System.Drawing.Point(155, 306);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(349, 26);
+            this.textBox7.TabIndex = 20;
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label65.ForeColor = System.Drawing.Color.White;
+            this.label65.Location = new System.Drawing.Point(16, 310);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(85, 18);
+            this.label65.TabIndex = 19;
+            this.label65.Text = "Réalisateur";
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.button3.Font = new System.Drawing.Font("Omega Flight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(169, 426);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(200, 64);
+            this.button3.TabIndex = 18;
+            this.button3.Text = "Créer";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // textBox8
+            // 
+            this.textBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox8.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox8.ForeColor = System.Drawing.Color.Cyan;
+            this.textBox8.Location = new System.Drawing.Point(155, 253);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(349, 26);
+            this.textBox8.TabIndex = 13;
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label66.ForeColor = System.Drawing.Color.White;
+            this.label66.Location = new System.Drawing.Point(16, 258);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(68, 18);
+            this.label66.TabIndex = 12;
+            this.label66.Text = "Synopsis";
+            // 
+            // textBox9
+            // 
+            this.textBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox9.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox9.ForeColor = System.Drawing.Color.Cyan;
+            this.textBox9.Location = new System.Drawing.Point(155, 154);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(349, 26);
+            this.textBox9.TabIndex = 10;
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label67.ForeColor = System.Drawing.Color.White;
+            this.label67.Location = new System.Drawing.Point(16, 363);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(56, 18);
+            this.label67.TabIndex = 9;
+            this.label67.Text = "label67";
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label68.ForeColor = System.Drawing.Color.White;
+            this.label68.Location = new System.Drawing.Point(16, 159);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(83, 18);
+            this.label68.TabIndex = 8;
+            this.label68.Text = "Path Image";
+            // 
+            // textBox10
+            // 
+            this.textBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox10.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox10.ForeColor = System.Drawing.Color.Cyan;
+            this.textBox10.Location = new System.Drawing.Point(155, 104);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(349, 26);
+            this.textBox10.TabIndex = 7;
+            // 
+            // textBox11
+            // 
+            this.textBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox11.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox11.ForeColor = System.Drawing.Color.Cyan;
+            this.textBox11.Location = new System.Drawing.Point(155, 54);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(349, 26);
+            this.textBox11.TabIndex = 6;
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label69.ForeColor = System.Drawing.Color.White;
+            this.label69.Location = new System.Drawing.Point(16, 104);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(38, 18);
+            this.label69.TabIndex = 5;
+            this.label69.Text = "Titre";
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label70.ForeColor = System.Drawing.Color.White;
+            this.label70.Location = new System.Drawing.Point(16, 60);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(22, 18);
+            this.label70.TabIndex = 4;
+            this.label70.Text = "ID";
+            // 
+            // textBox12
+            // 
+            this.textBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox12.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox12.ForeColor = System.Drawing.Color.Cyan;
+            this.textBox12.Location = new System.Drawing.Point(155, 358);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(349, 26);
+            this.textBox12.TabIndex = 11;
+            this.textBox12.Text = "0";
+            // 
+            // tabGestionDesCommandes
+            // 
+            this.tabGestionDesCommandes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tabGestionDesCommandes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.tabGestionDesCommandes.Controls.Add(this.groupBox19);
+            this.tabGestionDesCommandes.Controls.Add(this.groupBox7);
+            this.tabGestionDesCommandes.Controls.Add(this.groupBox6);
+            this.tabGestionDesCommandes.Controls.Add(this.dataOfCommande);
+            this.tabGestionDesCommandes.Controls.Add(this.label43);
+            this.tabGestionDesCommandes.Location = new System.Drawing.Point(4, 27);
+            this.tabGestionDesCommandes.Name = "tabGestionDesCommandes";
+            this.tabGestionDesCommandes.Padding = new System.Windows.Forms.Padding(3);
+            this.tabGestionDesCommandes.Size = new System.Drawing.Size(754, 672);
+            this.tabGestionDesCommandes.TabIndex = 10;
+            this.tabGestionDesCommandes.Text = "Gestion des Commandes";
+            // 
+            // groupBox19
+            // 
+            this.groupBox19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.groupBox19.Controls.Add(this.label87);
+            this.groupBox19.Controls.Add(this.label86);
+            this.groupBox19.Controls.Add(this.selectCommandeForDelete);
+            this.groupBox19.Controls.Add(this.buttonDeleteCommande);
+            this.groupBox19.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox19.ForeColor = System.Drawing.Color.White;
+            this.groupBox19.Location = new System.Drawing.Point(9, 455);
+            this.groupBox19.Name = "groupBox19";
+            this.groupBox19.Size = new System.Drawing.Size(352, 211);
+            this.groupBox19.TabIndex = 13;
+            this.groupBox19.TabStop = false;
+            this.groupBox19.Text = "Supprimer";
+            // 
+            // label87
+            // 
+            this.label87.AutoSize = true;
+            this.label87.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label87.ForeColor = System.Drawing.Color.Red;
+            this.label87.Location = new System.Drawing.Point(11, 86);
+            this.label87.Name = "label87";
+            this.label87.Size = new System.Drawing.Size(300, 18);
+            this.label87.TabIndex = 31;
+            this.label87.Text = "Supprimez seulement les commandes TEST.";
+            // 
+            // label86
+            // 
+            this.label86.AutoSize = true;
+            this.label86.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label86.ForeColor = System.Drawing.Color.White;
+            this.label86.Location = new System.Drawing.Point(6, 18);
+            this.label86.Name = "label86";
+            this.label86.Size = new System.Drawing.Size(192, 18);
+            this.label86.TabIndex = 30;
+            this.label86.Text = "Séléctionnez une commade.";
+            // 
+            // selectCommandeForDelete
+            // 
+            this.selectCommandeForDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.selectCommandeForDelete.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.selectCommandeForDelete.ForeColor = System.Drawing.Color.Red;
+            this.selectCommandeForDelete.FormattingEnabled = true;
+            this.selectCommandeForDelete.Location = new System.Drawing.Point(9, 44);
+            this.selectCommandeForDelete.Name = "selectCommandeForDelete";
+            this.selectCommandeForDelete.Size = new System.Drawing.Size(334, 26);
+            this.selectCommandeForDelete.TabIndex = 29;
+            // 
+            // buttonDeleteCommande
+            // 
+            this.buttonDeleteCommande.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.buttonDeleteCommande.Font = new System.Drawing.Font("Omega Flight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDeleteCommande.ForeColor = System.Drawing.Color.White;
+            this.buttonDeleteCommande.Location = new System.Drawing.Point(78, 159);
+            this.buttonDeleteCommande.Name = "buttonDeleteCommande";
+            this.buttonDeleteCommande.Size = new System.Drawing.Size(190, 31);
+            this.buttonDeleteCommande.TabIndex = 28;
+            this.buttonDeleteCommande.Text = "Supprimer";
+            this.buttonDeleteCommande.UseVisualStyleBackColor = false;
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.groupBox7.Controls.Add(this.label57);
+            this.groupBox7.Controls.Add(this.selectCommandeForEdit);
+            this.groupBox7.Controls.Add(this.selectEtatForEditCommande);
+            this.groupBox7.Controls.Add(this.label47);
+            this.groupBox7.Controls.Add(this.selectDocumentForEditCommande);
+            this.groupBox7.Controls.Add(this.label52);
+            this.groupBox7.Controls.Add(this.inputDateCommandeForEdit);
+            this.groupBox7.Controls.Add(this.label53);
+            this.groupBox7.Controls.Add(this.buttonModifierCommande);
+            this.groupBox7.Controls.Add(this.inputMontantCommandeForEdit);
+            this.groupBox7.Controls.Add(this.label54);
+            this.groupBox7.Controls.Add(this.inputNbExemplairesCommandesForEdit);
+            this.groupBox7.Controls.Add(this.inputIdCommandeForEdit);
+            this.groupBox7.Controls.Add(this.label55);
+            this.groupBox7.Controls.Add(this.label56);
+            this.groupBox7.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox7.ForeColor = System.Drawing.Color.White;
+            this.groupBox7.Location = new System.Drawing.Point(367, 199);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(379, 307);
+            this.groupBox7.TabIndex = 12;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Créer";
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label57.ForeColor = System.Drawing.Color.White;
+            this.label57.Location = new System.Drawing.Point(6, 18);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(200, 18);
+            this.label57.TabIndex = 31;
+            this.label57.Text = "Séléctionnez une commande.";
+            // 
+            // selectCommandeForEdit
+            // 
+            this.selectCommandeForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.selectCommandeForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.selectCommandeForEdit.ForeColor = System.Drawing.Color.Cyan;
+            this.selectCommandeForEdit.FormattingEnabled = true;
+            this.selectCommandeForEdit.Location = new System.Drawing.Point(9, 41);
+            this.selectCommandeForEdit.Name = "selectCommandeForEdit";
+            this.selectCommandeForEdit.Size = new System.Drawing.Size(364, 26);
+            this.selectCommandeForEdit.TabIndex = 30;
+            // 
+            // selectEtatForEditCommande
+            // 
+            this.selectEtatForEditCommande.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.selectEtatForEditCommande.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.selectEtatForEditCommande.ForeColor = System.Drawing.Color.Cyan;
+            this.selectEtatForEditCommande.FormattingEnabled = true;
+            this.selectEtatForEditCommande.Location = new System.Drawing.Point(110, 233);
+            this.selectEtatForEditCommande.Name = "selectEtatForEditCommande";
+            this.selectEtatForEditCommande.Size = new System.Drawing.Size(263, 26);
+            this.selectEtatForEditCommande.TabIndex = 29;
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.ForeColor = System.Drawing.Color.White;
+            this.label47.Location = new System.Drawing.Point(11, 236);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(35, 18);
+            this.label47.TabIndex = 28;
+            this.label47.Text = "État";
+            // 
+            // selectDocumentForEditCommande
+            // 
+            this.selectDocumentForEditCommande.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.selectDocumentForEditCommande.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.selectDocumentForEditCommande.ForeColor = System.Drawing.Color.Cyan;
+            this.selectDocumentForEditCommande.FormattingEnabled = true;
+            this.selectDocumentForEditCommande.Location = new System.Drawing.Point(110, 201);
+            this.selectDocumentForEditCommande.Name = "selectDocumentForEditCommande";
+            this.selectDocumentForEditCommande.Size = new System.Drawing.Size(263, 26);
+            this.selectDocumentForEditCommande.TabIndex = 27;
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.ForeColor = System.Drawing.Color.White;
+            this.label52.Location = new System.Drawing.Point(11, 204);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(75, 18);
+            this.label52.TabIndex = 26;
+            this.label52.Text = "Document";
+            // 
+            // inputDateCommandeForEdit
+            // 
+            this.inputDateCommandeForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputDateCommandeForEdit.Location = new System.Drawing.Point(110, 137);
+            this.inputDateCommandeForEdit.Name = "inputDateCommandeForEdit";
+            this.inputDateCommandeForEdit.Size = new System.Drawing.Size(263, 26);
+            this.inputDateCommandeForEdit.TabIndex = 25;
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.ForeColor = System.Drawing.Color.White;
+            this.label53.Location = new System.Drawing.Point(9, 140);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(39, 18);
+            this.label53.TabIndex = 19;
+            this.label53.Text = "Date";
+            // 
+            // buttonModifierCommande
+            // 
+            this.buttonModifierCommande.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.buttonModifierCommande.Font = new System.Drawing.Font("Omega Flight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonModifierCommande.ForeColor = System.Drawing.Color.White;
+            this.buttonModifierCommande.Location = new System.Drawing.Point(122, 265);
+            this.buttonModifierCommande.Name = "buttonModifierCommande";
+            this.buttonModifierCommande.Size = new System.Drawing.Size(164, 33);
+            this.buttonModifierCommande.TabIndex = 18;
+            this.buttonModifierCommande.Text = "Modifier";
+            this.buttonModifierCommande.UseVisualStyleBackColor = false;
+            // 
+            // inputMontantCommandeForEdit
+            // 
+            this.inputMontantCommandeForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputMontantCommandeForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputMontantCommandeForEdit.ForeColor = System.Drawing.Color.Cyan;
+            this.inputMontantCommandeForEdit.Location = new System.Drawing.Point(110, 169);
+            this.inputMontantCommandeForEdit.Name = "inputMontantCommandeForEdit";
+            this.inputMontantCommandeForEdit.Size = new System.Drawing.Size(263, 26);
+            this.inputMontantCommandeForEdit.TabIndex = 11;
+            this.inputMontantCommandeForEdit.Text = "0";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.ForeColor = System.Drawing.Color.White;
+            this.label54.Location = new System.Drawing.Point(9, 172);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(62, 18);
+            this.label54.TabIndex = 9;
+            this.label54.Text = "Montant";
+            // 
+            // inputNbExemplairesCommandesForEdit
+            // 
+            this.inputNbExemplairesCommandesForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputNbExemplairesCommandesForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputNbExemplairesCommandesForEdit.ForeColor = System.Drawing.Color.Cyan;
+            this.inputNbExemplairesCommandesForEdit.Location = new System.Drawing.Point(110, 105);
+            this.inputNbExemplairesCommandesForEdit.Name = "inputNbExemplairesCommandesForEdit";
+            this.inputNbExemplairesCommandesForEdit.Size = new System.Drawing.Size(263, 26);
+            this.inputNbExemplairesCommandesForEdit.TabIndex = 7;
+            this.inputNbExemplairesCommandesForEdit.Text = "1";
+            // 
+            // inputIdCommandeForEdit
+            // 
+            this.inputIdCommandeForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputIdCommandeForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputIdCommandeForEdit.ForeColor = System.Drawing.Color.Cyan;
+            this.inputIdCommandeForEdit.Location = new System.Drawing.Point(110, 73);
+            this.inputIdCommandeForEdit.Name = "inputIdCommandeForEdit";
+            this.inputIdCommandeForEdit.Size = new System.Drawing.Size(263, 26);
+            this.inputIdCommandeForEdit.TabIndex = 6;
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.ForeColor = System.Drawing.Color.White;
+            this.label55.Location = new System.Drawing.Point(8, 108);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(92, 18);
+            this.label55.TabIndex = 5;
+            this.label55.Text = "Exemplaires";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.ForeColor = System.Drawing.Color.White;
+            this.label56.Location = new System.Drawing.Point(9, 76);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(22, 18);
+            this.label56.TabIndex = 4;
+            this.label56.Text = "ID";
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.groupBox6.Controls.Add(this.selectEtatForCreateCommande);
+            this.groupBox6.Controls.Add(this.label45);
+            this.groupBox6.Controls.Add(this.selectDocumentForCreateCommande);
+            this.groupBox6.Controls.Add(this.label44);
+            this.groupBox6.Controls.Add(this.inputDateCommande);
+            this.groupBox6.Controls.Add(this.label46);
+            this.groupBox6.Controls.Add(this.buttonCreateCommande);
+            this.groupBox6.Controls.Add(this.inputMontantCommande);
+            this.groupBox6.Controls.Add(this.label48);
+            this.groupBox6.Controls.Add(this.inputNbExemplairesCommande);
+            this.groupBox6.Controls.Add(this.inputIdCommande);
+            this.groupBox6.Controls.Add(this.label49);
+            this.groupBox6.Controls.Add(this.label50);
+            this.groupBox6.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox6.ForeColor = System.Drawing.Color.White;
+            this.groupBox6.Location = new System.Drawing.Point(9, 199);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(352, 250);
+            this.groupBox6.TabIndex = 11;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Créer";
+            // 
+            // selectEtatForCreateCommande
+            // 
+            this.selectEtatForCreateCommande.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.selectEtatForCreateCommande.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.selectEtatForCreateCommande.ForeColor = System.Drawing.Color.Cyan;
+            this.selectEtatForCreateCommande.FormattingEnabled = true;
+            this.selectEtatForCreateCommande.Location = new System.Drawing.Point(103, 176);
+            this.selectEtatForCreateCommande.Name = "selectEtatForCreateCommande";
+            this.selectEtatForCreateCommande.Size = new System.Drawing.Size(232, 26);
+            this.selectEtatForCreateCommande.TabIndex = 29;
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.ForeColor = System.Drawing.Color.White;
+            this.label45.Location = new System.Drawing.Point(11, 179);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(35, 18);
+            this.label45.TabIndex = 28;
+            this.label45.Text = "État";
+            // 
+            // selectDocumentForCreateCommande
+            // 
+            this.selectDocumentForCreateCommande.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.selectDocumentForCreateCommande.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.selectDocumentForCreateCommande.ForeColor = System.Drawing.Color.Cyan;
+            this.selectDocumentForCreateCommande.FormattingEnabled = true;
+            this.selectDocumentForCreateCommande.Location = new System.Drawing.Point(103, 144);
+            this.selectDocumentForCreateCommande.Name = "selectDocumentForCreateCommande";
+            this.selectDocumentForCreateCommande.Size = new System.Drawing.Size(232, 26);
+            this.selectDocumentForCreateCommande.TabIndex = 27;
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.ForeColor = System.Drawing.Color.White;
+            this.label44.Location = new System.Drawing.Point(11, 147);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(75, 18);
+            this.label44.TabIndex = 26;
+            this.label44.Text = "Document";
+            // 
+            // inputDateCommande
+            // 
+            this.inputDateCommande.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputDateCommande.Location = new System.Drawing.Point(103, 80);
+            this.inputDateCommande.Name = "inputDateCommande";
+            this.inputDateCommande.Size = new System.Drawing.Size(232, 26);
+            this.inputDateCommande.TabIndex = 25;
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.ForeColor = System.Drawing.Color.White;
+            this.label46.Location = new System.Drawing.Point(9, 83);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(39, 18);
+            this.label46.TabIndex = 19;
+            this.label46.Text = "Date";
+            // 
+            // buttonCreateCommande
+            // 
+            this.buttonCreateCommande.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.buttonCreateCommande.Font = new System.Drawing.Font("Omega Flight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCreateCommande.ForeColor = System.Drawing.Color.White;
+            this.buttonCreateCommande.Location = new System.Drawing.Point(78, 208);
+            this.buttonCreateCommande.Name = "buttonCreateCommande";
+            this.buttonCreateCommande.Size = new System.Drawing.Size(164, 33);
+            this.buttonCreateCommande.TabIndex = 18;
+            this.buttonCreateCommande.Text = "Créer";
+            this.buttonCreateCommande.UseVisualStyleBackColor = false;
+            // 
+            // inputMontantCommande
+            // 
+            this.inputMontantCommande.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputMontantCommande.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputMontantCommande.ForeColor = System.Drawing.Color.Cyan;
+            this.inputMontantCommande.Location = new System.Drawing.Point(103, 112);
+            this.inputMontantCommande.Name = "inputMontantCommande";
+            this.inputMontantCommande.Size = new System.Drawing.Size(232, 26);
+            this.inputMontantCommande.TabIndex = 11;
+            this.inputMontantCommande.Text = "0";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.ForeColor = System.Drawing.Color.White;
+            this.label48.Location = new System.Drawing.Point(9, 115);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(62, 18);
+            this.label48.TabIndex = 9;
+            this.label48.Text = "Montant";
+            // 
+            // inputNbExemplairesCommande
+            // 
+            this.inputNbExemplairesCommande.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputNbExemplairesCommande.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputNbExemplairesCommande.ForeColor = System.Drawing.Color.Cyan;
+            this.inputNbExemplairesCommande.Location = new System.Drawing.Point(103, 48);
+            this.inputNbExemplairesCommande.Name = "inputNbExemplairesCommande";
+            this.inputNbExemplairesCommande.Size = new System.Drawing.Size(232, 26);
+            this.inputNbExemplairesCommande.TabIndex = 7;
+            this.inputNbExemplairesCommande.Text = "1";
+            // 
+            // inputIdCommande
+            // 
+            this.inputIdCommande.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputIdCommande.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputIdCommande.ForeColor = System.Drawing.Color.Cyan;
+            this.inputIdCommande.Location = new System.Drawing.Point(103, 16);
+            this.inputIdCommande.Name = "inputIdCommande";
+            this.inputIdCommande.Size = new System.Drawing.Size(232, 26);
+            this.inputIdCommande.TabIndex = 6;
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.ForeColor = System.Drawing.Color.White;
+            this.label49.Location = new System.Drawing.Point(8, 51);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(92, 18);
+            this.label49.TabIndex = 5;
+            this.label49.Text = "Exemplaires";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.ForeColor = System.Drawing.Color.White;
+            this.label50.Location = new System.Drawing.Point(9, 19);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(22, 18);
+            this.label50.TabIndex = 4;
+            this.label50.Text = "ID";
+            // 
+            // dataOfCommande
+            // 
+            this.dataOfCommande.AllowUserToAddRows = false;
+            this.dataOfCommande.AllowUserToDeleteRows = false;
+            this.dataOfCommande.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.dataOfCommande.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataOfCommande.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
+            this.dataOfCommande.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataOfCommande.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.nbExemplaire,
+            this.dateCommande,
+            this.montant,
+            this.document,
+            this.etatCommande});
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle25.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle25.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataOfCommande.DefaultCellStyle = dataGridViewCellStyle25;
+            this.dataOfCommande.Location = new System.Drawing.Point(8, 26);
+            this.dataOfCommande.Name = "dataOfCommande";
+            this.dataOfCommande.ReadOnly = true;
+            this.dataOfCommande.RowHeadersWidth = 51;
+            dataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataOfCommande.RowsDefaultCellStyle = dataGridViewCellStyle26;
+            this.dataOfCommande.RowTemplate.Height = 24;
+            this.dataOfCommande.Size = new System.Drawing.Size(738, 167);
+            this.dataOfCommande.TabIndex = 10;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle24;
+            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // nbExemplaire
+            // 
+            this.nbExemplaire.HeaderText = "Nombre d\'Exemplaires";
+            this.nbExemplaire.MinimumWidth = 6;
+            this.nbExemplaire.Name = "nbExemplaire";
+            this.nbExemplaire.ReadOnly = true;
+            this.nbExemplaire.Width = 125;
+            // 
+            // dateCommande
+            // 
+            this.dateCommande.HeaderText = "Date Commande";
+            this.dateCommande.MinimumWidth = 6;
+            this.dateCommande.Name = "dateCommande";
+            this.dateCommande.ReadOnly = true;
+            this.dateCommande.Width = 125;
+            // 
+            // montant
+            // 
+            this.montant.HeaderText = "Montant";
+            this.montant.MinimumWidth = 6;
+            this.montant.Name = "montant";
+            this.montant.ReadOnly = true;
+            this.montant.Width = 125;
+            // 
+            // document
+            // 
+            this.document.HeaderText = "Document";
+            this.document.MinimumWidth = 6;
+            this.document.Name = "document";
+            this.document.ReadOnly = true;
+            this.document.Width = 125;
+            // 
+            // etatCommande
+            // 
+            this.etatCommande.HeaderText = "État Commande";
+            this.etatCommande.MinimumWidth = 6;
+            this.etatCommande.Name = "etatCommande";
+            this.etatCommande.ReadOnly = true;
+            this.etatCommande.Width = 125;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Omega Flight Title", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.ForeColor = System.Drawing.Color.White;
+            this.label43.Location = new System.Drawing.Point(5, 3);
+            this.label43.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(370, 20);
+            this.label43.TabIndex = 9;
+            this.label43.Text = "Gestion des Commandes";
+            // 
             // FrmMediateq
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(982, 629);
+            this.ClientSize = new System.Drawing.Size(762, 703);
+            this.ControlBox = false;
             this.Controls.Add(this.tabOngletsApplication);
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.MaximumSize = new System.Drawing.Size(1000, 676);
-            this.MinimumSize = new System.Drawing.Size(1000, 676);
+            this.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.MaximumSize = new System.Drawing.Size(780, 750);
+            this.MinimumSize = new System.Drawing.Size(780, 750);
             this.Name = "FrmMediateq";
             this.Text = "Gestion Médiathèque";
             this.Load += new System.EventHandler(this.FrmMediateq_Load);
             this.tabOngletsApplication.ResumeLayout(false);
             this.tabProfil.ResumeLayout(false);
-            this.tabProfil.PerformLayout();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
-            this.tabGestionDesDocs.ResumeLayout(false);
-            this.tabGestionDesDocs.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.groupSuprLivre.ResumeLayout(false);
-            this.groupSuprLivre.PerformLayout();
-            this.groupModifierLivre.ResumeLayout(false);
-            this.groupModifierLivre.PerformLayout();
-            this.groupCreerLivre.ResumeLayout(false);
-            this.groupCreerLivre.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataOfDvd)).EndInit();
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox10.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.tabGestionDesUsers.ResumeLayout(false);
+            this.tabGestionDesUsers.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataOfUser)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            this.tabGestionDesCommandes.ResumeLayout(false);
-            this.tabGestionDesCommandes.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataOfCommande)).EndInit();
-            this.tabParutions.ResumeLayout(false);
-            this.tabParutions.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvParutions)).EndInit();
-            this.tabTitres.ResumeLayout(false);
-            this.tabTitres.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTitres)).EndInit();
-            this.tabLivres.ResumeLayout(false);
-            this.grpRechercheTitre.ResumeLayout(false);
-            this.grpRechercheTitre.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvLivres)).EndInit();
-            this.grpRechercheCode.ResumeLayout(false);
-            this.grpRechercheCode.PerformLayout();
+            this.tabGestionDesLivres.ResumeLayout(false);
+            this.tabGestionDesLivres.PerformLayout();
+            this.groupBox12.ResumeLayout(false);
+            this.groupBox12.PerformLayout();
+            this.groupSuprLivre.ResumeLayout(false);
+            this.groupSuprLivre.PerformLayout();
+            this.groupModifierLivre.ResumeLayout(false);
+            this.groupModifierLivre.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataOfLivre)).EndInit();
+            this.groupCreerLivre.ResumeLayout(false);
+            this.groupCreerLivre.PerformLayout();
+            this.tabGestionDesDvd.ResumeLayout(false);
+            this.tabControl2.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataOfDvd)).EndInit();
+            this.groupBox18.ResumeLayout(false);
+            this.groupBox18.PerformLayout();
+            this.groupBox13.ResumeLayout(false);
+            this.groupBox13.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
+            this.groupBox14.ResumeLayout(false);
+            this.groupBox14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox15.ResumeLayout(false);
+            this.groupBox15.PerformLayout();
+            this.groupBox16.ResumeLayout(false);
+            this.groupBox16.PerformLayout();
+            this.groupBox17.ResumeLayout(false);
+            this.groupBox17.PerformLayout();
+            this.tabGestionDesCommandes.ResumeLayout(false);
+            this.tabGestionDesCommandes.PerformLayout();
+            this.groupBox19.ResumeLayout(false);
+            this.groupBox19.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataOfCommande)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2487,53 +3524,7 @@ namespace Mediateq_AP_SIO2
         #endregion
 
         private System.Windows.Forms.TabControl tabOngletsApplication;
-        private System.Windows.Forms.TabPage tabParutions;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cbxTitres;
-        private System.Windows.Forms.TabPage tabTitres;
-        private System.Windows.Forms.ComboBox cbxDomaines;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dgvTitres;
-        private System.Windows.Forms.DataGridView dgvParutions;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numero;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dateParution;
-        private System.Windows.Forms.DataGridViewTextBoxColumn photo;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idTitre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nom;
-        private System.Windows.Forms.DataGridViewTextBoxColumn empruntable;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dateFin;
-        private System.Windows.Forms.DataGridViewTextBoxColumn periodicite;
-        private System.Windows.Forms.TabPage tabLivres;
-        private System.Windows.Forms.Button btnRechercher;
-        private System.Windows.Forms.TextBox txbTitre;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txbNumDoc;
-        private System.Windows.Forms.Label lblImage;
-        private System.Windows.Forms.Label lblISBN;
-        private System.Windows.Forms.Label lblAuteur;
-        private System.Windows.Forms.Label lblCollection;
-        private System.Windows.Forms.Label lblTitre;
-        private System.Windows.Forms.Label lblNumero;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.GroupBox grpRechercheTitre;
-        private System.Windows.Forms.GroupBox grpRechercheCode;
-        private System.Windows.Forms.DataGridView dgvLivres;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idDoc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn titre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn auteur;
-        private System.Windows.Forms.DataGridViewTextBoxColumn isbn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lacollection;
-        private System.Windows.Forms.Label lblCategorie;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TabPage tabGestionDesDocs;
+        private System.Windows.Forms.TabPage tabGestionDesLivres;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.GroupBox groupCreerLivre;
         private System.Windows.Forms.TextBox inputTitreLivre;
@@ -2551,15 +3542,9 @@ namespace Mediateq_AP_SIO2
         private System.Windows.Forms.ComboBox selectCategorieLivreForCreate;
         private System.Windows.Forms.GroupBox groupModifierLivre;
         private System.Windows.Forms.Button buttonEditLivre;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.GroupBox groupSuprLivre;
         private System.Windows.Forms.ComboBox selectLivreForEdit;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Button buttonDeleteLivre;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Label textAlertEvent;
         private System.Windows.Forms.ComboBox selectCategorieForEdit;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.TextBox inputImageLivreForEdit;
@@ -2575,54 +3560,7 @@ namespace Mediateq_AP_SIO2
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.ComboBox selectLivreForDelete;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.ComboBox selectCategorieDvdForCreate;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.TextBox inputRealisateurDvd;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Button buttonCreerDvd;
-        private System.Windows.Forms.TextBox inputSynopsisDvd;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.TextBox inputDureeDvd;
-        private System.Windows.Forms.TextBox inputImageDvd;
-        private System.Windows.Forms.Label Durée;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.TextBox inputTitreDvd;
-        private System.Windows.Forms.TextBox inputIdDvd;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.ComboBox selectDvdForEdit;
-        private System.Windows.Forms.Button buttonEditDvd;
-        private System.Windows.Forms.ComboBox selectCategorieDvdForEdit;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.TextBox inputRealisateurDvdForEdit;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.TextBox inputSynopsisDvdForEdit;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.TextBox inputImageDvdForEdit;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.TextBox inputTitreDvdForEdit;
-        private System.Windows.Forms.TextBox inputIdDvdForEdit;
-        private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.TextBox inputDureeDvdForEdit;
-        private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.ComboBox selectDvdForDelete;
-        private System.Windows.Forms.Button buttonDeleteDvd;
-        private System.Windows.Forms.DataGridView dataOfDvd;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TabPage tabProfil;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label prenomUtilisateurAlert;
         private System.Windows.Forms.TabPage tabGestionDesUsers;
@@ -2630,34 +3568,6 @@ namespace Mediateq_AP_SIO2
         private System.Windows.Forms.Label serviceUtilisateurProfil;
         private System.Windows.Forms.Label nomUtilisateurProfil;
         private System.Windows.Forms.Label prenomUtilisateurProfil;
-        private System.Windows.Forms.TabPage tabGestionDesCommandes;
-        private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.DataGridView dataOfCommande;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox selectDocumentForCommande;
-        private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.Button buttonCreerCommande;
-        private System.Windows.Forms.TextBox inputMontantCommande;
-        private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.TextBox inputExemplairesCommande;
-        private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.TextBox inputIDCommande;
-        private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.Label label55;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ComboBox selectCommandeForEtat;
-        private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.Button buttonModifierEtatCommande;
-        private System.Windows.Forms.Label label57;
-        private System.Windows.Forms.TextBox inputEtatActuelCommande;
-        private System.Windows.Forms.Label label56;
-        private System.Windows.Forms.ComboBox selectNouveauEtatCommande;
-        private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Document;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NbExemplaires;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DateCommande;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Montant;
-        private System.Windows.Forms.DataGridViewTextBoxColumn État;
         private System.Windows.Forms.TextBox inputAuteurLivreForEdit;
         private System.Windows.Forms.TextBox inputAuteurLivre;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdLivre;
@@ -2668,6 +3578,206 @@ namespace Mediateq_AP_SIO2
         private System.Windows.Forms.DataGridViewTextBoxColumn AuteurLivre;
         private System.Windows.Forms.DataGridViewTextBoxColumn CollectionLivre;
         private System.Windows.Forms.DataGridView dataOfLivre;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Label loginUtilisateurProfil;
+        private System.Windows.Forms.GroupBox groupBox10;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.TextBox inputAncienMDP;
+        private System.Windows.Forms.TextBox inputNouveauMDP;
+        private System.Windows.Forms.Button buttonModifierMDP;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.Label confirmationNouveauMDP;
+        private System.Windows.Forms.Button buttonExit;
+        private System.Windows.Forms.GroupBox groupBox12;
+        private System.Windows.Forms.Label textEventLivres;
+        private System.Windows.Forms.TabPage tabGestionDesDvd;
+        private System.Windows.Forms.TabControl tabControl2;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Label label78;
+        private System.Windows.Forms.DataGridView dataOfDvd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn19;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn20;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
+        private System.Windows.Forms.GroupBox groupBox18;
+        private System.Windows.Forms.ComboBox selectCategorieDvdForCreate;
+        private System.Windows.Forms.Label label71;
+        private System.Windows.Forms.TextBox inputRealisateurDvd;
+        private System.Windows.Forms.Label label72;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox inputSynopsisDvd;
+        private System.Windows.Forms.Label label73;
+        private System.Windows.Forms.TextBox inputImageDvd;
+        private System.Windows.Forms.Label label74;
+        private System.Windows.Forms.Label label75;
+        private System.Windows.Forms.TextBox inputTitreDvd;
+        private System.Windows.Forms.TextBox inputIdDvd;
+        private System.Windows.Forms.Label label76;
+        private System.Windows.Forms.Label label77;
+        private System.Windows.Forms.TextBox inputDureeDvd;
+        private System.Windows.Forms.GroupBox groupBox13;
+        private System.Windows.Forms.Label textEventDvd;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.GroupBox groupBox14;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
+        private System.Windows.Forms.GroupBox groupBox15;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.GroupBox groupBox16;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.GroupBox groupBox17;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Label label65;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Label label67;
+        private System.Windows.Forms.Label label68;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.Label label69;
+        private System.Windows.Forms.Label label70;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.ComboBox selectDvdForDelete;
+        private System.Windows.Forms.Button ButtonDeleteDvd;
+        private System.Windows.Forms.GroupBox groupBox11;
+        private System.Windows.Forms.ComboBox selectCategorieDvdForEdit;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox inputRealisateurDvdForEdit;
+        private System.Windows.Forms.Label label79;
+        private System.Windows.Forms.TextBox inputSynopsisDvdForEdit;
+        private System.Windows.Forms.Label label80;
+        private System.Windows.Forms.TextBox inputImageDvdForEdit;
+        private System.Windows.Forms.Label label81;
+        private System.Windows.Forms.Label label82;
+        private System.Windows.Forms.TextBox inputTitreDvdForEdit;
+        private System.Windows.Forms.TextBox inputIdDvdForEdit;
+        private System.Windows.Forms.Label label83;
+        private System.Windows.Forms.Label label84;
+        private System.Windows.Forms.TextBox inputDureeDvdForEdit;
+        private System.Windows.Forms.Label label85;
+        private System.Windows.Forms.ComboBox selectDvdForEdit;
+        private System.Windows.Forms.Button button5;
+        public System.Windows.Forms.TabPage tabProfil;
+        private System.Windows.Forms.Button buttonDeleteLivre;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.DataGridView dataOfUser;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idUtilisateur;
+        private System.Windows.Forms.DataGridViewTextBoxColumn prenomUtilisateur;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomUtilisateur;
+        private System.Windows.Forms.DataGridViewTextBoxColumn serviceUtilisateur;
+        private System.Windows.Forms.DataGridViewTextBoxColumn loginUtilisateur;
+        private System.Windows.Forms.TabPage tabGestionDesCommandes;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.DataGridView dataOfCommande;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nbExemplaire;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateCommande;
+        private System.Windows.Forms.DataGridViewTextBoxColumn montant;
+        private System.Windows.Forms.DataGridViewTextBoxColumn document;
+        private System.Windows.Forms.DataGridViewTextBoxColumn etatCommande;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Button buttonCreateCommande;
+        private System.Windows.Forms.TextBox inputMontantCommande;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.TextBox inputNbExemplairesCommande;
+        private System.Windows.Forms.TextBox inputIdCommande;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.DateTimePicker inputDateCommande;
+        private System.Windows.Forms.ComboBox selectDocumentForCreateCommande;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.ComboBox selectEtatForCreateCommande;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.ComboBox selectEtatForEditCommande;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.ComboBox selectDocumentForEditCommande;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.DateTimePicker inputDateCommandeForEdit;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Button buttonModifierCommande;
+        private System.Windows.Forms.TextBox inputMontantCommandeForEdit;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.TextBox inputNbExemplairesCommandesForEdit;
+        private System.Windows.Forms.TextBox inputIdCommandeForEdit;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.ComboBox selectCommandeForEdit;
+        private System.Windows.Forms.GroupBox groupBox19;
+        private System.Windows.Forms.Label label87;
+        private System.Windows.Forms.Label label86;
+        private System.Windows.Forms.ComboBox selectCommandeForDelete;
+        private System.Windows.Forms.Button buttonDeleteCommande;
     }
 }
 

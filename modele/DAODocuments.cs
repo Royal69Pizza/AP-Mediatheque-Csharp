@@ -15,61 +15,61 @@ namespace Mediateq_AP_SIO2
 
         #region Gestion Générale
 
-        public static List<Categorie> getAllCategories()
+        public static List<Categorie> GetAllCategories()
         {
             List<Categorie> lesCategories = new List<Categorie>();
             string req = "Select * from categorie";
 
             try
             {
-                DAOFactory.connecter();
+                DAOFactory.Connecter();
 
-                MySqlDataReader reader = DAOFactory.execSQLRead(req);
+                MySqlDataReader reader = DAOFactory.ExecSQLRead(req);
 
                 while (reader.Read())
                 {
                     Categorie categorie = new Categorie(reader[0].ToString(), reader[1].ToString());
                     lesCategories.Add(categorie);
                 }
-                DAOFactory.deconnecter();
+                DAOFactory.Deconnecter();
             }
             catch (Exception e)
             {
                 MessageBox.Show(e.Message);
-                DAOFactory.deconnecter();
+                DAOFactory.Deconnecter();
             }
 
             return lesCategories;
         }
 
-        public static List<Descripteur> getAllDescripteurs()
+        public static List<Descripteur> GetAllDescripteurs()
         {
             List<Descripteur> lesDescripteurs = new List<Descripteur>();
             string req = "Select * from descripteur";
 
             try
             {
-                DAOFactory.connecter();
+                DAOFactory.Connecter();
 
-                MySqlDataReader reader = DAOFactory.execSQLRead(req);
+                MySqlDataReader reader = DAOFactory.ExecSQLRead(req);
 
                 while (reader.Read())
                 {
                     Descripteur genre = new Descripteur(reader[0].ToString(), reader[1].ToString());
                     lesDescripteurs.Add(genre);
                 }
-                DAOFactory.deconnecter();
+                DAOFactory.Deconnecter();
             }
             catch (Exception e)
             {
                 MessageBox.Show(e.Message);
-                DAOFactory.deconnecter();
+                DAOFactory.Deconnecter();
             }
             
             return lesDescripteurs;
         }
         
-        public static List<Livre> getAllLivres()
+        public static List<Livre> GetAllLivres()
         {
             List<Livre> lesLivres = new List<Livre>();
             string req = "Select l.id, d.titre, l.ISBN, l.auteur, l.collection, d.image, d.idCategorie, c.libelle from livre l ";
@@ -78,9 +78,9 @@ namespace Mediateq_AP_SIO2
 
             try
             {
-                DAOFactory.connecter();
+                DAOFactory.Connecter();
 
-                MySqlDataReader reader = DAOFactory.execSQLRead(req);
+                MySqlDataReader reader = DAOFactory.ExecSQLRead(req);
 
                 while (reader.Read())
                 {
@@ -90,12 +90,12 @@ namespace Mediateq_AP_SIO2
                     lesLivres.Add(livre);
                 }
 
-                DAOFactory.deconnecter();
+                DAOFactory.Deconnecter();
             }
             catch (Exception e)
             {
                 MessageBox.Show(e.Message);
-                DAOFactory.deconnecter();
+                DAOFactory.Deconnecter();
             }
             
             return lesLivres;
@@ -104,18 +104,18 @@ namespace Mediateq_AP_SIO2
         //|-----------------------------------------------------------
         //| Retourne une collection d'objets DVD
         //|-----------------------------------------------------------
-        public static List<Dvd> getAllDvd()
+        public static List<Dvd> GetAllDvd()
         {
             List<Dvd> lesDvd = new List<Dvd>();
             string req = "Select d.id, d.synopsis, d.réalisateur, doc.titre, d.duree, doc.image, doc.idCategorie, c.libelle from dvd d";
-            req += " join document doc on d.id=doc.id";
+            req += " join document doc on d.id = doc.id";
             req += " join categorie c on doc.idCategorie = c.id";
 
             try
             {
-                DAOFactory.connecter();
+                DAOFactory.Connecter();
 
-                MySqlDataReader reader = DAOFactory.execSQLRead(req);
+                MySqlDataReader reader = DAOFactory.ExecSQLRead(req);
 
                 while (reader.Read())
                 {
@@ -124,12 +124,12 @@ namespace Mediateq_AP_SIO2
                     lesDvd.Add(dvd);
                 }
 
-                DAOFactory.deconnecter();
+                DAOFactory.Deconnecter();
             }
             catch (Exception e)
             {
                 MessageBox.Show(e.Message);
-                DAOFactory.deconnecter();
+                DAOFactory.Deconnecter();
             }
 
             return lesDvd;
@@ -138,11 +138,11 @@ namespace Mediateq_AP_SIO2
         //|-----------------------------------------------------------
         //| Créer un genre
         //|-----------------------------------------------------------
-        public static void setDescripteurs(List<Livre> lesLivres)
+        public static void SetDescripteurs(List<Livre> lesLivres)
         {
             try
             {
-                DAOFactory.connecter();
+                DAOFactory.Connecter();
 
                 foreach (Livre livre in lesLivres)
                 {
@@ -151,19 +151,19 @@ namespace Mediateq_AP_SIO2
                     req += " join est_decrit_par e on de.id = e.idDesc";
                     req += " join document do on do.id = '" + livre.IdDoc + "'";
 
-                    MySqlDataReader reader = DAOFactory.execSQLRead(req);
+                    MySqlDataReader reader = DAOFactory.ExecSQLRead(req);
                     while (reader.Read())
                     {
                         lesDescripteursDuLivre.Add(new Descripteur(reader[0].ToString(), reader[1].ToString()));
                     }
                     livre.LesDescripteurs = lesDescripteursDuLivre;
                 }
-                DAOFactory.deconnecter();
+                DAOFactory.Deconnecter();
             }
             catch (Exception e)
             {
                 MessageBox.Show(e.Message);
-                DAOFactory.deconnecter();
+                DAOFactory.Deconnecter();
             }
         }
 
@@ -174,7 +174,7 @@ namespace Mediateq_AP_SIO2
         //|-----------------------------------------------------------
         //| Créer un nouveau livre
         //|-----------------------------------------------------------
-        public static bool setNouveauLivre(String ID, String Titre, String ISBN, String unAuteur, String Collection, String Image, String unIdCategorie)
+        public static bool SetNouveauLivre(String ID, String Titre, String ISBN, String unAuteur, String Collection, String Image, String unIdCategorie)
         {
             bool resultat;
 
@@ -184,13 +184,13 @@ namespace Mediateq_AP_SIO2
                 
                 String req2 = "INSERT INTO livre (id, ISBN, auteur, collection) VALUES ('" + ID + "', '" + ISBN + "', '" + unAuteur + "', '" + Collection + "');";
 
-                DAOFactory.connecter();
+                DAOFactory.Connecter();
 
-                DAOFactory.execSQLWrite(req1);
+                DAOFactory.ExecSQLWrite(req1);
 
-                DAOFactory.execSQLWrite(req2);
+                DAOFactory.ExecSQLWrite(req2);
 
-                DAOFactory.deconnecter();
+                DAOFactory.Deconnecter();
 
                 resultat = true;
             }
@@ -198,7 +198,7 @@ namespace Mediateq_AP_SIO2
             {
                 MessageBox.Show(e.Message);
                 resultat = false;
-                DAOFactory.deconnecter();
+                DAOFactory.Deconnecter();
             }
             
             return resultat;
@@ -207,16 +207,16 @@ namespace Mediateq_AP_SIO2
         //|-----------------------------------------------------------
         //| Récupération des infos pour la modif des livres
         //|-----------------------------------------------------------
-        public static Livre getLivreByLibelleForEdit(String unId)
+        public static Livre GetLivreByLibelleForEdit(String unId)
         {
             Livre resultat;
             string req = "Select l.id, d.titre, l.ISBN, l.auteur, l.collection, d.image, d.idCategorie, c.libelle from livre l ";
             req += " join document d on l.id=d.id";
             req += " join categorie c on d.idCategorie = c.id WHERE d.id = '" + unId + "'";
 
-            DAOFactory.connecter();
+            DAOFactory.Connecter();
 
-            MySqlDataReader reader = DAOFactory.execSQLRead(req);
+            MySqlDataReader reader = DAOFactory.ExecSQLRead(req);
 
             if (reader.Read())
             {
@@ -228,7 +228,7 @@ namespace Mediateq_AP_SIO2
                 resultat = null;
             }
 
-            DAOFactory.deconnecter();
+            DAOFactory.Deconnecter();
 
             return resultat;
         }
@@ -236,7 +236,7 @@ namespace Mediateq_AP_SIO2
         //|-----------------------------------------------------------
         //| Modifiaction d'un livre
         //|-----------------------------------------------------------
-        public static bool editLivre(Livre unLivre, Categorie uneCategorie)
+        public static bool EditLivre(Livre unLivre, Categorie uneCategorie)
         {
             bool resultat;
 
@@ -246,13 +246,13 @@ namespace Mediateq_AP_SIO2
 
                 String req2 = "UPDATE livre SET ISBN = '" + unLivre.ISBN1 + "', auteur = '" + unLivre.AuteurDuLivre + "', collection = '" + unLivre.LaCollection + "' WHERE id = '" + unLivre.IdDoc + "';";
 
-                DAOFactory.connecter();
+                DAOFactory.Connecter();
 
-                DAOFactory.execSQLWrite(req1);
+                DAOFactory.ExecSQLWrite(req1);
 
-                DAOFactory.execSQLWrite(req2);
+                DAOFactory.ExecSQLWrite(req2);
 
-                DAOFactory.deconnecter();
+                DAOFactory.Deconnecter();
 
                 resultat = true;
             }
@@ -260,7 +260,7 @@ namespace Mediateq_AP_SIO2
             {
                 MessageBox.Show(e.Message);
                 resultat = false;
-                DAOFactory.deconnecter();
+                DAOFactory.Deconnecter();
             }
 
             return resultat;
@@ -269,7 +269,7 @@ namespace Mediateq_AP_SIO2
         //|-----------------------------------------------------------
         //| Supprimer un livre
         //|-----------------------------------------------------------
-        public static bool deleteLivre(Livre unLivre)
+        public static bool DeleteLivre(Livre unLivre)
         {
             bool resultat;
 
@@ -279,13 +279,13 @@ namespace Mediateq_AP_SIO2
 
                 String req2 = "DELETE FROM document WHERE id = '" + unLivre.IdDoc + "';";
 
-                DAOFactory.connecter();
+                DAOFactory.Connecter();
 
-                DAOFactory.execSQLWrite(req1);
+                DAOFactory.ExecSQLWrite(req1);
 
-                DAOFactory.execSQLWrite(req2);
+                DAOFactory.ExecSQLWrite(req2);
 
-                DAOFactory.deconnecter();
+                DAOFactory.Deconnecter();
 
                 resultat = true;
             }
@@ -293,7 +293,7 @@ namespace Mediateq_AP_SIO2
             {
                 MessageBox.Show(e.Message);
                 resultat = false;
-                DAOFactory.deconnecter();
+                DAOFactory.Deconnecter();
             }
             return resultat;
         }
@@ -305,7 +305,7 @@ namespace Mediateq_AP_SIO2
         //|-----------------------------------------------------------
         //| Créer un nouveau Dvd
         //|-----------------------------------------------------------
-        public static bool setNouveauDvd(Dvd unDvd, Categorie uneCategorie)
+        public static bool SetNouveauDvd(Dvd unDvd, Categorie uneCategorie)
         {
             bool resultat;
 
@@ -315,13 +315,13 @@ namespace Mediateq_AP_SIO2
 
                 String req2 = "INSERT INTO dvd (id, synopsis, réalisateur, duree) VALUES ('" + unDvd.IdDoc + "', '" + unDvd.Synopsis + "', '" + unDvd.Realisateur + "', '" + unDvd.Duree + "');";
 
-                DAOFactory.connecter();
+                DAOFactory.Connecter();
 
-                DAOFactory.execSQLWrite(req1);
+                DAOFactory.ExecSQLWrite(req1);
 
-                DAOFactory.execSQLWrite(req2);
+                DAOFactory.ExecSQLWrite(req2);
 
-                DAOFactory.deconnecter();
+                DAOFactory.Deconnecter();
 
                 resultat = true;
             }
@@ -329,7 +329,7 @@ namespace Mediateq_AP_SIO2
             {
                 MessageBox.Show(e.Message);
                 resultat = false;
-                DAOFactory.deconnecter();
+                DAOFactory.Deconnecter();
             }
 
             return resultat;
@@ -338,7 +338,7 @@ namespace Mediateq_AP_SIO2
         //|-----------------------------------------------------------
         //| Modification d'un Dvd
         //|-----------------------------------------------------------
-        public static bool editDvd(Dvd unDvd, Categorie uneCategorie)
+        public static bool EditDvd(Dvd unDvd, Categorie uneCategorie)
         {
             bool resultat;
 
@@ -348,13 +348,13 @@ namespace Mediateq_AP_SIO2
 
                 String req2 = "UPDATE dvd SET synopsis = '" + unDvd.Synopsis + "', réalisateur = '" + unDvd.Realisateur + "', duree = '" + unDvd.Duree + "' WHERE id = '" + unDvd.IdDoc + "';";
 
-                DAOFactory.connecter();
+                DAOFactory.Connecter();
 
-                DAOFactory.execSQLWrite(req1);
+                DAOFactory.ExecSQLWrite(req1);
 
-                DAOFactory.execSQLWrite(req2);
+                DAOFactory.ExecSQLWrite(req2);
 
-                DAOFactory.deconnecter();
+                DAOFactory.Deconnecter();
 
                 resultat = true;
             }
@@ -362,7 +362,7 @@ namespace Mediateq_AP_SIO2
             {
                 MessageBox.Show(e.Message);
                 resultat = false;
-                DAOFactory.deconnecter();
+                DAOFactory.Deconnecter();
             }
 
             return resultat;
@@ -371,7 +371,7 @@ namespace Mediateq_AP_SIO2
         //|-----------------------------------------------------------
         //| Supprimer un dvd
         //|-----------------------------------------------------------
-        public static bool deleteDvd(Dvd unDvd)
+        public static bool DeleteDvd(Dvd unDvd)
         {
             bool resultat;
 
@@ -381,13 +381,13 @@ namespace Mediateq_AP_SIO2
 
                 String req2 = "DELETE FROM document WHERE id = '" + unDvd.IdDoc + "';";
 
-                DAOFactory.connecter();
+                DAOFactory.Connecter();
 
-                DAOFactory.execSQLWrite(req1);
+                DAOFactory.ExecSQLWrite(req1);
 
-                DAOFactory.execSQLWrite(req2);
+                DAOFactory.ExecSQLWrite(req2);
 
-                DAOFactory.deconnecter();
+                DAOFactory.Deconnecter();
 
                 resultat = true;
             }
@@ -395,7 +395,7 @@ namespace Mediateq_AP_SIO2
             {
                 MessageBox.Show(e.Message);
                 resultat = false;
-                DAOFactory.deconnecter();
+                DAOFactory.Deconnecter();
             }
             return resultat;
         }

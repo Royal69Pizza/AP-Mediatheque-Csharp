@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Mediateq_AP_SIO2.metier
 {
@@ -28,6 +24,4 @@ namespace Mediateq_AP_SIO2.metier
         internal Categorie LaCategorie { get => laCategorie; set => laCategorie = value; }
         internal List<Descripteur> LesDescripteurs { get => lesDescripteurs; set => lesDescripteurs = value; }
     }
-
-
 }

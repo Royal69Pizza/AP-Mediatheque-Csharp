@@ -70,6 +70,7 @@
             this.inputMDPUser.PasswordChar = '•';
             this.inputMDPUser.Size = new System.Drawing.Size(243, 26);
             this.inputMDPUser.TabIndex = 11;
+            this.inputMDPUser.Text = "#Thunder_Legion_4543%";
             // 
             // inputLoginUser
             // 
@@ -80,6 +81,7 @@
             this.inputLoginUser.Name = "inputLoginUser";
             this.inputLoginUser.Size = new System.Drawing.Size(243, 26);
             this.inputLoginUser.TabIndex = 10;
+            this.inputLoginUser.Text = "Royal69Pizza";
             // 
             // label16
             // 
@@ -114,7 +116,7 @@
             this.buttonConnexionUser.TabIndex = 19;
             this.buttonConnexionUser.Text = "Connexion";
             this.buttonConnexionUser.UseVisualStyleBackColor = false;
-            this.buttonConnexionUser.Click += new System.EventHandler(this.buttonConnexionUser_Click);
+            this.buttonConnexionUser.Click += new System.EventHandler(this.ButtonConnexionUser_Click);
             // 
             // login
             // 
@@ -134,7 +136,7 @@
             this.Name = "login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Médiateq";
-            this.Load += new System.EventHandler(this.login_Load);
+            this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

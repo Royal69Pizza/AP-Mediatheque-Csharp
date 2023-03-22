@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Diagnostics;
-using System.IO;
+using System.Security.Cryptography;
+using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using Mediateq_AP_SIO2.divers;
@@ -15,18 +15,18 @@ namespace Mediateq_AP_SIO2
             InitializeComponent();
         }
 
-        private void login_Load(object sender, EventArgs e)
+        private void Login_Load(object sender, EventArgs e)
         {
             //|
             //| Création de la connection
             //|
-            DAOFactory.creerConnection();
+            DAOFactory.CreerConnection();
         }
 
         //|-----------------------------------------------------------
         //| Login
         //|-----------------------------------------------------------
-        private void buttonConnexionUser_Click(object sender, EventArgs e)
+        private void ButtonConnexionUser_Click(object sender, EventArgs e)
         {
             string Login = inputLoginUser.Text;
             string MDP = inputMDPUser.Text;
@@ -34,45 +34,40 @@ namespace Mediateq_AP_SIO2
             //|
             //| Pour le login on autorise juste les chiffres et les lettres
             //|
-            Regex regexLogin = new Regex(@"^[\wéèàùëêöôâäüûïî]+$");
-            //|
-            //| Pour le mot de passe on autorise certain caractères spéciaux
-            //|
-            Regex regexMdp = new Regex(@"^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$");
+            Regex regexLogin = new Regex(@"^[\w]+$");
 
             Match LoginTest = regexLogin.Match(Login);
-            Match MdpTest = regexMdp.Match(MDP);
 
             try
             {
                 if (Login == "" || MDP == "")
                 {
-                    throw new ExceptionSio(0, "buttonConnexionUser_Click", "Login ou MDP vide.");
+                    throw new ExceptionSio("Connexion à Mediateq", "Login ou MDP vide.", "");
                 }
                 else
                 {
-                    if(!LoginTest.Success || !MdpTest.Success)
+                    if (!LoginTest.Success)
                     {
-                        throw new ExceptionSio(0, "buttonConnexionUser_Click", "Caractères illégaux détéctés");
+                        throw new ExceptionSio("Connexion à Mediateq", "Caractères illégaux détéctés.", "");
                     }
                     else
                     {
                         //|
                         //| Cryptage des données rentrées par l'utilisateur, le login de l'user sert de clé
                         //|
-                        string userMdpHashed = XORCipher(MDP, Login);
+                        string userMdpHashed = MD5(MDP);
 
                         //|
                         //| Récupération du mdp de l'utilisateur par son login
                         //|
-                        string bddUserMdpHashed = DAOUtilisateurs.getMdpByLogin(Login);
+                        string bddUserMdpHashed = DAOUtilisateurs.GetMdpByLogin(Login);
 
                         //|
                         //| Si le mdp rentré crypté est le meme que celui dans la base de données
                         //|
                         if (userMdpHashed == bddUserMdpHashed)
                         {
-                            Utilisateur unUtilisateur = DAOUtilisateurs.getUtilisateurByLogin(Login);
+                            Utilisateur unUtilisateur = DAOUtilisateurs.GetUtilisateurByLogin(Login);
 
                             //|
                             //| On lance l'appli médiateq
@@ -90,31 +85,38 @@ namespace Mediateq_AP_SIO2
                         }
                         else
                         {
-                            throw new ExceptionSio(0, "buttonConnexionUser_Click", "Mot de passe incorrect.");
+                            throw new ExceptionSio("Connexion à Mediateq", "Mot de passe incorrect.", "");
                         }
                     }
                 }
             } catch (ExceptionSio ex)
             {
-                MessageBox.Show("Niveau d'erreur : " + ex.NiveauExc + "\nLocalisation : " + ex.LibelleExc + "\nInfo : " + ex.Message + " ", "Mediateq", MessageBoxButtons.OK);
+                MessageBox.Show(ex.MessageErreur, ex.LibelleErreur, MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
-        /** [CRYPTAGE XOR] Cryptage en XOR
-         * @param data (mdp)
-         * @param key (clé de chiffrement)
+        /** [CRYPTAGE MD5] Cryptage en MD5
+         * @param text (mdp)
          * **/
-        public string XORCipher(string data, string key)
+        public string MD5(string text)
         {
-            int dataLen = data.Length;
-            int keyLen = key.Length;
-            char[] output = new char[dataLen];
+            MD5 md5 = new MD5CryptoServiceProvider();
 
-            for (int i = 0; i < dataLen; ++i)
+            //compute hash from the bytes of text
+            md5.ComputeHash(ASCIIEncoding.ASCII.GetBytes(text));
+
+            //get hash result after compute it  
+            byte[] result = md5.Hash;
+
+            StringBuilder strBuilder = new StringBuilder();
+            for (int i = 0; i < result.Length; i++)
             {
-                output[i] = (char)(data[i] ^ key[i % keyLen]);
+                //change it into 2 hexadecimal digits  
+                //for each byte
+                strBuilder.Append(result[i].ToString("x2"));
             }
-            return new string(output);
+
+            return strBuilder.ToString();
         }
     }
 }

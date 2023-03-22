@@ -97,6 +97,7 @@
     <Compile Include="login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
+    <Compile Include="metier\EtatCommande.cs" />
     <Compile Include="metier\Commande.cs" />
     <Compile Include="metier\Categorie.cs" />
     <Compile Include="metier\Document.cs" />

@@ -8,7 +8,7 @@ namespace Mediateq_AP_SIO2
     {
         private static MySqlConnection connexion;
 
-        public static void creerConnection()
+        public static void CreerConnection()
         {
             string serverIp = "127.0.0.1";
             string username = "root";
@@ -23,12 +23,12 @@ namespace Mediateq_AP_SIO2
             }
             catch (Exception e)
             {
-                throw new ExceptionSio(1, "Connexion générale à la BDD impossible.", "Configurez ou reconnectez la connexion au server.");
+                throw new ExceptionSio("Connexion générale à la BDD impossible.", "Configurez ou reconnectez la connexion au server.", e.Message);
             }
 
         }
 
-        public static void connecter()
+        public static void Connecter()
         {
             try
             {
@@ -36,18 +36,18 @@ namespace Mediateq_AP_SIO2
             }
             catch (Exception e)
             {
-                throw new ExceptionSio(1, "Connexion locale à la BDD impossible.", "Configurez ou reconnectez la connexion au server.");
+                throw new ExceptionSio("Connexion locale à la BDD impossible.", "Configurez ou reconnectez la connexion au server.", e.Message);
             }
         }
 
-        public static void deconnecter()
+        public static void Deconnecter()
         {
             connexion.Close();
         }
 
 
         // Exécution d'une requête de lecture ; retourne un Datareader
-        public static MySqlDataReader execSQLRead(string requete)
+        public static MySqlDataReader ExecSQLRead(string requete)
         {
             MySqlCommand command;
             MySqlDataAdapter adapter;
@@ -66,15 +66,14 @@ namespace Mediateq_AP_SIO2
             }
             catch (Exception e)
             {
-                throw new ExceptionSio(1, "Erreur de lecture dans la BDD", "Configurez ou reconnectez la connexion au server.");
+                throw new ExceptionSio("Erreur de lecture dans la BDD", "Configurez ou reconnectez la connexion au server.", e.Message);
             }
-
 
             return dataReader;
         }
 
         // Exécution d'une requete d'écriture (Insert ou Update) ; ne retourne rien
-        public static void execSQLWrite(string requete)
+        public static void ExecSQLWrite(string requete)
         {
             MySqlCommand command;
             command = new MySqlCommand();
@@ -86,7 +85,7 @@ namespace Mediateq_AP_SIO2
             }
             catch (Exception e)
             {
-                throw new ExceptionSio(1, "Erreur d'écriture dans la BDD", "Configurez ou reconnectez la connexion au server.");
+                throw new ExceptionSio("Erreur d'écriture dans la BDD", "Configurez ou reconnectez la connexion au server.", e.Message);
             }
             
         }
