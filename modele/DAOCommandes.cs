@@ -112,6 +112,94 @@ namespace Mediateq_AP_SIO2
 
             return lesEtatCommande;
         }
+
+        //|-----------------------------------------------------------
+        //| Créer une nouvelle Commande
+        //|-----------------------------------------------------------
+        public static bool SetNouvelleCommande(int ID, int NbExemplaires, DateTime DateCommande, int MontantCommande, Document unNouveauDocumentForCommande, EtatCommande unNouvelEtatCommandeForCommande)
+        {
+            bool resultat;
+
+            try
+            {
+                string uneDate = DateCommande.ToString("yyyy-MM-dd");
+                String req = "INSERT INTO commande (id, nbExemplaire, dateCommande, montant, idDoc, idEtatCommande) VALUES ('" + ID + "', '" + NbExemplaires + "', '" + uneDate + "', '" + MontantCommande + "', '" + unNouveauDocumentForCommande.IdDoc + "', '" + unNouvelEtatCommandeForCommande.Id + "');";
+
+                DAOFactory.Connecter();
+
+                DAOFactory.ExecSQLWrite(req);
+
+                DAOFactory.Deconnecter();
+
+                resultat = true;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+                resultat = false;
+                DAOFactory.Deconnecter();
+            }
+
+            return resultat;
+        }
+
+        //|-----------------------------------------------------------
+        //| Modifiaction d'une commande
+        //|-----------------------------------------------------------
+        public static bool EditCommande(Commande uneCommande, Document unDocument, EtatCommande unEtatCommande)
+        {
+            bool resultat;
+
+            try
+            {
+                string uneDate = uneCommande.DateCommande.ToString("yyyy-MM-dd");
+                String req = "UPDATE commande SET nbExemplaire = '" + uneCommande.ExemplairesCommande + "', dateCommande = '" + uneDate + "', montant = '" + uneCommande.MontantCommande + "', idDoc = '" + unDocument.IdDoc + "', idEtatCommande = '" + unEtatCommande.Id + "' WHERE id = '" + uneCommande.IdCommande + "';";
+
+                DAOFactory.Connecter();
+
+                DAOFactory.ExecSQLWrite(req);
+
+                DAOFactory.Deconnecter();
+
+                resultat = true;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+                resultat = false;
+                DAOFactory.Deconnecter();
+            }
+
+            return resultat;
+        }
+
+        //|-----------------------------------------------------------
+        //| Supprimer une commande
+        //|-----------------------------------------------------------
+        public static bool DeleteCommande(Commande uneCommande)
+        {
+            bool resultat;
+
+            try
+            {
+                String req = "DELETE FROM commande WHERE id = '" + uneCommande.IdCommande + "';";
+
+                DAOFactory.Connecter();
+
+                DAOFactory.ExecSQLWrite(req);
+
+                DAOFactory.Deconnecter();
+
+                resultat = true;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+                resultat = false;
+                DAOFactory.Deconnecter();
+            }
+            return resultat;
+        }
     }
 }
 

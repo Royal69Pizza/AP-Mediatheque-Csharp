@@ -63,6 +63,7 @@ namespace Mediateq_AP_SIO2
             SetComboboxCategorieForLivreAndDvd();
             SetComboboxDocumentForCommande();
             SetComboboxEtatForCommande();
+            SetComboboxCommandeForCommande();
 
 
             //|
@@ -109,8 +110,8 @@ namespace Mediateq_AP_SIO2
         //|
         private void SetComboboxDvdForDvd()
         {
-            selectDvdForEdit.DataSource = lesDvd;
-            selectDvdForEdit.DisplayMember = "titre";
+            SelectDvdForEdit.DataSource = lesDvd;
+            SelectDvdForEdit.DisplayMember = "titre";
 
             selectDvdForDelete.DataSource = lesDvd;
             selectDvdForDelete.DisplayMember = "titre";
@@ -156,6 +157,18 @@ namespace Mediateq_AP_SIO2
 
             selectEtatForEditCommande.DataSource = lesEtatCommande;
             selectEtatForEditCommande.DisplayMember = "libelle";
+        }
+
+        //|
+        //| Comboboxes pour commande dans commandes
+        //|
+        private void SetComboboxCommandeForCommande()
+        {
+            SelectCommandeForEdit.DataSource = lesCommandes;
+            SelectCommandeForEdit.DisplayMember = "idCommande";
+
+            selectCommandeForDelete.DataSource = lesCommandes;
+            selectCommandeForDelete.DisplayMember = "idCommande";
         }
 
         #endregion
@@ -413,11 +426,6 @@ namespace Mediateq_AP_SIO2
 
                     resultat = DAODocuments.EditLivre(leLivreForEdit, uneNouvelleCategorie);
 
-                    //|
-                    //| Création de l'objet Livre
-                    //|
-                    Livre unNouveauLivre = new Livre(ID, Titre, ISBN, Auteur, Collection, Image, uneNouvelleCategorie);
-
                     if (resultat)
                     {
                         //|
@@ -447,7 +455,7 @@ namespace Mediateq_AP_SIO2
         //|-----------------------------------------------------------
         //| Suppression des livres
         //|-----------------------------------------------------------
-        private void ButtonDeleteLivre_Click_1(object sender, EventArgs e)
+        private void ButtonDeleteLivre_Click(object sender, EventArgs e)
         {
             bool resultat;
             Livre leLivreForDelete = (Livre)selectLivreForDelete.SelectedItem;
@@ -511,7 +519,7 @@ namespace Mediateq_AP_SIO2
         //|-----------------------------------------------------------
         //| Créer un Dvd
         //|-----------------------------------------------------------
-        private void ButtonCreerDvd_Click(object sender, EventArgs e)
+        private void ButtonCreerDvd_Click_1(object sender, EventArgs e)
         {
             //|
             //| Récupération des infos des input
@@ -584,12 +592,12 @@ namespace Mediateq_AP_SIO2
         //|-----------------------------------------------------------
         //| Affichage des infos du dvd séléctionné dans modification
         //|-----------------------------------------------------------
-        private void SelectDvdForEdit_SelectedIndexChanged(object sender, EventArgs e)
+        private void SelectDvdForEdit_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             //|
             //| On recupère les infos de l'objet dvd séléctionné
             //|
-            Dvd leDvdForEdit = (Dvd)selectDvdForEdit.SelectedItem;
+            Dvd leDvdForEdit = (Dvd)SelectDvdForEdit.SelectedItem;
 
             inputIdDvdForEdit.Text = leDvdForEdit.IdDoc;
             inputTitreDvdForEdit.Text = leDvdForEdit.Titre;
@@ -603,7 +611,7 @@ namespace Mediateq_AP_SIO2
         //|-----------------------------------------------------------
         //| Modification des Dvd
         //|-----------------------------------------------------------
-        private void ButtonEditDvd_Click(object sender, EventArgs e)
+        private void ButtonEditDvd_Click_1(object sender, EventArgs e)
         {
             //|
             //| Récupération des infos des input
@@ -631,7 +639,7 @@ namespace Mediateq_AP_SIO2
                     //|
                     //| On supprime l'ancien objet et on le recrée avec les nouveaux trucs
                     //|
-                    Dvd leDvdForEdit = (Dvd)selectDvdForEdit.SelectedItem;
+                    Dvd leDvdForEdit = (Dvd)SelectDvdForEdit.SelectedItem;
                     leDvdForEdit = null;
                     leDvdForEdit = new Dvd(ID, Synopsis, Realisateur, Titre, Duree, Image, uneNouvelleCategorie);
 
@@ -641,11 +649,6 @@ namespace Mediateq_AP_SIO2
                     bool resultat;
 
                     resultat = DAODocuments.EditDvd(leDvdForEdit, uneNouvelleCategorie);
-
-                    //|
-                    //| Création de l'objet Livre
-                    //|
-                    Dvd unNouveauDvd = new Dvd(ID, Synopsis, Realisateur, Titre, Duree, Image, uneNouvelleCategorie);
 
                     if (resultat)
                     {
@@ -676,7 +679,7 @@ namespace Mediateq_AP_SIO2
         //|-----------------------------------------------------------
         //| Supprimer les Dvd
         //|-----------------------------------------------------------
-        private void ButtonDeleteDvd_Click(object sender, EventArgs e)
+        private void ButtonDeleteDvd_Click_1(object sender, EventArgs e)
         {
             bool resultat;
             Dvd leDvdForDelete = (Dvd)selectDvdForDelete.SelectedItem;
@@ -736,6 +739,184 @@ namespace Mediateq_AP_SIO2
             foreach (Commande uneCommande in lesCommandes)
             {
                 dataOfCommande.Rows.Add(uneCommande.IdCommande, uneCommande.ExemplairesCommande, uneCommande.DateCommande, uneCommande.MontantCommande, uneCommande.Document.Titre, uneCommande.EtatCommande.Libelle);
+            }
+        }
+
+        //|-----------------------------------------------------------
+        //| Créer une commande
+        //|-----------------------------------------------------------
+        private void ButtonCreateCommande_Click(object sender, EventArgs e)
+        {
+            int ID = int.Parse(inputIdCommande.Text);
+            int NbExemplaires = int.Parse(inputNbExemplairesCommande.Text);
+            DateTime DateCommande = inputDateCommande.Value;
+            int MontantCommande = int.Parse(inputMontantCommande.Text);
+            Document unNouveauDocumentForCommande = (Document)selectDocumentForCreateCommande.SelectedItem;
+            EtatCommande unNouvelEtatCommandeForCommande = (EtatCommande)selectEtatForCreateCommande.SelectedItem;
+
+            try
+            {
+                if (DateCommande == null || unNouveauDocumentForCommande == null || unNouvelEtatCommandeForCommande == null)
+                {
+                    throw new ExceptionSio("CRUD COMMANDE - Créer", "Des champs ne sont pas renseignés.", "");
+                }
+                else
+                {
+                    Commande unNouvelleCommande = new Commande(ID, NbExemplaires, DateCommande, MontantCommande, unNouveauDocumentForCommande, unNouvelEtatCommandeForCommande);
+
+                    bool resultat = DAOCommandes.SetNouvelleCommande(ID, NbExemplaires, DateCommande, MontantCommande, unNouveauDocumentForCommande, unNouvelEtatCommandeForCommande);
+                    
+                    if (resultat)
+                    {
+                        lesCommandes = DAOCommandes.GetAllCommandes();
+
+                        SetAllDataOfCommandes();
+
+                        SetComboboxCommandeForCommande();
+
+                        textEventCommande.Text = "La commande à bien étée créé";
+                        textEventCommande.ForeColor = System.Drawing.Color.FromArgb(0, 255, 0);
+                    }
+                    else
+                    {
+                        throw new ExceptionSio("CRUD COMMANDE - Créer", "Erreur BDD lors de la création de la commande.", "");
+                    }
+                }
+            }
+            catch (ExceptionSio ex)
+            {
+                MessageBox.Show(ex.MessageErreur, ex.LibelleErreur, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        //|-----------------------------------------------------------
+        //| Affiche les infos d'une commande
+        //|-----------------------------------------------------------
+        private void SelectCommandeForEdit_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //|
+            //| On recupère les infos de l'objet commande séléctionné
+            //|
+            Commande laCommandeForEdit = (Commande)SelectCommandeForEdit.SelectedItem;
+
+            inputIdCommandeForEdit.Text = laCommandeForEdit.IdCommande.ToString();
+            inputNbExemplairesCommandeForEdit.Text = laCommandeForEdit.ExemplairesCommande.ToString();
+            inputDateCommandeForEdit.Value = laCommandeForEdit.DateCommande;
+            inputMontantCommandeForEdit.Text = laCommandeForEdit.MontantCommande.ToString();
+            selectDocumentForEditCommande.Text = laCommandeForEdit.Document.Titre;
+            selectEtatForEditCommande.Text = laCommandeForEdit.EtatCommande.Libelle;
+        }
+
+        //|-----------------------------------------------------------
+        //| Modification des Commandes
+        //|-----------------------------------------------------------
+        private void ButtonModifierCommande_Click(object sender, EventArgs e)
+        {
+            int ID = int.Parse(inputIdCommandeForEdit.Text);
+            int NbExemplaires = int.Parse(inputNbExemplairesCommandeForEdit.Text);
+            DateTime DateCommande = inputDateCommandeForEdit.Value;
+            int Montant = int.Parse(inputMontantCommandeForEdit.Text);
+            Document uneNouveauDocument = (Document)selectDocumentForEditCommande.SelectedItem;
+            EtatCommande unNouvelEtatCommande = (EtatCommande)selectEtatForEditCommande.SelectedItem;
+
+            int TestPourID = inputIdCommandeForEdit.Text.Length;
+
+            try
+            {
+                if (TestPourID < 5 || TestPourID > 6)
+                {
+                    throw new ExceptionSio("CRUD COMMANDE - Modifier", "L'ID de la commande est incorrect. Il doit être de la forme 'xxxxx'.", "");
+                }
+                else
+                {
+                    if (NbExemplaires == 0 || Montant == 0 || Montant >= 10000)
+                    {
+                        throw new ExceptionSio("CRUD COMMANDE - Modifier", "Le nombre d'exemplaires ou le montant de la commande ne peut être égal à 0 et supérieur à 9999.", "");
+                    }
+                    else
+                    {
+                        if (DateCommande == null || uneNouveauDocument == null || unNouvelEtatCommande == null)
+                        {
+                            throw new ExceptionSio("CRUD COMMANDE - Modifier", "Séléctionnez un document, un état de commande et une date valide.", "");
+                        }
+                        else
+                        {
+                            //|
+                            //| Création de l'objet commande
+                            //|
+                            Commande laCommandeForEdit = (Commande)SelectCommandeForEdit.SelectedItem;
+                            laCommandeForEdit = null;
+                            laCommandeForEdit = new Commande(ID, NbExemplaires, DateCommande, Montant, uneNouveauDocument, unNouvelEtatCommande);
+
+                            //|
+                            //| Appel de la base de données pour modifier la commande selon son ID
+                            //|
+                            bool resultat;
+
+                            resultat = DAOCommandes.EditCommande(laCommandeForEdit, uneNouveauDocument, unNouvelEtatCommande);
+
+                            if (resultat)
+                            {
+                                //|
+                                //| On met à jour la combobox de la modif et suppression des dvd & le datagridview des dvd
+                                //|
+                                lesCommandes = DAOCommandes.GetAllCommandes();
+
+                                SetAllDataOfCommandes();
+
+                                SetComboboxCommandeForCommande();
+
+                                textEventCommande.Text = "La commande à été modifiée";
+                                textEventCommande.ForeColor = System.Drawing.Color.FromArgb(0, 255, 0);
+                            }
+                            else
+                            {
+                                throw new ExceptionSio("CRUD COMMANDE - Modifier", "Erreur BDD lors de la modification de la commande", "");
+                            }
+                        }
+                    }
+                }
+            }
+            catch (ExceptionSio ex)
+            {
+                MessageBox.Show(ex.MessageErreur, ex.LibelleErreur, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        //|-----------------------------------------------------------
+        //| Suppression des Commandes
+        //|-----------------------------------------------------------
+        private void ButtonDeleteCommande_Click(object sender, EventArgs e)
+        {
+            bool resultat;
+            Commande laCommandeForDelete = (Commande)selectCommandeForDelete.SelectedItem;
+
+            if (laCommandeForDelete == null)
+            {
+                throw new ExceptionSio("CRUD COMMANDE - Supprimer", "Aucune commande séléctionnée.", "");
+            }
+            else
+            {
+                resultat = DAOCommandes.DeleteCommande(laCommandeForDelete);
+
+                if (resultat)
+                {
+                    textEventCommande.Text = "La commande à bien été supprimée";
+                    textEventCommande.ForeColor = System.Drawing.Color.FromArgb(0, 255, 0);
+
+                    //|
+                    //| On met à jour la combobox de la modif et suppression des dvd
+                    //|
+                    lesCommandes = DAOCommandes.GetAllCommandes();
+
+                    SetAllDataOfCommandes();
+
+                    SetComboboxCommandeForCommande();
+                }
+                else
+                {
+                    throw new ExceptionSio("CRUD COMMANDE - Supprimer", "Erreur BDD lors de la suppression de la commande", "");
+                }
             }
         }
 
