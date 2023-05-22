@@ -141,11 +141,11 @@ namespace Mediateq_AP_SIO2
             this.tabGestionDesDvd = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabGestionDesDvdO = new System.Windows.Forms.TabPage();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.groupSuprDvd = new System.Windows.Forms.GroupBox();
             this.label32 = new System.Windows.Forms.Label();
             this.selectDvdForDelete = new System.Windows.Forms.ComboBox();
             this.ButtonDeleteDvd = new System.Windows.Forms.Button();
-            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.groupModifierDvd = new System.Windows.Forms.GroupBox();
             this.label88 = new System.Windows.Forms.Label();
             this.inputDureeDvdForEdit = new System.Windows.Forms.NumericUpDown();
             this.selectCategorieDvdForEdit = new System.Windows.Forms.ComboBox();
@@ -173,7 +173,7 @@ namespace Mediateq_AP_SIO2
             this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.groupBox18 = new System.Windows.Forms.GroupBox();
+            this.groupCreerDvd = new System.Windows.Forms.GroupBox();
             this.label87 = new System.Windows.Forms.Label();
             this.inputDureeDvd = new System.Windows.Forms.NumericUpDown();
             this.selectCategorieDvdForCreate = new System.Windows.Forms.ComboBox();
@@ -305,11 +305,11 @@ namespace Mediateq_AP_SIO2
             this.tabGestionDesDvd.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabGestionDesDvdO.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupBox11.SuspendLayout();
+            this.groupSuprDvd.SuspendLayout();
+            this.groupModifierDvd.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.inputDureeDvdForEdit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataOfDvd)).BeginInit();
-            this.groupBox18.SuspendLayout();
+            this.groupCreerDvd.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.inputDureeDvd)).BeginInit();
             this.groupBox13.SuspendLayout();
             this.tabPage4.SuspendLayout();
@@ -1340,11 +1340,11 @@ namespace Mediateq_AP_SIO2
             // tabGestionDesDvdO
             // 
             this.tabGestionDesDvdO.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tabGestionDesDvdO.Controls.Add(this.groupBox4);
-            this.tabGestionDesDvdO.Controls.Add(this.groupBox11);
+            this.tabGestionDesDvdO.Controls.Add(this.groupSuprDvd);
+            this.tabGestionDesDvdO.Controls.Add(this.groupModifierDvd);
             this.tabGestionDesDvdO.Controls.Add(this.label78);
             this.tabGestionDesDvdO.Controls.Add(this.dataOfDvd);
-            this.tabGestionDesDvdO.Controls.Add(this.groupBox18);
+            this.tabGestionDesDvdO.Controls.Add(this.groupCreerDvd);
             this.tabGestionDesDvdO.Controls.Add(this.groupBox13);
             this.tabGestionDesDvdO.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabGestionDesDvdO.ForeColor = System.Drawing.Color.White;
@@ -1355,20 +1355,20 @@ namespace Mediateq_AP_SIO2
             this.tabGestionDesDvdO.TabIndex = 0;
             this.tabGestionDesDvdO.Text = "Livres";
             // 
-            // groupBox4
+            // groupSuprDvd
             // 
-            this.groupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.groupBox4.Controls.Add(this.label32);
-            this.groupBox4.Controls.Add(this.selectDvdForDelete);
-            this.groupBox4.Controls.Add(this.ButtonDeleteDvd);
-            this.groupBox4.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.ForeColor = System.Drawing.Color.White;
-            this.groupBox4.Location = new System.Drawing.Point(280, 698);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(357, 161);
-            this.groupBox4.TabIndex = 10;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Supprimer";
+            this.groupSuprDvd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.groupSuprDvd.Controls.Add(this.label32);
+            this.groupSuprDvd.Controls.Add(this.selectDvdForDelete);
+            this.groupSuprDvd.Controls.Add(this.ButtonDeleteDvd);
+            this.groupSuprDvd.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupSuprDvd.ForeColor = System.Drawing.Color.White;
+            this.groupSuprDvd.Location = new System.Drawing.Point(280, 698);
+            this.groupSuprDvd.Name = "groupSuprDvd";
+            this.groupSuprDvd.Size = new System.Drawing.Size(357, 161);
+            this.groupSuprDvd.TabIndex = 10;
+            this.groupSuprDvd.TabStop = false;
+            this.groupSuprDvd.Text = "Supprimer";
             // 
             // label32
             // 
@@ -1405,35 +1405,35 @@ namespace Mediateq_AP_SIO2
             this.ButtonDeleteDvd.UseVisualStyleBackColor = false;
             this.ButtonDeleteDvd.Click += new System.EventHandler(this.ButtonDeleteDvd_Click_1);
             // 
-            // groupBox11
+            // groupModifierDvd
             // 
-            this.groupBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.groupBox11.Controls.Add(this.label88);
-            this.groupBox11.Controls.Add(this.inputDureeDvdForEdit);
-            this.groupBox11.Controls.Add(this.selectCategorieDvdForEdit);
-            this.groupBox11.Controls.Add(this.label1);
-            this.groupBox11.Controls.Add(this.inputRealisateurDvdForEdit);
-            this.groupBox11.Controls.Add(this.label79);
-            this.groupBox11.Controls.Add(this.inputSynopsisDvdForEdit);
-            this.groupBox11.Controls.Add(this.label80);
-            this.groupBox11.Controls.Add(this.inputImageDvdForEdit);
-            this.groupBox11.Controls.Add(this.label81);
-            this.groupBox11.Controls.Add(this.label82);
-            this.groupBox11.Controls.Add(this.inputTitreDvdForEdit);
-            this.groupBox11.Controls.Add(this.inputIdDvdForEdit);
-            this.groupBox11.Controls.Add(this.label83);
-            this.groupBox11.Controls.Add(this.label84);
-            this.groupBox11.Controls.Add(this.label85);
-            this.groupBox11.Controls.Add(this.SelectDvdForEdit);
-            this.groupBox11.Controls.Add(this.ButtonEditDvd);
-            this.groupBox11.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox11.ForeColor = System.Drawing.Color.White;
-            this.groupBox11.Location = new System.Drawing.Point(643, 400);
-            this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(375, 406);
-            this.groupBox11.TabIndex = 9;
-            this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "Modifier";
+            this.groupModifierDvd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.groupModifierDvd.Controls.Add(this.label88);
+            this.groupModifierDvd.Controls.Add(this.inputDureeDvdForEdit);
+            this.groupModifierDvd.Controls.Add(this.selectCategorieDvdForEdit);
+            this.groupModifierDvd.Controls.Add(this.label1);
+            this.groupModifierDvd.Controls.Add(this.inputRealisateurDvdForEdit);
+            this.groupModifierDvd.Controls.Add(this.label79);
+            this.groupModifierDvd.Controls.Add(this.inputSynopsisDvdForEdit);
+            this.groupModifierDvd.Controls.Add(this.label80);
+            this.groupModifierDvd.Controls.Add(this.inputImageDvdForEdit);
+            this.groupModifierDvd.Controls.Add(this.label81);
+            this.groupModifierDvd.Controls.Add(this.label82);
+            this.groupModifierDvd.Controls.Add(this.inputTitreDvdForEdit);
+            this.groupModifierDvd.Controls.Add(this.inputIdDvdForEdit);
+            this.groupModifierDvd.Controls.Add(this.label83);
+            this.groupModifierDvd.Controls.Add(this.label84);
+            this.groupModifierDvd.Controls.Add(this.label85);
+            this.groupModifierDvd.Controls.Add(this.SelectDvdForEdit);
+            this.groupModifierDvd.Controls.Add(this.ButtonEditDvd);
+            this.groupModifierDvd.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupModifierDvd.ForeColor = System.Drawing.Color.White;
+            this.groupModifierDvd.Location = new System.Drawing.Point(643, 400);
+            this.groupModifierDvd.Name = "groupModifierDvd";
+            this.groupModifierDvd.Size = new System.Drawing.Size(375, 406);
+            this.groupModifierDvd.TabIndex = 9;
+            this.groupModifierDvd.TabStop = false;
+            this.groupModifierDvd.Text = "Modifier";
             // 
             // label88
             // 
@@ -1769,33 +1769,33 @@ namespace Mediateq_AP_SIO2
             this.dataGridViewTextBoxColumn21.ReadOnly = true;
             this.dataGridViewTextBoxColumn21.Width = 125;
             // 
-            // groupBox18
+            // groupCreerDvd
             // 
-            this.groupBox18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.groupBox18.Controls.Add(this.label87);
-            this.groupBox18.Controls.Add(this.inputDureeDvd);
-            this.groupBox18.Controls.Add(this.selectCategorieDvdForCreate);
-            this.groupBox18.Controls.Add(this.label71);
-            this.groupBox18.Controls.Add(this.inputRealisateurDvd);
-            this.groupBox18.Controls.Add(this.label72);
-            this.groupBox18.Controls.Add(this.ButtonCreerDvd);
-            this.groupBox18.Controls.Add(this.inputSynopsisDvd);
-            this.groupBox18.Controls.Add(this.label73);
-            this.groupBox18.Controls.Add(this.inputImageDvd);
-            this.groupBox18.Controls.Add(this.label74);
-            this.groupBox18.Controls.Add(this.label75);
-            this.groupBox18.Controls.Add(this.inputTitreDvd);
-            this.groupBox18.Controls.Add(this.inputIdDvd);
-            this.groupBox18.Controls.Add(this.label76);
-            this.groupBox18.Controls.Add(this.label77);
-            this.groupBox18.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox18.ForeColor = System.Drawing.Color.White;
-            this.groupBox18.Location = new System.Drawing.Point(280, 400);
-            this.groupBox18.Name = "groupBox18";
-            this.groupBox18.Size = new System.Drawing.Size(357, 292);
-            this.groupBox18.TabIndex = 6;
-            this.groupBox18.TabStop = false;
-            this.groupBox18.Text = "Créer";
+            this.groupCreerDvd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.groupCreerDvd.Controls.Add(this.label87);
+            this.groupCreerDvd.Controls.Add(this.inputDureeDvd);
+            this.groupCreerDvd.Controls.Add(this.selectCategorieDvdForCreate);
+            this.groupCreerDvd.Controls.Add(this.label71);
+            this.groupCreerDvd.Controls.Add(this.inputRealisateurDvd);
+            this.groupCreerDvd.Controls.Add(this.label72);
+            this.groupCreerDvd.Controls.Add(this.ButtonCreerDvd);
+            this.groupCreerDvd.Controls.Add(this.inputSynopsisDvd);
+            this.groupCreerDvd.Controls.Add(this.label73);
+            this.groupCreerDvd.Controls.Add(this.inputImageDvd);
+            this.groupCreerDvd.Controls.Add(this.label74);
+            this.groupCreerDvd.Controls.Add(this.label75);
+            this.groupCreerDvd.Controls.Add(this.inputTitreDvd);
+            this.groupCreerDvd.Controls.Add(this.inputIdDvd);
+            this.groupCreerDvd.Controls.Add(this.label76);
+            this.groupCreerDvd.Controls.Add(this.label77);
+            this.groupCreerDvd.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupCreerDvd.ForeColor = System.Drawing.Color.White;
+            this.groupCreerDvd.Location = new System.Drawing.Point(280, 400);
+            this.groupCreerDvd.Name = "groupCreerDvd";
+            this.groupCreerDvd.Size = new System.Drawing.Size(357, 292);
+            this.groupCreerDvd.TabIndex = 6;
+            this.groupCreerDvd.TabStop = false;
+            this.groupCreerDvd.Text = "Créer";
             // 
             // label87
             // 
@@ -3279,14 +3279,14 @@ namespace Mediateq_AP_SIO2
             this.tabControl2.ResumeLayout(false);
             this.tabGestionDesDvdO.ResumeLayout(false);
             this.tabGestionDesDvdO.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.groupBox11.ResumeLayout(false);
-            this.groupBox11.PerformLayout();
+            this.groupSuprDvd.ResumeLayout(false);
+            this.groupSuprDvd.PerformLayout();
+            this.groupModifierDvd.ResumeLayout(false);
+            this.groupModifierDvd.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.inputDureeDvdForEdit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataOfDvd)).EndInit();
-            this.groupBox18.ResumeLayout(false);
-            this.groupBox18.PerformLayout();
+            this.groupCreerDvd.ResumeLayout(false);
+            this.groupCreerDvd.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.inputDureeDvd)).EndInit();
             this.groupBox13.ResumeLayout(false);
             this.groupBox13.PerformLayout();
@@ -3406,7 +3406,7 @@ namespace Mediateq_AP_SIO2
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn19;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn20;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
-        private System.Windows.Forms.GroupBox groupBox18;
+        private System.Windows.Forms.GroupBox groupCreerDvd;
         private System.Windows.Forms.ComboBox selectCategorieDvdForCreate;
         private System.Windows.Forms.Label label71;
         private System.Windows.Forms.TextBox inputRealisateurDvd;
@@ -3472,11 +3472,11 @@ namespace Mediateq_AP_SIO2
         private System.Windows.Forms.Label label69;
         private System.Windows.Forms.Label label70;
         private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox groupSuprDvd;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.ComboBox selectDvdForDelete;
         private System.Windows.Forms.Button ButtonDeleteDvd;
-        private System.Windows.Forms.GroupBox groupBox11;
+        private System.Windows.Forms.GroupBox groupModifierDvd;
         private System.Windows.Forms.ComboBox selectCategorieDvdForEdit;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox inputRealisateurDvdForEdit;

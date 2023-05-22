@@ -112,7 +112,7 @@
             this.buttonConnexionUser.ForeColor = System.Drawing.Color.White;
             this.buttonConnexionUser.Location = new System.Drawing.Point(124, 147);
             this.buttonConnexionUser.Name = "buttonConnexionUser";
-            this.buttonConnexionUser.Size = new System.Drawing.Size(153, 26);
+            this.buttonConnexionUser.Size = new System.Drawing.Size(153, 34);
             this.buttonConnexionUser.TabIndex = 19;
             this.buttonConnexionUser.Text = "Connexion";
             this.buttonConnexionUser.UseVisualStyleBackColor = false;

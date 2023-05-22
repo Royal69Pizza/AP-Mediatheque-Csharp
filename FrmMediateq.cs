@@ -106,8 +106,21 @@ namespace Mediateq_AP_SIO2
                 {
                     if (UtilisateurLogged.Service == "Prêts")
                     {
-                        textRoles.Text = "Vous avez accès à la gestion des DVD et des Livres, ainsi qu'a la gestion des commandes.";
+                        textRoles.Text = "Vous avez accès en consultation sur les Livres et les DVD.";
+
                         tabOngletsApplication.TabPages.Remove(TabGestionDesUsers);
+
+                        //| Consultation de livres
+                        groupCreerLivre.Visible = false;
+                        groupModifierLivre.Visible = false;
+                        groupSuprLivre.Visible = false;
+
+                        //| Consultation de Dvd
+                        groupCreerDvd.Visible = false;
+                        groupModifierDvd.Visible = false;
+                        groupSuprDvd.Visible = false;
+
+                        tabOngletsApplication.TabPages.Remove(TabGestionDesCommandes);
                     }
                     else
                     {
@@ -116,7 +129,7 @@ namespace Mediateq_AP_SIO2
                             textRoles.Text = "Vous avez accès à l'onglet profil uniquement";
                             tabOngletsApplication.TabPages.Remove(TabGestionDesUsers);
                             tabOngletsApplication.TabPages.Remove(TabGestionDesLivres);
-                            tabOngletsApplication.TabPages.Remove(TabGestionDesDvdO);
+                            tabOngletsApplication.TabPages.Remove(tabGestionDesDvd);
                             tabOngletsApplication.TabPages.Remove(TabGestionDesCommandes);
                         }
                     }
