@@ -1,11 +1,7 @@
 ﻿using Mediateq_AP_SIO2.metier;
 using MySql.Data.MySqlClient;
-using MySqlX.XDevAPI.Common;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Mediateq_AP_SIO2
@@ -180,15 +176,32 @@ namespace Mediateq_AP_SIO2
 
             try
             {
-                String req1 = "INSERT INTO document (id, titre, image, idCategorie) VALUES ('" + ID + "', '" + Titre + "', '" + Image + "', '" + unIdCategorie + "');";
-                
-                String req2 = "INSERT INTO livre (id, ISBN, auteur, collection) VALUES ('" + ID + "', '" + ISBN + "', '" + unAuteur + "', '" + Collection + "');";
+                //| Requètes préparées
+                string requetePrepareeSurDocument = "INSERT INTO document (id, titre, image, idCategorie) VALUES (@ID, @Titre, @Image, @unIdCategorie)";
+                string requetePrepareeSurLivre = "INSERT INTO livre (id, ISBN, auteur, collection) VALUES (@ID, @ISBN, @unAuteur, @Collection);";
 
                 DAOFactory.Connecter();
 
-                DAOFactory.ExecSQLWrite(req1);
+                //| Requètes paramétrées
+                using (MySqlCommand requetePrepareeParametreeSurDocument = new MySqlCommand(requetePrepareeSurDocument, DAOFactory.ReturnConnexion()))
+                {
+                    requetePrepareeParametreeSurDocument.Parameters.AddWithValue("@ID", ID);
+                    requetePrepareeParametreeSurDocument.Parameters.AddWithValue("@Titre", Titre);
+                    requetePrepareeParametreeSurDocument.Parameters.AddWithValue("@Image", Image);
+                    requetePrepareeParametreeSurDocument.Parameters.AddWithValue("@unIdCategorie", unIdCategorie);
 
-                DAOFactory.ExecSQLWrite(req2);
+                    requetePrepareeParametreeSurDocument.ExecuteNonQuery();
+                }
+
+                using (MySqlCommand requetePrepareeParametreeSurLivre = new MySqlCommand(requetePrepareeSurLivre, DAOFactory.ReturnConnexion()))
+                {
+                    requetePrepareeParametreeSurLivre.Parameters.AddWithValue("@ID", ID);
+                    requetePrepareeParametreeSurLivre.Parameters.AddWithValue("@ISBN", ISBN);
+                    requetePrepareeParametreeSurLivre.Parameters.AddWithValue("@unAuteur", unAuteur);
+                    requetePrepareeParametreeSurLivre.Parameters.AddWithValue("@Collection", Collection);
+
+                    requetePrepareeParametreeSurLivre.ExecuteNonQuery();
+                }
 
                 DAOFactory.Deconnecter();
 
@@ -242,15 +255,34 @@ namespace Mediateq_AP_SIO2
 
             try
             {
-                String req1 = "UPDATE document SET titre = '" + unLivre.Titre + "', image = '" + unLivre.Image + "', idCategorie = '" + uneCategorie.Id + "' WHERE id = '" + unLivre.IdDoc + "';";
-
-                String req2 = "UPDATE livre SET ISBN = '" + unLivre.ISBN1 + "', auteur = '" + unLivre.AuteurDuLivre + "', collection = '" + unLivre.LaCollection + "' WHERE id = '" + unLivre.IdDoc + "';";
+                string requetePrepareeSurDocument = "UPDATE document SET titre = @titre, image = @image, idCategorie = @idCategorie WHERE id = @idDoc";
+                string requetePrepareeSurLivre = "UPDATE livre SET ISBN = @ISBN, auteur = @auteur, collection = @collection WHERE id = @idDoc;";
 
                 DAOFactory.Connecter();
 
-                DAOFactory.ExecSQLWrite(req1);
+                using (MySqlCommand requetePrepareeParametreeSurDocument = new MySqlCommand(requetePrepareeSurDocument, DAOFactory.ReturnConnexion()))
+                {
+                    requetePrepareeParametreeSurDocument.Parameters.AddWithValue("@titre", unLivre.Titre);
+                    requetePrepareeParametreeSurDocument.Parameters.AddWithValue("@image", unLivre.Image);
+                    requetePrepareeParametreeSurDocument.Parameters.AddWithValue("@idCategorie", uneCategorie.Id);
+                    requetePrepareeParametreeSurDocument.Parameters.AddWithValue("@idDoc", unLivre.IdDoc);
 
-                DAOFactory.ExecSQLWrite(req2);
+                    requetePrepareeParametreeSurDocument.ExecuteNonQuery();
+                }
+
+                using (MySqlCommand requetePrepareeParametreeSurLivre = new MySqlCommand(requetePrepareeSurLivre, DAOFactory.ReturnConnexion()))
+                {
+                    requetePrepareeParametreeSurLivre.Parameters.AddWithValue("@ISBN", unLivre.ISBN1);
+                    requetePrepareeParametreeSurLivre.Parameters.AddWithValue("@auteur", unLivre.AuteurDuLivre);
+                    requetePrepareeParametreeSurLivre.Parameters.AddWithValue("@collection", unLivre.LaCollection);
+                    requetePrepareeParametreeSurLivre.Parameters.AddWithValue("@idDoc", unLivre.IdDoc);
+
+                    requetePrepareeParametreeSurLivre.ExecuteNonQuery();
+                }
+
+                String req1 = "UPDATE document SET titre = '" + unLivre.Titre + "', image = '" + unLivre.Image + "', idCategorie = '" + uneCategorie.Id + "' WHERE id = '" + unLivre.IdDoc + "';";
+
+                String req2 = "UPDATE livre SET ISBN = '" + unLivre.ISBN1 + "', auteur = '" + unLivre.AuteurDuLivre + "', collection = '" + unLivre.LaCollection + "' WHERE id = '" + unLivre.IdDoc + "';";
 
                 DAOFactory.Deconnecter();
 
@@ -311,15 +343,30 @@ namespace Mediateq_AP_SIO2
 
             try
             {
-                String req1 = "INSERT INTO document (id, titre, image, idCategorie) VALUES ('" + unDvd.IdDoc + "', '" + unDvd.Titre + "', '" + unDvd.Image + "', '" + uneCategorie.Id + "');";
-
-                String req2 = "INSERT INTO dvd (id, synopsis, réalisateur, duree) VALUES ('" + unDvd.IdDoc + "', '" + unDvd.Synopsis + "', '" + unDvd.Realisateur + "', '" + unDvd.Duree + "');";
+                string requetePrepareeSurDocument = "INSERT INTO document (id, titre, image, idCategorie) VALUES (@id, @titre, @image, @idCategorie);";
+                string requetePrepareeSurDvd = "INSERT INTO dvd (id, synopsis, réalisateur, duree) VALUES (@id, @synopsis, @réalisateur, @duree);";
 
                 DAOFactory.Connecter();
 
-                DAOFactory.ExecSQLWrite(req1);
+                using (MySqlCommand requetePrepareeParametreeSurDocument = new MySqlCommand(requetePrepareeSurDocument, DAOFactory.ReturnConnexion()))
+                {
+                    requetePrepareeParametreeSurDocument.Parameters.AddWithValue("@id", unDvd.IdDoc);
+                    requetePrepareeParametreeSurDocument.Parameters.AddWithValue("@titre", unDvd.Titre);
+                    requetePrepareeParametreeSurDocument.Parameters.AddWithValue("@image", unDvd.Image);
+                    requetePrepareeParametreeSurDocument.Parameters.AddWithValue("@idCategorie", uneCategorie.Id);
 
-                DAOFactory.ExecSQLWrite(req2);
+                    requetePrepareeParametreeSurDocument.ExecuteNonQuery();
+                }
+
+                using (MySqlCommand requetePrepareeParametreeSurDvd = new MySqlCommand(requetePrepareeSurDvd, DAOFactory.ReturnConnexion()))
+                {
+                    requetePrepareeParametreeSurDvd.Parameters.AddWithValue("@id", unDvd.IdDoc);
+                    requetePrepareeParametreeSurDvd.Parameters.AddWithValue("@synopsis", unDvd.Synopsis);
+                    requetePrepareeParametreeSurDvd.Parameters.AddWithValue("@réalisateur", unDvd.Realisateur);
+                    requetePrepareeParametreeSurDvd.Parameters.AddWithValue("@duree", unDvd.Duree);
+
+                    requetePrepareeParametreeSurDvd.ExecuteNonQuery();
+                }
 
                 DAOFactory.Deconnecter();
 
@@ -344,15 +391,34 @@ namespace Mediateq_AP_SIO2
 
             try
             {
-                String req1 = "UPDATE document SET titre = '" + unDvd.Titre + "', image = '" + unDvd.Image + "', idCategorie = '" + uneCategorie.Id + "' WHERE id = '" + unDvd.IdDoc + "';";
-
-                String req2 = "UPDATE dvd SET synopsis = '" + unDvd.Synopsis + "', réalisateur = '" + unDvd.Realisateur + "', duree = '" + unDvd.Duree + "' WHERE id = '" + unDvd.IdDoc + "';";
+                string requetePrepareeSurDocument = "UPDATE document SET titre = @titre, image = @image, idCategorie = @idCategorie WHERE id = @idDoc;";
+                string requetePrepareeSurDvd = "UPDATE dvd SET synopsis = @synopsis, réalisateur = @réalisateur, duree = @duree WHERE id = @idDoc;";
 
                 DAOFactory.Connecter();
 
-                DAOFactory.ExecSQLWrite(req1);
+                using (MySqlCommand requetePrepareeParametreeSurDocument = new MySqlCommand(requetePrepareeSurDocument, DAOFactory.ReturnConnexion()))
+                {
+                    requetePrepareeParametreeSurDocument.Parameters.AddWithValue("@titre", unDvd.Titre);
+                    requetePrepareeParametreeSurDocument.Parameters.AddWithValue("@image", unDvd.Image);
+                    requetePrepareeParametreeSurDocument.Parameters.AddWithValue("@idCategorie", uneCategorie.Id);
+                    requetePrepareeParametreeSurDocument.Parameters.AddWithValue("@idDoc", unDvd.IdDoc);
 
-                DAOFactory.ExecSQLWrite(req2);
+                    requetePrepareeParametreeSurDocument.ExecuteNonQuery();
+                }
+
+                using (MySqlCommand requetePrepareeParametreeSurDvd = new MySqlCommand(requetePrepareeSurDvd, DAOFactory.ReturnConnexion()))
+                {
+                    requetePrepareeParametreeSurDvd.Parameters.AddWithValue("@synopsis", unDvd.Synopsis);
+                    requetePrepareeParametreeSurDvd.Parameters.AddWithValue("@réalisateur", unDvd.Realisateur);
+                    requetePrepareeParametreeSurDvd.Parameters.AddWithValue("@duree", unDvd.Duree);
+                    requetePrepareeParametreeSurDvd.Parameters.AddWithValue("@idDoc", unDvd.IdDoc);
+
+                    requetePrepareeParametreeSurDvd.ExecuteNonQuery();
+                }
+
+                //String req1 = "UPDATE document SET titre = '" + unDvd.Titre + "', image = '" + unDvd.Image + "', idCategorie = '" + uneCategorie.Id + "' WHERE id = '" + unDvd.IdDoc + "';";
+
+                //String req2 = "UPDATE dvd SET synopsis = '" + unDvd.Synopsis + "', réalisateur = '" + unDvd.Realisateur + "', duree = '" + unDvd.Duree + "' WHERE id = '" + unDvd.IdDoc + "';";
 
                 DAOFactory.Deconnecter();
 

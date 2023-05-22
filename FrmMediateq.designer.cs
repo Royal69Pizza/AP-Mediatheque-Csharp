@@ -29,36 +29,37 @@ namespace Mediateq_AP_SIO2
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle63 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle64 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle61 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle62 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle55 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle56 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle57 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle58 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle59 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle60 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle65 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle73 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle74 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle66 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle67 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle68 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle69 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle70 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle71 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle72 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle75 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle77 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle78 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle76 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabOngletsApplication = new System.Windows.Forms.TabControl();
             this.tabProfil = new System.Windows.Forms.TabPage();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.textRoles = new System.Windows.Forms.Label();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.confirmationNouveauMDP = new System.Windows.Forms.Label();
             this.label63 = new System.Windows.Forms.Label();
@@ -87,34 +88,6 @@ namespace Mediateq_AP_SIO2
             this.serviceUtilisateur = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.loginUtilisateur = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label42 = new System.Windows.Forms.Label();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button8 = new System.Windows.Forms.Button();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.label38 = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.label39 = new System.Windows.Forms.Label();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.label40 = new System.Windows.Forms.Label();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.label35 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.label36 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
             this.tabGestionDesLivres = new System.Windows.Forms.TabPage();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.textEventLivres = new System.Windows.Forms.Label();
@@ -167,12 +140,14 @@ namespace Mediateq_AP_SIO2
             this.label17 = new System.Windows.Forms.Label();
             this.tabGestionDesDvd = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabGestionDesDvdO = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label32 = new System.Windows.Forms.Label();
             this.selectDvdForDelete = new System.Windows.Forms.ComboBox();
             this.ButtonDeleteDvd = new System.Windows.Forms.Button();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.label88 = new System.Windows.Forms.Label();
+            this.inputDureeDvdForEdit = new System.Windows.Forms.NumericUpDown();
             this.selectCategorieDvdForEdit = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.inputRealisateurDvdForEdit = new System.Windows.Forms.TextBox();
@@ -186,7 +161,6 @@ namespace Mediateq_AP_SIO2
             this.inputIdDvdForEdit = new System.Windows.Forms.TextBox();
             this.label83 = new System.Windows.Forms.Label();
             this.label84 = new System.Windows.Forms.Label();
-            this.inputDureeDvdForEdit = new System.Windows.Forms.TextBox();
             this.label85 = new System.Windows.Forms.Label();
             this.SelectDvdForEdit = new System.Windows.Forms.ComboBox();
             this.ButtonEditDvd = new System.Windows.Forms.Button();
@@ -200,6 +174,8 @@ namespace Mediateq_AP_SIO2
             this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox18 = new System.Windows.Forms.GroupBox();
+            this.label87 = new System.Windows.Forms.Label();
+            this.inputDureeDvd = new System.Windows.Forms.NumericUpDown();
             this.selectCategorieDvdForCreate = new System.Windows.Forms.ComboBox();
             this.label71 = new System.Windows.Forms.Label();
             this.inputRealisateurDvd = new System.Windows.Forms.TextBox();
@@ -214,7 +190,6 @@ namespace Mediateq_AP_SIO2
             this.inputIdDvd = new System.Windows.Forms.TextBox();
             this.label76 = new System.Windows.Forms.Label();
             this.label77 = new System.Windows.Forms.Label();
-            this.inputDureeDvd = new System.Windows.Forms.TextBox();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
             this.textEventDvd = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
@@ -274,6 +249,7 @@ namespace Mediateq_AP_SIO2
             this.selectCommandeForDelete = new System.Windows.Forms.ComboBox();
             this.ButtonDeleteCommande = new System.Windows.Forms.Button();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.label90 = new System.Windows.Forms.Label();
             this.inputMontantCommandeForEdit = new System.Windows.Forms.NumericUpDown();
             this.inputNbExemplairesCommandeForEdit = new System.Windows.Forms.NumericUpDown();
             this.label57 = new System.Windows.Forms.Label();
@@ -290,6 +266,8 @@ namespace Mediateq_AP_SIO2
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.label89 = new System.Windows.Forms.Label();
+            this.inputIdCommande = new System.Windows.Forms.TextBox();
             this.inputMontantCommande = new System.Windows.Forms.NumericUpDown();
             this.inputNbExemplairesCommande = new System.Windows.Forms.NumericUpDown();
             this.selectEtatForCreateCommande = new System.Windows.Forms.ComboBox();
@@ -310,7 +288,6 @@ namespace Mediateq_AP_SIO2
             this.document = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.etatCommande = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label43 = new System.Windows.Forms.Label();
-            this.inputIdCommande = new System.Windows.Forms.NumericUpDown();
             this.tabOngletsApplication.SuspendLayout();
             this.tabProfil.SuspendLayout();
             this.groupBox9.SuspendLayout();
@@ -319,9 +296,6 @@ namespace Mediateq_AP_SIO2
             this.groupBox3.SuspendLayout();
             this.tabGestionDesUsers.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataOfUser)).BeginInit();
-            this.groupBox5.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.tabGestionDesLivres.SuspendLayout();
             this.groupBox12.SuspendLayout();
             this.groupSuprLivre.SuspendLayout();
@@ -330,11 +304,13 @@ namespace Mediateq_AP_SIO2
             this.groupCreerLivre.SuspendLayout();
             this.tabGestionDesDvd.SuspendLayout();
             this.tabControl2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
+            this.tabGestionDesDvdO.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.inputDureeDvdForEdit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataOfDvd)).BeginInit();
             this.groupBox18.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.inputDureeDvd)).BeginInit();
             this.groupBox13.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.groupBox14.SuspendLayout();
@@ -352,7 +328,6 @@ namespace Mediateq_AP_SIO2
             ((System.ComponentModel.ISupportInitialize)(this.inputMontantCommande)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputNbExemplairesCommande)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataOfCommande)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.inputIdCommande)).BeginInit();
             this.SuspendLayout();
             // 
             // tabOngletsApplication
@@ -401,6 +376,7 @@ namespace Mediateq_AP_SIO2
             // 
             // groupBox8
             // 
+            this.groupBox8.Controls.Add(this.textRoles);
             this.groupBox8.Controls.Add(this.groupBox10);
             this.groupBox8.Controls.Add(this.loginUtilisateurProfil);
             this.groupBox8.Controls.Add(this.label51);
@@ -412,6 +388,17 @@ namespace Mediateq_AP_SIO2
             this.groupBox8.TabIndex = 22;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Paramètres";
+            // 
+            // textRoles
+            // 
+            this.textRoles.AutoSize = true;
+            this.textRoles.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textRoles.ForeColor = System.Drawing.Color.Cyan;
+            this.textRoles.Location = new System.Drawing.Point(6, 50);
+            this.textRoles.Name = "textRoles";
+            this.textRoles.Size = new System.Drawing.Size(165, 18);
+            this.textRoles.TabIndex = 24;
+            this.textRoles.Text = "Rôles dans l\'application";
             // 
             // groupBox10
             // 
@@ -654,9 +641,6 @@ namespace Mediateq_AP_SIO2
             this.tabGestionDesUsers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.tabGestionDesUsers.Controls.Add(this.dataOfUser);
             this.tabGestionDesUsers.Controls.Add(this.label42);
-            this.tabGestionDesUsers.Controls.Add(this.groupBox5);
-            this.tabGestionDesUsers.Controls.Add(this.groupBox2);
-            this.tabGestionDesUsers.Controls.Add(this.groupBox1);
             this.tabGestionDesUsers.ForeColor = System.Drawing.Color.White;
             this.tabGestionDesUsers.Location = new System.Drawing.Point(4, 27);
             this.tabGestionDesUsers.Name = "tabGestionDesUsers";
@@ -678,14 +662,14 @@ namespace Mediateq_AP_SIO2
             this.dataOfUser.Name = "dataOfUser";
             this.dataOfUser.ReadOnly = true;
             this.dataOfUser.RowHeadersWidth = 51;
-            dataGridViewCellStyle63.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle63.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle63.ForeColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle63.SelectionBackColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle63.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataOfUser.RowsDefaultCellStyle = dataGridViewCellStyle63;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataOfUser.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataOfUser.RowTemplate.Height = 24;
-            this.dataOfUser.Size = new System.Drawing.Size(731, 135);
+            this.dataOfUser.Size = new System.Drawing.Size(731, 632);
             this.dataOfUser.TabIndex = 26;
             // 
             // idUtilisateur
@@ -738,334 +722,6 @@ namespace Mediateq_AP_SIO2
             this.label42.Size = new System.Drawing.Size(389, 20);
             this.label42.TabIndex = 25;
             this.label42.Text = "Gestion des Utilisateurs";
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.groupBox5.Controls.Add(this.button6);
-            this.groupBox5.Controls.Add(this.label2);
-            this.groupBox5.Controls.Add(this.comboBox5);
-            this.groupBox5.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.ForeColor = System.Drawing.Color.White;
-            this.groupBox5.Location = new System.Drawing.Point(8, 586);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(738, 77);
-            this.groupBox5.TabIndex = 24;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Supprimer";
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.button6.Font = new System.Drawing.Font("Omega Flight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(562, 33);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(170, 36);
-            this.button6.TabIndex = 31;
-            this.button6.Text = "Supprimer";
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(6, 18);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(186, 18);
-            this.label2.TabIndex = 30;
-            this.label2.Text = "Séléctionnez un utilisateur.";
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.comboBox5.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox5.ForeColor = System.Drawing.Color.Red;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(9, 39);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(534, 26);
-            this.comboBox5.TabIndex = 29;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.button8);
-            this.groupBox2.Controls.Add(this.textBox18);
-            this.groupBox2.Controls.Add(this.label38);
-            this.groupBox2.Controls.Add(this.textBox19);
-            this.groupBox2.Controls.Add(this.label39);
-            this.groupBox2.Controls.Add(this.textBox20);
-            this.groupBox2.Controls.Add(this.label40);
-            this.groupBox2.Controls.Add(this.textBox21);
-            this.groupBox2.Controls.Add(this.label41);
-            this.groupBox2.Controls.Add(this.label37);
-            this.groupBox2.Controls.Add(this.comboBox6);
-            this.groupBox2.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(8, 369);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(738, 211);
-            this.groupBox2.TabIndex = 23;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Modifier un utilisateur";
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.button8.Font = new System.Drawing.Font("Omega Flight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(562, 97);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(170, 36);
-            this.button8.TabIndex = 33;
-            this.button8.Text = "Modifier";
-            this.button8.UseVisualStyleBackColor = false;
-            // 
-            // textBox18
-            // 
-            this.textBox18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox18.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox18.ForeColor = System.Drawing.Color.Cyan;
-            this.textBox18.Location = new System.Drawing.Point(109, 107);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(434, 26);
-            this.textBox18.TabIndex = 43;
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.ForeColor = System.Drawing.Color.White;
-            this.label38.Location = new System.Drawing.Point(6, 110);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(40, 18);
-            this.label38.TabIndex = 42;
-            this.label38.Text = "Nom";
-            // 
-            // textBox19
-            // 
-            this.textBox19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox19.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox19.ForeColor = System.Drawing.Color.Cyan;
-            this.textBox19.Location = new System.Drawing.Point(109, 75);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(434, 26);
-            this.textBox19.TabIndex = 41;
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.ForeColor = System.Drawing.Color.White;
-            this.label39.Location = new System.Drawing.Point(6, 78);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(60, 18);
-            this.label39.TabIndex = 40;
-            this.label39.Text = "Prénom";
-            // 
-            // textBox20
-            // 
-            this.textBox20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox20.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox20.ForeColor = System.Drawing.Color.Cyan;
-            this.textBox20.Location = new System.Drawing.Point(109, 171);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(434, 26);
-            this.textBox20.TabIndex = 39;
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.ForeColor = System.Drawing.Color.White;
-            this.label40.Location = new System.Drawing.Point(6, 174);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(97, 18);
-            this.label40.TabIndex = 38;
-            this.label40.Text = "Mot de passe";
-            // 
-            // textBox21
-            // 
-            this.textBox21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox21.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox21.ForeColor = System.Drawing.Color.Cyan;
-            this.textBox21.Location = new System.Drawing.Point(109, 139);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(434, 26);
-            this.textBox21.TabIndex = 37;
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.ForeColor = System.Drawing.Color.White;
-            this.label41.Location = new System.Drawing.Point(5, 142);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(45, 18);
-            this.label41.TabIndex = 35;
-            this.label41.Text = "Login";
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.ForeColor = System.Drawing.Color.White;
-            this.label37.Location = new System.Drawing.Point(6, 18);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(186, 18);
-            this.label37.TabIndex = 33;
-            this.label37.Text = "Séléctionnez un utilisateur.";
-            // 
-            // comboBox6
-            // 
-            this.comboBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.comboBox6.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox6.ForeColor = System.Drawing.Color.Red;
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(9, 39);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(534, 26);
-            this.comboBox6.TabIndex = 32;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.button7);
-            this.groupBox1.Controls.Add(this.textBox16);
-            this.groupBox1.Controls.Add(this.label35);
-            this.groupBox1.Controls.Add(this.textBox17);
-            this.groupBox1.Controls.Add(this.label36);
-            this.groupBox1.Controls.Add(this.textBox13);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox14);
-            this.groupBox1.Controls.Add(this.textBox15);
-            this.groupBox1.Controls.Add(this.label33);
-            this.groupBox1.Controls.Add(this.label34);
-            this.groupBox1.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(8, 173);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(738, 190);
-            this.groupBox1.TabIndex = 22;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Créer un utilisateur";
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.button7.Font = new System.Drawing.Font("Omega Flight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(562, 83);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(170, 36);
-            this.button7.TabIndex = 32;
-            this.button7.Text = "Créer";
-            this.button7.UseVisualStyleBackColor = false;
-            // 
-            // textBox16
-            // 
-            this.textBox16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox16.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox16.ForeColor = System.Drawing.Color.Cyan;
-            this.textBox16.Location = new System.Drawing.Point(109, 89);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(434, 26);
-            this.textBox16.TabIndex = 30;
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.ForeColor = System.Drawing.Color.White;
-            this.label35.Location = new System.Drawing.Point(6, 92);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(40, 18);
-            this.label35.TabIndex = 29;
-            this.label35.Text = "Nom";
-            // 
-            // textBox17
-            // 
-            this.textBox17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox17.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox17.ForeColor = System.Drawing.Color.Cyan;
-            this.textBox17.Location = new System.Drawing.Point(109, 57);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(434, 26);
-            this.textBox17.TabIndex = 28;
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.ForeColor = System.Drawing.Color.White;
-            this.label36.Location = new System.Drawing.Point(6, 60);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(60, 18);
-            this.label36.TabIndex = 27;
-            this.label36.Text = "Prénom";
-            // 
-            // textBox13
-            // 
-            this.textBox13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox13.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.ForeColor = System.Drawing.Color.Cyan;
-            this.textBox13.Location = new System.Drawing.Point(109, 153);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(434, 26);
-            this.textBox13.TabIndex = 26;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(6, 156);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(97, 18);
-            this.label3.TabIndex = 25;
-            this.label3.Text = "Mot de passe";
-            // 
-            // textBox14
-            // 
-            this.textBox14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox14.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox14.ForeColor = System.Drawing.Color.Cyan;
-            this.textBox14.Location = new System.Drawing.Point(109, 121);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(434, 26);
-            this.textBox14.TabIndex = 24;
-            // 
-            // textBox15
-            // 
-            this.textBox15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox15.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox15.ForeColor = System.Drawing.Color.Cyan;
-            this.textBox15.Location = new System.Drawing.Point(109, 25);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(434, 26);
-            this.textBox15.TabIndex = 23;
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.ForeColor = System.Drawing.Color.White;
-            this.label33.Location = new System.Drawing.Point(5, 124);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(45, 18);
-            this.label33.TabIndex = 22;
-            this.label33.Text = "Login";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.ForeColor = System.Drawing.Color.White;
-            this.label34.Location = new System.Drawing.Point(6, 28);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(22, 18);
-            this.label34.TabIndex = 21;
-            this.label34.Text = "ID";
             // 
             // tabGestionDesLivres
             // 
@@ -1399,12 +1055,12 @@ namespace Mediateq_AP_SIO2
             this.dataOfLivre.Name = "dataOfLivre";
             this.dataOfLivre.ReadOnly = true;
             this.dataOfLivre.RowHeadersWidth = 51;
-            dataGridViewCellStyle64.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle64.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle64.ForeColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle64.SelectionBackColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle64.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataOfLivre.RowsDefaultCellStyle = dataGridViewCellStyle64;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataOfLivre.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataOfLivre.RowTemplate.Height = 24;
             this.dataOfLivre.Size = new System.Drawing.Size(731, 183);
             this.dataOfLivre.TabIndex = 3;
@@ -1501,6 +1157,7 @@ namespace Mediateq_AP_SIO2
             this.inputAuteurLivre.Name = "inputAuteurLivre";
             this.inputAuteurLivre.Size = new System.Drawing.Size(237, 26);
             this.inputAuteurLivre.TabIndex = 24;
+            this.inputAuteurLivre.Text = "Exemple d\'auteur";
             // 
             // label14
             // 
@@ -1544,6 +1201,7 @@ namespace Mediateq_AP_SIO2
             this.inputImageLivre.Name = "inputImageLivre";
             this.inputImageLivre.Size = new System.Drawing.Size(237, 26);
             this.inputImageLivre.TabIndex = 20;
+            this.inputImageLivre.Text = "exemple.png";
             // 
             // label19
             // 
@@ -1578,6 +1236,7 @@ namespace Mediateq_AP_SIO2
             this.inputCollectionLivre.Name = "inputCollectionLivre";
             this.inputCollectionLivre.Size = new System.Drawing.Size(237, 26);
             this.inputCollectionLivre.TabIndex = 13;
+            this.inputCollectionLivre.Text = "Exemple de collection";
             // 
             // label22
             // 
@@ -1599,6 +1258,7 @@ namespace Mediateq_AP_SIO2
             this.inputISBNLivre.Name = "inputISBNLivre";
             this.inputISBNLivre.Size = new System.Drawing.Size(237, 26);
             this.inputISBNLivre.TabIndex = 11;
+            this.inputISBNLivre.Text = "00000";
             // 
             // label20
             // 
@@ -1620,6 +1280,7 @@ namespace Mediateq_AP_SIO2
             this.inputTitreLivre.Name = "inputTitreLivre";
             this.inputTitreLivre.Size = new System.Drawing.Size(237, 26);
             this.inputTitreLivre.TabIndex = 7;
+            this.inputTitreLivre.Text = "Exemple de titre";
             // 
             // inputIDLivre
             // 
@@ -1667,7 +1328,7 @@ namespace Mediateq_AP_SIO2
             // 
             // tabControl2
             // 
-            this.tabControl2.Controls.Add(this.tabPage3);
+            this.tabControl2.Controls.Add(this.tabGestionDesDvdO);
             this.tabControl2.Controls.Add(this.tabPage4);
             this.tabControl2.Font = new System.Drawing.Font("Omega Flight Title", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl2.Location = new System.Drawing.Point(-276, -225);
@@ -1676,23 +1337,23 @@ namespace Mediateq_AP_SIO2
             this.tabControl2.Size = new System.Drawing.Size(1727, 1214);
             this.tabControl2.TabIndex = 3;
             // 
-            // tabPage3
+            // tabGestionDesDvdO
             // 
-            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tabPage3.Controls.Add(this.groupBox4);
-            this.tabPage3.Controls.Add(this.groupBox11);
-            this.tabPage3.Controls.Add(this.label78);
-            this.tabPage3.Controls.Add(this.dataOfDvd);
-            this.tabPage3.Controls.Add(this.groupBox18);
-            this.tabPage3.Controls.Add(this.groupBox13);
-            this.tabPage3.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage3.ForeColor = System.Drawing.Color.White;
-            this.tabPage3.Location = new System.Drawing.Point(4, 30);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1719, 1180);
-            this.tabPage3.TabIndex = 0;
-            this.tabPage3.Text = "Livres";
+            this.tabGestionDesDvdO.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tabGestionDesDvdO.Controls.Add(this.groupBox4);
+            this.tabGestionDesDvdO.Controls.Add(this.groupBox11);
+            this.tabGestionDesDvdO.Controls.Add(this.label78);
+            this.tabGestionDesDvdO.Controls.Add(this.dataOfDvd);
+            this.tabGestionDesDvdO.Controls.Add(this.groupBox18);
+            this.tabGestionDesDvdO.Controls.Add(this.groupBox13);
+            this.tabGestionDesDvdO.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabGestionDesDvdO.ForeColor = System.Drawing.Color.White;
+            this.tabGestionDesDvdO.Location = new System.Drawing.Point(4, 30);
+            this.tabGestionDesDvdO.Name = "tabGestionDesDvdO";
+            this.tabGestionDesDvdO.Padding = new System.Windows.Forms.Padding(3);
+            this.tabGestionDesDvdO.Size = new System.Drawing.Size(1719, 1180);
+            this.tabGestionDesDvdO.TabIndex = 0;
+            this.tabGestionDesDvdO.Text = "Livres";
             // 
             // groupBox4
             // 
@@ -1747,6 +1408,8 @@ namespace Mediateq_AP_SIO2
             // groupBox11
             // 
             this.groupBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.groupBox11.Controls.Add(this.label88);
+            this.groupBox11.Controls.Add(this.inputDureeDvdForEdit);
             this.groupBox11.Controls.Add(this.selectCategorieDvdForEdit);
             this.groupBox11.Controls.Add(this.label1);
             this.groupBox11.Controls.Add(this.inputRealisateurDvdForEdit);
@@ -1760,7 +1423,6 @@ namespace Mediateq_AP_SIO2
             this.groupBox11.Controls.Add(this.inputIdDvdForEdit);
             this.groupBox11.Controls.Add(this.label83);
             this.groupBox11.Controls.Add(this.label84);
-            this.groupBox11.Controls.Add(this.inputDureeDvdForEdit);
             this.groupBox11.Controls.Add(this.label85);
             this.groupBox11.Controls.Add(this.SelectDvdForEdit);
             this.groupBox11.Controls.Add(this.ButtonEditDvd);
@@ -1772,6 +1434,32 @@ namespace Mediateq_AP_SIO2
             this.groupBox11.TabIndex = 9;
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "Modifier";
+            // 
+            // label88
+            // 
+            this.label88.AutoSize = true;
+            this.label88.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label88.ForeColor = System.Drawing.Color.White;
+            this.label88.Location = new System.Drawing.Point(308, 278);
+            this.label88.Name = "label88";
+            this.label88.Size = new System.Drawing.Size(61, 18);
+            this.label88.TabIndex = 41;
+            this.label88.Text = "Minutes";
+            // 
+            // inputDureeDvdForEdit
+            // 
+            this.inputDureeDvdForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputDureeDvdForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputDureeDvdForEdit.ForeColor = System.Drawing.Color.Cyan;
+            this.inputDureeDvdForEdit.Location = new System.Drawing.Point(100, 275);
+            this.inputDureeDvdForEdit.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.inputDureeDvdForEdit.Name = "inputDureeDvdForEdit";
+            this.inputDureeDvdForEdit.Size = new System.Drawing.Size(202, 26);
+            this.inputDureeDvdForEdit.TabIndex = 40;
             // 
             // selectCategorieDvdForEdit
             // 
@@ -1912,16 +1600,6 @@ namespace Mediateq_AP_SIO2
             this.label84.TabIndex = 26;
             this.label84.Text = "ID";
             // 
-            // inputDureeDvdForEdit
-            // 
-            this.inputDureeDvdForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputDureeDvdForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputDureeDvdForEdit.ForeColor = System.Drawing.Color.Aqua;
-            this.inputDureeDvdForEdit.Location = new System.Drawing.Point(100, 275);
-            this.inputDureeDvdForEdit.Name = "inputDureeDvdForEdit";
-            this.inputDureeDvdForEdit.Size = new System.Drawing.Size(269, 26);
-            this.inputDureeDvdForEdit.TabIndex = 33;
-            // 
             // label85
             // 
             this.label85.AutoSize = true;
@@ -1975,14 +1653,14 @@ namespace Mediateq_AP_SIO2
             this.dataOfDvd.AllowUserToDeleteRows = false;
             this.dataOfDvd.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.dataOfDvd.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle53.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle53.BackColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle53.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle53.ForeColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle53.SelectionBackColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle53.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle53.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataOfDvd.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle53;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataOfDvd.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataOfDvd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataOfDvd.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn15,
@@ -1992,33 +1670,33 @@ namespace Mediateq_AP_SIO2
             this.dataGridViewTextBoxColumn19,
             this.dataGridViewTextBoxColumn20,
             this.dataGridViewTextBoxColumn21});
-            dataGridViewCellStyle61.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle61.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle61.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle61.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle61.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle61.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle61.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataOfDvd.DefaultCellStyle = dataGridViewCellStyle61;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataOfDvd.DefaultCellStyle = dataGridViewCellStyle11;
             this.dataOfDvd.Location = new System.Drawing.Point(280, 227);
             this.dataOfDvd.Name = "dataOfDvd";
             this.dataOfDvd.ReadOnly = true;
             this.dataOfDvd.RowHeadersWidth = 51;
-            dataGridViewCellStyle62.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle62.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle62.ForeColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle62.SelectionBackColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle62.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataOfDvd.RowsDefaultCellStyle = dataGridViewCellStyle62;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataOfDvd.RowsDefaultCellStyle = dataGridViewCellStyle12;
             this.dataOfDvd.RowTemplate.Height = 24;
             this.dataOfDvd.Size = new System.Drawing.Size(738, 167);
             this.dataOfDvd.TabIndex = 7;
             // 
             // dataGridViewTextBoxColumn15
             // 
-            dataGridViewCellStyle54.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle54.ForeColor = System.Drawing.Color.Aqua;
-            this.dataGridViewTextBoxColumn15.DefaultCellStyle = dataGridViewCellStyle54;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn15.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewTextBoxColumn15.HeaderText = "ID";
             this.dataGridViewTextBoxColumn15.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
@@ -2027,9 +1705,9 @@ namespace Mediateq_AP_SIO2
             // 
             // dataGridViewTextBoxColumn16
             // 
-            dataGridViewCellStyle55.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle55.ForeColor = System.Drawing.Color.Aqua;
-            this.dataGridViewTextBoxColumn16.DefaultCellStyle = dataGridViewCellStyle55;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn16.DefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewTextBoxColumn16.HeaderText = "Titre";
             this.dataGridViewTextBoxColumn16.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
@@ -2038,9 +1716,9 @@ namespace Mediateq_AP_SIO2
             // 
             // dataGridViewTextBoxColumn17
             // 
-            dataGridViewCellStyle56.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle56.ForeColor = System.Drawing.Color.Aqua;
-            this.dataGridViewTextBoxColumn17.DefaultCellStyle = dataGridViewCellStyle56;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn17.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridViewTextBoxColumn17.HeaderText = "Image";
             this.dataGridViewTextBoxColumn17.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
@@ -2049,9 +1727,9 @@ namespace Mediateq_AP_SIO2
             // 
             // dataGridViewTextBoxColumn18
             // 
-            dataGridViewCellStyle57.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle57.ForeColor = System.Drawing.Color.Aqua;
-            this.dataGridViewTextBoxColumn18.DefaultCellStyle = dataGridViewCellStyle57;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn18.DefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridViewTextBoxColumn18.HeaderText = "Categorie";
             this.dataGridViewTextBoxColumn18.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
@@ -2060,9 +1738,9 @@ namespace Mediateq_AP_SIO2
             // 
             // dataGridViewTextBoxColumn19
             // 
-            dataGridViewCellStyle58.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle58.ForeColor = System.Drawing.Color.Aqua;
-            this.dataGridViewTextBoxColumn19.DefaultCellStyle = dataGridViewCellStyle58;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn19.DefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridViewTextBoxColumn19.HeaderText = "Synopsis";
             this.dataGridViewTextBoxColumn19.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
@@ -2071,9 +1749,9 @@ namespace Mediateq_AP_SIO2
             // 
             // dataGridViewTextBoxColumn20
             // 
-            dataGridViewCellStyle59.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle59.ForeColor = System.Drawing.Color.Aqua;
-            this.dataGridViewTextBoxColumn20.DefaultCellStyle = dataGridViewCellStyle59;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn20.DefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridViewTextBoxColumn20.HeaderText = "Réalisateur";
             this.dataGridViewTextBoxColumn20.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
@@ -2082,9 +1760,9 @@ namespace Mediateq_AP_SIO2
             // 
             // dataGridViewTextBoxColumn21
             // 
-            dataGridViewCellStyle60.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle60.ForeColor = System.Drawing.Color.Aqua;
-            this.dataGridViewTextBoxColumn21.DefaultCellStyle = dataGridViewCellStyle60;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn21.DefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridViewTextBoxColumn21.HeaderText = "Durée";
             this.dataGridViewTextBoxColumn21.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
@@ -2094,6 +1772,8 @@ namespace Mediateq_AP_SIO2
             // groupBox18
             // 
             this.groupBox18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.groupBox18.Controls.Add(this.label87);
+            this.groupBox18.Controls.Add(this.inputDureeDvd);
             this.groupBox18.Controls.Add(this.selectCategorieDvdForCreate);
             this.groupBox18.Controls.Add(this.label71);
             this.groupBox18.Controls.Add(this.inputRealisateurDvd);
@@ -2108,7 +1788,6 @@ namespace Mediateq_AP_SIO2
             this.groupBox18.Controls.Add(this.inputIdDvd);
             this.groupBox18.Controls.Add(this.label76);
             this.groupBox18.Controls.Add(this.label77);
-            this.groupBox18.Controls.Add(this.inputDureeDvd);
             this.groupBox18.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox18.ForeColor = System.Drawing.Color.White;
             this.groupBox18.Location = new System.Drawing.Point(280, 400);
@@ -2117,6 +1796,37 @@ namespace Mediateq_AP_SIO2
             this.groupBox18.TabIndex = 6;
             this.groupBox18.TabStop = false;
             this.groupBox18.Text = "Créer";
+            // 
+            // label87
+            // 
+            this.label87.AutoSize = true;
+            this.label87.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label87.ForeColor = System.Drawing.Color.White;
+            this.label87.Location = new System.Drawing.Point(286, 211);
+            this.label87.Name = "label87";
+            this.label87.Size = new System.Drawing.Size(61, 18);
+            this.label87.TabIndex = 33;
+            this.label87.Text = "Minutes";
+            // 
+            // inputDureeDvd
+            // 
+            this.inputDureeDvd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputDureeDvd.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputDureeDvd.ForeColor = System.Drawing.Color.Cyan;
+            this.inputDureeDvd.Location = new System.Drawing.Point(95, 207);
+            this.inputDureeDvd.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.inputDureeDvd.Name = "inputDureeDvd";
+            this.inputDureeDvd.Size = new System.Drawing.Size(185, 26);
+            this.inputDureeDvd.TabIndex = 32;
+            this.inputDureeDvd.Value = new decimal(new int[] {
+            120,
+            0,
+            0,
+            0});
             // 
             // selectCategorieDvdForCreate
             // 
@@ -2149,6 +1859,7 @@ namespace Mediateq_AP_SIO2
             this.inputRealisateurDvd.Name = "inputRealisateurDvd";
             this.inputRealisateurDvd.Size = new System.Drawing.Size(252, 26);
             this.inputRealisateurDvd.TabIndex = 20;
+            this.inputRealisateurDvd.Text = "Exemple de réalisateur";
             // 
             // label72
             // 
@@ -2183,6 +1894,7 @@ namespace Mediateq_AP_SIO2
             this.inputSynopsisDvd.Name = "inputSynopsisDvd";
             this.inputSynopsisDvd.Size = new System.Drawing.Size(252, 26);
             this.inputSynopsisDvd.TabIndex = 13;
+            this.inputSynopsisDvd.Text = "Exemple de synopsis";
             // 
             // label73
             // 
@@ -2204,6 +1916,7 @@ namespace Mediateq_AP_SIO2
             this.inputImageDvd.Name = "inputImageDvd";
             this.inputImageDvd.Size = new System.Drawing.Size(252, 26);
             this.inputImageDvd.TabIndex = 10;
+            this.inputImageDvd.Text = "exemple.jpg";
             // 
             // label74
             // 
@@ -2236,6 +1949,7 @@ namespace Mediateq_AP_SIO2
             this.inputTitreDvd.Name = "inputTitreDvd";
             this.inputTitreDvd.Size = new System.Drawing.Size(252, 26);
             this.inputTitreDvd.TabIndex = 7;
+            this.inputTitreDvd.Text = "Exemple de titre";
             // 
             // inputIdDvd
             // 
@@ -2269,17 +1983,6 @@ namespace Mediateq_AP_SIO2
             this.label77.Size = new System.Drawing.Size(22, 18);
             this.label77.TabIndex = 4;
             this.label77.Text = "ID";
-            // 
-            // inputDureeDvd
-            // 
-            this.inputDureeDvd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputDureeDvd.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputDureeDvd.ForeColor = System.Drawing.Color.Cyan;
-            this.inputDureeDvd.Location = new System.Drawing.Point(95, 207);
-            this.inputDureeDvd.Name = "inputDureeDvd";
-            this.inputDureeDvd.Size = new System.Drawing.Size(252, 26);
-            this.inputDureeDvd.TabIndex = 11;
-            this.inputDureeDvd.Text = "0";
             // 
             // groupBox13
             // 
@@ -2351,14 +2054,14 @@ namespace Mediateq_AP_SIO2
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle65.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle65.BackColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle65.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle65.ForeColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle65.SelectionBackColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle65.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle65.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle65;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn8,
@@ -2368,33 +2071,33 @@ namespace Mediateq_AP_SIO2
             this.dataGridViewTextBoxColumn12,
             this.dataGridViewTextBoxColumn13,
             this.dataGridViewTextBoxColumn14});
-            dataGridViewCellStyle73.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle73.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle73.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle73.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle73.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle73.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle73.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle73;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle21;
             this.dataGridView1.Location = new System.Drawing.Point(6, 176);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle74.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle74.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle74.ForeColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle74.SelectionBackColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle74.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle74;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle22;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(1093, 335);
             this.dataGridView1.TabIndex = 4;
             // 
             // dataGridViewTextBoxColumn8
             // 
-            dataGridViewCellStyle66.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle66.ForeColor = System.Drawing.Color.Aqua;
-            this.dataGridViewTextBoxColumn8.DefaultCellStyle = dataGridViewCellStyle66;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn8.DefaultCellStyle = dataGridViewCellStyle14;
             this.dataGridViewTextBoxColumn8.HeaderText = "ID";
             this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
@@ -2403,9 +2106,9 @@ namespace Mediateq_AP_SIO2
             // 
             // dataGridViewTextBoxColumn9
             // 
-            dataGridViewCellStyle67.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle67.ForeColor = System.Drawing.Color.Aqua;
-            this.dataGridViewTextBoxColumn9.DefaultCellStyle = dataGridViewCellStyle67;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn9.DefaultCellStyle = dataGridViewCellStyle15;
             this.dataGridViewTextBoxColumn9.HeaderText = "Titre";
             this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
@@ -2414,9 +2117,9 @@ namespace Mediateq_AP_SIO2
             // 
             // dataGridViewTextBoxColumn10
             // 
-            dataGridViewCellStyle68.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle68.ForeColor = System.Drawing.Color.Aqua;
-            this.dataGridViewTextBoxColumn10.DefaultCellStyle = dataGridViewCellStyle68;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn10.DefaultCellStyle = dataGridViewCellStyle16;
             this.dataGridViewTextBoxColumn10.HeaderText = "Image";
             this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
@@ -2425,9 +2128,9 @@ namespace Mediateq_AP_SIO2
             // 
             // dataGridViewTextBoxColumn11
             // 
-            dataGridViewCellStyle69.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle69.ForeColor = System.Drawing.Color.Aqua;
-            this.dataGridViewTextBoxColumn11.DefaultCellStyle = dataGridViewCellStyle69;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn11.DefaultCellStyle = dataGridViewCellStyle17;
             this.dataGridViewTextBoxColumn11.HeaderText = "Categorie";
             this.dataGridViewTextBoxColumn11.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
@@ -2436,9 +2139,9 @@ namespace Mediateq_AP_SIO2
             // 
             // dataGridViewTextBoxColumn12
             // 
-            dataGridViewCellStyle70.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle70.ForeColor = System.Drawing.Color.Aqua;
-            this.dataGridViewTextBoxColumn12.DefaultCellStyle = dataGridViewCellStyle70;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn12.DefaultCellStyle = dataGridViewCellStyle18;
             this.dataGridViewTextBoxColumn12.HeaderText = "Synopsis";
             this.dataGridViewTextBoxColumn12.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
@@ -2447,9 +2150,9 @@ namespace Mediateq_AP_SIO2
             // 
             // dataGridViewTextBoxColumn13
             // 
-            dataGridViewCellStyle71.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle71.ForeColor = System.Drawing.Color.Aqua;
-            this.dataGridViewTextBoxColumn13.DefaultCellStyle = dataGridViewCellStyle71;
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn13.DefaultCellStyle = dataGridViewCellStyle19;
             this.dataGridViewTextBoxColumn13.HeaderText = "Réalisateur";
             this.dataGridViewTextBoxColumn13.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
@@ -2458,9 +2161,9 @@ namespace Mediateq_AP_SIO2
             // 
             // dataGridViewTextBoxColumn14
             // 
-            dataGridViewCellStyle72.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle72.ForeColor = System.Drawing.Color.Aqua;
-            this.dataGridViewTextBoxColumn14.DefaultCellStyle = dataGridViewCellStyle72;
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn14.DefaultCellStyle = dataGridViewCellStyle20;
             this.dataGridViewTextBoxColumn14.HeaderText = "Durée";
             this.dataGridViewTextBoxColumn14.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
@@ -3010,6 +2713,7 @@ namespace Mediateq_AP_SIO2
             // groupBox7
             // 
             this.groupBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.groupBox7.Controls.Add(this.label90);
             this.groupBox7.Controls.Add(this.inputMontantCommandeForEdit);
             this.groupBox7.Controls.Add(this.inputNbExemplairesCommandeForEdit);
             this.groupBox7.Controls.Add(this.label57);
@@ -3034,15 +2738,36 @@ namespace Mediateq_AP_SIO2
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Modifier";
             // 
+            // label90
+            // 
+            this.label90.AutoSize = true;
+            this.label90.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label90.ForeColor = System.Drawing.Color.White;
+            this.label90.Location = new System.Drawing.Point(356, 172);
+            this.label90.Name = "label90";
+            this.label90.Size = new System.Drawing.Size(17, 18);
+            this.label90.TabIndex = 34;
+            this.label90.Text = "€";
+            // 
             // inputMontantCommandeForEdit
             // 
             this.inputMontantCommandeForEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.inputMontantCommandeForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.inputMontantCommandeForEdit.ForeColor = System.Drawing.Color.Cyan;
             this.inputMontantCommandeForEdit.Location = new System.Drawing.Point(110, 169);
+            this.inputMontantCommandeForEdit.Maximum = new decimal(new int[] {
+            9999999,
+            0,
+            0,
+            0});
             this.inputMontantCommandeForEdit.Name = "inputMontantCommandeForEdit";
-            this.inputMontantCommandeForEdit.Size = new System.Drawing.Size(263, 26);
+            this.inputMontantCommandeForEdit.Size = new System.Drawing.Size(240, 26);
             this.inputMontantCommandeForEdit.TabIndex = 33;
+            this.inputMontantCommandeForEdit.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // inputNbExemplairesCommandeForEdit
             // 
@@ -3050,6 +2775,11 @@ namespace Mediateq_AP_SIO2
             this.inputNbExemplairesCommandeForEdit.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.inputNbExemplairesCommandeForEdit.ForeColor = System.Drawing.Color.Cyan;
             this.inputNbExemplairesCommandeForEdit.Location = new System.Drawing.Point(110, 106);
+            this.inputNbExemplairesCommandeForEdit.Maximum = new decimal(new int[] {
+            9999999,
+            0,
+            0,
+            0});
             this.inputNbExemplairesCommandeForEdit.Name = "inputNbExemplairesCommandeForEdit";
             this.inputNbExemplairesCommandeForEdit.Size = new System.Drawing.Size(263, 26);
             this.inputNbExemplairesCommandeForEdit.TabIndex = 32;
@@ -3179,7 +2909,7 @@ namespace Mediateq_AP_SIO2
             this.inputIdCommandeForEdit.ReadOnly = true;
             this.inputIdCommandeForEdit.Size = new System.Drawing.Size(263, 26);
             this.inputIdCommandeForEdit.TabIndex = 6;
-            this.inputIdCommandeForEdit.Text = "00000";
+            this.inputIdCommandeForEdit.Text = "PZ-00000";
             // 
             // label55
             // 
@@ -3206,6 +2936,7 @@ namespace Mediateq_AP_SIO2
             // groupBox6
             // 
             this.groupBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.groupBox6.Controls.Add(this.label89);
             this.groupBox6.Controls.Add(this.inputIdCommande);
             this.groupBox6.Controls.Add(this.inputMontantCommande);
             this.groupBox6.Controls.Add(this.inputNbExemplairesCommande);
@@ -3228,15 +2959,47 @@ namespace Mediateq_AP_SIO2
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Créer";
             // 
+            // label89
+            // 
+            this.label89.AutoSize = true;
+            this.label89.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label89.ForeColor = System.Drawing.Color.White;
+            this.label89.Location = new System.Drawing.Point(318, 115);
+            this.label89.Name = "label89";
+            this.label89.Size = new System.Drawing.Size(17, 18);
+            this.label89.TabIndex = 33;
+            this.label89.Text = "€";
+            // 
+            // inputIdCommande
+            // 
+            this.inputIdCommande.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputIdCommande.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputIdCommande.ForeColor = System.Drawing.Color.Cyan;
+            this.inputIdCommande.Location = new System.Drawing.Point(103, 15);
+            this.inputIdCommande.Name = "inputIdCommande";
+            this.inputIdCommande.Size = new System.Drawing.Size(232, 26);
+            this.inputIdCommande.TabIndex = 32;
+            this.inputIdCommande.Text = "PZ-00000";
+            // 
             // inputMontantCommande
             // 
             this.inputMontantCommande.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.inputMontantCommande.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.inputMontantCommande.ForeColor = System.Drawing.Color.Cyan;
             this.inputMontantCommande.Location = new System.Drawing.Point(103, 112);
+            this.inputMontantCommande.Maximum = new decimal(new int[] {
+            9999999,
+            0,
+            0,
+            0});
             this.inputMontantCommande.Name = "inputMontantCommande";
-            this.inputMontantCommande.Size = new System.Drawing.Size(232, 26);
+            this.inputMontantCommande.Size = new System.Drawing.Size(211, 26);
             this.inputMontantCommande.TabIndex = 31;
+            this.inputMontantCommande.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // inputNbExemplairesCommande
             // 
@@ -3245,7 +3008,7 @@ namespace Mediateq_AP_SIO2
             this.inputNbExemplairesCommande.ForeColor = System.Drawing.Color.Cyan;
             this.inputNbExemplairesCommande.Location = new System.Drawing.Point(103, 48);
             this.inputNbExemplairesCommande.Maximum = new decimal(new int[] {
-            999,
+            9999999,
             0,
             0,
             0});
@@ -3373,14 +3136,14 @@ namespace Mediateq_AP_SIO2
             this.dataOfCommande.AllowUserToDeleteRows = false;
             this.dataOfCommande.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.dataOfCommande.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle75.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle75.BackColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle75.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle75.ForeColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle75.SelectionBackColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle75.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle75.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataOfCommande.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle75;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataOfCommande.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
             this.dataOfCommande.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataOfCommande.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -3389,33 +3152,33 @@ namespace Mediateq_AP_SIO2
             this.montant,
             this.document,
             this.etatCommande});
-            dataGridViewCellStyle77.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle77.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle77.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle77.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle77.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle77.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle77.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataOfCommande.DefaultCellStyle = dataGridViewCellStyle77;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle25.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle25.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataOfCommande.DefaultCellStyle = dataGridViewCellStyle25;
             this.dataOfCommande.Location = new System.Drawing.Point(8, 26);
             this.dataOfCommande.Name = "dataOfCommande";
             this.dataOfCommande.ReadOnly = true;
             this.dataOfCommande.RowHeadersWidth = 51;
-            dataGridViewCellStyle78.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle78.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle78.ForeColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle78.SelectionBackColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle78.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataOfCommande.RowsDefaultCellStyle = dataGridViewCellStyle78;
+            dataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataOfCommande.RowsDefaultCellStyle = dataGridViewCellStyle26;
             this.dataOfCommande.RowTemplate.Height = 24;
             this.dataOfCommande.Size = new System.Drawing.Size(738, 167);
             this.dataOfCommande.TabIndex = 10;
             // 
             // dataGridViewTextBoxColumn1
             // 
-            dataGridViewCellStyle76.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle76.ForeColor = System.Drawing.Color.Aqua;
-            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle76;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.Aqua;
+            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle24;
             this.dataGridViewTextBoxColumn1.HeaderText = "ID";
             this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
@@ -3474,26 +3237,6 @@ namespace Mediateq_AP_SIO2
             this.label43.TabIndex = 9;
             this.label43.Text = "Gestion des Commandes";
             // 
-            // inputIdCommande
-            // 
-            this.inputIdCommande.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputIdCommande.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputIdCommande.ForeColor = System.Drawing.Color.Cyan;
-            this.inputIdCommande.Location = new System.Drawing.Point(103, 16);
-            this.inputIdCommande.Maximum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.inputIdCommande.Name = "inputIdCommande";
-            this.inputIdCommande.Size = new System.Drawing.Size(232, 26);
-            this.inputIdCommande.TabIndex = 32;
-            this.inputIdCommande.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
             // FrmMediateq
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
@@ -3521,12 +3264,6 @@ namespace Mediateq_AP_SIO2
             this.tabGestionDesUsers.ResumeLayout(false);
             this.tabGestionDesUsers.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataOfUser)).EndInit();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.tabGestionDesLivres.ResumeLayout(false);
             this.tabGestionDesLivres.PerformLayout();
             this.groupBox12.ResumeLayout(false);
@@ -3540,15 +3277,17 @@ namespace Mediateq_AP_SIO2
             this.groupCreerLivre.PerformLayout();
             this.tabGestionDesDvd.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
+            this.tabGestionDesDvdO.ResumeLayout(false);
+            this.tabGestionDesDvdO.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.inputDureeDvdForEdit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataOfDvd)).EndInit();
             this.groupBox18.ResumeLayout(false);
             this.groupBox18.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.inputDureeDvd)).EndInit();
             this.groupBox13.ResumeLayout(false);
             this.groupBox13.PerformLayout();
             this.tabPage4.ResumeLayout(false);
@@ -3576,7 +3315,6 @@ namespace Mediateq_AP_SIO2
             ((System.ComponentModel.ISupportInitialize)(this.inputMontantCommande)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputNbExemplairesCommande)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataOfCommande)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.inputIdCommande)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3658,7 +3396,7 @@ namespace Mediateq_AP_SIO2
         private System.Windows.Forms.Label textEventLivres;
         private System.Windows.Forms.TabPage tabGestionDesDvd;
         private System.Windows.Forms.TabControl tabControl2;
-        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabPage tabGestionDesDvdO;
         private System.Windows.Forms.Label label78;
         private System.Windows.Forms.DataGridView dataOfDvd;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
@@ -3683,7 +3421,6 @@ namespace Mediateq_AP_SIO2
         private System.Windows.Forms.TextBox inputIdDvd;
         private System.Windows.Forms.Label label76;
         private System.Windows.Forms.Label label77;
-        private System.Windows.Forms.TextBox inputDureeDvd;
         private System.Windows.Forms.GroupBox groupBox13;
         private System.Windows.Forms.Label textEventDvd;
         private System.Windows.Forms.TabPage tabPage4;
@@ -3753,40 +3490,11 @@ namespace Mediateq_AP_SIO2
         private System.Windows.Forms.TextBox inputIdDvdForEdit;
         private System.Windows.Forms.Label label83;
         private System.Windows.Forms.Label label84;
-        private System.Windows.Forms.TextBox inputDureeDvdForEdit;
         private System.Windows.Forms.Label label85;
         private System.Windows.Forms.ComboBox SelectDvdForEdit;
         private System.Windows.Forms.Button ButtonEditDvd;
         public System.Windows.Forms.TabPage tabProfil;
         private System.Windows.Forms.Button buttonDeleteLivre;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.ComboBox comboBox6;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.DataGridView dataOfUser;
         private System.Windows.Forms.DataGridViewTextBoxColumn idUtilisateur;
@@ -3838,7 +3546,14 @@ namespace Mediateq_AP_SIO2
         private System.Windows.Forms.NumericUpDown inputMontantCommande;
         private System.Windows.Forms.NumericUpDown inputMontantCommandeForEdit;
         private System.Windows.Forms.NumericUpDown inputNbExemplairesCommandeForEdit;
-        private System.Windows.Forms.NumericUpDown inputIdCommande;
+        private System.Windows.Forms.NumericUpDown inputDureeDvdForEdit;
+        private System.Windows.Forms.NumericUpDown inputDureeDvd;
+        private System.Windows.Forms.Label label87;
+        private System.Windows.Forms.Label label88;
+        private System.Windows.Forms.TextBox inputIdCommande;
+        private System.Windows.Forms.Label label89;
+        private System.Windows.Forms.Label label90;
+        private System.Windows.Forms.Label textRoles;
     }
 }
 

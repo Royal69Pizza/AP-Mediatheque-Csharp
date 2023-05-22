@@ -8,6 +8,7 @@ namespace Mediateq_AP_SIO2
     {
         private static MySqlConnection connexion;
 
+        //| Création de la connexion
         public static void CreerConnection()
         {
             string serverIp = "127.0.0.1";
@@ -28,6 +29,12 @@ namespace Mediateq_AP_SIO2
 
         }
 
+        //| Retourne l'objet connexion pour éxécuter les requètes préparées
+        public static MySqlConnection ReturnConnexion() {
+            return connexion;
+        }
+
+        //| Ouvre la comnnexion
         public static void Connecter()
         {
             try
@@ -40,6 +47,7 @@ namespace Mediateq_AP_SIO2
             }
         }
 
+        //| Ferme la connexion
         public static void Deconnecter()
         {
             connexion.Close();

@@ -32,7 +32,7 @@ namespace Mediateq_AP_SIO2
                     Document document = new Document(reader[6].ToString(), reader[7].ToString(), reader[8].ToString(), categorie);
                     EtatCommande etatCommande = new EtatCommande(reader[9].ToString(), reader[10].ToString());
 
-                    Commande commande = new Commande(int.Parse(reader[2].ToString()), int.Parse(reader[3].ToString()), Convert.ToDateTime(reader[4].ToString()), int.Parse(reader[5].ToString()), document, etatCommande);
+                    Commande commande = new Commande(reader[2].ToString(), int.Parse(reader[3].ToString()), Convert.ToDateTime(reader[4].ToString()), int.Parse(reader[5].ToString()), document, etatCommande);
 
                     lesCommandes.Add(commande);
                 }
@@ -116,18 +116,29 @@ namespace Mediateq_AP_SIO2
         //|-----------------------------------------------------------
         //| Créer une nouvelle Commande
         //|-----------------------------------------------------------
-        public static bool SetNouvelleCommande(int ID, int NbExemplaires, DateTime DateCommande, int MontantCommande, Document unNouveauDocumentForCommande, EtatCommande unNouvelEtatCommandeForCommande)
+        public static bool SetNouvelleCommande(string ID, int NbExemplaires, DateTime DateCommande, int MontantCommande, Document unNouveauDocumentForCommande, EtatCommande unNouvelEtatCommandeForCommande)
         {
             bool resultat;
 
             try
             {
                 string uneDate = DateCommande.ToString("yyyy-MM-dd");
-                String req = "INSERT INTO commande (id, nbExemplaire, dateCommande, montant, idDoc, idEtatCommande) VALUES ('" + ID + "', '" + NbExemplaires + "', '" + uneDate + "', '" + MontantCommande + "', '" + unNouveauDocumentForCommande.IdDoc + "', '" + unNouvelEtatCommandeForCommande.Id + "');";
+
+                string requetePrepareeSurCommande = "INSERT INTO commande (id, nbExemplaire, dateCommande, montant, idDoc, idEtatCommande) VALUES (@id, @nbExemplaire, @dateCommande, @montant, @idDoc, @idEtatCommande);";
 
                 DAOFactory.Connecter();
 
-                DAOFactory.ExecSQLWrite(req);
+                using (MySqlCommand requetePrepareeParametreeSurCommande = new MySqlCommand(requetePrepareeSurCommande, DAOFactory.ReturnConnexion()))
+                {
+                    requetePrepareeParametreeSurCommande.Parameters.AddWithValue("@id", ID);
+                    requetePrepareeParametreeSurCommande.Parameters.AddWithValue("@nbExemplaire", NbExemplaires);
+                    requetePrepareeParametreeSurCommande.Parameters.AddWithValue("@dateCommande", uneDate);
+                    requetePrepareeParametreeSurCommande.Parameters.AddWithValue("@montant", MontantCommande);
+                    requetePrepareeParametreeSurCommande.Parameters.AddWithValue("@idDoc", unNouveauDocumentForCommande.IdDoc);
+                    requetePrepareeParametreeSurCommande.Parameters.AddWithValue("@idEtatCommande", unNouvelEtatCommandeForCommande.Id);
+
+                    requetePrepareeParametreeSurCommande.ExecuteNonQuery();
+                }
 
                 DAOFactory.Deconnecter();
 
@@ -153,11 +164,24 @@ namespace Mediateq_AP_SIO2
             try
             {
                 string uneDate = uneCommande.DateCommande.ToString("yyyy-MM-dd");
-                String req = "UPDATE commande SET nbExemplaire = '" + uneCommande.ExemplairesCommande + "', dateCommande = '" + uneDate + "', montant = '" + uneCommande.MontantCommande + "', idDoc = '" + unDocument.IdDoc + "', idEtatCommande = '" + unEtatCommande.Id + "' WHERE id = '" + uneCommande.IdCommande + "';";
+
+                string requetePrepareeSurCommande = "UPDATE commande SET nbExemplaire = @nbExemplaire, dateCommande = @dateCommande, montant = @montant, idDoc = @idDoc, idEtatCommande = @idEtatCommande WHERE id = @id;";
 
                 DAOFactory.Connecter();
 
-                DAOFactory.ExecSQLWrite(req);
+                using (MySqlCommand requetePrepareeParametreeSurCommande = new MySqlCommand(requetePrepareeSurCommande, DAOFactory.ReturnConnexion()))
+                {
+                    requetePrepareeParametreeSurCommande.Parameters.AddWithValue("@nbExemplaire", uneCommande.ExemplairesCommande);
+                    requetePrepareeParametreeSurCommande.Parameters.AddWithValue("@dateCommande", uneDate);
+                    requetePrepareeParametreeSurCommande.Parameters.AddWithValue("@montant", uneCommande.MontantCommande);
+                    requetePrepareeParametreeSurCommande.Parameters.AddWithValue("@idDoc", unDocument.IdDoc);
+                    requetePrepareeParametreeSurCommande.Parameters.AddWithValue("@idEtatCommande", unEtatCommande.Id);
+                    requetePrepareeParametreeSurCommande.Parameters.AddWithValue("@id", uneCommande.IdCommande);
+
+                    requetePrepareeParametreeSurCommande.ExecuteNonQuery();
+                }
+                
+                //String req = "UPDATE commande SET nbExemplaire = '" + uneCommande.ExemplairesCommande + "', dateCommande = '" + uneDate + "', montant = '" + uneCommande.MontantCommande + "', idDoc = '" + unDocument.IdDoc + "', idEtatCommande = '" + unEtatCommande.Id + "' WHERE id = '" + uneCommande.IdCommande + "';";
 
                 DAOFactory.Deconnecter();
 

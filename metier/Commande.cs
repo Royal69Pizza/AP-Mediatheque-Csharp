@@ -4,14 +4,14 @@ namespace Mediateq_AP_SIO2.metier
 {
     class Commande
     {
-        private int idCommande;
+        private string idCommande;
         private int nbExemplaires;
         private DateTime dateCommande;
         private int montant;
         private Document document;
         private EtatCommande etatCommande;
 
-        public Commande(int unIdCommande, int unNbExemplaires, DateTime uneDate, int unMontant, Document unDocument, EtatCommande unEtatCommande)
+        public Commande(string unIdCommande, int unNbExemplaires, DateTime uneDate, int unMontant, Document unDocument, EtatCommande unEtatCommande)
         {
             this.idCommande = unIdCommande;
             this.nbExemplaires = unNbExemplaires;
@@ -21,7 +21,7 @@ namespace Mediateq_AP_SIO2.metier
             this.etatCommande = unEtatCommande;
         }
 
-        public int IdCommande { get => idCommande; set => idCommande = value; }
+        public string IdCommande { get => idCommande; set => idCommande = value; }
         public int ExemplairesCommande { get => nbExemplaires; set => nbExemplaires = value; }
         public DateTime DateCommande { get => dateCommande; set => dateCommande = value; }
         public int MontantCommande { get => montant; set => montant = value; }

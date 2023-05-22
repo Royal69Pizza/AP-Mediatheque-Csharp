@@ -86,7 +86,42 @@ namespace Mediateq_AP_SIO2
             //|
             //| Accès aux différentes parties de l'appli delon le service
             //|
-            tabGestionDesUsers.Enabled = false;
+            TabPage TabGestionDesUsers = tabGestionDesUsers;
+            TabPage TabGestionDesLivres = tabGestionDesLivres;
+            TabPage TabGestionDesDvdO = tabGestionDesDvdO;
+            TabPage TabGestionDesCommandes = tabGestionDesCommandes;
+
+            if (UtilisateurLogged.Service == "Administrateur")
+            {
+                textRoles.Text = "Vous avez accès à tous les onglets.";
+            }
+            else
+            {
+                if (UtilisateurLogged.Service == "Administratif")
+                {
+                    textRoles.Text = "Vous avez accès à la gestion des DVD et des Livres, ainsi qu'a la gestion des commandes.";
+                    tabOngletsApplication.TabPages.Remove(TabGestionDesUsers);
+                }
+                else
+                {
+                    if (UtilisateurLogged.Service == "Prêts")
+                    {
+                        textRoles.Text = "Vous avez accès à la gestion des DVD et des Livres, ainsi qu'a la gestion des commandes.";
+                        tabOngletsApplication.TabPages.Remove(TabGestionDesUsers);
+                    }
+                    else
+                    {
+                        if (UtilisateurLogged.Service == "Culture")
+                        {
+                            textRoles.Text = "Vous avez accès à l'onglet profil uniquement";
+                            tabOngletsApplication.TabPages.Remove(TabGestionDesUsers);
+                            tabOngletsApplication.TabPages.Remove(TabGestionDesLivres);
+                            tabOngletsApplication.TabPages.Remove(TabGestionDesDvdO);
+                            tabOngletsApplication.TabPages.Remove(TabGestionDesCommandes);
+                        }
+                    }
+                }
+            }
         }
 
         #endregion
@@ -304,59 +339,73 @@ namespace Mediateq_AP_SIO2
             //|
             Categorie uneNouvelleCategorie = (Categorie)selectCategorieLivreForCreate.SelectedItem;
 
+            //|
+            //| Regex
+            //|
+            Regex regexID = new Regex(@"^[0-9]{5}$");
+            Match IDTest = regexID.Match(ID);
+
+            Regex regexTitre = new Regex(@"^[a-zA-ZÀ-ÿ \-\']+$");
+            Match TitreTest = regexTitre.Match(Titre);
+
+            Regex regexAuteur = new Regex(@"^[a-zA-ZÀ-ÿ \-\']+$");
+            Match AuteurTest = regexAuteur.Match(Auteur);
+
+            Regex regexISBN = new Regex(@"^[0-9]{5}$");
+            Match ISBNTest = regexISBN.Match(ISBN);
+
+            Regex regexImage = new Regex(@"^([a-zA-Z_]+)(\.)([a-z]{3}|[a-z]{4})$");
+            Match ImageTest = regexImage.Match(Image);
+
+            Regex regexCollection = new Regex(@"^[a-zA-ZÀ-ÿ \-\']+$");
+            Match CollectionTest = regexCollection.Match(Collection);
+
             try
             {
                 //|
-                //| Si les champs ID, Titre et categorie sont vides
+                //| Test des regex
                 //|
-                if (ID == "" || Titre == "" || uneNouvelleCategorie == null)
+                if (!IDTest.Success || !TitreTest.Success || !AuteurTest.Success || !ISBNTest.Success || !ImageTest.Success || !CollectionTest.Success || uneNouvelleCategorie == null)
                 {
-                    throw new ExceptionSio("CRUD LIVRE - Créer", "Le champ ID, Titre, Catégorie et Auteur sont obligatoires", "");
+                    throw new ExceptionSio("CRUD LIVRE - Créer", "Un ou plusieurs regex se sont déclenchés.", "");
                 }
                 else
                 {
-                    if (ID.Length > 5)
+                    //|
+                    //| Création de l'objet Livre
+                    //|
+                    Livre unNouveauLivre = new Livre(ID, Titre, ISBN, Auteur, Collection, Image, uneNouvelleCategorie);
+
+                    //|
+                    //| Appel de la base de données qui donnera le résultat True ou False si ça a bien fonctionné ou non
+                    //|
+                    bool resultat;
+
+                    resultat = DAODocuments.SetNouveauLivre(ID, Titre, ISBN, Auteur, Collection, Image, uneNouvelleCategorie.Id);
+
+                    if (resultat)
                     {
-                        throw new ExceptionSio("CRUD LIVRE - Créer", "Le champ ID est trop long (Max 5 caractères)", "");
+                        //|
+                        //| Mise à jour de la liste des objets Livre
+                        //|
+                        lesLivres = DAODocuments.GetAllLivres();
+
+                        //|
+                        //| Mise à jour du Datagridview
+                        //|
+                        SetAllDataOfLivres();
+
+                        //|
+                        //| Mise à jour des combobox dans l'onglet Livres
+                        //|
+                        SetComboboxLivreForLivre();
+
+                        textEventLivres.Text = "Le livre à bien été créé.";
+                        textEventLivres.ForeColor = System.Drawing.Color.FromArgb(0, 255, 0);
                     }
                     else
                     {
-                        //|
-                        //| Création de l'objet Livre
-                        //|
-                        Livre unNouveauLivre = new Livre(ID, Titre, ISBN, Auteur, Collection, Image, uneNouvelleCategorie);
-
-                        //|
-                        //| Appel de la base de données qui donnera le résultat True ou False si ça a bien fonctionné ou non
-                        //|
-                        bool resultat;
-
-                        resultat = DAODocuments.SetNouveauLivre(ID, Titre, ISBN, Auteur, Collection, Image, uneNouvelleCategorie.Id);
-
-                        if (resultat)
-                        {
-                            //|
-                            //| Mise à jour de la liste des objets Livre
-                            //|
-                            lesLivres = DAODocuments.GetAllLivres();
-
-                            //|
-                            //| Mise à jour du Datagridview
-                            //|
-                            SetAllDataOfLivres();
-
-                            //|
-                            //| Mise à jour des combobox dans l'onglet Livres
-                            //|
-                            SetComboboxLivreForLivre();
-
-                            textEventLivres.Text = "Le livre à bien été créé.";
-                            textEventLivres.ForeColor = System.Drawing.Color.FromArgb(0, 255, 0);
-                        }
-                        else
-                        {
-                            throw new ExceptionSio("CRUD LIVRE - Créer", "Erreur BDD lors de la création du livre", "");
-                        }
+                        throw new ExceptionSio("CRUD LIVRE - Créer", "Erreur BDD lors de la création du livre", "");
                     }
                 }
             }
@@ -401,14 +450,32 @@ namespace Mediateq_AP_SIO2
 
             Categorie uneNouvelleCategorie = (Categorie)selectCategorieForEdit.SelectedItem;
 
+            //|
+            //| Regex
+            //|
+            Regex regexID = new Regex(@"^[0-9]{5}$");
+            Match IDTest = regexID.Match(ID);
+
+            Regex regexTitre = new Regex(@"^[a-zA-Z0-9_ ]+$");
+            Match TitreTest = regexTitre.Match(Titre);
+
+            Regex regexAuteur = new Regex(@"^[a-zA-Z_ ]+$");
+            Match AuteurTest = regexAuteur.Match(Auteur);
+
+            Regex regexISBN = new Regex(@"^[0-9]{5}$");
+            Match ISBNTest = regexISBN.Match(ISBN);
+
+            Regex regexImage = new Regex(@"^([a-zA-Z_]+)(\.)([a-z]{3}|[a-z]{4})$");
+            Match ImageTest = regexImage.Match(Image);
+
             try
             {
                 //|
-                //| Si les champs ID, Titre et categorie sont vides
+                //| Test des regex
                 //|
-                if (ID == "" || Titre == "" || uneNouvelleCategorie == null)
+                if (!IDTest.Success || !TitreTest.Success || !AuteurTest.Success || !ISBNTest.Success || !ImageTest.Success || uneNouvelleCategorie == null)
                 {
-                    throw new ExceptionSio("CRUD LIVRE - Modifier", "Le champ ID, Titre et la catégorie sont obligatoires", "");
+                    throw new ExceptionSio("CRUD LIVRE - Modifier", "Un ou plusieurs regex se sont déclenchés.", "");
                 }
                 else
                 {
@@ -528,58 +595,70 @@ namespace Mediateq_AP_SIO2
             String Titre = inputTitreDvd.Text;
             String Image = inputImageDvd.Text;
             String Realisateur = inputRealisateurDvd.Text;
+            string DureeString = inputDureeDvd.Text;
             int Duree = int.Parse(inputDureeDvd.Text);
             String Synopsis = inputSynopsisDvd.Text;
 
             Categorie uneNouvelleCategorie = (Categorie)selectCategorieDvdForCreate.SelectedItem;
 
+            //|
+            //| Regex
+            //|
+            Regex regexID = new Regex(@"^[0-9]{5}$");
+            Match IDTest = regexID.Match(ID);
+
+            Regex regexTitre = new Regex(@"^[a-zA-ZÀ-ÿ \-\']+$");
+            Match TitreTest = regexTitre.Match(Titre);
+
+            Regex regexImage = new Regex(@"^([a-zA-Z_]+)(\.)([a-z]{3}|[a-z]{4})$");
+            Match ImageTest = regexImage.Match(Image);
+
+            Regex regexRealisateur = new Regex(@"^[a-zA-ZÀ-ÿ \-\']+$");
+            Match RealisateurTest = regexRealisateur.Match(Realisateur);
+
+            Regex regexDuree = new Regex(@"^[0-9]+$");
+            Match DureeTest = regexDuree.Match(DureeString);
+
             try
             {
                 //|
-                //| Si les champs ID, Titre et categorie sont vides
+                //| Test des regex
                 //|
-                if (ID == "" || Titre == "" || uneNouvelleCategorie == null)
+                if (!IDTest.Success || !TitreTest.Success || !RealisateurTest.Success || !DureeTest.Success || !ImageTest.Success || uneNouvelleCategorie == null)
                 {
-                    throw new ExceptionSio("CRUD DVD - Créer", "Le champ ID, Titre et la catégorie sont obligatoires", "");
+                    throw new ExceptionSio("CRUD DVD - Créer", "Un ou plusieurs regex se sont déclenchés.", "");
                 }
                 else
                 {
-                    if (ID.Length > 5)
+                    //|
+                    //| Création de l'objet Dvd
+                    //|
+                    Dvd unNouveauDvd = new Dvd(ID, Synopsis, Realisateur, Titre, Duree, Image, uneNouvelleCategorie);
+
+                    //|
+                    //| Appel de la base de données
+                    //|
+                    bool resultat;
+
+                    resultat = DAODocuments.SetNouveauDvd(unNouveauDvd, uneNouvelleCategorie);
+
+                    if (resultat)
                     {
-                        throw new ExceptionSio("CRUD DVD - Créer", "Le champ ID est trop long (Max 5 caractères)", "");
+                        //|
+                        //| On met à jour la combobox de la modif et suppression des dvd & le datagridview des dvd
+                        //|
+                        lesDvd = DAODocuments.GetAllDvd();
+
+                        SetAllDataOfDvd();
+
+                        SetComboboxDvdForDvd();
+
+                        textEventDvd.Text = "Un dvd à été créé";
+                        textEventDvd.ForeColor = System.Drawing.Color.FromArgb(0, 255, 0);
                     }
                     else
                     {
-                        //|
-                        //| Création de l'objet Dvd
-                        //|
-                        Dvd unNouveauDvd = new Dvd(ID, Synopsis, Realisateur, Titre, Duree, Image, uneNouvelleCategorie);
-
-                        //|
-                        //| Appel de la base de données
-                        //|
-                        bool resultat;
-
-                        resultat = DAODocuments.SetNouveauDvd(unNouveauDvd, uneNouvelleCategorie);
-
-                        if (resultat)
-                        {
-                            //|
-                            //| On met à jour la combobox de la modif et suppression des dvd & le datagridview des dvd
-                            //|
-                            lesDvd = DAODocuments.GetAllDvd();
-
-                            SetAllDataOfDvd();
-
-                            SetComboboxDvdForDvd();
-
-                            textEventDvd.Text = "Un dvd à été créé";
-                            textEventDvd.ForeColor = System.Drawing.Color.FromArgb(0, 255, 0);
-                        }
-                        else
-                        {
-                            throw new ExceptionSio("CRUD DVD - Créer", "Erreur BDD lors de la création du dvd", "");
-                        }
+                        throw new ExceptionSio("CRUD DVD - Créer", "Erreur BDD lors de la création du dvd", "");
                     }
                 }
             }
@@ -621,18 +700,40 @@ namespace Mediateq_AP_SIO2
             String Image = inputImageDvdForEdit.Text;
             String Synopsis = inputSynopsisDvdForEdit.Text;
             String Realisateur = inputRealisateurDvdForEdit.Text;
+            string DureeString = inputDureeDvdForEdit.Text;
             int Duree = int.Parse(inputDureeDvdForEdit.Text);
 
             Categorie uneNouvelleCategorie = (Categorie)selectCategorieDvdForEdit.SelectedItem;
 
+            //|
+            //| Regex
+            //|
+            Regex regexID = new Regex(@"^[0-9]{5}$");
+            Match IDTest = regexID.Match(ID);
+
+            Regex regexTitre = new Regex(@"^[a-zA-ZÀ-ÿ \-\']+$");
+            Match TitreTest = regexTitre.Match(Titre);
+
+            Regex regexImage = new Regex(@"^([a-zA-Z_]+)(\.)([a-z]{3}|[a-z]{4})$");
+            Match ImageTest = regexImage.Match(Image);
+
+            Regex regexRealisateur = new Regex(@"^[a-zA-ZÀ-ÿ \-\']+$");
+            Match RealisateurTest = regexRealisateur.Match(Realisateur);
+
+            Regex regexSynopsis = new Regex(@"^[a-zA-ZÀ-ÿ \-\']+$");
+            Match SynopsisTest = regexSynopsis.Match(Synopsis);
+
+            Regex regexDuree = new Regex(@"^[0-9]+$");
+            Match DureeTest = regexDuree.Match(DureeString);
+
             try
             {
                 //|
-                //| Si les champs ID, Titre et categorie sont vides 
+                //| Test des regex
                 //|
-                if (ID == "" || Titre == "" || uneNouvelleCategorie == null)
+                if (!IDTest.Success || !TitreTest.Success || !RealisateurTest.Success || !DureeTest.Success || !ImageTest.Success || !SynopsisTest.Success || uneNouvelleCategorie == null)
                 {
-                    throw new ExceptionSio("CRUD DVD - Modifier", "Le champ ID, Titre et la catégorie sont obligatoires", "");
+                    throw new ExceptionSio("CRUD DVD - Modifier", "Un ou plusieurs regex se sont déclenchés.", "");
                 }
                 else
                 {
@@ -747,31 +848,52 @@ namespace Mediateq_AP_SIO2
         //|-----------------------------------------------------------
         private void ButtonCreateCommande_Click(object sender, EventArgs e)
         {
-            int ID = int.Parse(inputIdCommande.Text);
+            //| Récupération des variables
+            string ID = inputIdCommande.Text;
             int NbExemplaires = int.Parse(inputNbExemplairesCommande.Text);
+            string NbExemplairesString = inputNbExemplairesCommande.Text;
             DateTime DateCommande = inputDateCommande.Value;
             int MontantCommande = int.Parse(inputMontantCommande.Text);
+            string MontantCommandeString = inputMontantCommande.Text;
+
             Document unNouveauDocumentForCommande = (Document)selectDocumentForCreateCommande.SelectedItem;
             EtatCommande unNouvelEtatCommandeForCommande = (EtatCommande)selectEtatForCreateCommande.SelectedItem;
 
+            //| Regex
+            Regex regexID = new Regex(@"^([A-Z]{2})(\-)([0-9]{5})$");
+            Match IDTest = regexID.Match(ID);
+
+            Regex regexNbExemplaires = new Regex(@"^[0-9]+$");
+            Match NbExemplairesTest = regexNbExemplaires.Match(NbExemplairesString);
+
+            Regex regexMontantCommande = new Regex(@"^[0-9]+$");
+            Match MontantCommandeTest = regexMontantCommande.Match(MontantCommandeString);
+
             try
             {
-                if (DateCommande == null || unNouveauDocumentForCommande == null || unNouvelEtatCommandeForCommande == null)
+                //| Test des entrées
+                if (!IDTest.Success || !NbExemplairesTest.Success || !MontantCommandeTest.Success ||  DateCommande == null || unNouveauDocumentForCommande == null || unNouvelEtatCommandeForCommande == null)
                 {
-                    throw new ExceptionSio("CRUD COMMANDE - Créer", "Des champs ne sont pas renseignés.", "");
+                    throw new ExceptionSio("CRUD COMMANDE - Créer", "Un ou plusieurs regex se sont déclenchés.", "");
                 }
                 else
                 {
+                    //| On créer un nouvel objet commande
                     Commande unNouvelleCommande = new Commande(ID, NbExemplaires, DateCommande, MontantCommande, unNouveauDocumentForCommande, unNouvelEtatCommandeForCommande);
 
+                    //| On envoie la commande à la bdd
                     bool resultat = DAOCommandes.SetNouvelleCommande(ID, NbExemplaires, DateCommande, MontantCommande, unNouveauDocumentForCommande, unNouvelEtatCommandeForCommande);
-                    
+
+                    //| Si ça a marché
                     if (resultat)
                     {
+                        //| On reset la collection de commandes
                         lesCommandes = DAOCommandes.GetAllCommandes();
 
+                        //| On reset le datagridview
                         SetAllDataOfCommandes();
 
+                        //| On reset les combobox
                         SetComboboxCommandeForCommande();
 
                         textEventCommande.Text = "La commande à bien étée créé";
@@ -812,68 +934,59 @@ namespace Mediateq_AP_SIO2
         //|-----------------------------------------------------------
         private void ButtonModifierCommande_Click(object sender, EventArgs e)
         {
-            int ID = int.Parse(inputIdCommandeForEdit.Text);
+            string ID = inputIdCommandeForEdit.Text;
             int NbExemplaires = int.Parse(inputNbExemplairesCommandeForEdit.Text);
+            string NbExemplairesString = inputNbExemplairesCommandeForEdit.Text;
             DateTime DateCommande = inputDateCommandeForEdit.Value;
             int Montant = int.Parse(inputMontantCommandeForEdit.Text);
+            string MontantString = inputMontantCommandeForEdit.Text;
+
             Document uneNouveauDocument = (Document)selectDocumentForEditCommande.SelectedItem;
             EtatCommande unNouvelEtatCommande = (EtatCommande)selectEtatForEditCommande.SelectedItem;
 
-            int TestPourID = inputIdCommandeForEdit.Text.Length;
+            //| Regex
+            Regex regexID = new Regex(@"^([A-Z]{2})(\-)([0-9]{5})$");
+            Match IDTest = regexID.Match(ID);
+
+            Regex regexNbExemplaires = new Regex(@"^[0-9]+$");
+            Match NbExemplairesTest = regexNbExemplaires.Match(NbExemplairesString);
+
+            Regex regexMontantCommande = new Regex(@"^[0-9]+$");
+            Match MontantCommandeTest = regexMontantCommande.Match(MontantString);
 
             try
             {
-                if (TestPourID < 5 || TestPourID > 6)
+                if (!IDTest.Success || !NbExemplairesTest.Success || !MontantCommandeTest.Success || DateCommande == null || uneNouveauDocument == null || unNouvelEtatCommande == null)
                 {
-                    throw new ExceptionSio("CRUD COMMANDE - Modifier", "L'ID de la commande est incorrect. Il doit être de la forme 'xxxxx'.", "");
+                    throw new ExceptionSio("CRUD COMMANDE - Modifier", "Un ou plusieurs regex se sont déclenchés.", "");
                 }
                 else
                 {
-                    if (NbExemplaires == 0 || Montant == 0 || Montant >= 10000)
+                    //| Création de l'objet commande
+                    Commande laCommandeForEdit = (Commande)SelectCommandeForEdit.SelectedItem;
+                    laCommandeForEdit = null;
+                    laCommandeForEdit = new Commande(ID, NbExemplaires, DateCommande, Montant, uneNouveauDocument, unNouvelEtatCommande);
+
+                    //| Appel de la base de données pour modifier la commande selon son ID
+                    bool resultat;
+
+                    resultat = DAOCommandes.EditCommande(laCommandeForEdit, uneNouveauDocument, unNouvelEtatCommande);
+
+                    if (resultat)
                     {
-                        throw new ExceptionSio("CRUD COMMANDE - Modifier", "Le nombre d'exemplaires ou le montant de la commande ne peut être égal à 0 et supérieur à 9999.", "");
+                        //| On met à jour la combobox de la modif et suppression des dvd & le datagridview des dvd
+                        lesCommandes = DAOCommandes.GetAllCommandes();
+
+                        SetAllDataOfCommandes();
+
+                        SetComboboxCommandeForCommande();
+
+                        textEventCommande.Text = "La commande à été modifiée";
+                        textEventCommande.ForeColor = System.Drawing.Color.FromArgb(0, 255, 0);
                     }
                     else
                     {
-                        if (DateCommande == null || uneNouveauDocument == null || unNouvelEtatCommande == null)
-                        {
-                            throw new ExceptionSio("CRUD COMMANDE - Modifier", "Séléctionnez un document, un état de commande et une date valide.", "");
-                        }
-                        else
-                        {
-                            //|
-                            //| Création de l'objet commande
-                            //|
-                            Commande laCommandeForEdit = (Commande)SelectCommandeForEdit.SelectedItem;
-                            laCommandeForEdit = null;
-                            laCommandeForEdit = new Commande(ID, NbExemplaires, DateCommande, Montant, uneNouveauDocument, unNouvelEtatCommande);
-
-                            //|
-                            //| Appel de la base de données pour modifier la commande selon son ID
-                            //|
-                            bool resultat;
-
-                            resultat = DAOCommandes.EditCommande(laCommandeForEdit, uneNouveauDocument, unNouvelEtatCommande);
-
-                            if (resultat)
-                            {
-                                //|
-                                //| On met à jour la combobox de la modif et suppression des dvd & le datagridview des dvd
-                                //|
-                                lesCommandes = DAOCommandes.GetAllCommandes();
-
-                                SetAllDataOfCommandes();
-
-                                SetComboboxCommandeForCommande();
-
-                                textEventCommande.Text = "La commande à été modifiée";
-                                textEventCommande.ForeColor = System.Drawing.Color.FromArgb(0, 255, 0);
-                            }
-                            else
-                            {
-                                throw new ExceptionSio("CRUD COMMANDE - Modifier", "Erreur BDD lors de la modification de la commande", "");
-                            }
-                        }
+                        throw new ExceptionSio("CRUD COMMANDE - Modifier", "Erreur BDD lors de la modification de la commande", "");
                     }
                 }
             }
@@ -904,9 +1017,7 @@ namespace Mediateq_AP_SIO2
                     textEventCommande.Text = "La commande à bien été supprimée";
                     textEventCommande.ForeColor = System.Drawing.Color.FromArgb(0, 255, 0);
 
-                    //|
                     //| On met à jour la combobox de la modif et suppression des dvd
-                    //|
                     lesCommandes = DAOCommandes.GetAllCommandes();
 
                     SetAllDataOfCommandes();
