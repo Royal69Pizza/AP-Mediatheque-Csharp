@@ -88,7 +88,7 @@ namespace Mediateq_AP_SIO2
             //|
             TabPage TabGestionDesUsers = tabGestionDesUsers;
             TabPage TabGestionDesLivres = tabGestionDesLivres;
-            TabPage TabGestionDesDvdO = tabGestionDesDvdO;
+            TabPage TabGestionDesDvd = tabGestionDesDvd;
             TabPage TabGestionDesCommandes = tabGestionDesCommandes;
 
             if (UtilisateurLogged.Service == "Administrateur")
@@ -126,10 +126,10 @@ namespace Mediateq_AP_SIO2
                     {
                         if (UtilisateurLogged.Service == "Culture")
                         {
-                            textRoles.Text = "Vous avez accès à l'onglet profil uniquement";
+                            textRoles.Text = "Aucune fonctionnalité développée pour ce rôle pour le moment.";
                             tabOngletsApplication.TabPages.Remove(TabGestionDesUsers);
                             tabOngletsApplication.TabPages.Remove(TabGestionDesLivres);
-                            tabOngletsApplication.TabPages.Remove(tabGestionDesDvd);
+                            tabOngletsApplication.TabPages.Remove(TabGestionDesDvd);
                             tabOngletsApplication.TabPages.Remove(TabGestionDesCommandes);
                         }
                     }
